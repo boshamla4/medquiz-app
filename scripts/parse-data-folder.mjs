@@ -6,7 +6,9 @@ const ROOT = process.cwd();
 const DATA_DIR = path.join(ROOT, 'data');
 const OUTPUT_DIR = path.join(ROOT, 'scripts', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'parsed-questions.json');
+// Hyphen-minus U+002D, en dash U+2013, em dash U+2014.
 const DASH_PATTERN = '[-–—]';
+const ANSWER_KEY_LINE_REGEX = new RegExp(`^(\\d+)\\s*${DASH_PATTERN}\\s*([A-E\\s,]+)\\.?$`, 'i');
 
 function normalizeText(text) {
   return text.replace(/\s+/g, ' ').trim();
@@ -27,7 +29,7 @@ function parseKeyAnswers(rawText) {
 
   for (let i = startIdx + 1; i < lines.length; i += 1) {
     const line = lines[i];
-    const match = line.match(new RegExp(`^(\\d+)\\s*${DASH_PATTERN}\\s*([A-E\\s,]+)\\.?$`, 'i'));
+    const match = line.match(ANSWER_KEY_LINE_REGEX);
     if (!match) {
       continue;
     }

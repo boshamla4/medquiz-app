@@ -6,13 +6,14 @@ const ROOT = process.cwd();
 const INPUT_FILE = path.join(ROOT, 'scripts', 'generated', 'parsed-questions.json');
 const DB_FILE = path.join(ROOT, 'medquiz.db');
 const IMPORT_TAG = 'data-folder-json-v1';
+const VALID_QUESTION_TYPES = ['single', 'multiple'];
 
 function ensureTables(db) {
   db.exec(`
     CREATE TABLE IF NOT EXISTS questions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       module TEXT NOT NULL,
-      type TEXT NOT NULL CHECK(type IN ('single','multiple')),
+      type TEXT NOT NULL CHECK(type IN ('${VALID_QUESTION_TYPES[0]}','${VALID_QUESTION_TYPES[1]}')),
       question_text TEXT NOT NULL,
       deleted_at DATETIME
     );
@@ -97,7 +98,7 @@ function main() {
   const runImport = db.transaction(() => {
     for (const file of payload.files) {
       for (const q of file.questions) {
-        if (q.type !== 'single' && q.type !== 'multiple') {
+        if (!VALID_QUESTION_TYPES.includes(q.type)) {
           throw new Error(`Invalid question type "${q.type}" in ${file.file}`);
         }
 
