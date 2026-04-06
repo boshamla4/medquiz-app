@@ -1,3 +1,8 @@
+/**
+ * Simple in-memory rate limiter.
+ * NOTE: State resets on server restart and does not work across multiple instances.
+ * For production multi-instance deployments, replace with a Redis-backed implementation.
+ */
 interface RateLimitEntry {
   count: number;
   firstAttempt: number;

@@ -142,13 +142,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   processAnswers();
 
-  const finishedAt = new Date().toISOString().replace('T', ' ').slice(0, 19);
+  // Calculate duration server-side; use CURRENT_TIMESTAMP for finished_at to stay consistent with SQLite
   const startedAt = new Date(exam.started_at);
   const duration = Math.round((Date.now() - startedAt.getTime()) / 1000);
 
   db.prepare(
-    'UPDATE exams SET finished_at = ?, duration = ? WHERE id = ?'
-  ).run(finishedAt, duration, examId);
+    'UPDATE exams SET finished_at = CURRENT_TIMESTAMP, duration = ? WHERE id = ?'
+  ).run(duration, examId);
 
   return NextResponse.json({
     score: correctCount,

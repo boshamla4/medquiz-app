@@ -19,8 +19,8 @@ export function proxy(request: NextRequest): NextResponse | undefined {
     );
   }
 
-  const token = request.cookies.get('user_id')?.value;
-  if (!token) {
+  const userId = request.cookies.get('user_id')?.value;
+  if (!userId) {
     return NextResponse.json(
       { error: 'Token cookie missing', code: 'TOKEN_MISSING' },
       { status: 401 }

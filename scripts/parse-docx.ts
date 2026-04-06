@@ -70,10 +70,10 @@ function parseQcmText(text: string): ParsedQuestion[] {
       let answerText = rawText;
 
       if (
-        answerText.startsWith('*') ||
-        answerText.toLowerCase().includes('(correct)') ||
         answerText.startsWith('**') ||
-        answerText.endsWith('**')
+        answerText.endsWith('**') ||
+        answerText.startsWith('*') ||
+        answerText.toLowerCase().includes('(correct)')
       ) {
         isCorrect = true;
         answerText = answerText
