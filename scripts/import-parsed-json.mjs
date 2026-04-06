@@ -13,7 +13,7 @@ function ensureTables(db) {
     CREATE TABLE IF NOT EXISTS questions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       module TEXT NOT NULL,
-      type TEXT NOT NULL CHECK(type IN ('${VALID_QUESTION_TYPES[0]}','${VALID_QUESTION_TYPES[1]}')),
+      type TEXT NOT NULL CHECK(type IN ('single','multiple')),
       question_text TEXT NOT NULL,
       deleted_at DATETIME
     );

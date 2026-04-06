@@ -9,6 +9,7 @@ const OUTPUT_FILE = path.join(OUTPUT_DIR, 'parsed-questions.json');
 // Hyphen-minus U+002D, en dash U+2013, em dash U+2014.
 const DASH_PATTERN = '[-–—]';
 const ANSWER_KEY_LINE_REGEX = new RegExp(`^(\\d+)\\s*${DASH_PATTERN}\\s*([A-E\\s,]+)\\.?$`, 'i');
+const VALID_SOURCE_TYPES = ['CM', 'CS'];
 
 function normalizeText(text) {
   return text.replace(/\s+/g, ' ').trim();
@@ -52,7 +53,7 @@ function parseDocText(rawText, moduleName) {
 
   const keyAnswers = parseKeyAnswers(rawText);
   const questions = [];
-  const questionPattern = /^(\d+)\.(CM|CS)\s+(.+)$/i;
+  const questionPattern = new RegExp(`^(\\d+)\\.(${VALID_SOURCE_TYPES.join('|')})\\s+(.+)$`, 'i');
   const answerPattern = /^([A-E])\.\s*(.*)$/i;
 
   let currentQuestion = null;
