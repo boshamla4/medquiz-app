@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "parse:data": "node scripts/parse-data-folder.mjs",
+    "import:data": "node scripts/import-parsed-json.mjs",
+    "seed:data-once": "npm run parse:data && npm run import:data"
   },
   "dependencies": {
     "@types/better-sqlite3": "^7.6.13",

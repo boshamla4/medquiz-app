@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## One-time data import from DOCX folder
+
+If your source questions are in `data/` (including subfolders), run:
+
+```bash
+npm run seed:data-once
+```
+
+This will:
+
+1. Parse all `.docx` files under `data/` into `scripts/generated/parsed-questions.json`
+2. Import the parsed JSON into the local database (`medquiz.db`)
+
+The importer is guarded to run once (tag `data-folder-json-v1`) and will skip duplicate runs.
+
 ## Getting Started
 
 First, run the development server:
