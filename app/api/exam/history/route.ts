@@ -21,7 +21,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const sort = searchParams.get('sort') === 'score' ? 'score' : 'date';
   const offset = (page - 1) * limit;
 
-  const orderBy =
+  const orderByClause =
     sort === 'score'
       ? 'correct_count DESC, e.started_at DESC'
       : 'e.started_at DESC';
@@ -39,7 +39,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
        LEFT JOIN exam_questions eq ON eq.exam_id = e.id
        WHERE e.user_id = ?
        GROUP BY e.id
-       ORDER BY ${orderBy}
+       ORDER BY ${orderByClause}
        LIMIT ? OFFSET ?`
     )
     .all(session.userId, limit, offset) as ExamRow[];
