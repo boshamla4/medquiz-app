@@ -75,7 +75,6 @@ function parseDocText(rawText, moduleName) {
       const questionNumber = Number(qMatch[1]);
       const sourceType = qMatch[2].toUpperCase();
       const questionText = normalizeText(qMatch[3]);
-      const correctSet = keyAnswers.get(questionNumber) ?? new Set();
 
       currentQuestion = {
         module: moduleName,
