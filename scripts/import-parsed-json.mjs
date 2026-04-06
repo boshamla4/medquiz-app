@@ -97,7 +97,11 @@ function main() {
   const runImport = db.transaction(() => {
     for (const file of payload.files) {
       for (const q of file.questions) {
-        const type = q.type === 'multiple' ? 'multiple' : 'single';
+        if (q.type !== 'single' && q.type !== 'multiple') {
+          throw new Error(`Invalid question type "${q.type}" in ${file.file}`);
+        }
+
+        const type = q.type;
         const questionResult = insertQuestion.run(q.module, type, q.question_text);
         const questionId = Number(questionResult.lastInsertRowid);
 

@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const DATA_DIR = path.join(ROOT, 'data');
 const OUTPUT_DIR = path.join(ROOT, 'scripts', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'parsed-questions.json');
+const DASH_PATTERN = '[-–—]';
 
 function normalizeText(text) {
   return text.replace(/\s+/g, ' ').trim();
@@ -26,7 +27,7 @@ function parseKeyAnswers(rawText) {
 
   for (let i = startIdx + 1; i < lines.length; i += 1) {
     const line = lines[i];
-    const match = line.match(/^(\d+)\s*[-–—]\s*([A-E\s,]+)\.?$/i);
+    const match = line.match(new RegExp(`^(\\d+)\\s*${DASH_PATTERN}\\s*([A-E\\s,]+)\\.?$`, 'i'));
     if (!match) {
       continue;
     }
@@ -61,8 +62,8 @@ function parseDocText(rawText, moduleName) {
     }
     const correctCount = currentQuestion.answers.filter((a) => a.is_correct).length;
     if (correctCount === 0) {
-      console.warn(
-        `Warning: no correct answers detected for ${moduleName} question ${currentQuestion.question_number}`
+      throw new Error(
+        `No correct answers detected for ${moduleName} question ${currentQuestion.question_number}`
       );
     }
     currentQuestion.type = correctCount > 1 ? 'multiple' : 'single';
