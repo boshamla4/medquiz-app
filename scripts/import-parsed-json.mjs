@@ -113,7 +113,7 @@ function main() {
     markRun.run(
       IMPORT_TAG,
       path.relative(ROOT, INPUT_FILE),
-      `files=${payload.totalFiles ?? payload.files.length},questions=${totalQuestions},answers=${totalAnswers}`
+      `files=${payload.files.length},questions=${totalQuestions},answers=${totalAnswers}`
     );
   });
 

@@ -60,6 +60,11 @@ function parseDocText(rawText, moduleName) {
       return;
     }
     const correctCount = currentQuestion.answers.filter((a) => a.is_correct).length;
+    if (correctCount === 0) {
+      console.warn(
+        `Warning: no correct answers detected for ${moduleName} question ${currentQuestion.question_number}`
+      );
+    }
     currentQuestion.type = correctCount > 1 ? 'multiple' : 'single';
     questions.push(currentQuestion);
   };
