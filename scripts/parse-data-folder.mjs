@@ -34,8 +34,7 @@ function parseKeyAnswers(rawText) {
     const letters = match[2]
       .split(/\s*,\s*/)
       .map((part) => part.trim().toUpperCase())
-      .filter((part) => /^[A-E]$/.test(part))
-      .filter(Boolean);
+      .filter((part) => /^[A-E]$/.test(part));
     answerMap.set(qNum, new Set(letters));
   }
 

@@ -123,4 +123,7 @@ function main() {
   console.log(`Imported ${totalQuestions} questions and ${totalAnswers} answers.`);
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
