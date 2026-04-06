@@ -26,14 +26,15 @@ function parseKeyAnswers(rawText) {
 
   for (let i = startIdx + 1; i < lines.length; i += 1) {
     const line = lines[i];
-    const match = line.match(/^(\d+)\s*[-–—]\s*([A-E](?:\s*,\s*[A-E])*)\.?$/i);
+    const match = line.match(/^(\d+)\s*[-–—]\s*([A-E\s,]+)\.?$/i);
     if (!match) {
       continue;
     }
     const qNum = Number(match[1]);
     const letters = match[2]
-      .split(',')
+      .split(/\s*,\s*/)
       .map((part) => part.trim().toUpperCase())
+      .filter((part) => /^[A-E]$/.test(part))
       .filter(Boolean);
     answerMap.set(qNum, new Set(letters));
   }
@@ -80,7 +81,7 @@ function parseDocText(rawText, moduleName) {
         module: moduleName,
         question_number: questionNumber,
         source_type: sourceType,
-        type: sourceType === 'CM' ? 'multiple' : 'single',
+        type: 'single',
         question_text: questionText,
         answers: [],
       };

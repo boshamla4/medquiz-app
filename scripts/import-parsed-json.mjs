@@ -97,7 +97,7 @@ function main() {
   const runImport = db.transaction(() => {
     for (const file of payload.files) {
       for (const q of file.questions) {
-        const type = q.type === 'multiple' || q.source_type === 'CM' ? 'multiple' : 'single';
+        const type = q.type === 'multiple' ? 'multiple' : 'single';
         const questionResult = insertQuestion.run(q.module, type, q.question_text);
         const questionId = Number(questionResult.lastInsertRowid);
 
