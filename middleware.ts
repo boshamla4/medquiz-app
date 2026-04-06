@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 const LOGIN_PATH = '/api/auth/login';
 const LOGOUT_PATH = '/api/auth/logout';
 
-export function proxy(request: NextRequest): NextResponse | undefined {
+export function middleware(request: NextRequest): NextResponse | undefined {
   const { pathname } = request.nextUrl;
 
   if (pathname === LOGIN_PATH || pathname === LOGOUT_PATH) {
