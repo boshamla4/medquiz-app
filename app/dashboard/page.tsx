@@ -1,19 +1,45 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
-import { apiPost } from '@/lib/apiClient';
+import { apiGet, apiPost } from '@/lib/apiClient';
 
 function DashboardContent() {
   const router = useRouter();
   const [showExamModal, setShowExamModal] = useState(false);
   const [module, setModule] = useState('');
+  const [modules, setModules] = useState<string[]>([]);
+  const [modulesLoading, setModulesLoading] = useState(false);
+  const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState('');
   const [logoutLoading, setLogoutLoading] = useState(false);
+
+  useEffect(() => {
+    if (!showExamModal || modules.length > 0) return;
+
+    async function loadModules() {
+      setModulesLoading(true);
+      try {
+        const res = await apiGet('/api/questions?modules=1');
+        if (!res.ok) {
+          return;
+        }
+
+        const data = (await res.json()) as { modules?: string[] };
+        setModules(Array.isArray(data.modules) ? data.modules : []);
+      } catch {
+        // Keep modal usable even if module list fails.
+      } finally {
+        setModulesLoading(false);
+      }
+    }
+
+    loadModules();
+  }, [showExamModal, modules.length]);
 
   async function handleStartExam(e: React.FormEvent) {
     e.preventDefault();
@@ -28,7 +54,8 @@ function DashboardContent() {
       const data = await res.json();
 
       if (res.ok) {
-        router.push(`/exam/${data.examId}`);
+        const timerQuery = timerMinutes > 0 ? `?timer=${timerMinutes}` : '';
+        router.push(`/exam/${data.examId}${timerQuery}`);
         return;
       }
 
@@ -65,10 +92,10 @@ function DashboardContent() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-10">
+      <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900">Welcome to MedQuiz</h2>
-          <p className="mt-1 text-sm text-gray-500">What would you like to do?</p>
+          <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
+          <p className="mt-2 text-sm text-gray-500">Select a module, configure your exam, and start practicing.</p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -94,35 +121,68 @@ function DashboardContent() {
 
       {showExamModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
-            <h3 className="mb-4 text-lg font-semibold text-gray-900">Configure New Exam</h3>
+          <div className="w-full max-w-lg rounded-2xl border border-gray-200 bg-white p-6 shadow-xl">
+            <h3 className="mb-1 text-lg font-semibold text-gray-900">Configure New Exam</h3>
+            <p className="mb-5 text-sm text-gray-500">Keep existing features, with a guided setup.</p>
 
             <form onSubmit={handleStartExam} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Module <span className="text-gray-400">(optional)</span>
                 </label>
-                <input
-                  type="text"
+                <select
                   value={module}
                   onChange={(e) => setModule(e.target.value)}
-                  placeholder="e.g. Cardiology"
-                  className="mt-1.5 block w-full rounded-lg border border-gray-300 px-3.5 py-2.5 text-sm placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                />
+                  className="mt-1.5 block w-full rounded-lg border border-gray-300 px-3.5 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                  disabled={modulesLoading}
+                >
+                  <option value="">All modules</option>
+                  {modules.map((moduleName) => (
+                    <option key={moduleName} value={moduleName}>
+                      {moduleName}
+                    </option>
+                  ))}
+                </select>
+                {modulesLoading && (
+                  <p className="mt-1 text-xs text-gray-400">Loading modules...</p>
+                )}
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Number of questions
-                </label>
+                <div className="mb-2 flex items-center justify-between">
+                  <label className="block text-sm font-medium text-gray-700">Number of questions</label>
+                  <span className="text-sm font-semibold text-blue-700">{limit}</span>
+                </div>
                 <input
-                  type="number"
-                  min={1}
-                  max={200}
+                  type="range"
+                  min={5}
+                  max={100}
+                  step={5}
                   value={limit}
-                  onChange={(e) => setLimit(Math.max(1, parseInt(e.target.value) || 20))}
-                  className="mt-1.5 block w-full rounded-lg border border-gray-300 px-3.5 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                  onChange={(e) => setLimit(parseInt(e.target.value, 10) || 20)}
+                  className="w-full accent-blue-600"
                 />
+                <p className="mt-1 text-xs text-gray-400">Choose between 5 and 100 questions</p>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-gray-700">Timer</label>
+                <div className="flex flex-wrap gap-2">
+                  {[0, 30, 60, 90].map((value) => (
+                    <button
+                      key={value}
+                      type="button"
+                      onClick={() => setTimerMinutes(value)}
+                      className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                        timerMinutes === value
+                          ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-200'
+                          : 'bg-gray-100 text-gray-600 ring-1 ring-gray-200 hover:bg-gray-200'
+                      }`}
+                    >
+                      {value === 0 ? 'No timer' : `${value} min`}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               {examError && (
@@ -134,7 +194,10 @@ function DashboardContent() {
               <div className="flex gap-3 pt-1">
                 <button
                   type="button"
-                  onClick={() => { setShowExamModal(false); setExamError(''); }}
+                  onClick={() => {
+                    setShowExamModal(false);
+                    setExamError('');
+                  }}
                   className="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50"
                 >
                   Cancel

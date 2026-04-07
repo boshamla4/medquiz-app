@@ -21,6 +21,29 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   if (session instanceof NextResponse) return session;
 
   const { searchParams } = request.nextUrl;
+  const modulesOnly = searchParams.get('modules') === '1';
+
+  if (modulesOnly) {
+    const { data, error } = await db
+      .from('questions')
+      .select('module')
+      .is('deleted_at', null)
+      .order('module');
+
+    if (error || !data) {
+      return NextResponse.json(
+        { error: 'Failed to fetch modules', code: 'MODULES_FETCH_FAILED' },
+        { status: 500 }
+      );
+    }
+
+    const modules = Array.from(
+      new Set(data.map((row) => row.module).filter((name) => typeof name === 'string' && name.length > 0))
+    );
+
+    return NextResponse.json({ modules });
+  }
+
   const moduleFilter = searchParams.get('module');
   const random = searchParams.get('random') === 'true';
   const limit = Math.min(parseInt(searchParams.get('limit') ?? '20', 10) || 20, 100);

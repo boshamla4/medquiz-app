@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import SessionGuard from '@/app/components/SessionGuard';
 import QuestionCard from '@/app/components/QuestionCard';
@@ -52,6 +52,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const [answers, setAnswers] = useState<Map<number, number[]>>(new Map());
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const autoSubmittedRef = useRef(false);
 
   useEffect(() => {
     const initialQ = searchParams.get('q');
@@ -100,8 +101,10 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
     window.history.replaceState(null, '', url.toString());
   }
 
+  const timerMinutes = Math.max(0, parseInt(searchParams.get('timer') ?? '0', 10) || 0);
+
   async function handleSubmit() {
-    if (!exam) return;
+    if (!exam || submitting) return;
     setSubmitError('');
     setSubmitting(true);
 
@@ -117,6 +120,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
       });
 
       if (res.ok) {
+        autoSubmittedRef.current = true;
         router.push(`/review/${examId}`);
         return;
       }
@@ -128,6 +132,12 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
     } finally {
       setSubmitting(false);
     }
+  }
+
+  function handleTimerExpire() {
+    if (autoSubmittedRef.current) return;
+    autoSubmittedRef.current = true;
+    handleSubmit();
   }
 
   if (loading) {
@@ -170,7 +180,11 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
               total={exam.questions.length}
             />
           </div>
-          <Timer startedAt={exam.started_at} />
+          <Timer
+            startedAt={exam.started_at}
+            countdownMinutes={timerMinutes}
+            onExpire={handleTimerExpire}
+          />
         </div>
       </header>
 
