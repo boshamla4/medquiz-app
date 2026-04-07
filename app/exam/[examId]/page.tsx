@@ -50,6 +50,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const [error, setError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Map<number, number[]>>(new Map());
+  const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
   const autoSubmittedRef = useRef(false);
@@ -166,9 +167,28 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
 
   const current = exam.questions[currentIndex];
   const isLast = currentIndex === exam.questions.length - 1;
+  const currentRevealed = revealed.has(current.id);
   const answeredCount = exam.questions.filter((q) =>
     (answers.get(q.id) ?? []).length > 0
   ).length;
+
+  const selectedNow = answers.get(current.id) ?? [];
+  const correctNow = new Set(
+    current.question_snapshot.answers
+      .filter((answer) => answer.is_correct)
+      .map((answer) => answer.id)
+  );
+  const currentIsCorrect =
+    selectedNow.length === correctNow.size &&
+    selectedNow.every((id) => correctNow.has(id));
+
+  function handleRevealCurrent() {
+    setRevealed((prev) => {
+      const next = new Set(prev);
+      next.add(current.id);
+      return next;
+    });
+  }
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
@@ -193,10 +213,23 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           questionSnapshot={current.question_snapshot}
           examQuestionId={current.id}
           selectedAnswerIds={answers.get(current.id) ?? []}
+          revealed={currentRevealed}
           onAnswerChange={handleAnswerChange}
           questionNumber={currentIndex + 1}
           totalQuestions={exam.questions.length}
         />
+
+        {currentRevealed && (
+          <div
+            className={`mt-4 rounded-lg px-4 py-3 text-sm font-medium ring-1 ${
+              currentIsCorrect
+                ? 'bg-green-50 text-green-700 ring-green-200'
+                : 'bg-red-50 text-red-700 ring-red-200'
+            }`}
+          >
+            {currentIsCorrect ? 'Correct answer.' : 'Incorrect answer. Review highlighted options above.'}
+          </div>
+        )}
 
         {submitError && (
           <div className="mt-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
@@ -217,7 +250,15 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
             {answeredCount} / {exam.questions.length} answered
           </span>
 
-          {isLast ? (
+          {!currentRevealed ? (
+            <button
+              onClick={handleRevealCurrent}
+              disabled={selectedNow.length === 0}
+              className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+            >
+              Check Answer
+            </button>
+          ) : isLast ? (
             <button
               onClick={handleSubmit}
               disabled={submitting}

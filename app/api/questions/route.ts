@@ -22,26 +22,81 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const { searchParams } = request.nextUrl;
   const modulesOnly = searchParams.get('modules') === '1';
+  const metaOnly = searchParams.get('meta') === '1';
 
-  if (modulesOnly) {
-    const { data, error } = await db
+  if (modulesOnly || metaOnly) {
+    const primary = await db
       .from('questions')
-      .select('module')
+      .select('module, type, source_file, topic')
       .is('deleted_at', null)
       .order('module');
 
+    const fallback =
+      primary.error || !primary.data
+        ? await db
+            .from('questions')
+            .select('module, type')
+            .is('deleted_at', null)
+            .order('module')
+        : null;
+
+    const data = primary.data ?? fallback?.data;
+    const error = primary.error ?? fallback?.error;
+
     if (error || !data) {
       return NextResponse.json(
-        { error: 'Failed to fetch modules', code: 'MODULES_FETCH_FAILED' },
+        { error: 'Failed to fetch metadata', code: 'METADATA_FETCH_FAILED' },
         { status: 500 }
       );
     }
 
     const modules = Array.from(
-      new Set(data.map((row) => row.module).filter((name) => typeof name === 'string' && name.length > 0))
+      new Set(
+        data
+          .map((row) => row.module)
+          .filter((name): name is string => typeof name === 'string' && name.length > 0)
+      )
     );
 
-    return NextResponse.json({ modules });
+    if (modulesOnly) {
+      return NextResponse.json({ modules });
+    }
+
+    const topics = Array.from(
+      new Set(
+        data
+          .map((row) =>
+            typeof (row as { topic?: string }).topic === 'string' &&
+            (row as { topic?: string }).topic
+              ? (row as { topic?: string }).topic
+              : row.module
+          )
+          .filter((name): name is string => typeof name === 'string' && name.length > 0)
+      )
+    );
+
+    const files = Array.from(
+      new Set(
+        data
+          .map((row) =>
+            typeof (row as { source_file?: string }).source_file === 'string' &&
+            (row as { source_file?: string }).source_file
+              ? (row as { source_file?: string }).source_file
+              : row.module
+          )
+          .filter((name): name is string => typeof name === 'string' && name.length > 0)
+      )
+    );
+
+    const types = Array.from(
+      new Set(
+        data
+          .map((row) => row.type)
+          .filter((name): name is string => typeof name === 'string' && name.length > 0)
+      )
+    );
+
+    return NextResponse.json({ modules, topics, files, types });
   }
 
   const moduleFilter = searchParams.get('module');

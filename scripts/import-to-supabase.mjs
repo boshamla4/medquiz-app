@@ -29,11 +29,31 @@ const payload = JSON.parse(readFileSync(INPUT, 'utf8'));
 let totalQ = 0;
 let totalA = 0;
 
+const metadataProbe = await db
+  .from('questions')
+  .select('source_file, topic, source_collection')
+  .limit(1);
+
+const hasMetadataColumns = !metadataProbe.error;
+
 for (const file of payload.files) {
   for (const q of file.questions) {
+    const insertQuestion = {
+      module: q.module,
+      type: q.type,
+      question_text: q.question_text,
+      ...(hasMetadataColumns
+        ? {
+            source_file: q.source_file ?? file.file,
+            source_collection: q.source_collection ?? 'data',
+            topic: q.topic ?? q.module,
+          }
+        : {}),
+    };
+
     const { data: qRow, error: qError } = await db
       .from('questions')
-      .insert({ module: q.module, type: q.type, question_text: q.question_text })
+      .insert(insertQuestion)
       .select('id')
       .single();
 

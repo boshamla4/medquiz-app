@@ -6,11 +6,23 @@ import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
 import { apiGet, apiPost } from '@/lib/apiClient';
 
+interface QuestionMeta {
+  modules: string[];
+  files: string[];
+  topics: string[];
+  types: string[];
+}
+
 function DashboardContent() {
   const router = useRouter();
   const [showExamModal, setShowExamModal] = useState(false);
   const [module, setModule] = useState('');
-  const [modules, setModules] = useState<string[]>([]);
+  const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], topics: [], types: [] });
+  const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
+  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+  const [selectedTypes, setSelectedTypes] = useState<Array<'single' | 'multiple'>>([]);
+  const [includeRepeated, setIncludeRepeated] = useState(true);
+  const [wrongOnly, setWrongOnly] = useState(false);
   const [modulesLoading, setModulesLoading] = useState(false);
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
@@ -19,18 +31,23 @@ function DashboardContent() {
   const [logoutLoading, setLogoutLoading] = useState(false);
 
   useEffect(() => {
-    if (!showExamModal || modules.length > 0) return;
+    if (!showExamModal || meta.modules.length > 0) return;
 
     async function loadModules() {
       setModulesLoading(true);
       try {
-        const res = await apiGet('/api/questions?modules=1');
+        const res = await apiGet('/api/questions?meta=1');
         if (!res.ok) {
           return;
         }
 
-        const data = (await res.json()) as { modules?: string[] };
-        setModules(Array.isArray(data.modules) ? data.modules : []);
+        const data = (await res.json()) as Partial<QuestionMeta>;
+        setMeta({
+          modules: Array.isArray(data.modules) ? data.modules : [],
+          files: Array.isArray(data.files) ? data.files : [],
+          topics: Array.isArray(data.topics) ? data.topics : [],
+          types: Array.isArray(data.types) ? data.types : [],
+        });
       } catch {
         // Keep modal usable even if module list fails.
       } finally {
@@ -39,7 +56,23 @@ function DashboardContent() {
     }
 
     loadModules();
-  }, [showExamModal, modules.length]);
+  }, [showExamModal, meta.modules.length]);
+
+  function toggleString(value: string, list: string[], setter: (value: string[]) => void) {
+    if (list.includes(value)) {
+      setter(list.filter((x) => x !== value));
+      return;
+    }
+    setter([...list, value]);
+  }
+
+  function toggleType(value: 'single' | 'multiple') {
+    if (selectedTypes.includes(value)) {
+      setSelectedTypes(selectedTypes.filter((x) => x !== value));
+      return;
+    }
+    setSelectedTypes([...selectedTypes, value]);
+  }
 
   async function handleStartExam(e: React.FormEvent) {
     e.preventDefault();
@@ -47,7 +80,14 @@ function DashboardContent() {
     setExamLoading(true);
 
     try {
-      const body: Record<string, unknown> = { limit };
+      const body: Record<string, unknown> = {
+        limit,
+        files: selectedFiles,
+        topics: selectedTopics,
+        questionTypes: selectedTypes,
+        includeRepeated,
+        wrongOnly,
+      };
       if (module.trim()) body.module = module.trim();
 
       const res = await apiPost('/api/exam/start', body);
@@ -137,7 +177,7 @@ function DashboardContent() {
                   disabled={modulesLoading}
                 >
                   <option value="">All modules</option>
-                  {modules.map((moduleName) => (
+                  {meta.modules.map((moduleName) => (
                     <option key={moduleName} value={moduleName}>
                       {moduleName}
                     </option>
@@ -146,6 +186,98 @@ function DashboardContent() {
                 {modulesLoading && (
                   <p className="mt-1 text-xs text-gray-400">Loading modules...</p>
                 )}
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-gray-700">Files / Tests</label>
+                  <div className="max-h-32 space-y-1 overflow-auto rounded-lg border border-gray-200 p-2">
+                    {meta.files.length === 0 && (
+                      <p className="text-xs text-gray-400">No files detected yet.</p>
+                    )}
+                    {meta.files.map((name) => (
+                      <label key={name} className="flex items-center gap-2 text-xs text-gray-700">
+                        <input
+                          type="checkbox"
+                          checked={selectedFiles.includes(name)}
+                          onChange={() => toggleString(name, selectedFiles, setSelectedFiles)}
+                          className="h-3.5 w-3.5"
+                        />
+                        <span className="truncate" title={name}>{name}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-gray-700">Topics</label>
+                  <div className="max-h-32 space-y-1 overflow-auto rounded-lg border border-gray-200 p-2">
+                    {meta.topics.length === 0 && (
+                      <p className="text-xs text-gray-400">No topics detected yet.</p>
+                    )}
+                    {meta.topics.map((name) => (
+                      <label key={name} className="flex items-center gap-2 text-xs text-gray-700">
+                        <input
+                          type="checkbox"
+                          checked={selectedTopics.includes(name)}
+                          onChange={() => toggleString(name, selectedTopics, setSelectedTopics)}
+                          className="h-3.5 w-3.5"
+                        />
+                        <span className="truncate" title={name}>{name}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-gray-700">Question Type</label>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => toggleType('single')}
+                    className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                      selectedTypes.includes('single')
+                        ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-200'
+                        : 'bg-gray-100 text-gray-600 ring-1 ring-gray-200 hover:bg-gray-200'
+                    }`}
+                  >
+                    CS / Single
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => toggleType('multiple')}
+                    className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                      selectedTypes.includes('multiple')
+                        ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-200'
+                        : 'bg-gray-100 text-gray-600 ring-1 ring-gray-200 hover:bg-gray-200'
+                    }`}
+                  >
+                    CM / Multiple
+                  </button>
+                </div>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <label className="flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-700">
+                  <input
+                    type="checkbox"
+                    checked={includeRepeated}
+                    onChange={(e) => setIncludeRepeated(e.target.checked)}
+                    className="h-4 w-4"
+                    disabled={wrongOnly}
+                  />
+                  Allow repeated questions
+                </label>
+                <label className="flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-700">
+                  <input
+                    type="checkbox"
+                    checked={wrongOnly}
+                    onChange={(e) => setWrongOnly(e.target.checked)}
+                    className="h-4 w-4"
+                  />
+                  Only previously wrong questions
+                </label>
               </div>
 
               <div>

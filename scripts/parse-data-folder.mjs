@@ -49,6 +49,17 @@ function normalizeText(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
+function isPotentialTopicHeading(line) {
+  const text = normalizeText(line);
+  if (text.length < 3 || text.length > 90) return false;
+  if (/^\d+\./.test(text)) return false;
+  if (ANSWER_BRACKET_PATTERN.test(text)) return false;
+  if (/^[a-e][.)]{1,2}\s/i.test(text)) return false;
+  if (/[:;]$/.test(text)) return true;
+  if (/^[A-Z][A-Za-z0-9\s,'"()\-/]+$/.test(text) && text.split(' ').length <= 8) return true;
+  return false;
+}
+
 /**
  * Returns true when the bracket content indicates a correct answer.
  * Handles ASCII x, Cyrillic х (U+0445), × (U+00D7), checkmark variants.
@@ -65,7 +76,7 @@ function isBracketCorrect(bracketContent) {
 // Core parser — handles [x] inline format
 // ---------------------------------------------------------------------------
 
-function parseDocText(rawText, moduleName, filePath) {
+function parseDocText(rawText, moduleName, fileRelativePath) {
   const lines = rawText
     .split('\n')
     .map((line) => line.trim())
@@ -75,6 +86,10 @@ function parseDocText(rawText, moduleName, filePath) {
   const questions = [];
   let currentQuestion = null;
   let currentAnswer = null;
+  let currentTopic = moduleName;
+
+  const pathParts = fileRelativePath.split(path.sep);
+  const sourceCollection = pathParts.length > 1 ? pathParts[1] : 'data';
   const warnings = [];
 
   const flushQuestion = () => {
@@ -120,6 +135,9 @@ function parseDocText(rawText, moduleName, filePath) {
 
       currentQuestion = {
         module: moduleName,
+        topic: currentTopic,
+        source_file: fileRelativePath,
+        source_collection: sourceCollection,
         question_number: questionNumber,
         type: 'single',
         question_text: questionText,
@@ -140,11 +158,20 @@ function parseDocText(rawText, moduleName, filePath) {
       continue;
     }
 
+    if (!currentQuestion && isPotentialTopicHeading(line)) {
+      currentTopic = normalizeText(line.replace(/[:;]+$/, ''));
+      continue;
+    }
+
     // Continuation line: append to answer text or question text
     if (currentQuestion) {
       if (currentAnswer) {
         currentAnswer.text = normalizeText(`${currentAnswer.text} ${line}`);
       } else {
+        if (isPotentialTopicHeading(line)) {
+          currentTopic = normalizeText(line.replace(/[:;]+$/, ''));
+          continue;
+        }
         // Only append if it doesn't look like the start of a new section
         if (!/^\d+\./.test(line)) {
           currentQuestion.question_text = normalizeText(
@@ -196,10 +223,11 @@ function moduleFromPath(filePath) {
 
 async function parseSingleFile(filePath) {
   const moduleName = moduleFromPath(filePath);
+  const fileRelativePath = path.relative(ROOT, filePath);
   const { value } = await mammoth.extractRawText({ path: filePath });
-  const { questions, warnings } = parseDocText(value, moduleName, filePath);
+  const { questions, warnings } = parseDocText(value, moduleName, fileRelativePath);
   return {
-    file: path.relative(ROOT, filePath),
+    file: fileRelativePath,
     module: moduleName,
     questionCount: questions.length,
     warningCount: warnings.length,

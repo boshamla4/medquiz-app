@@ -5,6 +5,7 @@ import AnswerSelector from './AnswerSelector';
 interface Answer {
   id: number;
   answer_text: string;
+  is_correct: boolean;
 }
 
 interface QuestionSnapshot {
@@ -18,6 +19,7 @@ interface QuestionCardProps {
   questionSnapshot: QuestionSnapshot;
   examQuestionId: number;
   selectedAnswerIds: number[];
+  revealed?: boolean;
   onAnswerChange: (examQuestionId: number, ids: number[]) => void;
   questionNumber: number;
   totalQuestions: number;
@@ -27,12 +29,16 @@ export default function QuestionCard({
   questionSnapshot,
   examQuestionId,
   selectedAnswerIds,
+  revealed = false,
   onAnswerChange,
   questionNumber,
   totalQuestions,
 }: QuestionCardProps) {
   const type = questionSnapshot.type === 'multiple' ? 'multiple' : 'single';
   const typeLabel = type === 'single' ? 'Single answer' : 'Multiple answers';
+  const correctIds = questionSnapshot.answers
+    .filter((answer) => answer.is_correct)
+    .map((answer) => answer.id);
 
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -55,10 +61,18 @@ export default function QuestionCard({
         {questionSnapshot.question_text}
       </p>
 
+      {revealed && (
+        <p className="mb-4 rounded-lg bg-gray-100 px-3 py-2 text-xs text-gray-600">
+          Green = correct selection, red = wrong selection, amber = correct answer you missed.
+        </p>
+      )}
+
       <AnswerSelector
         type={type}
         answers={questionSnapshot.answers}
         selectedIds={selectedAnswerIds}
+        correctIds={correctIds}
+        revealed={revealed}
         onChange={(ids) => onAnswerChange(examQuestionId, ids)}
       />
     </div>

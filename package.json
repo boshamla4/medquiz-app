@@ -10,6 +10,7 @@
     "parse:data": "node scripts/parse-data-folder.mjs",
     "import:data": "node scripts/import-parsed-json.mjs",
     "import:supabase": "node scripts/import-to-supabase.mjs",
+    "sync:metadata:supabase": "node scripts/sync-question-metadata.mjs",
     "seed:tokens:supabase": "node scripts/seed-tokens-supabase.mjs",
     "seed:data-once": "npm run parse:data && npm run import:data"
   },
