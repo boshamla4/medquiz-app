@@ -164,7 +164,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         .sort(() => Math.random() - 0.5)
         .slice(0, limit);
     } else {
-      questions = rpcResult.data.map((q) => ({
+      questions = rpcResult.data.map((q: QuestionRow) => ({
         id: q.id,
         module: q.module,
         type: q.type,

@@ -34,7 +34,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     });
 
     if (!rpcResult.error && rpcResult.data) {
-      questions = rpcResult.data.map((q) => ({
+      questions = rpcResult.data.map((q: QuestionRow) => ({
         id: q.id,
         module: q.module,
         type: q.type,
