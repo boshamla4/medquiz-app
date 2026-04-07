@@ -1,16 +1,14 @@
 import Database from 'better-sqlite3';
 import path from 'path';
+import { randomBytes } from 'crypto';
 
-const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const TOKEN_LENGTH = 8;
 const TOKEN_COUNT = 25;
 
 function generateToken(): string {
-  let token = '';
-  for (let i = 0; i < TOKEN_LENGTH; i++) {
-    token += CHARS[Math.floor(Math.random() * CHARS.length)];
-  }
-  return token;
+  // Use crypto.randomBytes for cryptographically secure tokens.
+  // base64url gives ~1.33 chars/byte; slice to TOKEN_LENGTH after uppercasing.
+  return randomBytes(16).toString('base64url').toUpperCase().slice(0, TOKEN_LENGTH);
 }
 
 const db = new Database(path.join(process.cwd(), 'medquiz.db'));

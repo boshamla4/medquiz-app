@@ -13,17 +13,10 @@ const SubmitExamSchema = z.object({
   answers: z.array(SubmitAnswerSchema),
 });
 
-interface ExamRow {
-  id: number;
-  user_id: number;
-  started_at: string;
-  finished_at: string | null;
-}
-
 interface ExamQuestionRow {
   id: number;
   question_id: number;
-  question_snapshot: string;
+  question_snapshot: string | QuestionSnapshot;
 }
 
 interface SnapshotAnswer {
@@ -36,10 +29,6 @@ interface QuestionSnapshot {
   id: number;
   type: string;
   answers: SnapshotAnswer[];
-}
-
-interface InsertResult {
-  changes: number;
 }
 
 function isAnswerCorrect(snapshot: QuestionSnapshot, selectedIds: number[]): boolean {
@@ -78,11 +67,21 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const { examId, answers } = parsed.data;
 
-  const exam = db
-    .prepare('SELECT id, user_id, started_at, finished_at FROM exams WHERE id = ?')
-    .get(examId) as ExamRow | undefined;
+  const { data: exam, error: examError } = await db
+    .from('exams')
+    .select('id, user_id, started_at, finished_at')
+    .eq('id', examId)
+    .eq('user_id', session.userId)
+    .maybeSingle();
 
-  if (!exam || exam.user_id !== session.userId) {
+  if (examError) {
+    return NextResponse.json(
+      { error: 'Failed to load exam', code: 'EXAM_LOOKUP_FAILED' },
+      { status: 500 }
+    );
+  }
+
+  if (!exam) {
     return NextResponse.json(
       { error: 'Exam not found', code: 'EXAM_NOT_FOUND' },
       { status: 404 }
@@ -96,18 +95,22 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  const examQuestions = db
-    .prepare('SELECT id, question_id, question_snapshot FROM exam_questions WHERE exam_id = ?')
-    .all(examId) as ExamQuestionRow[];
+  const { data: examQuestions, error: examQuestionsError } = await db
+    .from('exam_questions')
+    .select('id, question_id, question_snapshot')
+    .eq('exam_id', examId);
+
+  if (examQuestionsError || !examQuestions) {
+    return NextResponse.json(
+      { error: 'Failed to load exam questions', code: 'EXAM_QUESTIONS_FETCH_FAILED' },
+      { status: 500 }
+    );
+  }
 
   const eqMap = new Map<number, ExamQuestionRow>();
   for (const eq of examQuestions) {
     eqMap.set(eq.id, eq);
   }
-
-  const updateEQ = db.prepare(
-    'UPDATE exam_questions SET user_answer = ?, is_correct = ? WHERE id = ?'
-  );
 
   let correctCount = 0;
   const results: {
@@ -116,39 +119,55 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     is_correct: boolean;
   }[] = [];
 
-  const processAnswers = db.transaction(() => {
-    for (const answer of answers) {
-      const eq = eqMap.get(answer.examQuestionId);
-      if (!eq) continue;
+  for (const answer of answers) {
+    const eq = eqMap.get(answer.examQuestionId);
+    if (!eq) continue;
 
-      const snapshot = JSON.parse(eq.question_snapshot) as QuestionSnapshot;
-      const correct = isAnswerCorrect(snapshot, answer.selectedAnswerIds);
+    const snapshot =
+      typeof eq.question_snapshot === 'string'
+        ? (JSON.parse(eq.question_snapshot) as QuestionSnapshot)
+        : eq.question_snapshot;
+    const correct = isAnswerCorrect(snapshot, answer.selectedAnswerIds);
 
-      if (correct) correctCount++;
+    if (correct) correctCount++;
 
-      updateEQ.run(
-        JSON.stringify(answer.selectedAnswerIds),
-        correct ? 1 : 0,
-        eq.id
-      ) as InsertResult;
-
-      results.push({
-        examQuestionId: eq.id,
-        selectedAnswerIds: answer.selectedAnswerIds,
+    const { error: updateError } = await db
+      .from('exam_questions')
+      .update({
+        user_answer: JSON.stringify(answer.selectedAnswerIds),
         is_correct: correct,
-      });
-    }
-  });
+      })
+      .eq('id', eq.id);
 
-  processAnswers();
+    if (updateError) {
+      return NextResponse.json(
+        { error: 'Failed to submit answers', code: 'ANSWER_SUBMIT_FAILED' },
+        { status: 500 }
+      );
+    }
+
+    results.push({
+      examQuestionId: eq.id,
+      selectedAnswerIds: answer.selectedAnswerIds,
+      is_correct: correct,
+    });
+  }
 
   // Calculate duration server-side; use CURRENT_TIMESTAMP for finished_at to stay consistent with SQLite
   const startedAt = new Date(exam.started_at);
   const duration = Math.round((Date.now() - startedAt.getTime()) / 1000);
 
-  db.prepare(
-    'UPDATE exams SET finished_at = CURRENT_TIMESTAMP, duration = ? WHERE id = ?'
-  ).run(duration, examId);
+  const { error: finishError } = await db
+    .from('exams')
+    .update({ finished_at: new Date().toISOString(), duration })
+    .eq('id', examId);
+
+  if (finishError) {
+    return NextResponse.json(
+      { error: 'Failed to finalize exam', code: 'EXAM_FINALIZE_FAILED' },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({
     score: correctCount,

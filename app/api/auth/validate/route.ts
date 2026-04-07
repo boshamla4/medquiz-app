@@ -11,7 +11,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  const result = validateSession(sessionId);
+  const result = await validateSession(sessionId);
 
   if (!result.valid) {
     const response = NextResponse.json(
@@ -23,7 +23,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     return response;
   }
 
-  updateSessionLastSeen(sessionId);
+  await updateSessionLastSeen(sessionId);
 
   return NextResponse.json({ valid: true, userId: result.userId });
 }

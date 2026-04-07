@@ -1,40 +1,26 @@
+// lib/auth.ts — FULL REPLACEMENT
 import { v4 as uuidv4 } from 'uuid';
 import db from './db';
 
-interface SessionRow {
-  id: string;
-  user_id: number;
-  is_active: number;
-}
-
-interface UserRow {
-  id: number;
-  active_session_id: string | null;
-}
-
-export function validateSession(
+export async function validateSession(
   sessionId: string
-): { valid: boolean; userId: number; reason?: string } {
-  const session = db
-    .prepare('SELECT id, user_id, is_active FROM sessions WHERE id = ?')
-    .get(sessionId) as SessionRow | undefined;
+): Promise<{ valid: boolean; userId: number; reason?: string }> {
+  const { data: session } = await db
+    .from('sessions')
+    .select('id, user_id, is_active')
+    .eq('id', sessionId)
+    .single();
 
-  if (!session) {
-    return { valid: false, userId: 0, reason: 'SESSION_NOT_FOUND' };
-  }
+  if (!session) return { valid: false, userId: 0, reason: 'SESSION_NOT_FOUND' };
+  if (!session.is_active) return { valid: false, userId: 0, reason: 'SESSION_EXPIRED' };
 
-  if (!session.is_active) {
-    return { valid: false, userId: 0, reason: 'SESSION_EXPIRED' };
-  }
+  const { data: user } = await db
+    .from('users')
+    .select('id, active_session_id')
+    .eq('id', session.user_id)
+    .single();
 
-  const user = db
-    .prepare('SELECT id, active_session_id FROM users WHERE id = ?')
-    .get(session.user_id) as UserRow | undefined;
-
-  if (!user) {
-    return { valid: false, userId: 0, reason: 'USER_NOT_FOUND' };
-  }
-
+  if (!user) return { valid: false, userId: 0, reason: 'USER_NOT_FOUND' };
   if (user.active_session_id !== sessionId) {
     return { valid: false, userId: 0, reason: 'SESSION_HIJACKED' };
   }
@@ -42,46 +28,43 @@ export function validateSession(
   return { valid: true, userId: session.user_id };
 }
 
-export function createSession(
+export async function createSession(
   userId: number,
   deviceInfo: Record<string, unknown>
-): string {
+): Promise<string> {
   const sessionId = uuidv4();
 
-  // Deactivate any existing sessions for this user
-  db.prepare(
-    'UPDATE sessions SET is_active = 0 WHERE user_id = ? AND is_active = 1'
-  ).run(userId);
+  await db.from('sessions').update({ is_active: false }).eq('user_id', userId).eq('is_active', true);
 
-  db.prepare(
-    `INSERT INTO sessions (id, user_id, started_at, last_seen, device_info, is_active)
-     VALUES (?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ?, 1)`
-  ).run(sessionId, userId, JSON.stringify(deviceInfo));
+  await db.from('sessions').insert({
+    id: sessionId,
+    user_id: userId,
+    device_info: deviceInfo,
+    is_active: true,
+  });
 
-  db.prepare('UPDATE users SET active_session_id = ? WHERE id = ?').run(
-    sessionId,
-    userId
-  );
+  await db.from('users').update({ active_session_id: sessionId }).eq('id', userId);
 
   return sessionId;
 }
 
-export function deactivateSession(sessionId: string): void {
-  const session = db
-    .prepare('SELECT user_id FROM sessions WHERE id = ?')
-    .get(sessionId) as Pick<SessionRow, 'user_id'> | undefined;
+export async function deactivateSession(sessionId: string): Promise<void> {
+  const { data: session } = await db
+    .from('sessions')
+    .select('user_id')
+    .eq('id', sessionId)
+    .single();
 
   if (!session) return;
 
-  db.prepare('UPDATE sessions SET is_active = 0 WHERE id = ?').run(sessionId);
-
-  db.prepare(
-    'UPDATE users SET active_session_id = NULL WHERE id = ? AND active_session_id = ?'
-  ).run(session.user_id, sessionId);
+  await db.from('sessions').update({ is_active: false }).eq('id', sessionId);
+  await db
+    .from('users')
+    .update({ active_session_id: null })
+    .eq('id', session.user_id)
+    .eq('active_session_id', sessionId);
 }
 
-export function updateSessionLastSeen(sessionId: string): void {
-  db.prepare('UPDATE sessions SET last_seen = CURRENT_TIMESTAMP WHERE id = ?').run(
-    sessionId
-  );
+export async function updateSessionLastSeen(sessionId: string): Promise<void> {
+  await db.from('sessions').update({ last_seen: new Date().toISOString() }).eq('id', sessionId);
 }

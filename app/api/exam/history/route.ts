@@ -7,8 +7,7 @@ interface ExamRow {
   started_at: string;
   finished_at: string | null;
   duration: number | null;
-  correct_count: number;
-  total_count: number;
+  exam_questions: { is_correct: boolean | null }[] | null;
 }
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -21,41 +20,69 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const sort = searchParams.get('sort') === 'score' ? 'score' : 'date';
   const offset = (page - 1) * limit;
 
-  const orderByClause =
-    sort === 'score'
-      ? 'correct_count DESC, e.started_at DESC'
-      : 'e.started_at DESC';
+  const selectClause = 'id, started_at, finished_at, duration, exam_questions(is_correct)';
 
-  const exams = db
-    .prepare(
-      `SELECT
-         e.id,
-         e.started_at,
-         e.finished_at,
-         e.duration,
-         COUNT(CASE WHEN eq.is_correct = 1 THEN 1 END) AS correct_count,
-         COUNT(eq.id) AS total_count
-       FROM exams e
-       LEFT JOIN exam_questions eq ON eq.exam_id = e.id
-       WHERE e.user_id = ?
-       GROUP BY e.id
-       ORDER BY ${orderByClause}
-       LIMIT ? OFFSET ?`
-    )
-    .all(session.userId, limit, offset) as ExamRow[];
+  let exams: ExamRow[] = [];
+  let total = 0;
 
-  const totalRow = db
-    .prepare('SELECT COUNT(*) AS count FROM exams WHERE user_id = ?')
-    .get(session.userId) as { count: number };
+  if (sort === 'score') {
+    const { data: scoreRows, error: scoreError } = await db
+      .from('exams')
+      .select(selectClause)
+      .eq('user_id', session.userId);
 
-  const data = exams.map((e) => ({
+    if (scoreError || !scoreRows) {
+      return NextResponse.json(
+        { error: 'Failed to load exam history', code: 'EXAM_HISTORY_FETCH_FAILED' },
+        { status: 500 }
+      );
+    }
+
+    const ranked = scoreRows
+      .map((row) => {
+        const questionRows = row.exam_questions ?? [];
+        const correctCount = questionRows.filter((q) => q.is_correct === true).length;
+        return { row, correctCount };
+      })
+      .sort((a, b) => {
+        if (b.correctCount !== a.correctCount) return b.correctCount - a.correctCount;
+        return new Date(b.row.started_at).getTime() - new Date(a.row.started_at).getTime();
+      });
+
+    total = ranked.length;
+    exams = ranked.slice(offset, offset + limit).map((entry) => entry.row as ExamRow);
+  } else {
+    const { data: dateRows, error: dateError, count } = await db
+      .from('exams')
+      .select(selectClause, { count: 'exact' })
+      .eq('user_id', session.userId)
+      .order('started_at', { ascending: false })
+      .range(offset, offset + limit - 1);
+
+    if (dateError || !dateRows) {
+      return NextResponse.json(
+        { error: 'Failed to load exam history', code: 'EXAM_HISTORY_FETCH_FAILED' },
+        { status: 500 }
+      );
+    }
+
+    exams = dateRows as ExamRow[];
+    total = count ?? 0;
+  }
+
+  const data = exams.map((e) => {
+    const questionRows = e.exam_questions ?? [];
+    const correctCount = questionRows.filter((q) => q.is_correct === true).length;
+
+    return {
     id: e.id,
     started_at: e.started_at,
     finished_at: e.finished_at,
     duration: e.duration,
-    score: e.correct_count,
-    total: e.total_count,
-  }));
+    score: correctCount,
+    total: questionRows.length,
+  };
+  });
 
-  return NextResponse.json({ data, total: totalRow.count });
+  return NextResponse.json({ data, total });
 }

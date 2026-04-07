@@ -5,7 +5,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const sessionId = request.cookies.get('session_id')?.value;
 
   if (sessionId) {
-    deactivateSession(sessionId);
+    await deactivateSession(sessionId);
   }
 
   const response = NextResponse.json({ success: true });

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import db from '@/lib/db';
 import { createSession } from '@/lib/auth';
-import { checkRateLimit, recordAttempt } from '@/lib/rateLimit';
+import { checkAndRecordAttempt } from '@/lib/rateLimit';
 
 const COOKIE_OPTIONS = {
   httpOnly: true,
@@ -16,18 +16,13 @@ const LoginSchema = z.object({
   token: z.string().min(1),
 });
 
-interface UserRow {
-  id: number;
-}
-
 export async function POST(request: NextRequest): Promise<NextResponse> {
   const ip =
     request.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
     request.headers.get('x-real-ip') ??
     'unknown';
 
-  const { allowed } = checkRateLimit(ip);
-  recordAttempt(ip);
+  const { allowed } = await checkAndRecordAttempt(ip);
 
   if (!allowed) {
     return NextResponse.json(
@@ -56,9 +51,18 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const { token } = parsed.data;
 
-  const user = db
-    .prepare('SELECT id FROM users WHERE token = ?')
-    .get(token) as UserRow | undefined;
+  const { data: user, error: userError } = await db
+    .from('users')
+    .select('id')
+    .eq('token', token)
+    .maybeSingle();
+
+  if (userError) {
+    return NextResponse.json(
+      { error: 'Failed to validate token', code: 'TOKEN_LOOKUP_FAILED' },
+      { status: 500 }
+    );
+  }
 
   if (!user) {
     return NextResponse.json(
@@ -72,7 +76,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     ip,
   };
 
-  const sessionId = createSession(user.id, deviceInfo);
+  const sessionId = await createSession(user.id, deviceInfo);
 
   const response = NextResponse.json({ success: true, userId: user.id });
   response.cookies.set('session_id', sessionId, COOKIE_OPTIONS);

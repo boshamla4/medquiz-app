@@ -21,41 +21,30 @@ interface AnswerRow {
   id: number;
   question_id: number;
   answer_text: string;
-  is_correct: number;
+  is_correct: boolean;
 }
 
-interface ExamQuestionRow {
-  question_id: number;
-  question_snapshot: string;
-  is_correct: number | null;
-}
-
-interface InsertResult {
-  lastInsertRowid: number | bigint;
-}
-
-function fetchQuestionsWithAnswers(questionIds: number[]): {
+async function fetchQuestionsWithAnswers(questionIds: number[]): Promise<{
   question: QuestionRow;
   answers: AnswerRow[];
-}[] {
+}[]> {
   if (questionIds.length === 0) return [];
 
-  const placeholders = questionIds.map(() => '?').join(',');
-  const questions = db
-    .prepare(
-      `SELECT id, module, type, question_text
-       FROM questions
-       WHERE id IN (${placeholders}) AND deleted_at IS NULL`
-    )
-    .all(...questionIds) as QuestionRow[];
+  const { data: questions, error: questionsError } = await db
+    .from('questions')
+    .select('id, module, type, question_text')
+    .in('id', questionIds)
+    .is('deleted_at', null);
 
-  const answers = db
-    .prepare(
-      `SELECT id, question_id, answer_text, is_correct
-       FROM answers
-       WHERE question_id IN (${placeholders}) AND deleted_at IS NULL`
-    )
-    .all(...questionIds) as AnswerRow[];
+  if (questionsError || !questions) return [];
+
+  const { data: answers, error: answersError } = await db
+    .from('answers')
+    .select('id, question_id, answer_text, is_correct')
+    .in('question_id', questionIds)
+    .is('deleted_at', null);
+
+  if (answersError || !answers) return [];
 
   const answersByQuestion = new Map<number, AnswerRow[]>();
   for (const a of answers) {
@@ -64,10 +53,16 @@ function fetchQuestionsWithAnswers(questionIds: number[]): {
     answersByQuestion.set(a.question_id, list);
   }
 
-  return questions.map((q) => ({
-    question: q,
-    answers: answersByQuestion.get(q.id) ?? [],
-  }));
+  const questionsById = new Map<number, QuestionRow>();
+  for (const q of questions) questionsById.set(q.id, q);
+
+  return questionIds
+    .map((id) => questionsById.get(id))
+    .filter((q): q is QuestionRow => Boolean(q))
+    .map((q) => ({
+      question: q,
+      answers: answersByQuestion.get(q.id) ?? [],
+    }));
 }
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
@@ -97,9 +92,19 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   let questionData: { question: QuestionRow; answers: AnswerRow[] }[] = [];
 
   if (source_exam_id !== undefined) {
-    const examOwner = db
-      .prepare('SELECT id FROM exams WHERE id = ? AND user_id = ?')
-      .get(source_exam_id, session.userId) as { id: number } | undefined;
+    const { data: examOwner, error: ownerError } = await db
+      .from('exams')
+      .select('id')
+      .eq('id', source_exam_id)
+      .eq('user_id', session.userId)
+      .maybeSingle();
+
+    if (ownerError) {
+      return NextResponse.json(
+        { error: 'Failed to verify source exam', code: 'SOURCE_EXAM_LOOKUP_FAILED' },
+        { status: 500 }
+      );
+    }
 
     if (!examOwner) {
       return NextResponse.json(
@@ -108,39 +113,67 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       );
     }
 
-    let eqQuery = `
-      SELECT question_id, question_snapshot, is_correct
-      FROM exam_questions
-      WHERE exam_id = ?
-    `;
-    const eqParams: (number | string)[] = [source_exam_id];
+    let eqQuery = db
+      .from('exam_questions')
+      .select('question_id, question_snapshot, is_correct')
+      .eq('exam_id', source_exam_id);
 
     if (filter === 'wrong_only') {
-      eqQuery += ' AND is_correct = 0';
+      eqQuery = eqQuery.eq('is_correct', false);
     }
 
-    const examQs = db.prepare(eqQuery).all(...eqParams) as ExamQuestionRow[];
+    const { data: examQs, error: examQsError } = await eqQuery;
+    if (examQsError || !examQs) {
+      return NextResponse.json(
+        { error: 'Failed to fetch source questions', code: 'SOURCE_QUESTIONS_FETCH_FAILED' },
+        { status: 500 }
+      );
+    }
+
     const questionIds = examQs.map((eq) => eq.question_id);
-    questionData = fetchQuestionsWithAnswers(questionIds);
+    questionData = await fetchQuestionsWithAnswers(questionIds);
   } else {
-    let qQuery = `
-      SELECT id, module, type, question_text
-      FROM questions
-      WHERE deleted_at IS NULL
-    `;
-    const qParams: (string | number)[] = [];
+    let questions: QuestionRow[] = [];
 
-    if (module) {
-      qQuery += ' AND module = ?';
-      qParams.push(module);
+    const rpcResult = await db.rpc('get_random_questions', {
+      p_module: module ?? null,
+      p_limit: limit,
+    });
+
+    if (rpcResult.error || !rpcResult.data) {
+      let fallbackQuery = db
+        .from('questions')
+        .select('id, module, type, question_text')
+        .is('deleted_at', null)
+        .order('id')
+        .limit(limit * 3);
+
+      if (module) {
+        fallbackQuery = fallbackQuery.eq('module', module);
+      }
+
+      const { data: fallbackQuestions, error: fallbackError } = await fallbackQuery;
+      if (fallbackError || !fallbackQuestions) {
+        return NextResponse.json(
+          { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
+          { status: 500 }
+        );
+      }
+
+      questions = [...fallbackQuestions]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, limit);
+    } else {
+      questions = rpcResult.data.map((q) => ({
+        id: q.id,
+        module: q.module,
+        type: q.type,
+        question_text: q.question_text,
+      }));
     }
 
-    qQuery += ' ORDER BY RANDOM() LIMIT ?';
-    qParams.push(limit);
-
-    const questions = db.prepare(qQuery).all(...qParams) as QuestionRow[];
     const questionIds = questions.map((q) => q.id);
-    questionData = fetchQuestionsWithAnswers(questionIds);
+    questionData = await fetchQuestionsWithAnswers(questionIds);
   }
 
   if (questionData.length === 0) {
@@ -150,47 +183,58 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  const insertExam = db.prepare(
-    'INSERT INTO exams (user_id, started_at) VALUES (?, CURRENT_TIMESTAMP)'
-  );
-  const examResult = insertExam.run(session.userId) as InsertResult;
-  const examId = Number(examResult.lastInsertRowid);
+  const { data: examRow, error: examInsertError } = await db
+    .from('exams')
+    .insert({ user_id: session.userId, started_at: new Date().toISOString() })
+    .select('id')
+    .single();
 
-  const insertEQ = db.prepare(
-    `INSERT INTO exam_questions (exam_id, question_id, question_snapshot)
-     VALUES (?, ?, ?)`
-  );
+  if (examInsertError || !examRow) {
+    return NextResponse.json(
+      { error: 'Failed to create exam', code: 'EXAM_CREATE_FAILED' },
+      { status: 500 }
+    );
+  }
+
+  const examId = examRow.id;
 
   const examQuestions: { id: number; question_snapshot: object }[] = [];
 
-  const insertAll = db.transaction(() => {
-    for (const { question, answers } of questionData) {
-      const snapshot = {
-        id: question.id,
-        module: question.module,
-        type: question.type,
-        question_text: question.question_text,
-        answers: answers.map((a) => ({
-          id: a.id,
-          answer_text: a.answer_text,
-          is_correct: Boolean(a.is_correct),
-        })),
-      };
+  for (const { question, answers } of questionData) {
+    const snapshot = {
+      id: question.id,
+      module: question.module,
+      type: question.type,
+      question_text: question.question_text,
+      answers: answers.map((a) => ({
+        id: a.id,
+        answer_text: a.answer_text,
+        is_correct: Boolean(a.is_correct),
+      })),
+    };
 
-      const eqResult = insertEQ.run(
-        examId,
-        question.id,
-        JSON.stringify(snapshot)
-      ) as InsertResult;
+    const { data: examQuestionRow, error: examQuestionInsertError } = await db
+      .from('exam_questions')
+      .insert({
+        exam_id: examId,
+        question_id: question.id,
+        question_snapshot: JSON.stringify(snapshot),
+      })
+      .select('id')
+      .single();
 
-      examQuestions.push({
-        id: Number(eqResult.lastInsertRowid),
-        question_snapshot: snapshot,
-      });
+    if (examQuestionInsertError || !examQuestionRow) {
+      return NextResponse.json(
+        { error: 'Failed to save exam questions', code: 'EXAM_QUESTIONS_CREATE_FAILED' },
+        { status: 500 }
+      );
     }
-  });
 
-  insertAll();
+    examQuestions.push({
+      id: examQuestionRow.id,
+      question_snapshot: snapshot,
+    });
+  }
 
   return NextResponse.json({ examId, questions: examQuestions });
 }

@@ -55,7 +55,7 @@ export default function LoginPage() {
               </label>
               <input
                 id="token"
-                type="text"
+                type="password"
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
                 required

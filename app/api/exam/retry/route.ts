@@ -8,11 +8,6 @@ const RetrySchema = z.object({
   filter: z.enum(['all', 'wrong_only']).default('all'),
 });
 
-interface ExamQuestionRow {
-  question_id: number;
-  is_correct: number | null;
-}
-
 interface QuestionRow {
   id: number;
   module: string;
@@ -24,11 +19,7 @@ interface AnswerRow {
   id: number;
   question_id: number;
   answer_text: string;
-  is_correct: number;
-}
-
-interface InsertResult {
-  lastInsertRowid: number | bigint;
+  is_correct: boolean;
 }
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
@@ -55,9 +46,19 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const { examId, filter } = parsed.data;
 
-  const examOwner = db
-    .prepare('SELECT id FROM exams WHERE id = ? AND user_id = ?')
-    .get(examId, session.userId) as { id: number } | undefined;
+  const { data: examOwner, error: examOwnerError } = await db
+    .from('exams')
+    .select('id')
+    .eq('id', examId)
+    .eq('user_id', session.userId)
+    .maybeSingle();
+
+  if (examOwnerError) {
+    return NextResponse.json(
+      { error: 'Failed to verify exam', code: 'EXAM_LOOKUP_FAILED' },
+      { status: 500 }
+    );
+  }
 
   if (!examOwner) {
     return NextResponse.json(
@@ -66,18 +67,23 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  let eqQuery = `
-    SELECT question_id, is_correct
-    FROM exam_questions
-    WHERE exam_id = ?
-  `;
-  const eqParams: number[] = [examId];
+  let eqQuery = db
+    .from('exam_questions')
+    .select('question_id, is_correct')
+    .eq('exam_id', examId);
 
   if (filter === 'wrong_only') {
-    eqQuery += ' AND is_correct = 0';
+    eqQuery = eqQuery.eq('is_correct', false);
   }
 
-  const examQs = db.prepare(eqQuery).all(...eqParams) as ExamQuestionRow[];
+  const { data: examQs, error: examQuestionsError } = await eqQuery;
+  if (examQuestionsError || !examQs) {
+    return NextResponse.json(
+      { error: 'Failed to fetch exam questions', code: 'EXAM_QUESTIONS_FETCH_FAILED' },
+      { status: 500 }
+    );
+  }
+
   const questionIds = examQs.map((eq) => eq.question_id);
 
   if (questionIds.length === 0) {
@@ -87,23 +93,31 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  const placeholders = questionIds.map(() => '?').join(',');
+  const { data: questions, error: questionsError } = await db
+    .from('questions')
+    .select('id, module, type, question_text')
+    .in('id', questionIds)
+    .is('deleted_at', null);
 
-  const questions = db
-    .prepare(
-      `SELECT id, module, type, question_text
-       FROM questions
-       WHERE id IN (${placeholders}) AND deleted_at IS NULL`
-    )
-    .all(...questionIds) as QuestionRow[];
+  if (questionsError || !questions) {
+    return NextResponse.json(
+      { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
+      { status: 500 }
+    );
+  }
 
-  const answers = db
-    .prepare(
-      `SELECT id, question_id, answer_text, is_correct
-       FROM answers
-       WHERE question_id IN (${placeholders}) AND deleted_at IS NULL`
-    )
-    .all(...questionIds) as AnswerRow[];
+  const { data: answers, error: answersError } = await db
+    .from('answers')
+    .select('id, question_id, answer_text, is_correct')
+    .in('question_id', questionIds)
+    .is('deleted_at', null);
+
+  if (answersError || !answers) {
+    return NextResponse.json(
+      { error: 'Failed to fetch answers', code: 'ANSWERS_FETCH_FAILED' },
+      { status: 500 }
+    );
+  }
 
   const answersByQuestion = new Map<number, AnswerRow[]>();
   for (const a of answers) {
@@ -112,47 +126,65 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     answersByQuestion.set(a.question_id, list);
   }
 
-  const newExamResult = db
-    .prepare('INSERT INTO exams (user_id, started_at) VALUES (?, CURRENT_TIMESTAMP)')
-    .run(session.userId) as InsertResult;
-  const newExamId = Number(newExamResult.lastInsertRowid);
+  const { data: newExamRow, error: createExamError } = await db
+    .from('exams')
+    .insert({ user_id: session.userId, started_at: new Date().toISOString() })
+    .select('id')
+    .single();
 
-  const insertEQ = db.prepare(
-    `INSERT INTO exam_questions (exam_id, question_id, question_snapshot)
-     VALUES (?, ?, ?)`
-  );
+  if (createExamError || !newExamRow) {
+    return NextResponse.json(
+      { error: 'Failed to create exam', code: 'EXAM_CREATE_FAILED' },
+      { status: 500 }
+    );
+  }
+
+  const newExamId = newExamRow.id;
 
   const examQuestions: { id: number; question_snapshot: object }[] = [];
 
-  const insertAll = db.transaction(() => {
-    for (const q of questions) {
-      const qAnswers = answersByQuestion.get(q.id) ?? [];
-      const snapshot = {
-        id: q.id,
-        module: q.module,
-        type: q.type,
-        question_text: q.question_text,
-        answers: qAnswers.map((a) => ({
-          id: a.id,
-          answer_text: a.answer_text,
-          is_correct: Boolean(a.is_correct),
-        })),
-      };
+  const questionsById = new Map<number, QuestionRow>();
+  for (const q of questions) questionsById.set(q.id, q);
 
-      const eqResult = insertEQ.run(
-        newExamId,
-        q.id,
-        JSON.stringify(snapshot)
-      ) as InsertResult;
+  for (const questionId of questionIds) {
+    const q = questionsById.get(questionId);
+    if (!q) continue;
 
-      examQuestions.push({
-        id: Number(eqResult.lastInsertRowid),
-        question_snapshot: snapshot,
-      });
+    const qAnswers = answersByQuestion.get(q.id) ?? [];
+    const snapshot = {
+      id: q.id,
+      module: q.module,
+      type: q.type,
+      question_text: q.question_text,
+      answers: qAnswers.map((a) => ({
+        id: a.id,
+        answer_text: a.answer_text,
+        is_correct: Boolean(a.is_correct),
+      })),
+    };
+
+    const { data: examQuestionRow, error: examQuestionInsertError } = await db
+      .from('exam_questions')
+      .insert({
+        exam_id: newExamId,
+        question_id: q.id,
+        question_snapshot: JSON.stringify(snapshot),
+      })
+      .select('id')
+      .single();
+
+    if (examQuestionInsertError || !examQuestionRow) {
+      return NextResponse.json(
+        { error: 'Failed to save exam questions', code: 'EXAM_QUESTIONS_CREATE_FAILED' },
+        { status: 500 }
+      );
     }
-  });
 
-  insertAll();
+    examQuestions.push({
+      id: examQuestionRow.id,
+      question_snapshot: snapshot,
+    });
+  }
 
   return NextResponse.json({ examId: newExamId, questions: examQuestions });
 }

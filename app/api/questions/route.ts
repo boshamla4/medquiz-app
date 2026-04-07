@@ -13,7 +13,7 @@ interface AnswerRow {
   id: number;
   question_id: number;
   answer_text: string;
-  is_correct: number;
+  is_correct: boolean;
 }
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -21,47 +21,91 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   if (session instanceof NextResponse) return session;
 
   const { searchParams } = request.nextUrl;
-  const module = searchParams.get('module');
+  const moduleFilter = searchParams.get('module');
   const random = searchParams.get('random') === 'true';
   const limit = Math.min(parseInt(searchParams.get('limit') ?? '20', 10) || 20, 100);
 
-  let query = `
-    SELECT id, module, type, question_text
-    FROM questions
-    WHERE deleted_at IS NULL
-  `;
-  const params: (string | number)[] = [];
-
-  if (module) {
-    query += ' AND module = ?';
-    params.push(module);
-  }
+  let questions: QuestionRow[] = [];
 
   if (random) {
-    query += ' ORDER BY RANDOM()';
+    const rpcResult = await db.rpc('get_random_questions', {
+      p_module: moduleFilter ?? null,
+      p_limit: limit,
+    });
+
+    if (!rpcResult.error && rpcResult.data) {
+      questions = rpcResult.data.map((q) => ({
+        id: q.id,
+        module: q.module,
+        type: q.type,
+        question_text: q.question_text,
+      }));
+    } else {
+      let fallbackQuery = db
+        .from('questions')
+        .select('id, module, type, question_text')
+        .is('deleted_at', null)
+        .order('id')
+        .limit(limit * 3);
+
+      if (moduleFilter) {
+        fallbackQuery = fallbackQuery.eq('module', moduleFilter);
+      }
+
+      const { data: fallbackQuestions, error: fallbackError } = await fallbackQuery;
+
+      if (fallbackError || !fallbackQuestions) {
+        return NextResponse.json(
+          { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
+          { status: 500 }
+        );
+      }
+
+      questions = [...fallbackQuestions]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, limit);
+    }
   } else {
-    query += ' ORDER BY id';
+    let query = db
+      .from('questions')
+      .select('id, module, type, question_text')
+      .is('deleted_at', null)
+      .order('id')
+      .limit(limit);
+
+    if (moduleFilter) {
+      query = query.eq('module', moduleFilter);
+    }
+
+    const { data, error } = await query;
+    if (error || !data) {
+      return NextResponse.json(
+        { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
+        { status: 500 }
+      );
+    }
+
+    questions = data;
   }
-
-  query += ' LIMIT ?';
-  params.push(limit);
-
-  const questions = db.prepare(query).all(...params) as QuestionRow[];
 
   if (questions.length === 0) {
     return NextResponse.json({ questions: [] });
   }
 
   const questionIds = questions.map((q) => q.id);
-  const placeholders = questionIds.map(() => '?').join(',');
 
-  const answers = db
-    .prepare(
-      `SELECT id, question_id, answer_text, is_correct
-       FROM answers
-       WHERE question_id IN (${placeholders}) AND deleted_at IS NULL`
-    )
-    .all(...questionIds) as AnswerRow[];
+  const { data: answers, error: answersError } = await db
+    .from('answers')
+    .select('id, question_id, answer_text, is_correct')
+    .in('question_id', questionIds)
+    .is('deleted_at', null);
+
+  if (answersError || !answers) {
+    return NextResponse.json(
+      { error: 'Failed to fetch answers', code: 'ANSWERS_FETCH_FAILED' },
+      { status: 500 }
+    );
+  }
 
   const answersByQuestion = new Map<number, AnswerRow[]>();
   for (const answer of answers) {

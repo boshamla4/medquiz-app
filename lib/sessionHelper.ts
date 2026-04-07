@@ -1,3 +1,4 @@
+// lib/sessionHelper.ts — FULL REPLACEMENT
 import { NextRequest, NextResponse } from 'next/server';
 import { validateSession, updateSessionLastSeen } from './auth';
 
@@ -13,18 +14,16 @@ export async function requireSession(
     );
   }
 
-  const result = validateSession(sessionId);
+  const result = await validateSession(sessionId);
 
   if (!result.valid) {
-    const code =
-      result.reason === 'SESSION_HIJACKED' ? 'SESSION_HIJACKED' : 'SESSION_EXPIRED';
+    const code = result.reason === 'SESSION_HIJACKED' ? 'SESSION_HIJACKED' : 'SESSION_EXPIRED';
     return NextResponse.json(
       { error: result.reason ?? 'Session invalid', code },
       { status: 401 }
     );
   }
 
-  updateSessionLastSeen(sessionId);
-
+  await updateSessionLastSeen(sessionId);
   return { userId: result.userId, sessionId };
 }
