@@ -87,18 +87,6 @@ async function extractDocumentXml(filePath) {
   return documentFile.async('string');
 }
 
-function normalizeText(text) {
-  // Normalize Cyrillic lookalikes to Latin
-  return text
-    .replace(/[АA]/g, 'A') // Cyrillic А → A (only if leading)
-    .replace(/[ВB]/g, 'B')
-    .replace(/[СC]/g, 'C')
-    .replace(/[ДD]/g, 'D')
-    .replace(/[ЕE]/g, 'E')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
 function isBracketCorrect(bracketContent) {
   const c = bracketContent.trim();
   if (!c || /^\s+$/.test(c)) return false;
@@ -885,13 +873,7 @@ function parseBoldCorrect(html) {
 function parseSurgery5th(html) {
   const allQuestions = [];
 
-  // Split on "KEY answers" occurrences (they appear inside <strong> tags)
-  // Each part before a KEY answers section contains questions;
-  // the KEY answers section itself contains bold <ol><li> answer items
-  const parts = html.split(/(KEY\s+answers[\s\S]*?(?=KEY\s+answers|$))/i);
-  // parts[0] = first question block, parts[1] = KEY+answers1, parts[2] = next question block, etc.
-  // Actually split produces: [before, key1+qs1, before2, key2+qs2, ...]
-  // Use a different approach: find all KEY answer blocks explicitly
+  // Find all KEY answer blocks explicitly.
 
   const keyAnswerRe = /KEY\s+answers[^<]*(?:<[^>]+>)*([^<]*)<\/[^>]+>(<ol>[\s\S]*?<\/ol>)/gi;
   const keyBlocks = [];
@@ -1145,7 +1127,12 @@ async function main() {
     sourceFolder: 'data',
     totalFiles: results.length,
     totalQuestions,
-    files: results.map(({ warnings: _w, warningCount: _wc, ...rest }) => rest),
+    files: results.map((result) => {
+      const { warnings, warningCount, ...rest } = result;
+      void warnings;
+      void warningCount;
+      return rest;
+    }),
   };
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });

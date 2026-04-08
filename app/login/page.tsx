@@ -20,7 +20,7 @@ export default function LoginPage() {
       const data = await res.json();
 
       if (res.ok) {
-        router.push('/dashboard');
+        router.push('/dashboard?welcome=1');
         return;
       }
 
@@ -44,6 +44,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold text-gray-900">MedQuiz</h1>
+          <p className="mt-3 text-sm font-medium text-blue-700">Welcome back</p>
           <p className="mt-2 text-sm text-gray-500">Enter your access token to continue</p>
         </div>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
 import { apiGet, apiPost } from '@/lib/apiClient';
@@ -38,7 +39,9 @@ interface ExamPreview {
 
 function DashboardContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [showExamModal, setShowExamModal] = useState(false);
+  const [showWelcomeBanner, setShowWelcomeBanner] = useState(searchParams.get('welcome') === '1');
   const [module, setModule] = useState('');
   const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], types: [], fileGroups: [] });
   const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
@@ -55,6 +58,12 @@ function DashboardContent() {
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState('');
   const [logoutLoading, setLogoutLoading] = useState(false);
+
+  useEffect(() => {
+    if (!showWelcomeBanner) return;
+    const timer = setTimeout(() => setShowWelcomeBanner(false), 5000);
+    return () => clearTimeout(timer);
+  }, [showWelcomeBanner]);
 
   useEffect(() => {
     if (!showExamModal || meta.modules.length > 0) return;
@@ -190,6 +199,12 @@ function DashboardContent() {
       </header>
 
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">
+        {showWelcomeBanner && (
+          <div className="mb-6 rounded-2xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-900 shadow-sm">
+            Welcome back. Your session is active and you can start a new exam whenever you are ready.
+          </div>
+        )}
+
         <div className="mb-8">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
           <p className="mt-2 text-sm text-gray-500">Select a module, configure your exam, and start practicing.</p>
