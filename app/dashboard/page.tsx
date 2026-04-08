@@ -37,6 +37,19 @@ interface ExamPreview {
   fileGroups: FileGroup[];
 }
 
+interface ExamHistoryEntry {
+  id: number;
+  score: number;
+  total: number;
+  started_at: string;
+}
+
+interface DashboardStats {
+  totalExams: number;
+  latestScore: string;
+  bestScore: string;
+}
+
 function DashboardContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -53,6 +66,8 @@ function DashboardContent() {
   const [modulesLoading, setModulesLoading] = useState(false);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [preview, setPreview] = useState<ExamPreview | null>(null);
+  const [statsLoading, setStatsLoading] = useState(false);
+  const [stats, setStats] = useState<DashboardStats | null>(null);
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
   const [examLoading, setExamLoading] = useState(false);
@@ -122,6 +137,44 @@ function DashboardContent() {
 
     loadPreview();
   }, [showExamModal, module, selectedFiles, selectedTypes, includeRepeated, wrongOnly, useAllQuestions, limit]);
+
+  useEffect(() => {
+    async function loadStats() {
+      setStatsLoading(true);
+      try {
+        const [recentRes, bestRes] = await Promise.all([
+          apiGet('/api/exam/history?limit=1&sort=date'),
+          apiGet('/api/exam/history?limit=1&sort=score'),
+        ]);
+
+        if (!recentRes.ok || !bestRes.ok) return;
+
+        const recentData = (await recentRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
+        const bestData = (await bestRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
+
+        const latest = recentData.data?.[0];
+        const best = bestData.data?.[0];
+
+        setStats({
+          totalExams: Number(recentData.total ?? 0),
+          latestScore:
+            latest && latest.total > 0
+              ? `${latest.score}/${latest.total} (${Math.round((latest.score / latest.total) * 100)}%)`
+              : 'No exams yet',
+          bestScore:
+            best && best.total > 0
+              ? `${best.score}/${best.total} (${Math.round((best.score / best.total) * 100)}%)`
+              : 'No exams yet',
+        });
+      } catch {
+        setStats(null);
+      } finally {
+        setStatsLoading(false);
+      }
+    }
+
+    loadStats();
+  }, []);
 
   function toggleString(value: string, list: string[], setter: (value: string[]) => void) {
     if (list.includes(value)) {
@@ -208,6 +261,27 @@ function DashboardContent() {
         <div className="mb-8">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
           <p className="mt-2 text-sm text-gray-500">Select a module, configure your exam, and start practicing.</p>
+        </div>
+
+        <div className="mb-8 grid gap-3 sm:grid-cols-3">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Total Exams</p>
+            <p className="mt-2 text-2xl font-semibold text-gray-900">
+              {statsLoading ? '…' : stats?.totalExams ?? 0}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Latest Score</p>
+            <p className="mt-2 text-lg font-semibold text-gray-900">
+              {statsLoading ? 'Loading…' : stats?.latestScore ?? 'No exams yet'}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Best Score</p>
+            <p className="mt-2 text-lg font-semibold text-gray-900">
+              {statsLoading ? 'Loading…' : stats?.bestScore ?? 'No exams yet'}
+            </p>
+          </div>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
