@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
 import { apiGet, apiPost } from '@/lib/apiClient';
@@ -42,12 +41,68 @@ interface ExamHistoryEntry {
   score: number;
   total: number;
   started_at: string;
+  finished_at: string | null;
 }
 
 interface DashboardStats {
   totalExams: number;
   latestScore: string;
   bestScore: string;
+}
+
+interface ExamPreset {
+  name: string;
+  module: string;
+  selectedFiles: string[];
+  selectedTypes: Array<'single' | 'multiple'>;
+  orderMode: 'preserve' | 'random';
+  useAllQuestions: boolean;
+  includeRepeated: boolean;
+  wrongOnly: boolean;
+  limit: number;
+  timerMinutes: number;
+}
+
+const PRESET_STORAGE_KEY = 'medquiz.exam-presets.v1';
+
+function isBrowser() {
+  return typeof window !== 'undefined';
+}
+
+function getStoredPresets(): ExamPreset[] {
+  if (!isBrowser()) return [];
+  try {
+    const raw = window.localStorage.getItem(PRESET_STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw) as unknown;
+    return Array.isArray(parsed)
+      ? parsed.filter((preset): preset is ExamPreset => Boolean(preset && typeof preset === 'object' && typeof (preset as ExamPreset).name === 'string'))
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function storePresets(presets: ExamPreset[]) {
+  if (!isBrowser()) return;
+  window.localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets));
+}
+
+function scoreLabel(entry?: ExamHistoryEntry): string {
+  if (!entry || entry.total <= 0) return 'No exams yet';
+  const percent = Math.round((entry.score / entry.total) * 100);
+  return `${entry.score}/${entry.total} (${percent}%)`;
+}
+
+function buildTrendPoints(entries: ExamHistoryEntry[]): Array<{ id: number; label: string; value: number }> {
+  return entries
+    .slice()
+    .reverse()
+    .map((entry) => ({
+      id: entry.id,
+      label: new Date(entry.started_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }),
+      value: entry.total > 0 ? Math.round((entry.score / entry.total) * 100) : 0,
+    }));
 }
 
 function DashboardContent() {
@@ -68,6 +123,9 @@ function DashboardContent() {
   const [preview, setPreview] = useState<ExamPreview | null>(null);
   const [statsLoading, setStatsLoading] = useState(false);
   const [stats, setStats] = useState<DashboardStats | null>(null);
+  const [recentHistory, setRecentHistory] = useState<ExamHistoryEntry[]>([]);
+  const [presets, setPresets] = useState<ExamPreset[]>([]);
+  const [presetName, setPresetName] = useState('');
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
   const [examLoading, setExamLoading] = useState(false);
@@ -79,6 +137,10 @@ function DashboardContent() {
     const timer = setTimeout(() => setShowWelcomeBanner(false), 5000);
     return () => clearTimeout(timer);
   }, [showWelcomeBanner]);
+
+  useEffect(() => {
+    setPresets(getStoredPresets());
+  }, []);
 
   useEffect(() => {
     if (!showExamModal || meta.modules.length > 0) return;
@@ -143,7 +205,7 @@ function DashboardContent() {
       setStatsLoading(true);
       try {
         const [recentRes, bestRes] = await Promise.all([
-          apiGet('/api/exam/history?limit=1&sort=date'),
+          apiGet('/api/exam/history?limit=5&sort=date'),
           apiGet('/api/exam/history?limit=1&sort=score'),
         ]);
 
@@ -152,22 +214,20 @@ function DashboardContent() {
         const recentData = (await recentRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
         const bestData = (await bestRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
 
-        const latest = recentData.data?.[0];
+        const recentEntries = recentData.data ?? [];
+        const latest = recentEntries[0];
         const best = bestData.data?.[0];
+
+        setRecentHistory(recentEntries);
 
         setStats({
           totalExams: Number(recentData.total ?? 0),
-          latestScore:
-            latest && latest.total > 0
-              ? `${latest.score}/${latest.total} (${Math.round((latest.score / latest.total) * 100)}%)`
-              : 'No exams yet',
-          bestScore:
-            best && best.total > 0
-              ? `${best.score}/${best.total} (${Math.round((best.score / best.total) * 100)}%)`
-              : 'No exams yet',
+          latestScore: scoreLabel(latest),
+          bestScore: scoreLabel(best ?? undefined),
         });
       } catch {
         setStats(null);
+        setRecentHistory([]);
       } finally {
         setStatsLoading(false);
       }
@@ -191,6 +251,70 @@ function DashboardContent() {
     }
     setSelectedTypes([...selectedTypes, value]);
   }
+
+  function savePreset() {
+    const name = presetName.trim();
+    if (!name) return;
+
+    const nextPreset: ExamPreset = {
+      name,
+      module: module.trim(),
+      selectedFiles,
+      selectedTypes,
+      orderMode,
+      useAllQuestions,
+      includeRepeated,
+      wrongOnly,
+      limit,
+      timerMinutes,
+    };
+
+    const nextPresets = [nextPreset, ...presets.filter((preset) => preset.name !== name)].slice(0, 8);
+    setPresets(nextPresets);
+    storePresets(nextPresets);
+    setPresetName('');
+  }
+
+  function applyPreset(preset: ExamPreset) {
+    setModule(preset.module);
+    setSelectedFiles(preset.selectedFiles);
+    setSelectedTypes(preset.selectedTypes);
+    setOrderMode(preset.orderMode);
+    setUseAllQuestions(preset.useAllQuestions);
+    setIncludeRepeated(preset.includeRepeated);
+    setWrongOnly(preset.wrongOnly);
+    setLimit(preset.limit);
+    setTimerMinutes(preset.timerMinutes);
+    setShowExamModal(true);
+  }
+
+  function deletePreset(name: string) {
+    const nextPresets = presets.filter((preset) => preset.name !== name);
+    setPresets(nextPresets);
+    storePresets(nextPresets);
+  }
+
+  function startWeakModuleRetry() {
+    setModule('');
+    setSelectedFiles([]);
+    setSelectedTypes([]);
+    setOrderMode('random');
+    setUseAllQuestions(true);
+    setIncludeRepeated(true);
+    setWrongOnly(true);
+    setLimit(20);
+    setTimerMinutes(0);
+    setShowExamModal(true);
+  }
+
+  function resumeLatestExam() {
+    const latest = recentHistory[0];
+    if (!latest || latest.finished_at) return;
+    router.push(`/exam/${latest.id}`);
+  }
+
+  const trendPoints = buildTrendPoints(recentHistory);
+  const inProgressExam = recentHistory[0]?.finished_at === null ? recentHistory[0] : null;
 
   async function handleStartExam(e: React.FormEvent) {
     e.preventDefault();
@@ -281,6 +405,143 @@ function DashboardContent() {
             <p className="mt-2 text-lg font-semibold text-gray-900">
               {statsLoading ? 'Loading…' : stats?.bestScore ?? 'No exams yet'}
             </p>
+          </div>
+        </div>
+
+        <div className="mb-8 grid gap-4 lg:grid-cols-3">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:col-span-2">
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Trend</p>
+                <h3 className="text-base font-semibold text-gray-900">Last 5 exam scores</h3>
+              </div>
+              <span className="text-xs text-gray-500">
+                {statsLoading ? 'Loading…' : trendPoints.length > 0 ? 'Recent performance' : 'No data yet'}
+              </span>
+            </div>
+
+            {trendPoints.length === 0 ? (
+              <p className="text-sm text-gray-500">Take a few exams and your score trend will appear here.</p>
+            ) : (
+              <div className="flex items-end gap-3 overflow-x-auto pb-1">
+                {trendPoints.map((point) => (
+                  <div key={point.id} className="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <div className="flex h-28 w-full items-end justify-center rounded-xl bg-gray-50 px-2 py-2">
+                      <div
+                        className="w-full max-w-10 rounded-t-lg bg-gradient-to-t from-blue-600 to-cyan-400"
+                        style={{ height: `${Math.max(8, point.value)}%` }}
+                        title={`${point.value}%`}
+                      />
+                    </div>
+                    <span className="text-xs font-semibold text-gray-700">{point.value}%</span>
+                    <span className="text-[11px] text-gray-400">{point.label}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Shortcuts</p>
+            <h3 className="mt-1 text-base font-semibold text-gray-900">Quick actions</h3>
+            <div className="mt-4 space-y-3">
+              <button
+                type="button"
+                onClick={resumeLatestExam}
+                disabled={!inProgressExam}
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-left text-sm font-medium text-gray-700 transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <span className="block text-xs uppercase tracking-wide text-gray-400">Resume last exam</span>
+                <span className="block mt-1">{inProgressExam ? `Exam #${inProgressExam.id}` : 'No exam in progress'}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={startWeakModuleRetry}
+                className="w-full rounded-xl bg-blue-600 px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                <span className="block text-xs uppercase tracking-wide text-blue-100">Retry weak modules</span>
+                <span className="block mt-1">Start from previously wrong questions</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-8 grid gap-4 lg:grid-cols-3">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:col-span-2">
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Presets</p>
+                <h3 className="text-base font-semibold text-gray-900">Saved exam setups</h3>
+              </div>
+              <span className="text-xs text-gray-500">Stored locally on this device</span>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
+              <input
+                type="text"
+                value={presetName}
+                onChange={(e) => setPresetName(e.target.value)}
+                placeholder="Preset name, e.g. Pediatrics weak CM"
+                className="rounded-xl border border-gray-300 px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+              />
+              <button
+                type="button"
+                onClick={savePreset}
+                disabled={!presetName.trim()}
+                className="rounded-xl bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                Save current setup
+              </button>
+            </div>
+
+            <div className="mt-4 space-y-2">
+              {presets.length === 0 ? (
+                <p className="text-sm text-gray-500">Save a setup once and reuse it for fast exam creation.</p>
+              ) : (
+                presets.map((preset) => (
+                  <div key={preset.name} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">{preset.name}</p>
+                      <p className="text-xs text-gray-500">
+                        {preset.module || 'All modules'} · {preset.useAllQuestions ? 'All questions' : `${preset.limit} questions`} · {preset.wrongOnly ? 'Wrong only' : 'All history'}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => applyPreset(preset)}
+                        className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
+                      >
+                        Apply
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => deletePreset(preset.name)}
+                        className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-white"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-400">History</p>
+            <h3 className="mt-1 text-base font-semibold text-gray-900">Latest activity</h3>
+            <div className="mt-4 space-y-3 text-sm text-gray-600">
+              <div className="rounded-xl bg-gray-50 px-4 py-3">
+                <p className="text-xs uppercase tracking-wide text-gray-400">Latest score</p>
+                <p className="mt-1 font-semibold text-gray-900">{statsLoading ? 'Loading…' : stats?.latestScore ?? 'No exams yet'}</p>
+              </div>
+              <div className="rounded-xl bg-gray-50 px-4 py-3">
+                <p className="text-xs uppercase tracking-wide text-gray-400">Best score</p>
+                <p className="mt-1 font-semibold text-gray-900">{statsLoading ? 'Loading…' : stats?.bestScore ?? 'No exams yet'}</p>
+              </div>
+            </div>
           </div>
         </div>
 
