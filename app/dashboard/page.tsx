@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
 import { apiGet, apiPost } from '@/lib/apiClient';
@@ -107,9 +107,8 @@ function buildTrendPoints(entries: ExamHistoryEntry[]): Array<{ id: number; labe
 
 function DashboardContent() {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [showExamModal, setShowExamModal] = useState(false);
-  const [showWelcomeBanner, setShowWelcomeBanner] = useState(searchParams.get('welcome') === '1');
+  const [showWelcomeBanner, setShowWelcomeBanner] = useState(false);
   const [module, setModule] = useState('');
   const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], types: [], fileGroups: [] });
   const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
@@ -137,6 +136,17 @@ function DashboardContent() {
     const timer = setTimeout(() => setShowWelcomeBanner(false), 5000);
     return () => clearTimeout(timer);
   }, [showWelcomeBanner]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('welcome') === '1') {
+      setShowWelcomeBanner(true);
+      params.delete('welcome');
+      const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}`;
+      window.history.replaceState(null, '', nextUrl);
+    }
+  }, []);
 
   useEffect(() => {
     setPresets(getStoredPresets());
@@ -387,6 +397,26 @@ function DashboardContent() {
           <p className="mt-2 text-sm text-gray-500">Select a module, configure your exam, and start practicing.</p>
         </div>
 
+        <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <button
+            onClick={() => setShowExamModal(true)}
+            className="flex flex-col items-start gap-2 rounded-xl bg-white p-6 text-left shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-blue-300"
+          >
+            <span className="text-2xl">📝</span>
+            <span className="text-base font-semibold text-gray-900">Start New Exam</span>
+            <span className="text-sm text-gray-500">Configure and begin a new QCM session</span>
+          </button>
+
+          <Link
+            href="/history"
+            className="flex flex-col items-start gap-2 rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-blue-300"
+          >
+            <span className="text-2xl">📋</span>
+            <span className="text-base font-semibold text-gray-900">View History</span>
+            <span className="text-sm text-gray-500">Browse your past exams and results</span>
+          </Link>
+        </div>
+
         <div className="mb-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
             <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Total Exams</p>
@@ -545,30 +575,12 @@ function DashboardContent() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <button
-            onClick={() => setShowExamModal(true)}
-            className="flex flex-col items-start gap-2 rounded-xl bg-white p-6 text-left shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-blue-300"
-          >
-            <span className="text-2xl">📝</span>
-            <span className="text-base font-semibold text-gray-900">Start New Exam</span>
-            <span className="text-sm text-gray-500">Configure and begin a new QCM session</span>
-          </button>
-
-          <Link
-            href="/history"
-            className="flex flex-col items-start gap-2 rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-blue-300"
-          >
-            <span className="text-2xl">📋</span>
-            <span className="text-base font-semibold text-gray-900">View History</span>
-            <span className="text-sm text-gray-500">Browse your past exams and results</span>
-          </Link>
-        </div>
       </main>
 
       {showExamModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-          <div className="w-full max-w-lg rounded-2xl border border-gray-200 bg-white p-6 shadow-xl">
+        <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/50 px-4 py-6 sm:items-center">
+          <div className="my-auto w-full max-w-lg overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl">
+            <div className="max-h-[calc(100vh-3rem)] overflow-y-auto p-6">
             <h3 className="mb-1 text-lg font-semibold text-gray-900">Configure New Exam</h3>
             <p className="mb-5 text-sm text-gray-500">Keep existing features, with a guided setup.</p>
 
@@ -803,6 +815,7 @@ function DashboardContent() {
                 </button>
               </div>
             </form>
+            </div>
           </div>
         </div>
       )}
