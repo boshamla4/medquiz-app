@@ -207,7 +207,8 @@ function DashboardContent() {
       }
     }
 
-    loadPreview();
+    const timer = setTimeout(loadPreview, 250);
+    return () => clearTimeout(timer);
   }, [showExamModal, module, selectedFiles, selectedTypes, includeRepeated, wrongOnly, useAllQuestions, limit]);
 
   useEffect(() => {
@@ -312,6 +313,19 @@ function DashboardContent() {
     setUseAllQuestions(true);
     setIncludeRepeated(true);
     setWrongOnly(true);
+    setLimit(20);
+    setTimerMinutes(0);
+    setShowExamModal(true);
+  }
+
+  function startFinalMockExam() {
+    setModule('');
+    setSelectedFiles([]);
+    setSelectedTypes([]);
+    setOrderMode('preserve');
+    setUseAllQuestions(true);
+    setIncludeRepeated(true);
+    setWrongOnly(false);
     setLimit(20);
     setTimerMinutes(0);
     setShowExamModal(true);
@@ -477,6 +491,15 @@ function DashboardContent() {
             <div className="mt-4 space-y-3">
               <button
                 type="button"
+                onClick={startFinalMockExam}
+                className="w-full rounded-xl bg-emerald-600 px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-emerald-700"
+              >
+                <span className="block text-xs uppercase tracking-wide text-emerald-100">Final mock exam</span>
+                <span className="block mt-1">All questions in preserved order</span>
+              </button>
+
+              <button
+                type="button"
                 onClick={resumeLatestExam}
                 disabled={!inProgressExam}
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-left text-sm font-medium text-gray-700 transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
@@ -592,7 +615,7 @@ function DashboardContent() {
                 <select
                   value={module}
                   onChange={(e) => setModule(e.target.value)}
-                  className="mt-1.5 block w-full rounded-lg border border-gray-300 px-3.5 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                  className="mt-1.5 block w-full rounded-lg border border-slate-400 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   disabled={modulesLoading}
                 >
                   <option value="">All modules</option>

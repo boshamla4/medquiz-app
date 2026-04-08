@@ -353,10 +353,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const examId = examRow.id;
 
-  const examQuestions: { id: number; question_snapshot: object }[] = [];
-
-  for (const { question, answers } of questionData) {
-    const snapshot = {
+  const examQuestionRows = questionData.map(({ question, answers }) => ({
+    question,
+    snapshot: {
       id: question.id,
       module: question.module,
       source_file: question.source_file ?? question.module,
@@ -368,30 +367,40 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         answer_text: a.answer_text,
         is_correct: Boolean(a.is_correct),
       })),
-    };
+    },
+  }));
 
-    const { data: examQuestionRow, error: examQuestionInsertError } = await db
+  const insertedExamQuestionIds = new Map<number, number>();
+  const batchSize = 250;
+
+  for (let index = 0; index < examQuestionRows.length; index += batchSize) {
+    const batch = examQuestionRows.slice(index, index + batchSize).map(({ question, snapshot }) => ({
+      exam_id: examId,
+      question_id: question.id,
+      question_snapshot: JSON.stringify(snapshot),
+    }));
+
+    const { data: insertedRows, error: examQuestionInsertError } = await db
       .from('exam_questions')
-      .insert({
-        exam_id: examId,
-        question_id: question.id,
-        question_snapshot: JSON.stringify(snapshot),
-      })
-      .select('id')
-      .single();
+      .insert(batch)
+      .select('id, question_id');
 
-    if (examQuestionInsertError || !examQuestionRow) {
+    if (examQuestionInsertError || !insertedRows) {
       return NextResponse.json(
         { error: 'Failed to save exam questions', code: 'EXAM_QUESTIONS_CREATE_FAILED' },
         { status: 500 }
       );
     }
 
-    examQuestions.push({
-      id: examQuestionRow.id,
-      question_snapshot: snapshot,
-    });
+    for (const row of insertedRows) {
+      insertedExamQuestionIds.set(row.question_id, row.id);
+    }
   }
+
+  const examQuestions = examQuestionRows.map(({ question, snapshot }) => ({
+    id: insertedExamQuestionIds.get(question.id) ?? 0,
+    question_snapshot: snapshot,
+  })).filter((entry) => entry.id > 0);
 
   return NextResponse.json({ examId, questions: examQuestions });
 }

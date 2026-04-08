@@ -24,6 +24,25 @@ interface AnswerRow {
   is_correct: boolean;
 }
 
+interface ExamQuestionSnapshot {
+  id: number;
+  module: string;
+  source_file: string;
+  question_order: number | null;
+  type: string;
+  question_text: string;
+  answers: Array<{
+    id: number;
+    answer_text: string;
+    is_correct: boolean;
+  }>;
+}
+
+interface ExamQuestionRow {
+  question: QuestionRow;
+  snapshot: ExamQuestionSnapshot;
+}
+
 export async function POST(request: NextRequest): Promise<NextResponse> {
   const session = await requireSession(request);
   if (session instanceof NextResponse) return session;
@@ -143,52 +162,67 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const newExamId = newExamRow.id;
 
-  const examQuestions: { id: number; question_snapshot: object }[] = [];
-
   const questionsById = new Map<number, QuestionRow>();
   for (const q of questions) questionsById.set(q.id, q);
 
-  for (const questionId of questionIds) {
-    const q = questionsById.get(questionId);
-    if (!q) continue;
 
-    const qAnswers = answersByQuestion.get(q.id) ?? [];
-    const snapshot = {
-      id: q.id,
-      module: q.module,
-      source_file: q.source_file ?? q.module,
-      question_order: q.question_order ?? null,
-      type: q.type,
-      question_text: q.question_text,
-      answers: qAnswers.map((a) => ({
-        id: a.id,
-        answer_text: a.answer_text,
-        is_correct: Boolean(a.is_correct),
-      })),
-    };
+  const examQuestionRows: ExamQuestionRow[] = questionIds
+    .map((questionId) => {
+      const q = questionsById.get(questionId);
+      if (!q) return null;
 
-    const { data: examQuestionRow, error: examQuestionInsertError } = await db
+      const qAnswers = answersByQuestion.get(q.id) ?? [];
+      const snapshot: ExamQuestionSnapshot = {
+        id: q.id,
+        module: q.module,
+        source_file: q.source_file ?? q.module,
+        question_order: q.question_order ?? null,
+        type: q.type,
+        question_text: q.question_text,
+        answers: qAnswers.map((a) => ({
+          id: a.id,
+          answer_text: a.answer_text,
+          is_correct: Boolean(a.is_correct),
+        })),
+      };
+
+      return { question: q, snapshot };
+    })
+    .filter((entry): entry is ExamQuestionRow => Boolean(entry));
+
+  const insertedExamQuestionIds = new Map<number, number>();
+  const batchSize = 250;
+
+  for (let index = 0; index < examQuestionRows.length; index += batchSize) {
+    const batch = examQuestionRows.slice(index, index + batchSize).map(({ question, snapshot }) => ({
+      exam_id: newExamId,
+      question_id: question.id,
+      question_snapshot: JSON.stringify(snapshot),
+    }));
+
+    const { data: insertedRows, error: examQuestionInsertError } = await db
       .from('exam_questions')
-      .insert({
-        exam_id: newExamId,
-        question_id: q.id,
-        question_snapshot: JSON.stringify(snapshot),
-      })
-      .select('id')
-      .single();
+      .insert(batch)
+      .select('id, question_id');
 
-    if (examQuestionInsertError || !examQuestionRow) {
+    if (examQuestionInsertError || !insertedRows) {
       return NextResponse.json(
         { error: 'Failed to save exam questions', code: 'EXAM_QUESTIONS_CREATE_FAILED' },
         { status: 500 }
       );
     }
 
-    examQuestions.push({
-      id: examQuestionRow.id,
-      question_snapshot: snapshot,
-    });
+    for (const row of insertedRows) {
+      insertedExamQuestionIds.set(row.question_id, row.id);
+    }
   }
+
+  const examQuestions = examQuestionRows
+    .map(({ question, snapshot }) => ({
+      id: insertedExamQuestionIds.get(question.id) ?? 0,
+      question_snapshot: snapshot,
+    }))
+    .filter((entry) => entry.id > 0);
 
   return NextResponse.json({ examId: newExamId, questions: examQuestions });
 }
