@@ -52,7 +52,6 @@ interface DashboardStats {
 
 interface ExamPreset {
   name: string;
-  module: string;
   selectedFiles: string[];
   selectedTypes: Array<'single' | 'multiple'>;
   orderMode: 'preserve' | 'random';
@@ -109,7 +108,6 @@ function DashboardContent() {
   const router = useRouter();
   const [showExamModal, setShowExamModal] = useState(false);
   const [showWelcomeBanner, setShowWelcomeBanner] = useState(false);
-  const [module, setModule] = useState('');
   const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], types: [], fileGroups: [] });
   const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<Array<'single' | 'multiple'>>([]);
@@ -117,7 +115,6 @@ function DashboardContent() {
   const [useAllQuestions, setUseAllQuestions] = useState(false);
   const [includeRepeated, setIncludeRepeated] = useState(true);
   const [wrongOnly, setWrongOnly] = useState(false);
-  const [modulesLoading, setModulesLoading] = useState(false);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [preview, setPreview] = useState<ExamPreview | null>(null);
   const [statsLoading, setStatsLoading] = useState(false);
@@ -153,10 +150,9 @@ function DashboardContent() {
   }, []);
 
   useEffect(() => {
-    if (!showExamModal || meta.modules.length > 0) return;
+    if (!showExamModal || meta.fileGroups.length > 0) return;
 
-    async function loadModules() {
-      setModulesLoading(true);
+    async function loadMeta() {
       try {
         const res = await apiGet('/api/questions?meta=1');
         if (!res.ok) {
@@ -171,14 +167,12 @@ function DashboardContent() {
           fileGroups: Array.isArray(data.fileGroups) ? data.fileGroups : [],
         });
       } catch {
-        // Keep modal usable even if module list fails.
-      } finally {
-        setModulesLoading(false);
+        // Keep modal usable even if metadata loading fails.
       }
     }
 
-    loadModules();
-  }, [showExamModal, meta.modules.length]);
+    loadMeta();
+  }, [showExamModal, meta.fileGroups.length]);
 
   useEffect(() => {
     if (!showExamModal) return;
@@ -194,7 +188,6 @@ function DashboardContent() {
           useAllQuestions,
           limit,
         };
-        if (module.trim()) body.module = module.trim();
 
         const res = await apiPost('/api/exam/preview', body);
         if (!res.ok) return;
@@ -209,7 +202,7 @@ function DashboardContent() {
 
     const timer = setTimeout(loadPreview, 250);
     return () => clearTimeout(timer);
-  }, [showExamModal, module, selectedFiles, selectedTypes, includeRepeated, wrongOnly, useAllQuestions, limit]);
+  }, [showExamModal, selectedFiles, selectedTypes, includeRepeated, wrongOnly, useAllQuestions, limit]);
 
   useEffect(() => {
     async function loadStats() {
@@ -269,7 +262,6 @@ function DashboardContent() {
 
     const nextPreset: ExamPreset = {
       name,
-      module: module.trim(),
       selectedFiles,
       selectedTypes,
       orderMode,
@@ -287,7 +279,6 @@ function DashboardContent() {
   }
 
   function applyPreset(preset: ExamPreset) {
-    setModule(preset.module);
     setSelectedFiles(preset.selectedFiles);
     setSelectedTypes(preset.selectedTypes);
     setOrderMode(preset.orderMode);
@@ -306,7 +297,6 @@ function DashboardContent() {
   }
 
   function startWeakModuleRetry() {
-    setModule('');
     setSelectedFiles([]);
     setSelectedTypes([]);
     setOrderMode('random');
@@ -319,16 +309,40 @@ function DashboardContent() {
   }
 
   function startFinalMockExam() {
-    setModule('');
     setSelectedFiles([]);
     setSelectedTypes([]);
     setOrderMode('preserve');
     setUseAllQuestions(true);
     setIncludeRepeated(true);
     setWrongOnly(false);
-    setLimit(20);
+    setLimit(200);
     setTimerMinutes(0);
-    setShowExamModal(true);
+  }
+
+  async function handleStartFinalMockExam() {
+    setExamError('');
+    setExamLoading(true);
+    try {
+      const res = await apiPost('/api/exam/start', {
+        limit: 200,
+        files: [],
+        questionTypes: [],
+        orderMode: 'random',
+        useAllQuestions: false,
+        includeRepeated: true,
+        wrongOnly: false,
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setExamError(data?.error ?? 'Failed to start final mock exam.');
+        return;
+      }
+      router.push(`/exam/${data.examId}`);
+    } catch {
+      setExamError('Network error. Please try again.');
+    } finally {
+      setExamLoading(false);
+    }
   }
 
   function resumeLatestExam() {
@@ -355,7 +369,6 @@ function DashboardContent() {
         includeRepeated,
         wrongOnly,
       };
-      if (module.trim()) body.module = module.trim();
 
       const res = await apiPost('/api/exam/start', body);
       const data = await res.json();
@@ -429,7 +442,23 @@ function DashboardContent() {
             <span className="text-base font-semibold text-gray-900">View History</span>
             <span className="text-sm text-gray-500">Browse your past exams and results</span>
           </Link>
+
+          <button
+            onClick={handleStartFinalMockExam}
+            disabled={examLoading}
+            className="flex flex-col items-start gap-2 rounded-xl bg-emerald-50 p-6 text-left shadow-sm ring-1 ring-emerald-200 transition hover:shadow-md hover:ring-emerald-300"
+          >
+            <span className="text-2xl">🎯</span>
+            <span className="text-base font-semibold text-emerald-900">Start Final Mock Exam</span>
+            <span className="text-sm text-emerald-700">Random 200 questions across all files</span>
+          </button>
         </div>
+
+        {examError && (
+          <div className="mb-6 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+            {examError}
+          </div>
+        )}
 
         <div className="mb-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
@@ -557,7 +586,7 @@ function DashboardContent() {
                     <div>
                       <p className="text-sm font-semibold text-gray-900">{preset.name}</p>
                       <p className="text-xs text-gray-500">
-                        {preset.module || 'All modules'} · {preset.useAllQuestions ? 'All questions' : `${preset.limit} questions`} · {preset.wrongOnly ? 'Wrong only' : 'All history'}
+                        All modules · {preset.useAllQuestions ? 'All questions' : `${preset.limit} questions`} · {preset.wrongOnly ? 'Wrong only' : 'All history'}
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
@@ -608,28 +637,6 @@ function DashboardContent() {
             <p className="mb-5 text-sm text-gray-500">Keep existing features, with a guided setup.</p>
 
             <form onSubmit={handleStartExam} className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Module <span className="text-gray-400">(optional)</span>
-                </label>
-                <select
-                  value={module}
-                  onChange={(e) => setModule(e.target.value)}
-                  className="mt-1.5 block w-full rounded-lg border border-slate-400 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                  disabled={modulesLoading}
-                >
-                  <option value="">All modules</option>
-                  {meta.modules.map((moduleName) => (
-                    <option key={moduleName} value={moduleName}>
-                      {moduleName}
-                    </option>
-                  ))}
-                </select>
-                {modulesLoading && (
-                  <p className="mt-1 text-xs text-gray-400">Loading modules...</p>
-                )}
-              </div>
-
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-700">Files / Tests</label>
                 <div className="max-h-52 space-y-2 overflow-auto rounded-lg border border-gray-200 p-2">

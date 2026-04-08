@@ -32,6 +32,10 @@ interface QuestionSnapshot {
 }
 
 function isAnswerCorrect(snapshot: QuestionSnapshot, selectedIds: number[]): boolean {
+  if (!Array.isArray(snapshot.answers) || snapshot.answers.length === 0) {
+    return false;
+  }
+
   const correctIds = snapshot.answers
     .filter((a) => a.is_correct)
     .map((a) => a.id)
@@ -113,11 +117,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   }
 
   let correctCount = 0;
-  const results: {
+  const results: Array<{
     examQuestionId: number;
     selectedAnswerIds: number[];
     is_correct: boolean;
-  }[] = [];
+  }> = [];
+
+  const updates: Array<{ id: number; selectedAnswerIds: number[]; isCorrect: boolean }> = [];
 
   for (const answer of answers) {
     const eq = eqMap.get(answer.examQuestionId);
@@ -131,26 +137,38 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     if (correct) correctCount++;
 
-    const { error: updateError } = await db
-      .from('exam_questions')
-      .update({
-        user_answer: JSON.stringify(answer.selectedAnswerIds),
-        is_correct: correct,
-      })
-      .eq('id', eq.id);
-
-    if (updateError) {
-      return NextResponse.json(
-        { error: 'Failed to submit answers', code: 'ANSWER_SUBMIT_FAILED' },
-        { status: 500 }
-      );
-    }
+    updates.push({ id: eq.id, selectedAnswerIds: answer.selectedAnswerIds, isCorrect: correct });
 
     results.push({
       examQuestionId: eq.id,
       selectedAnswerIds: answer.selectedAnswerIds,
       is_correct: correct,
     });
+  }
+
+  const updateBatchSize = 50;
+  for (let i = 0; i < updates.length; i += updateBatchSize) {
+    const batch = updates.slice(i, i + updateBatchSize);
+    const settled = await Promise.allSettled(
+      batch.map((item) =>
+        db
+          .from('exam_questions')
+          .update({
+            user_answer: JSON.stringify(item.selectedAnswerIds),
+            is_correct: item.isCorrect,
+          })
+          .eq('id', item.id)
+      )
+    );
+
+    for (const result of settled) {
+      if (result.status === 'rejected' || result.value.error) {
+        return NextResponse.json(
+          { error: 'Failed to submit answers', code: 'ANSWER_SUBMIT_FAILED' },
+          { status: 500 }
+        );
+      }
+    }
   }
 
   // Calculate duration server-side; use CURRENT_TIMESTAMP for finished_at to stay consistent with SQLite

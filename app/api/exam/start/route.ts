@@ -112,16 +112,23 @@ async function fetchQuestionsWithAnswers(questionIds: number[]): Promise<{
 
   if (questionsError || !questions) return [];
 
-  const { data: answers, error: answersError } = await db
-    .from('answers')
-    .select('id, question_id, answer_text, is_correct')
-    .in('question_id', questionIds)
-    .is('deleted_at', null);
+  const allAnswers: AnswerRow[] = [];
+  const chunkSize = 150;
 
-  if (answersError || !answers) return [];
+  for (let index = 0; index < questionIds.length; index += chunkSize) {
+    const chunk = questionIds.slice(index, index + chunkSize);
+    const { data: answers, error: answersError } = await db
+      .from('answers')
+      .select('id, question_id, answer_text, is_correct')
+      .in('question_id', chunk)
+      .is('deleted_at', null);
+
+    if (answersError || !answers) return [];
+    allAnswers.push(...(answers as AnswerRow[]));
+  }
 
   const answersByQuestion = new Map<number, AnswerRow[]>();
-  for (const a of answers) {
+  for (const a of allAnswers) {
     const list = answersByQuestion.get(a.question_id) ?? [];
     list.push(a);
     answersByQuestion.set(a.question_id, list);
