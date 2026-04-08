@@ -11,6 +11,7 @@ if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
 const db = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
 const INPUT = 'scripts/generated/parsed-questions.json';
 const IMPORT_TAG = 'data-folder-json-v1';
+const forceReset = process.argv.includes('--force-reset');
 
 const { data: existing, error: existingError } = await db
   .from('import_runs')
@@ -20,9 +21,36 @@ const { data: existing, error: existingError } = await db
 
 if (existingError) throw existingError;
 
-if (existing) {
+if (existing && !forceReset) {
   console.log('Already imported. Delete import_runs row to re-run.');
   process.exit(0);
+}
+
+if (forceReset) {
+  // Clear question bank and dependent records before a clean reimport.
+  const { error: resetExamQuestionsError } = await db
+    .from('exam_questions')
+    .delete()
+    .gt('id', 0);
+  if (resetExamQuestionsError) throw resetExamQuestionsError;
+
+  const { error: resetAnswersError } = await db
+    .from('answers')
+    .delete()
+    .gt('id', 0);
+  if (resetAnswersError) throw resetAnswersError;
+
+  const { error: resetQuestionsError } = await db
+    .from('questions')
+    .delete()
+    .gt('id', 0);
+  if (resetQuestionsError) throw resetQuestionsError;
+
+  const { error: resetRunsError } = await db
+    .from('import_runs')
+    .delete()
+    .eq('tag', IMPORT_TAG);
+  if (resetRunsError) throw resetRunsError;
 }
 
 const payload = JSON.parse(readFileSync(INPUT, 'utf8'));
@@ -31,7 +59,7 @@ let totalA = 0;
 
 const metadataProbe = await db
   .from('questions')
-  .select('source_file, topic, source_collection')
+  .select('source_file, source_collection, question_order')
   .limit(1);
 
 const hasMetadataColumns = !metadataProbe.error;
@@ -46,7 +74,10 @@ for (const file of payload.files) {
         ? {
             source_file: q.source_file ?? file.file,
             source_collection: q.source_collection ?? 'data',
-            topic: q.topic ?? q.module,
+            question_order:
+              typeof q.question_order === 'number'
+                ? q.question_order
+                : totalQ,
           }
         : {}),
     };

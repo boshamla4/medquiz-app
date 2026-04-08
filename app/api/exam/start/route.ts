@@ -6,11 +6,12 @@ import { requireSession } from '@/lib/sessionHelper';
 const StartExamSchema = z.object({
   module: z.string().optional(),
   files: z.array(z.string()).optional(),
-  topics: z.array(z.string()).optional(),
   questionTypes: z.array(z.enum(['single', 'multiple'])).optional(),
+  orderMode: z.enum(['preserve', 'random']).optional().default('random'),
+  useAllQuestions: z.boolean().optional().default(false),
   includeRepeated: z.boolean().optional().default(true),
   wrongOnly: z.boolean().optional().default(false),
-  limit: z.number().int().positive().max(200).optional().default(20),
+  limit: z.number().int().positive().max(2000).optional().default(20),
   source_exam_id: z.number().int().positive().optional(),
   filter: z.enum(['all', 'wrong_only']).optional().default('all'),
 });
@@ -18,8 +19,8 @@ const StartExamSchema = z.object({
 interface QuestionRow {
   id: number;
   module: string;
-  topic?: string | null;
   source_file?: string | null;
+  question_order?: number | null;
   type: string;
   question_text: string;
 }
@@ -31,6 +32,60 @@ interface AnswerRow {
   is_correct: boolean;
 }
 
+const PAGE_SIZE = 1000;
+
+async function fetchAllCandidateQuestions(options: {
+  metadataColumnsAvailable: boolean;
+  module?: string;
+  files: string[];
+  questionTypes: Array<'single' | 'multiple'>;
+}): Promise<{ data: QuestionRow[] | null; error: string | null }> {
+  const rows: QuestionRow[] = [];
+  let from = 0;
+
+  while (true) {
+    let query = db
+      .from('questions')
+      .select(
+        options.metadataColumnsAvailable
+          ? 'id, module, source_file, question_order, type, question_text'
+          : 'id, module, type, question_text'
+      )
+      .is('deleted_at', null)
+      .order('question_order')
+      .order('id')
+      .range(from, from + PAGE_SIZE - 1);
+
+    if (options.module) {
+      query = query.eq('module', options.module);
+    }
+
+    if (options.files.length > 0 && options.metadataColumnsAvailable) {
+      query = query.in('source_file', options.files);
+    }
+
+    if (options.files.length > 0 && !options.metadataColumnsAvailable) {
+      query = query.in('module', options.files);
+    }
+
+    if (options.questionTypes.length > 0) {
+      query = query.in('type', options.questionTypes);
+    }
+
+    const { data, error } = await query;
+    if (error || !data) {
+      return { data: null, error: error?.message ?? 'QUERY_FAILED' };
+    }
+
+    rows.push(...(data as unknown as QuestionRow[]));
+
+    if (data.length < PAGE_SIZE) break;
+    from += PAGE_SIZE;
+  }
+
+  return { data: rows, error: null };
+}
+
 async function fetchQuestionsWithAnswers(questionIds: number[]): Promise<{
   question: QuestionRow;
   answers: AnswerRow[];
@@ -39,7 +94,7 @@ async function fetchQuestionsWithAnswers(questionIds: number[]): Promise<{
 
   const primaryQuestions = await db
     .from('questions')
-    .select('id, module, topic, source_file, type, question_text')
+    .select('id, module, source_file, question_order, type, question_text')
     .in('id', questionIds)
     .is('deleted_at', null);
 
@@ -81,15 +136,15 @@ async function fetchQuestionsWithAnswers(questionIds: number[]): Promise<{
     .map((q) => ({
       question: {
         ...q,
-        topic: q.topic ?? q.module,
         source_file: q.source_file ?? q.module,
+        question_order: q.question_order ?? null,
       },
       answers: answersByQuestion.get(q.id) ?? [],
     }));
 }
 
 async function hasQuestionMetadataColumns(): Promise<boolean> {
-  const probe = await db.from('questions').select('source_file, topic').limit(1);
+  const probe = await db.from('questions').select('source_file, question_order').limit(1);
   return !probe.error;
 }
 
@@ -157,8 +212,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const {
     module,
     files = [],
-    topics = [],
     questionTypes = [],
+    orderMode,
+    useAllQuestions,
     includeRepeated,
     wrongOnly,
     limit,
@@ -218,106 +274,58 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     const { answeredIds, wrongIds } = await fetchUserAnswerHistory(session.userId);
 
-    const rpcResult = await db.rpc('get_random_questions', {
-      p_module: module ?? null,
-      p_limit: limit,
+    const { data: fallbackQuestions, error: fallbackError } = await fetchAllCandidateQuestions({
+      metadataColumnsAvailable,
+      module,
+      files,
+      questionTypes,
     });
-
-    if (rpcResult.error || !rpcResult.data) {
-      let fallbackQuery = db
-        .from('questions')
-        .select(
-          metadataColumnsAvailable
-            ? 'id, module, topic, source_file, type, question_text'
-            : 'id, module, type, question_text'
-        )
-        .is('deleted_at', null)
-        .order('id')
-        .limit(limit * 20);
-
-      if (module) {
-        fallbackQuery = fallbackQuery.eq('module', module);
-      }
-
-      if (files.length > 0 && metadataColumnsAvailable) {
-        fallbackQuery = fallbackQuery.in('source_file', files);
-      }
-
-      if (topics.length > 0 && metadataColumnsAvailable) {
-        fallbackQuery = fallbackQuery.in('topic', topics);
-      }
-
-      if (!metadataColumnsAvailable && (files.length > 0 || topics.length > 0)) {
-        const union = Array.from(new Set([...files, ...topics]));
-        if (union.length > 0) {
-          fallbackQuery = fallbackQuery.in('module', union);
-        }
-      }
-
-      if (questionTypes.length > 0) {
-        fallbackQuery = fallbackQuery.in('type', questionTypes);
-      }
-
-      const { data: fallbackQuestions, error: fallbackError } = await fallbackQuery;
-      if (fallbackError || !fallbackQuestions) {
-        return NextResponse.json(
-          { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
-          { status: 500 }
-        );
-      }
-
-      const fallbackRows = fallbackQuestions as unknown as QuestionRow[];
-
-      let filtered = fallbackRows.map((q) => ({
-        id: q.id,
-        module: q.module,
-        topic: q.topic ?? q.module,
-        source_file: q.source_file ?? q.module,
-        type: q.type,
-        question_text: q.question_text,
-      }));
-
-      if (normalizedFilter === 'wrong_only') {
-        filtered = filtered.filter((q) => wrongIds.has(q.id));
-      } else if (!includeRepeated) {
-        filtered = filtered.filter((q) => !answeredIds.has(q.id));
-      }
-
-      questions = [...filtered].sort(() => Math.random() - 0.5).slice(0, limit);
-    } else {
-      questions = rpcResult.data.map((q: QuestionRow) => ({
-        id: q.id,
-        module: q.module,
-        topic: q.topic ?? q.module,
-        source_file: q.source_file ?? q.module,
-        type: q.type,
-        question_text: q.question_text,
-      }));
-
-      if (files.length > 0) {
-        questions = questions.filter(
-          (q) => typeof q.source_file === 'string' && files.includes(q.source_file)
-        );
-      }
-
-      if (topics.length > 0) {
-        questions = questions.filter(
-          (q) => typeof q.topic === 'string' && topics.includes(q.topic)
-        );
-      }
-
-      if (questionTypes.length > 0) {
-        questions = questions.filter((q) => questionTypes.includes(q.type as 'single' | 'multiple'));
-      }
-
-      if (normalizedFilter === 'wrong_only') {
-        questions = questions.filter((q) => wrongIds.has(q.id));
-      } else if (!includeRepeated) {
-        questions = questions.filter((q) => !answeredIds.has(q.id));
-      }
-
-      questions = questions.slice(0, limit);
+    if (fallbackError || !fallbackQuestions) {
+      return NextResponse.json(
+        { error: 'Failed to fetch questions', code: 'QUESTIONS_FETCH_FAILED' },
+        { status: 500 }
+      );
     }
+
+    const fallbackRows = fallbackQuestions as unknown as QuestionRow[];
+
+    let filtered = fallbackRows.map((q) => ({
+      id: q.id,
+      module: q.module,
+      source_file: q.source_file ?? q.module,
+      question_order: q.question_order ?? null,
+      type: q.type,
+      question_text: q.question_text,
+    }));
+
+    if (normalizedFilter === 'wrong_only') {
+      filtered = filtered.filter((q) => wrongIds.has(q.id));
+    } else if (!includeRepeated) {
+      filtered = filtered.filter((q) => !answeredIds.has(q.id));
+    }
+
+    const selectedCount = useAllQuestions ? filtered.length : Math.min(limit, filtered.length);
+    const pool = [...filtered];
+    if (selectedCount < pool.length) {
+      pool.sort(() => Math.random() - 0.5);
+      pool.length = selectedCount;
+    }
+
+    if (orderMode === 'preserve') {
+      pool.sort((a, b) => {
+        const fileA = a.source_file ?? '';
+        const fileB = b.source_file ?? '';
+        if (fileA !== fileB) return fileA.localeCompare(fileB);
+        const orderA = typeof a.question_order === 'number' ? a.question_order : Number.MAX_SAFE_INTEGER;
+        const orderB = typeof b.question_order === 'number' ? b.question_order : Number.MAX_SAFE_INTEGER;
+        if (orderA !== orderB) return orderA - orderB;
+        return a.id - b.id;
+      });
+    } else {
+      pool.sort(() => Math.random() - 0.5);
+    }
+
+    questions = pool;
 
     const questionIds = questions.map((q) => q.id);
     questionData = await fetchQuestionsWithAnswers(questionIds);
@@ -351,8 +359,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     const snapshot = {
       id: question.id,
       module: question.module,
-      topic: question.topic ?? question.module,
       source_file: question.source_file ?? question.module,
+      question_order: question.question_order ?? null,
       type: question.type,
       question_text: question.question_text,
       answers: answers.map((a) => ({

@@ -13,7 +13,7 @@ const payload = JSON.parse(readFileSync('scripts/generated/parsed-questions.json
 
 const probe = await db
   .from('questions')
-  .select('source_file, source_collection, topic')
+  .select('source_file, source_collection, question_order')
   .limit(1);
 
 if (probe.error) {
@@ -30,7 +30,10 @@ for (const file of payload.files) {
       .update({
         source_file: q.source_file ?? file.file,
         source_collection: q.source_collection ?? 'data',
-        topic: q.topic ?? q.module,
+        question_order:
+          typeof q.question_order === 'number'
+            ? q.question_order
+            : 0,
       })
       .eq('module', q.module)
       .eq('question_text', q.question_text)

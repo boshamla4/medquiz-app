@@ -7,12 +7,15 @@ const INPUT_FILE = path.join(ROOT, 'scripts', 'generated', 'parsed-questions.jso
 const DB_FILE = path.join(ROOT, 'medquiz.db');
 const IMPORT_TAG = 'data-folder-json-v1';
 const VALID_QUESTION_TYPES = ['single', 'multiple'];
+const RESET = process.argv.includes('--reset');
 
 function ensureTables(db) {
   db.exec(`
     CREATE TABLE IF NOT EXISTS questions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       module TEXT NOT NULL,
+      source_file TEXT,
+      question_order INTEGER,
       type TEXT NOT NULL CHECK(type IN ('single','multiple')),
       question_text TEXT NOT NULL,
       deleted_at DATETIME
@@ -35,6 +38,17 @@ function ensureTables(db) {
       notes TEXT
     );
   `);
+
+  const questionColumns = db.prepare('PRAGMA table_info(questions)').all();
+  const hasSourceFile = questionColumns.some((column) => column.name === 'source_file');
+  const hasQuestionOrder = questionColumns.some((column) => column.name === 'question_order');
+
+  if (!hasSourceFile) {
+    db.exec('ALTER TABLE questions ADD COLUMN source_file TEXT');
+  }
+  if (!hasQuestionOrder) {
+    db.exec('ALTER TABLE questions ADD COLUMN question_order INTEGER');
+  }
 }
 
 function validatePayload(payload) {
@@ -74,7 +88,7 @@ function main() {
     .prepare('SELECT id, imported_at FROM import_runs WHERE tag = ?')
     .get(IMPORT_TAG);
 
-  if (existingRun) {
+  if (existingRun && !RESET) {
     console.log(
       `Import already executed once (tag: ${IMPORT_TAG}, at: ${existingRun.imported_at}). Skipping.`
     );
@@ -82,8 +96,17 @@ function main() {
     return;
   }
 
+  if (RESET) {
+    const reset = db.transaction(() => {
+      db.prepare('DELETE FROM answers').run();
+      db.prepare('DELETE FROM questions').run();
+      db.prepare('DELETE FROM import_runs WHERE tag = ?').run(IMPORT_TAG);
+    });
+    reset();
+  }
+
   const insertQuestion = db.prepare(
-    'INSERT INTO questions (module, type, question_text) VALUES (?, ?, ?)'
+    'INSERT INTO questions (module, source_file, question_order, type, question_text) VALUES (?, ?, ?, ?, ?)'
   );
   const insertAnswer = db.prepare(
     'INSERT INTO answers (question_id, answer_text, is_correct) VALUES (?, ?, ?)'
@@ -103,7 +126,13 @@ function main() {
         }
 
         const type = q.type;
-        const questionResult = insertQuestion.run(q.module, type, q.question_text);
+        const questionResult = insertQuestion.run(
+          q.module,
+          q.source_file ?? file.file,
+          typeof q.question_order === 'number' ? q.question_order : totalQuestions,
+          type,
+          q.question_text
+        );
         const questionId = Number(questionResult.lastInsertRowid);
 
         for (const answer of q.answers) {
@@ -128,7 +157,9 @@ function main() {
   console.log(`Imported ${totalQuestions} questions and ${totalAnswers} answers.`);
 }
 
-main().catch((error) => {
+try {
+  main();
+} catch (error) {
   console.error(error);
   process.exit(1);
-});
+}

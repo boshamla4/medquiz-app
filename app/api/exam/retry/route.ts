@@ -11,6 +11,8 @@ const RetrySchema = z.object({
 interface QuestionRow {
   id: number;
   module: string;
+  source_file?: string | null;
+  question_order?: number | null;
   type: string;
   question_text: string;
 }
@@ -95,7 +97,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const { data: questions, error: questionsError } = await db
     .from('questions')
-    .select('id, module, type, question_text')
+    .select('id, module, source_file, question_order, type, question_text')
     .in('id', questionIds)
     .is('deleted_at', null);
 
@@ -154,6 +156,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     const snapshot = {
       id: q.id,
       module: q.module,
+      source_file: q.source_file ?? q.module,
+      question_order: q.question_order ?? null,
       type: q.type,
       question_text: q.question_text,
       answers: qAnswers.map((a) => ({

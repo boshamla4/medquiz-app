@@ -5,8 +5,66 @@ import { requireSession } from '@/lib/sessionHelper';
 interface QuestionRow {
   id: number;
   module: string;
+  source_file?: string | null;
+  question_order?: number | null;
   type: string;
   question_text: string;
+}
+
+interface MetaRow {
+  module: string;
+  type: string;
+  source_file?: string | null;
+}
+
+const PAGE_SIZE = 1000;
+
+async function fetchAllMetadataRows(): Promise<{
+  data: MetaRow[] | null;
+  error: string | null;
+}> {
+  const rows: MetaRow[] = [];
+  let from = 0;
+
+  while (true) {
+    const primary = await db
+      .from('questions')
+      .select('module, type, source_file')
+      .is('deleted_at', null)
+      .order('module')
+      .range(from, from + PAGE_SIZE - 1);
+
+    const fallback =
+      primary.error || !primary.data
+        ? await db
+            .from('questions')
+            .select('module, type')
+            .is('deleted_at', null)
+            .order('module')
+            .range(from, from + PAGE_SIZE - 1)
+        : null;
+
+    const data = (primary.data ?? fallback?.data) as MetaRow[] | undefined;
+    const error = primary.error ?? fallback?.error;
+
+    if (error || !data) {
+      return { data: null, error: error?.message ?? 'QUERY_FAILED' };
+    }
+
+    rows.push(...data);
+    if (data.length < PAGE_SIZE) break;
+    from += PAGE_SIZE;
+  }
+
+  return { data: rows, error: null };
+}
+
+function getFileParts(sourceFile: string): { folder: string; fileName: string } {
+  const normalized = sourceFile.replace(/\\/g, '/');
+  const parts = normalized.split('/').filter(Boolean);
+  const fileName = parts[parts.length - 1] ?? sourceFile;
+  const folder = parts.length > 1 ? parts[parts.length - 2] : 'Ungrouped';
+  return { folder, fileName };
 }
 
 interface AnswerRow {
@@ -25,23 +83,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const metaOnly = searchParams.get('meta') === '1';
 
   if (modulesOnly || metaOnly) {
-    const primary = await db
-      .from('questions')
-      .select('module, type, source_file, topic')
-      .is('deleted_at', null)
-      .order('module');
-
-    const fallback =
-      primary.error || !primary.data
-        ? await db
-            .from('questions')
-            .select('module, type')
-            .is('deleted_at', null)
-            .order('module')
-        : null;
-
-    const data = primary.data ?? fallback?.data;
-    const error = primary.error ?? fallback?.error;
+    const { data, error } = await fetchAllMetadataRows();
 
     if (error || !data) {
       return NextResponse.json(
@@ -61,19 +103,6 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     if (modulesOnly) {
       return NextResponse.json({ modules });
     }
-
-    const topics = Array.from(
-      new Set(
-        data
-          .map((row) =>
-            typeof (row as { topic?: string }).topic === 'string' &&
-            (row as { topic?: string }).topic
-              ? (row as { topic?: string }).topic
-              : row.module
-          )
-          .filter((name): name is string => typeof name === 'string' && name.length > 0)
-      )
-    );
 
     const files = Array.from(
       new Set(
@@ -96,7 +125,52 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       )
     );
 
-    return NextResponse.json({ modules, topics, files, types });
+    const byFile = new Map<
+      string,
+      { source_file: string; folder: string; file_name: string; total_questions: number }
+    >();
+
+    for (const row of data) {
+      const key =
+        typeof row.source_file === 'string' && row.source_file.length > 0
+          ? row.source_file
+          : row.module;
+      const existing = byFile.get(key);
+      if (existing) {
+        existing.total_questions += 1;
+        continue;
+      }
+      const { folder, fileName } = getFileParts(key);
+      byFile.set(key, {
+        source_file: key,
+        folder,
+        file_name: fileName,
+        total_questions: 1,
+      });
+    }
+
+    const fileStats = [...byFile.values()].sort((a, b) => {
+      if (a.folder !== b.folder) return a.folder.localeCompare(b.folder);
+      return a.file_name.localeCompare(b.file_name);
+    });
+
+    const groupedMap = new Map<
+      string,
+      { folder: string; files: typeof fileStats; total_questions: number }
+    >();
+    for (const stat of fileStats) {
+      const group = groupedMap.get(stat.folder) ?? {
+        folder: stat.folder,
+        files: [],
+        total_questions: 0,
+      };
+      group.files.push(stat);
+      group.total_questions += stat.total_questions;
+      groupedMap.set(stat.folder, group);
+    }
+    const fileGroups = [...groupedMap.values()].sort((a, b) => a.folder.localeCompare(b.folder));
+
+    return NextResponse.json({ modules, files, types, fileStats, fileGroups });
   }
 
   const moduleFilter = searchParams.get('module');
@@ -115,14 +189,17 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       questions = rpcResult.data.map((q: QuestionRow) => ({
         id: q.id,
         module: q.module,
+        source_file: q.source_file ?? q.module,
+        question_order: q.question_order ?? null,
         type: q.type,
         question_text: q.question_text,
       }));
     } else {
       let fallbackQuery = db
         .from('questions')
-        .select('id, module, type, question_text')
+        .select('id, module, source_file, question_order, type, question_text')
         .is('deleted_at', null)
+        .order('question_order')
         .order('id')
         .limit(limit * 3);
 
@@ -146,8 +223,9 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   } else {
     let query = db
       .from('questions')
-      .select('id, module, type, question_text')
+      .select('id, module, source_file, question_order, type, question_text')
       .is('deleted_at', null)
+      .order('question_order')
       .order('id')
       .limit(limit);
 
@@ -195,6 +273,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const result = questions.map((q) => ({
     id: q.id,
     module: q.module,
+    source_file: q.source_file ?? q.module,
+    question_order: q.question_order ?? null,
     type: q.type,
     question_text: q.question_text,
     answers: (answersByQuestion.get(q.id) ?? []).map((a) => ({

@@ -9,7 +9,9 @@
     "lint": "eslint",
     "parse:data": "node scripts/parse-data-folder.mjs",
     "import:data": "node scripts/import-parsed-json.mjs",
+    "reimport:data": "node scripts/import-parsed-json.mjs --reset",
     "import:supabase": "node scripts/import-to-supabase.mjs",
+    "reimport:supabase": "node scripts/import-to-supabase.mjs --force-reset",
     "sync:metadata:supabase": "node scripts/sync-question-metadata.mjs",
     "seed:tokens:supabase": "node scripts/seed-tokens-supabase.mjs",
     "seed:data-once": "npm run parse:data && npm run import:data"
@@ -22,6 +24,7 @@
     "@upstash/redis": "^1.37.0",
     "better-sqlite3": "^12.8.0",
     "dotenv": "^17.4.1",
+    "jszip": "^3.10.1",
     "mammoth": "^1.12.0",
     "next": "16.2.2",
     "react": "19.2.4",

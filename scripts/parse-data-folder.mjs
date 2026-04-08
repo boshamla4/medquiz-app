@@ -1,20 +1,17 @@
 /**
- * parse-data-folder.mjs
+ * parse-data-folder.mjs  —  Comprehensive multi-format parser
  *
- * Parses all .docx files under data/ and writes scripts/generated/parsed-questions.json.
- *
- * SUPPORTED FORMAT (Graduation Exam Tests — [x] inline correct-answer style):
- *   Question line:  "1.   CS. Tick the ECG sign of sinus bradycardia:"
- *                   "4. CM Choose complications..."
- *   Answer lines:   "a) [x] Correct answer text"   ← [x] marks correct
- *                   "a) [ ] Wrong answer text"
- *                   "a.) [x] Correct answer text"  ← a.) variant also handled
+ * Supports all 25 .docx files across three format families:
+ *   A) [x] / [ ] inline bracket markers
+ *   B) Explicit "Correct answer: X" lines after each question
+ *   C) Answer-key section at the end of the document
  *
  * Run: node scripts/parse-data-folder.mjs
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
+import JSZip from 'jszip';
 import mammoth from 'mammoth';
 
 const ROOT = process.cwd();
@@ -23,168 +20,1070 @@ const OUTPUT_DIR = path.join(ROOT, 'scripts', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'parsed-questions.json');
 
 // ---------------------------------------------------------------------------
-// Patterns
+// HTML helpers
 // ---------------------------------------------------------------------------
 
-// Matches question lines in these variants (case-insensitive):
-//   "1.CS text"   "1. CS text"   "1.   CS. text"   "1. CM. text"
-//   "4. CM Choose ..."   "282.CS Capitol: ..."
-// Group 1 = question number, Group 2 = CM|CS (optional), Group 3 = question text
-const QUESTION_PATTERN =
-  /^(\d+)\.\s*(?:(CM|CS)\.?\s+)?(\S.+)$/i;
+function stripTags(html) {
+  return html
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#8209;/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
-// Matches answer lines in these variants:
-//   "a) [x] text"   "a) [ ] text"
-//   "a.) [x] text"  "a.) [ ] text"
-//   "A) [x] text"   "A. [x] text"
-// Group 1 = letter (a-e), Group 2 = bracket content (x or space), Group 3 = answer text
-const ANSWER_BRACKET_PATTERN =
-  /^([A-Ea-e])[.)]{1,2}\s*\[([^\]]*)\]\s*(.+)$/;
+function decodeXmlText(text) {
+  return text
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
+function extractParagraphsFromDocumentXml(xml) {
+  const paragraphs = [];
+  const paragraphRe = /<w:p\b[\s\S]*?<\/w:p>/g;
+  let paragraphMatch;
+
+  while ((paragraphMatch = paragraphRe.exec(xml)) !== null) {
+    const paragraphXml = paragraphMatch[0];
+    const runRe = /<w:r\b[\s\S]*?<\/w:r>/g;
+    let runMatch;
+    let text = '';
+    let isUnderlined = false;
+
+    while ((runMatch = runRe.exec(paragraphXml)) !== null) {
+      const runXml = runMatch[0];
+      if (/<w:u\b[^>]*\/>/.test(runXml) || /<w:u\b[^>]*w:val="single"[^>]*>/.test(runXml)) {
+        isUnderlined = true;
+      }
+
+      const runText = [...runXml.matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>/g)]
+        .map((textMatch) => decodeXmlText(textMatch[1]))
+        .join('');
+      text += runText;
+    }
+
+    const normalized = text.replace(/\s+/g, ' ').trim();
+    if (normalized) {
+      paragraphs.push({ text: normalized, isUnderlined });
+    }
+  }
+
+  return paragraphs;
+}
+
+async function extractDocumentXml(filePath) {
+  const buffer = await fs.promises.readFile(filePath);
+  const zip = await JSZip.loadAsync(buffer);
+  const documentFile = zip.file('word/document.xml');
+  if (!documentFile) return null;
+  return documentFile.async('string');
+}
 
 function normalizeText(text) {
-  return text.replace(/\s+/g, ' ').trim();
+  // Normalize Cyrillic lookalikes to Latin
+  return text
+    .replace(/[АA]/g, 'A') // Cyrillic А → A (only if leading)
+    .replace(/[ВB]/g, 'B')
+    .replace(/[СC]/g, 'C')
+    .replace(/[ДD]/g, 'D')
+    .replace(/[ЕE]/g, 'E')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-function isPotentialTopicHeading(line) {
-  const text = normalizeText(line);
-  if (text.length < 3 || text.length > 90) return false;
-  if (/^\d+\./.test(text)) return false;
-  if (ANSWER_BRACKET_PATTERN.test(text)) return false;
-  if (/^[a-e][.)]{1,2}\s/i.test(text)) return false;
-  if (/[:;]$/.test(text)) return true;
-  if (/^[A-Z][A-Za-z0-9\s,'"()\-/]+$/.test(text) && text.split(' ').length <= 8) return true;
-  return false;
-}
-
-/**
- * Returns true when the bracket content indicates a correct answer.
- * Handles ASCII x, Cyrillic х (U+0445), × (U+00D7), checkmark variants.
- */
 function isBracketCorrect(bracketContent) {
   const c = bracketContent.trim();
-  if (c.length === 0) return false;
-  // Whitespace-only (i.e. "[ ]") → wrong
-  if (/^\s+$/.test(c)) return false;
+  if (!c || /^\s+$/.test(c)) return false;
   return true;
 }
 
 // ---------------------------------------------------------------------------
-// Core parser — handles [x] inline format
+// Token extraction from HTML
 // ---------------------------------------------------------------------------
 
-function parseDocText(rawText, moduleName, fileRelativePath) {
-  const lines = rawText
-    .split('\n')
-    .map((line) => line.trim())
-    // Drop pure separator lines (dashes, underscores, equals, dots — any length ≥ 3)
-    .filter((line) => Boolean(line) && !/^[-–—_=.]{3,}$/.test(line));
+/**
+ * Returns a flat list of text segments from HTML.
+ * Each segment: { text: string, bold: string[], isList: boolean, rawHtml: string }
+ *
+ * Special handling for Nephrology-style nested <ol>:
+ *   <ol><li>QUESTION<ol><li>A</li><li>B</li></ol></li></ol>
+ * → emits question segment then A/B/... as list segments with letter prefix added.
+ */
+function extractSegments(html) {
+  const segments = [];
 
+  // Pre-process: flatten nested OL (Nephrology format)
+  // Pattern: <li>QUESTION<ol><li>A</li>...</ol></li>
+  // The questionPart must NOT cross any </li> or </ol> boundary (use negative lookahead).
+  const flatHtml = html.replace(
+    /<li>((?:(?!<\/li>|<\/ol>|<li)[\s\S])*?)<ol>([\s\S]*?)<\/ol>\s*<\/li>/g,
+    (_, questionPart, innerOl) => {
+      const qText = stripTags(questionPart).trim();
+      const answers = [...innerOl.matchAll(/<li>([\s\S]*?)<\/li>/g)];
+      const letters = ['A', 'B', 'C', 'D', 'E'];
+      const answerPs = answers
+        .map((m, i) => `<p>${letters[i] || String.fromCharCode(65 + i)}. ${stripTags(m[1]).trim()}</p>`)
+        .join('');
+      return `<p>${qText}</p>${answerPs}`;
+    }
+  );
+
+  // Process block elements: headings, paragraphs, list items
+  const blockRe = /<(h[1-6]|p|li)(\s[^>]*)?>[\s\S]*?<\/\1>/gi;
+  let match;
+
+  while ((match = blockRe.exec(flatHtml)) !== null) {
+    const rawHtml = match[0];
+    const tag = match[1].toLowerCase();
+    const isList = tag === 'li';
+
+    // Extract bold text within this block
+    const boldTexts = [];
+    const boldRe = /<strong>([\s\S]*?)<\/strong>/gi;
+    let bm;
+    while ((bm = boldRe.exec(rawHtml)) !== null) {
+      const b = stripTags(bm[1]).trim();
+      if (b) boldTexts.push(b);
+    }
+
+    // Split on <br> — each line is a separate segment
+    const innerHtml = rawHtml.replace(/^<[^>]+>/, '').replace(/<\/[^>]+>$/, '');
+    const parts = innerHtml.split(/<br\s*\/?>/i);
+
+    for (const part of parts) {
+      const text = stripTags(part).trim();
+      if (!text) continue;
+      segments.push({ text, bold: boldTexts, isList, rawHtml: part });
+    }
+  }
+
+  return segments;
+}
+
+// ---------------------------------------------------------------------------
+// Answer letter normalisation
+// ---------------------------------------------------------------------------
+
+const CYRILLIC_TO_LATIN = {
+  'А': 'A', 'а': 'a',
+  'В': 'B', 'в': 'b',
+  'С': 'C', 'с': 'c',
+  'Д': 'D', 'д': 'd',
+  'Е': 'E', 'е': 'e',
+};
+
+function normLetter(ch) {
+  return (CYRILLIC_TO_LATIN[ch] || ch).toUpperCase();
+}
+
+// ---------------------------------------------------------------------------
+// STRATEGY A — Bracket format  [x] / [ ]
+// ---------------------------------------------------------------------------
+
+const QUESTION_P = /^(\d+)[.)]\s*(?:(CM|CS)[.):]?\s+)?(\S[\s\S]+)$/i;
+// Accepts: "1. CS text", "1) CS. text", "1. text"
+
+const ANSWER_BRACKET_P =
+  /^([A-Ea-e])[.)]{1,2}\s*\[([^\]]*)\]\s*(.+)$/;
+
+function parseBracket(html) {
+  const segments = extractSegments(html);
   const questions = [];
-  let currentQuestion = null;
-  let currentAnswer = null;
-  let currentTopic = moduleName;
+  let current = null;
+  let lastAnswer = null;
+  let autoNum = 0;
 
-  const pathParts = fileRelativePath.split(path.sep);
-  const sourceCollection = pathParts.length > 1 ? pathParts[1] : 'data';
-  const warnings = [];
-
-  const flushQuestion = () => {
-    if (!currentQuestion) return;
-
-    if (currentQuestion.answers.length === 0) {
-      warnings.push(
-        `Q${currentQuestion.question_number}: no answers detected — skipped`
-      );
-      currentQuestion = null;
-      currentAnswer = null;
+  function flush() {
+    if (!current) return;
+    if (current.answers.length === 0 || !current.answers.some((a) => a.is_correct)) {
+      current = null;
+      lastAnswer = null;
       return;
     }
+    const correct = current.answers.filter((a) => a.is_correct).length;
+    current.type = correct > 1 ? 'multiple' : 'single';
+    questions.push(current);
+    current = null;
+    lastAnswer = null;
+  }
 
-    const correctCount = currentQuestion.answers.filter((a) => a.is_correct).length;
-    if (correctCount === 0) {
-      warnings.push(
-        `Q${currentQuestion.question_number}: no correct answer detected — skipped`
-      );
-      currentQuestion = null;
-      currentAnswer = null;
-      return;
+  let pendingNumber = null;
+
+  for (const seg of segments) {
+    const { text } = seg;
+
+    // Skip separator lines
+    if (/^[-–—_=.]{3,}$/.test(text)) continue;
+
+    // Pure question number line (e.g. "1." or "2.")
+    if (/^\d+[.)]\s*$/.test(text)) {
+      pendingNumber = parseInt(text);
+      continue;
     }
 
-    currentQuestion.type = correctCount > 1 ? 'multiple' : 'single';
-    questions.push(currentQuestion);
-    currentQuestion = null;
-    currentAnswer = null;
-  };
+    // Answer with bracket
+    const aMatch = text.match(ANSWER_BRACKET_P);
+    if (aMatch && current) {
+      const isCorrect = isBracketCorrect(aMatch[2]);
+      const ans = {
+        letter: aMatch[1].toUpperCase(),
+        text: aMatch[3].replace(/\s+/g, ' ').trim(),
+        is_correct: isCorrect,
+      };
+      current.answers.push(ans);
+      lastAnswer = ans;
+      continue;
+    }
 
-  for (const line of lines) {
-    const qMatch = line.match(QUESTION_PATTERN);
-    const aMatch = line.match(ANSWER_BRACKET_PATTERN);
-
+    // Question line (numbered)
+    const qMatch = text.match(QUESTION_P);
     if (qMatch && !aMatch) {
-      flushQuestion();
-
-      const questionNumber = Number(qMatch[1]);
-      const questionText = normalizeText(qMatch[3]);
-
-      // Skip lines that look like question numbers but are too short to be real questions
+      const questionText = qMatch[3].trim();
       if (questionText.length < 5) continue;
 
-      currentQuestion = {
-        module: moduleName,
-        topic: currentTopic,
-        source_file: fileRelativePath,
-        source_collection: sourceCollection,
-        question_number: questionNumber,
-        type: 'single',
+      flush();
+      autoNum = parseInt(qMatch[1]);
+      pendingNumber = null;
+      current = {
+        question_number: autoNum,
+        type: qMatch[2]?.toUpperCase() || 'unknown',
         question_text: questionText,
         answers: [],
       };
-      currentAnswer = null;
+      lastAnswer = null;
       continue;
     }
 
-    if (aMatch && currentQuestion) {
-      const letter = aMatch[1].toUpperCase();
-      const isCorrect = isBracketCorrect(aMatch[2]);
-      const answerText = normalizeText(aMatch[3]);
-
-      const answer = { letter, text: answerText, is_correct: isCorrect };
-      currentQuestion.answers.push(answer);
-      currentAnswer = answer;
+    // Unnumbered CS/CM question (e.g., Pneumology: "CS Select the range...")
+    const csMatch = text.match(/^(CS|CM)[.):]?\s+(.{5,})$/i);
+    if (csMatch) {
+      flush();
+      autoNum++;
+      current = {
+        question_number: autoNum,
+        type: csMatch[1].toUpperCase(),
+        question_text: csMatch[2].trim(),
+        answers: [],
+      };
+      lastAnswer = null;
       continue;
     }
 
-    if (!currentQuestion && isPotentialTopicHeading(line)) {
-      currentTopic = normalizeText(line.replace(/[:;]+$/, ''));
-      continue;
+    // Pending number + CS/CM question (Surgery_Ped_Jalba style)
+    if (pendingNumber !== null) {
+      const pendMatch = text.match(/^(?:(CS|CM)[.):]?\s+)?(.{5,})$/i);
+      if (pendMatch) {
+        flush();
+        current = {
+          question_number: pendingNumber,
+          type: pendMatch[1]?.toUpperCase() || 'unknown',
+          question_text: pendMatch[2].trim(),
+          answers: [],
+        };
+        pendingNumber = null;
+        lastAnswer = null;
+        continue;
+      }
     }
 
-    // Continuation line: append to answer text or question text
-    if (currentQuestion) {
-      if (currentAnswer) {
-        currentAnswer.text = normalizeText(`${currentAnswer.text} ${line}`);
+    // Continuation text
+    if (current) {
+      if (lastAnswer) {
+        lastAnswer.text = (lastAnswer.text + ' ' + text).replace(/\s+/g, ' ').trim();
       } else {
-        if (isPotentialTopicHeading(line)) {
-          currentTopic = normalizeText(line.replace(/[:;]+$/, ''));
-          continue;
-        }
-        // Only append if it doesn't look like the start of a new section
-        if (!/^\d+\./.test(line)) {
-          currentQuestion.question_text = normalizeText(
-            `${currentQuestion.question_text} ${line}`
-          );
-        }
+        current.question_text = (current.question_text + ' ' + text).replace(/\s+/g, ' ').trim();
       }
     }
   }
 
-  flushQuestion();
+  flush();
+  return questions;
+}
 
-  return { questions, warnings };
+// ---------------------------------------------------------------------------
+// STRATEGY B — Explicit "Correct answer: X" lines
+// ---------------------------------------------------------------------------
+
+const CORRECT_ANSWER_P = /^Correct\s+answers?\s*[:\-]?\s*(.+)$/i;
+const ANSWER_LETTER_P = /^([A-Ea-e])[.):\-]\s*(.+)$/;
+
+function parseExplicit(html) {
+  const segments = extractSegments(html);
+  const questions = [];
+  let current = null;
+  let autoNum = 0;
+
+  function flush() {
+    if (!current) return;
+    if (current.answers.length === 0 || !current.answers.some((a) => a.is_correct)) {
+      current = null;
+      return;
+    }
+    const correct = current.answers.filter((a) => a.is_correct).length;
+    current.type = correct > 1 ? 'multiple' : 'single';
+    questions.push(current);
+    current = null;
+  }
+
+  for (const seg of segments) {
+    const { text } = seg;
+    if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
+
+    // Correct answer line
+    const caMatch = text.match(CORRECT_ANSWER_P);
+    if (caMatch && current) {
+      const raw = caMatch[1].trim();
+      // Extract letters (A-E, a-e, possibly comma/space separated)
+      const letters = new Set(
+        [...raw.matchAll(/[A-Ea-e]/g)].map((m) => normLetter(m[0]))
+      );
+      for (const ans of current.answers) {
+        if (letters.has(ans.letter.toUpperCase())) {
+          ans.is_correct = true;
+        }
+      }
+      flush();
+      continue;
+    }
+
+    // Question line (numbered)
+    const qMatch = text.match(QUESTION_P);
+    if (qMatch) {
+      const questionText = qMatch[3].trim();
+      if (questionText.length < 5) continue;
+      flush();
+      autoNum = parseInt(qMatch[1]);
+      current = {
+        question_number: autoNum,
+        type: qMatch[2]?.toUpperCase() || 'unknown',
+        question_text: questionText,
+        answers: [],
+      };
+      continue;
+    }
+
+    // Unnumbered CS/CM question
+    const csMatch = text.match(/^(CS|CM)[.):]?\s+(.{5,})$/i);
+    if (csMatch && !current?.answers.length) {
+      flush();
+      autoNum++;
+      current = {
+        question_number: autoNum,
+        type: csMatch[1].toUpperCase(),
+        question_text: csMatch[2].trim(),
+        answers: [],
+      };
+      continue;
+    }
+
+    // CS/CM type-only line (Nephrology uses <h2>CS</h2> before the ol)
+    if (/^(CS|CM)$/i.test(text)) continue;
+
+    // Answer line (letter prefix)
+    if (current) {
+      const aMatch = text.match(ANSWER_LETTER_P);
+      if (aMatch) {
+        current.answers.push({
+          letter: aMatch[1].toUpperCase(),
+          text: aMatch[2].trim(),
+          is_correct: false,
+        });
+        continue;
+      }
+
+      // The question itself might be the first <li> in Nephrology nested ol
+      // If we have a current question but no answers yet, append to question text
+      if (current.answers.length === 0 && text.length > 3) {
+        current.question_text = (current.question_text + ' ' + text).replace(/\s+/g, ' ').trim();
+      }
+    }
+  }
+
+  flush();
+  return questions;
+}
+
+// ---------------------------------------------------------------------------
+// STRATEGY C — Answer key at end of document
+// ---------------------------------------------------------------------------
+
+/**
+ * Locate the answer key section within text (last 35% of document).
+ * Returns the index within `text` where the key section starts, or -1.
+ */
+function findAnswerKeyStart(text) {
+  const startSearch = Math.floor(text.length * 0.5);
+  const tail = text.slice(startSearch);
+
+  const markers = [
+    /answers?\s*[:;]?\s*(simple|single|cs|sc)\s*choice/i,
+    /(simple|single|cs|sc)\s*choice\s*(answers?|tests?)/i,
+    /correct\s+answers?\s*(simple|single|cs|sc)/i,
+    /correct\s+answer\s*[:\n]/i,
+    /answers?:\s*idiopath/i,
+    /[a-z]\s+SC[A-E]/,
+    /\bSC\b.*[A-E]{3}/,
+  ];
+
+  for (const pat of markers) {
+    const m = tail.search(pat);
+    if (m >= 0) return startSearch + m;
+  }
+
+  // Fallback: look for a run of 5+ capital letters A-E (the answer string)
+  const fallbackPat = /(?<![A-Za-z])([A-EABCDE]{5,})/;
+  const fm = tail.search(fallbackPat);
+  if (fm >= 0) return startSearch + fm;
+
+  return -1;
+}
+
+/**
+ * Parse the answer key text into:
+ *   csAnswers: string[] of single letters (A-E) for single-choice questions
+ *   cmGroups: string[][] of letter arrays for multiple-choice questions
+ */
+function parseAnswerKeyText(keyText) {
+  // Normalize Cyrillic
+  let t = keyText;
+  for (const [cyr, lat] of Object.entries(CYRILLIC_TO_LATIN)) {
+    t = t.split(cyr).join(lat);
+  }
+
+  const upper = t.toUpperCase();
+  const multipleIdx = upper.search(/\bMULTIPLE\b|\bMC\b|\bCM\b/i);
+
+  const csPart = multipleIdx > 0 ? upper.slice(0, multipleIdx) : upper;
+  const cmPart = multipleIdx > 0 ? upper.slice(multipleIdx) : '';
+
+  const cleanCs = csPart.replace(/[^A-E0-9,\.\s]/g, ' ').toUpperCase();
+  const cleanCm = cmPart.replace(/[^A-E0-9,\.\s]/g, ' ').toUpperCase();
+
+  // --- Parse CS answers ---
+  const csAnswers = [];
+
+  // Check if numbered format: "1. D 2. C 3. A" or "1.D2.C3.A"
+  const numberedMatches = [...cleanCs.matchAll(/\d+\s*\.\s*([A-E])/g)];
+  if (numberedMatches.length >= 3) {
+    for (const m of numberedMatches) {
+      csAnswers.push(m[1]);
+    }
+  } else {
+    // Sequential format: extract individual capital letters A-E
+    // Remove number sequences and dots first
+    const seq = cleanCs.replace(/\d+\s*\.\s*/g, ' ');
+    for (const m of seq.matchAll(/\b([A-E])\b/g)) {
+      csAnswers.push(m[1]);
+    }
+    // Also handle runs like "CDCCAABEB"
+    if (csAnswers.length < 3) {
+      csAnswers.length = 0;
+      for (const m of cleanCs.matchAll(/[A-E]/g)) {
+        csAnswers.push(m[0]);
+      }
+    }
+  }
+
+  // --- Parse CM answers ---
+  const cmGroups = [];
+
+  if (cmPart) {
+    // Check if numbered: "1. A, B, C 2. D, E"
+    const numberedCm = [...cleanCm.matchAll(/\d+\s*\.\s*([A-E,\s]+?)(?=\d+\.|$)/g)];
+    if (numberedCm.length >= 2) {
+      for (const m of numberedCm) {
+        const letters = [...m[1].matchAll(/[A-E]/g)].map((x) => x[0]);
+        if (letters.length > 0) cmGroups.push(letters);
+      }
+    } else {
+      // Split groups by boundary between groups (where a letter follows
+      // another letter without comma separator)
+      // Remove "MULTIPLE CHOICE" text first
+      const cleaned = cleanCm.replace(/MULTIPLE\s+CHOICE[^A-E]*/i, '').replace(/\bMC\b/i, '').replace(/\bCM\b/i, '');
+      cmGroups.push(...splitCmGroups(cleaned));
+    }
+  }
+
+  return { csAnswers, cmGroups };
+}
+
+/**
+ * Split a run of CM answer groups.
+ * Input: "A, B, CA, B, D, EB, C" → [["A","B","C"], ["A","B","D","E"], ["B","C"]]
+ */
+function splitCmGroups(text) {
+  const groups = [];
+  let current = [];
+  let lastWasLetter = false;
+
+  const chars = text.toUpperCase();
+  for (let i = 0; i < chars.length; i++) {
+    const c = chars[i];
+    if (/[A-E]/.test(c)) {
+      if (lastWasLetter) {
+        // Two letters in a row → new group starts
+        if (current.length > 0) groups.push(current);
+        current = [];
+      }
+      current.push(c);
+      lastWasLetter = true;
+    } else if (c === ',') {
+      lastWasLetter = false;
+    } else {
+      // space or other — reset
+      lastWasLetter = false;
+    }
+  }
+  if (current.length > 0) groups.push(current);
+  return groups.filter((g) => g.length > 0);
+}
+
+/**
+ * Parse all questions and their answer options from the HTML body.
+ * Returns: Array<{ question_number, type, question_text, answers: [{letter, text}] }>
+ */
+function extractQuestionsFromHtml(html) {
+  const questions = [];
+
+  // Obtain flat list of items (paragraphs and list items)
+  const allSegments = extractSegments(html);
+
+  let current = null;
+  let autoNum = 0;
+
+  function flush() {
+    if (!current || current.answers.length === 0) { current = null; return; }
+    questions.push(current);
+    current = null;
+  }
+
+  // Heuristic: is this text a question?
+  function isQuestion(text) {
+    if (text.length < 10) return false;
+    if (ANSWER_LETTER_P.test(text)) return false;
+    if (/^[A-E][.)]\s/.test(text)) return false;
+    // Ends with ? or : → likely question
+    if (/[?:]$/.test(text.trim())) return true;
+    // Contains question words
+    if (/\b(which|what|choose|select|indicate|identify|specify|name|note|mark|determine|define|enumerate)\b/i.test(text)) return true;
+    // Long enough without being an answer
+    if (text.length > 60) return true;
+    return false;
+  }
+
+  // Detect if question has a number prefix
+  function extractNumberedQuestion(text) {
+    const m = text.match(/^(\d+)[.):\-]?\s*(?:(CM|CS)[.):]?\s+)?(.{5,})$/i);
+    if (!m) return null;
+    return { num: parseInt(m[1]), type: m[2]?.toUpperCase() || '', text: m[3].trim() };
+  }
+
+  let i = 0;
+  while (i < allSegments.length) {
+    const seg = allSegments[i];
+    const { text } = seg;
+
+    if (!text || /^[-–—_=.]{3,}$/.test(text)) { i++; continue; }
+    // Skip CS/CM markers alone
+    if (/^(CS|CM)$/i.test(text)) { i++; continue; }
+    // Skip section headers
+    if (/^(single|multiple|simple)\s*(choice|test)/i.test(text)) { i++; continue; }
+
+    // Check for numbered question
+    const nq = extractNumberedQuestion(text);
+    if (nq) {
+      flush();
+      autoNum = nq.num;
+      current = { question_number: nq.num, type: nq.type, question_text: nq.text, answers: [] };
+      i++;
+      continue;
+    }
+
+    // Check for answer line (A. text / a) text)
+    const aMatch = text.match(ANSWER_LETTER_P);
+    if (aMatch && current) {
+      current.answers.push({ letter: aMatch[1].toUpperCase(), text: aMatch[2].trim(), is_correct: false });
+      i++;
+      continue;
+    }
+
+    // For list items: first item in a group may be a question
+    if (seg.isList && !aMatch) {
+      if (isQuestion(text) && (!current || current.answers.length > 0)) {
+        flush();
+        autoNum++;
+        current = { question_number: autoNum, type: 'unknown', question_text: text, answers: [] };
+        i++;
+        continue;
+      }
+
+      // Otherwise it's an answer option (unlabeled, use auto-letter)
+      if (current) {
+        const letter = String.fromCharCode(65 + current.answers.length); // A, B, C...
+        if (letter <= 'E') {
+          current.answers.push({ letter, text, is_correct: false });
+        }
+        i++;
+        continue;
+      }
+    }
+
+    i++;
+  }
+
+  flush();
+  return questions;
+}
+
+function parseAnswerKey(html) {
+  // --- Try OL-block answer key first (Chronic lung, Malabsorbtion, etc.) ---
+  const olResult = tryOlAnswerKey(html);
+  if (olResult !== null) return olResult;
+
+  const text = stripTags(html).replace(/\s+/g, ' ');
+
+  // Find answer key section
+  const keyStart = findAnswerKeyStart(text);
+  if (keyStart < 0) {
+    // No key found — try bold detection as last resort
+    return parseBoldCorrect(html);
+  }
+
+  const keyText = text.slice(keyStart);
+  const { csAnswers, cmGroups } = parseAnswerKeyText(keyText);
+
+  // Extract questions from full HTML
+  const questions = extractQuestionsFromHtml(html);
+  return applyAnswerKeyToQuestions(questions, csAnswers, cmGroups);
+}
+
+/**
+ * Detect OL-format answer key where last 1-3 <ol> blocks contain only
+ * single letters or comma-separated letter groups (not question text).
+ * Returns parsed questions or null if not applicable.
+ */
+function tryOlAnswerKey(html) {
+  const olMatches = [...html.matchAll(/<ol>([\s\S]*?)<\/ol>/g)];
+  if (olMatches.length < 2) return null;
+
+  // Check the last 3 OL blocks for answer-key patterns
+  let csAnswers = [];
+  let cmGroups = [];
+  const keyOlIndexes = new Set();
+
+  for (let i = olMatches.length - 1; i >= Math.max(0, olMatches.length - 3); i--) {
+    const items = [...olMatches[i][1].matchAll(/<li>([\s\S]*?)<\/li>/g)]
+      .map((m) => stripTags(m[1]).replace(/\s+/g, ' ').trim());
+
+    if (items.length === 0) continue;
+
+    // Single-letter CS key: each item is exactly one letter A-E
+    const isCSKey = items.length >= 3 && items.every((it) => /^[A-Ea-eА-ЕА-Д]{1,2}$/.test(it.replace(/[.\s]/g, '')));
+    // CM key: each item is comma-separated letters like "A, B, C, D"
+    const isCMKey = items.length >= 3 && items.every((it) => /^[A-Ea-eА-Е][,\s A-Ea-eА-Е]*$/.test(it) && it.length > 1);
+
+    if (isCSKey && csAnswers.length === 0) {
+      csAnswers = items.map((it) => normLetter(it.replace(/[.\s]/g, '')));
+      keyOlIndexes.add(i);
+    } else if (isCMKey && cmGroups.length === 0) {
+      cmGroups = items.map((it) =>
+        [...it.matchAll(/[A-Ea-e]/g)].map((m) => normLetter(m[0]))
+      );
+      keyOlIndexes.add(i);
+    }
+  }
+
+  if (keyOlIndexes.size === 0) return null;
+
+  // Preserve full context for question parsing and only remove the OL key blocks.
+  const keyRanges = [...keyOlIndexes]
+    .map((idx) => {
+      const start = olMatches[idx].index;
+      if (typeof start !== 'number') return null;
+      return { start, end: start + olMatches[idx][0].length };
+    })
+    .filter((range) => range !== null)
+    .sort((a, b) => a.start - b.start);
+
+  let htmlWithoutKey = '';
+  let cursor = 0;
+  for (const range of keyRanges) {
+    htmlWithoutKey += html.slice(cursor, range.start);
+    cursor = range.end;
+  }
+  htmlWithoutKey += html.slice(cursor);
+
+  const questions = extractQuestionsFromHtml(htmlWithoutKey);
+  return applyAnswerKeyToQuestions(questions, csAnswers, cmGroups);
+}
+
+async function parseUnderlinedDocx(filePath) {
+  const xml = await extractDocumentXml(filePath);
+  if (!xml) return [];
+
+  const paragraphs = extractParagraphsFromDocumentXml(xml);
+  const questions = [];
+  let current = null;
+  let autoNum = 0;
+
+  function flush() {
+    if (!current || current.answers.length === 0) {
+      current = null;
+      return;
+    }
+
+    const correct = current.answers.filter((answer) => answer.is_correct).length;
+    current.type = correct > 1 ? 'multiple' : 'single';
+    questions.push(current);
+    current = null;
+  }
+
+  for (const paragraph of paragraphs) {
+    const text = paragraph.text;
+
+    if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
+
+    const questionMatch = text.match(/^(\d+)\.?\s*(?:(CM|CS)[.):]?\s+)?(.{5,})$/i);
+    if (questionMatch) {
+      flush();
+      autoNum = parseInt(questionMatch[1], 10);
+      current = {
+        question_number: autoNum,
+        type: questionMatch[2]?.toUpperCase() || 'unknown',
+        question_text: questionMatch[3].trim(),
+        answers: [],
+      };
+      continue;
+    }
+
+    const answerMatch = text.match(/^([A-Ea-e])[.)]\s*(.{2,})$/);
+    if (answerMatch && current) {
+      current.answers.push({
+        letter: answerMatch[1].toUpperCase(),
+        text: answerMatch[2].trim(),
+        is_correct: paragraph.isUnderlined,
+      });
+      continue;
+    }
+
+    if (current) {
+      if (current.answers.length === 0) {
+        current.question_text = (current.question_text + ' ' + text).replace(/\s+/g, ' ').trim();
+      } else {
+        const lastAnswer = current.answers[current.answers.length - 1];
+        lastAnswer.text = (lastAnswer.text + ' ' + text).replace(/\s+/g, ' ').trim();
+      }
+    }
+  }
+
+  flush();
+  return questions;
+}
+
+function applyAnswerKeyToQuestions(questions, csAnswers, cmGroups) {
+  let csQuestions = questions.filter((q) => q.type !== 'CM' && q.type !== 'multiple');
+  let cmQuestions = questions.filter((q) => q.type === 'CM' || q.type === 'multiple');
+
+  // Some files provide separate CS/CM key sections but question stems don't label CM/CS.
+  // If that happens, infer the split by key lengths and question order.
+  if (
+    cmGroups.length > 0
+    && cmQuestions.length === 0
+    && questions.length >= csAnswers.length + cmGroups.length
+  ) {
+    csQuestions = questions.slice(0, csAnswers.length);
+    cmQuestions = questions.slice(csAnswers.length, csAnswers.length + cmGroups.length);
+  }
+
+  for (let i = 0; i < csQuestions.length && i < csAnswers.length; i++) {
+    const q = csQuestions[i];
+    const letter = csAnswers[i].toUpperCase();
+    for (const ans of q.answers) {
+      if (ans.letter === letter) { ans.is_correct = true; break; }
+    }
+    const idx = letter.charCodeAt(0) - 65;
+    if (!q.answers.some((a) => a.is_correct) && q.answers[idx]) {
+      q.answers[idx].is_correct = true;
+    }
+  }
+
+  for (let i = 0; i < cmQuestions.length && i < cmGroups.length; i++) {
+    const q = cmQuestions[i];
+    const letters = new Set(cmGroups[i].map((l) => l.toUpperCase()));
+    for (const ans of q.answers) {
+      if (letters.has(ans.letter)) ans.is_correct = true;
+    }
+    if (!q.answers.some((a) => a.is_correct)) {
+      for (const l of letters) {
+        const idx = l.charCodeAt(0) - 65;
+        if (q.answers[idx]) q.answers[idx].is_correct = true;
+      }
+    }
+  }
+
+  return questions.filter((q) => q.answers.length > 0 && q.answers.some((a) => a.is_correct));
+}
+
+// ---------------------------------------------------------------------------
+// STRATEGY D — Bold = correct answer (last resort)
+// ---------------------------------------------------------------------------
+
+function parseBoldCorrect(html) {
+  // For files where the correct answer <p> has more bold text than others
+  // (very imprecise — currently unused but kept as fallback)
+  const segments = extractSegments(html);
+  const questions = [];
+  let current = null;
+  let autoNum = 0;
+
+  function flush() {
+    if (!current || current.answers.length === 0) { current = null; return; }
+    if (!current.answers.some((a) => a.is_correct)) { current = null; return; }
+    const correct = current.answers.filter((a) => a.is_correct).length;
+    current.type = correct > 1 ? 'multiple' : 'single';
+    questions.push(current);
+    current = null;
+  }
+
+  for (const seg of segments) {
+    const { text, bold } = seg;
+    if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
+
+    const nq = text.match(/^(\d+)[.)]\s*(?:(CM|CS)[.):]?\s+)?(.{5,})$/i);
+    if (nq) {
+      flush();
+      autoNum = parseInt(nq[1]);
+      current = { question_number: autoNum, type: nq[2]?.toUpperCase() || '', question_text: nq[3].trim(), answers: [] };
+      continue;
+    }
+
+    const aMatch = text.match(ANSWER_LETTER_P);
+    if (aMatch && current) {
+      // Check if the full answer text appears in bold
+      const isCorrect = bold.some((b) => b.includes(aMatch[2].slice(0, 10)));
+      current.answers.push({ letter: aMatch[1].toUpperCase(), text: aMatch[2].trim(), is_correct: isCorrect });
+      continue;
+    }
+  }
+
+  flush();
+  return questions;
+}
+
+// ---------------------------------------------------------------------------
+// Surgery 5th year — per-section answer key in bold <ol><li>
+// ---------------------------------------------------------------------------
+
+function parseSurgery5th(html) {
+  const allQuestions = [];
+
+  // Split on "KEY answers" occurrences (they appear inside <strong> tags)
+  // Each part before a KEY answers section contains questions;
+  // the KEY answers section itself contains bold <ol><li> answer items
+  const parts = html.split(/(KEY\s+answers[\s\S]*?(?=KEY\s+answers|$))/i);
+  // parts[0] = first question block, parts[1] = KEY+answers1, parts[2] = next question block, etc.
+  // Actually split produces: [before, key1+qs1, before2, key2+qs2, ...]
+  // Use a different approach: find all KEY answer blocks explicitly
+
+  const keyAnswerRe = /KEY\s+answers[^<]*(?:<[^>]+>)*([^<]*)<\/[^>]+>(<ol>[\s\S]*?<\/ol>)/gi;
+  const keyBlocks = [];
+  let km;
+  while ((km = keyAnswerRe.exec(html)) !== null) {
+    keyBlocks.push({
+      index: km.index,
+      sectionName: km[1].trim() || km[0].slice(0, 50),
+      answerHtml: km[2],
+    });
+  }
+
+  // Extract all questions in one pass
+  const allRawQuestions = extractQuestionsFromSurgery5thHtml(html);
+
+  if (keyBlocks.length === 0) {
+    // Fallback: no structured key found
+    return allRawQuestions;
+  }
+
+  // Assign questions to sections based on document position
+  // Each question has no position info, so we rely on sequential order within sections
+  // Group questions by the order they appear, matching to key blocks in order
+
+  // For each key block, parse the answer list (bold li items)
+  const sectionAnswers = keyBlocks.map((kb) => {
+    const liTexts = [...kb.answerHtml.matchAll(/<li>([\s\S]*?)<\/li>/g)]
+      .map((m) => stripTags(m[1]).replace(/\s+/g, ' ').trim());
+    return liTexts;
+  });
+
+  // Since we don't know exactly how many questions belong to each section,
+  // use the number of answer key items as a guide
+  let qIdx = 0;
+  for (let s = 0; s < sectionAnswers.length; s++) {
+    const answers = sectionAnswers[s];
+    const sectionQs = [];
+
+    for (const keyItem of answers) {
+      const q = allRawQuestions[qIdx];
+      if (!q) break;
+
+      const letters = new Set(
+        [...keyItem.matchAll(/[A-Ea-e]/g)].map((m) => normLetter(m[0]))
+      );
+
+      for (const ans of q.answers) {
+        if (letters.has(ans.letter)) ans.is_correct = true;
+      }
+      // Index fallback
+      if (!q.answers.some((a) => a.is_correct)) {
+        const idx = [...letters][0]?.charCodeAt(0) - 65;
+        if (idx >= 0 && q.answers[idx]) q.answers[idx].is_correct = true;
+      }
+
+      if (q.answers.some((a) => a.is_correct)) sectionQs.push(q);
+      qIdx++;
+    }
+
+    allQuestions.push(...sectionQs);
+  }
+
+  return allQuestions;
+}
+
+function extractQuestionsFromSurgery5thHtml(html) {
+  const questions = [];
+  // Use extractSegments to get all text lines (br-split paragraphs)
+  const segs = extractSegments(html);
+  let current = null;
+
+  function flush() {
+    if (!current || current.answers.length === 0) { current = null; return; }
+    questions.push(current);
+    current = null;
+  }
+
+  for (const seg of segs) {
+    const { text } = seg;
+    if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
+    // Skip KEY answers lines
+    if (/^KEY\s+answers/i.test(text)) { flush(); continue; }
+
+    // "1.CM question text" — note answers may be on same segment or following
+    const qMatch = text.match(/^(\d+)\.(CM|CS)\s+(.{5,})$/i);
+    if (qMatch) {
+      flush();
+      current = {
+        question_number: parseInt(qMatch[1]),
+        type: qMatch[2].toUpperCase(),
+        question_text: qMatch[3].trim(),
+        answers: [],
+      };
+      continue;
+    }
+
+    // Answer line: "A.text" (capital letter + dot + text)
+    const aMatch = text.match(/^([A-E])\.\s*(.{2,})$/);
+    if (aMatch && current) {
+      current.answers.push({ letter: aMatch[1], text: aMatch[2].trim(), is_correct: false });
+      continue;
+    }
+
+    // Continuation of question text (before answers collected)
+    if (current && current.answers.length === 0 && text.length > 3) {
+      current.question_text = (current.question_text + ' ' + text).replace(/\s+/g, ' ').trim();
+    }
+  }
+
+  flush();
+  return questions;
+}
+
+// ---------------------------------------------------------------------------
+// Main file dispatcher
+// ---------------------------------------------------------------------------
+
+async function parseFile(filePath) {
+  const filename = path.basename(filePath);
+  const moduleName = path.basename(filePath, path.extname(filePath));
+  const fileRelativePath = path.relative(ROOT, filePath).replace(/\\/g, '/');
+  const folder = path.basename(path.dirname(filePath));
+
+  const { value: html } = await mammoth.convertToHtml({ path: filePath });
+  const rawText = stripTags(html);
+
+  // Detect strategy
+  const hasBracket = /\[[xX×хХ✓ ]\]/.test(rawText);
+  const hasExplicitCorrect = /Correct\s+answer/i.test(rawText);
+  const isSurgery5th = filename === 'Surgery_5th year_Timis.docx';
+  const isUnderlinedSurgery = filename === 'Surgery_3rd year_Vescu.docx';
+
+  let rawQuestions;
+
+  if (isUnderlinedSurgery) {
+    rawQuestions = await parseUnderlinedDocx(filePath);
+    if (rawQuestions.length === 0) {
+      rawQuestions = parseAnswerKey(html);
+    }
+  } else if (isSurgery5th) {
+    rawQuestions = parseSurgery5th(html);
+  } else if (hasBracket) {
+    rawQuestions = parseBracket(html);
+  } else if (hasExplicitCorrect) {
+    // Check if explicit markers are scattered (Reumatology/Nephrology/Obstetrics style)
+    // vs appearing only at the end (answer key style)
+    const bodyPart = rawText.slice(0, Math.floor(rawText.length * 0.8));
+    const explicitInBody = (bodyPart.match(/Correct\s+answer/gi) || []).length;
+    if (explicitInBody >= 3) {
+      rawQuestions = parseExplicit(html);
+    } else {
+      rawQuestions = parseAnswerKey(html);
+    }
+  } else {
+    rawQuestions = parseAnswerKey(html);
+  }
+
+  // Normalise output
+  const warnings = [];
+  const questions = [];
+  let order = 0;
+
+  for (const rq of rawQuestions) {
+    if (!rq.question_text || rq.question_text.length < 5) continue;
+    if (rq.answers.length === 0) {
+      warnings.push(`Q${rq.question_number}: no answers — skipped`);
+      continue;
+    }
+    const correctCount = rq.answers.filter((a) => a.is_correct).length;
+    if (correctCount === 0) {
+      warnings.push(`Q${rq.question_number}: no correct answer — skipped`);
+      continue;
+    }
+
+    const type = correctCount > 1 ? 'multiple' : 'single';
+
+    questions.push({
+      module: moduleName,
+      source_file: fileRelativePath,
+      question_order: order++,
+      question_number: rq.question_number || order,
+      type,
+      question_text: rq.question_text.replace(/\s+/g, ' ').trim(),
+      answers: rq.answers.map((a) => ({
+        letter: a.letter,
+        text: a.text.replace(/\s+/g, ' ').trim(),
+        is_correct: Boolean(a.is_correct),
+      })),
+    });
+  }
+
+  return { file: fileRelativePath, module: moduleName, folder, questionCount: questions.length, warningCount: warnings.length, warnings, questions };
 }
 
 // ---------------------------------------------------------------------------
@@ -196,91 +1095,57 @@ function getDocxFiles(dirPath) {
   const files = [];
   for (const entry of entries) {
     const fullPath = path.join(dirPath, entry.name);
-    if (entry.isDirectory()) {
-      files.push(...getDocxFiles(fullPath));
-    } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.docx')) {
+    if (entry.isDirectory()) files.push(...getDocxFiles(fullPath));
+    else if (entry.isFile() && entry.name.toLowerCase().endsWith('.docx')) {
       files.push(fullPath);
     }
   }
   return files;
 }
 
-function moduleFromPath(filePath) {
-  const rel = path.relative(DATA_DIR, filePath);
-  const parts = rel.split(path.sep);
-  // Use subfolder name as module (e.g. "Graduation Exam Tests" or "Pediatrics")
-  // then the filename stem as sub-module for more precision
-  const stem = path.basename(filePath, path.extname(filePath));
-  if (parts.length > 1) {
-    return stem; // use filename stem so each file gets its own module name
-  }
-  return stem;
-}
-
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
-async function parseSingleFile(filePath) {
-  const moduleName = moduleFromPath(filePath);
-  const fileRelativePath = path.relative(ROOT, filePath);
-  const { value } = await mammoth.extractRawText({ path: filePath });
-  const { questions, warnings } = parseDocText(value, moduleName, fileRelativePath);
-  return {
-    file: fileRelativePath,
-    module: moduleName,
-    questionCount: questions.length,
-    warningCount: warnings.length,
-    warnings,
-    questions,
-  };
-}
-
 async function main() {
-  if (!fs.existsSync(DATA_DIR)) {
-    throw new Error(`Missing data folder at ${DATA_DIR}`);
-  }
+  if (!fs.existsSync(DATA_DIR)) throw new Error(`Missing data folder at ${DATA_DIR}`);
 
   const docxFiles = getDocxFiles(DATA_DIR).sort((a, b) => a.localeCompare(b));
-  if (docxFiles.length === 0) {
-    throw new Error(`No .docx files found in ${DATA_DIR}`);
-  }
+  if (!docxFiles.length) throw new Error(`No .docx files found in ${DATA_DIR}`);
 
   console.log(`Found ${docxFiles.length} .docx file(s). Parsing...\n`);
 
-  const files = [];
+  const results = [];
   for (const filePath of docxFiles) {
-    const result = await parseSingleFile(filePath);
-    files.push(result);
-
-    const status = result.questionCount > 0 ? '✓' : '✗';
-    console.log(
-      `${status} ${path.relative(ROOT, filePath)}: ${result.questionCount} questions` +
-        (result.warningCount > 0 ? ` (${result.warningCount} warnings)` : '')
-    );
-    if (result.warningCount > 0 && result.questionCount === 0) {
-      result.warnings.slice(0, 3).forEach((w) => console.log(`    ⚠ ${w}`));
+    try {
+      const result = await parseFile(filePath);
+      results.push(result);
+      const icon = result.questionCount > 0 ? '✓' : '✗';
+      const warnStr = result.warningCount > 0 ? ` (${result.warningCount} warnings)` : '';
+      console.log(`${icon} ${result.file}: ${result.questionCount} questions${warnStr}`);
+      if (result.warningCount > 0 && result.questionCount === 0) {
+        result.warnings.slice(0, 3).forEach((w) => console.log(`    ⚠ ${w}`));
+      }
+    } catch (err) {
+      console.log(`✗ ${path.relative(ROOT, filePath)}: ERROR — ${err.message}`);
     }
   }
 
-  const totalQuestions = files.reduce((acc, f) => acc + f.questionCount, 0);
-  const totalWarnings = files.reduce((acc, f) => acc + f.warningCount, 0);
+  const totalQuestions = results.reduce((acc, r) => acc + r.questionCount, 0);
+  const totalWarnings = results.reduce((acc, r) => acc + r.warningCount, 0);
 
   console.log(`\n--- Summary ---`);
-  console.log(`Files:     ${files.length}`);
+  console.log(`Files:     ${results.length}`);
   console.log(`Questions: ${totalQuestions}`);
   console.log(`Warnings:  ${totalWarnings}`);
-  console.log(
-    `Files with 0 questions: ${files.filter((f) => f.questionCount === 0).length}`
-  );
+  console.log(`Files with 0 questions: ${results.filter((r) => r.questionCount === 0).length}`);
 
-  // Strip warnings from output payload (keep questions only)
   const payload = {
     generatedAt: new Date().toISOString(),
     sourceFolder: 'data',
-    totalFiles: files.length,
+    totalFiles: results.length,
     totalQuestions,
-    files: files.map(({ warnings: _w, warningCount: _wc, ...rest }) => rest),
+    files: results.map(({ warnings: _w, warningCount: _wc, ...rest }) => rest),
   };
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -288,7 +1153,7 @@ async function main() {
   console.log(`\nOutput written to: ${path.relative(ROOT, OUTPUT_FILE)}`);
 }
 
-main().catch((error) => {
-  console.error(error);
+main().catch((err) => {
+  console.error(err);
   process.exit(1);
 });

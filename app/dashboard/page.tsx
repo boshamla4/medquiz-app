@@ -9,21 +9,47 @@ import { apiGet, apiPost } from '@/lib/apiClient';
 interface QuestionMeta {
   modules: string[];
   files: string[];
-  topics: string[];
   types: string[];
+  fileGroups: FileGroup[];
+}
+
+interface FileRow {
+  source_file: string;
+  folder: string;
+  file_name: string;
+  total_questions: number;
+  available_questions?: number;
+}
+
+interface FileGroup {
+  folder: string;
+  total_questions: number;
+  available_questions?: number;
+  files: FileRow[];
+}
+
+interface ExamPreview {
+  totalAvailable: number;
+  plannedQuestionCount: number;
+  totalMatchingBeforeHistory: number;
+  fileRows: FileRow[];
+  fileGroups: FileGroup[];
 }
 
 function DashboardContent() {
   const router = useRouter();
   const [showExamModal, setShowExamModal] = useState(false);
   const [module, setModule] = useState('');
-  const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], topics: [], types: [] });
+  const [meta, setMeta] = useState<QuestionMeta>({ modules: [], files: [], types: [], fileGroups: [] });
   const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<Array<'single' | 'multiple'>>([]);
+  const [orderMode, setOrderMode] = useState<'preserve' | 'random'>('random');
+  const [useAllQuestions, setUseAllQuestions] = useState(false);
   const [includeRepeated, setIncludeRepeated] = useState(true);
   const [wrongOnly, setWrongOnly] = useState(false);
   const [modulesLoading, setModulesLoading] = useState(false);
+  const [previewLoading, setPreviewLoading] = useState(false);
+  const [preview, setPreview] = useState<ExamPreview | null>(null);
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
   const [examLoading, setExamLoading] = useState(false);
@@ -45,8 +71,8 @@ function DashboardContent() {
         setMeta({
           modules: Array.isArray(data.modules) ? data.modules : [],
           files: Array.isArray(data.files) ? data.files : [],
-          topics: Array.isArray(data.topics) ? data.topics : [],
           types: Array.isArray(data.types) ? data.types : [],
+          fileGroups: Array.isArray(data.fileGroups) ? data.fileGroups : [],
         });
       } catch {
         // Keep modal usable even if module list fails.
@@ -57,6 +83,36 @@ function DashboardContent() {
 
     loadModules();
   }, [showExamModal, meta.modules.length]);
+
+  useEffect(() => {
+    if (!showExamModal) return;
+
+    async function loadPreview() {
+      setPreviewLoading(true);
+      try {
+        const body: Record<string, unknown> = {
+          files: selectedFiles,
+          questionTypes: selectedTypes,
+          includeRepeated,
+          wrongOnly,
+          useAllQuestions,
+          limit,
+        };
+        if (module.trim()) body.module = module.trim();
+
+        const res = await apiPost('/api/exam/preview', body);
+        if (!res.ok) return;
+        const data = (await res.json()) as ExamPreview;
+        setPreview(data);
+      } catch {
+        // Ignore preview failures and keep form usable.
+      } finally {
+        setPreviewLoading(false);
+      }
+    }
+
+    loadPreview();
+  }, [showExamModal, module, selectedFiles, selectedTypes, includeRepeated, wrongOnly, useAllQuestions, limit]);
 
   function toggleString(value: string, list: string[], setter: (value: string[]) => void) {
     if (list.includes(value)) {
@@ -83,8 +139,9 @@ function DashboardContent() {
       const body: Record<string, unknown> = {
         limit,
         files: selectedFiles,
-        topics: selectedTopics,
         questionTypes: selectedTypes,
+        orderMode,
+        useAllQuestions,
         includeRepeated,
         wrongOnly,
       };
@@ -188,45 +245,39 @@ function DashboardContent() {
                 )}
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">Files / Tests</label>
-                  <div className="max-h-32 space-y-1 overflow-auto rounded-lg border border-gray-200 p-2">
-                    {meta.files.length === 0 && (
-                      <p className="text-xs text-gray-400">No files detected yet.</p>
-                    )}
-                    {meta.files.map((name) => (
-                      <label key={name} className="flex items-center gap-2 text-xs text-gray-700">
-                        <input
-                          type="checkbox"
-                          checked={selectedFiles.includes(name)}
-                          onChange={() => toggleString(name, selectedFiles, setSelectedFiles)}
-                          className="h-3.5 w-3.5"
-                        />
-                        <span className="truncate" title={name}>{name}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">Topics</label>
-                  <div className="max-h-32 space-y-1 overflow-auto rounded-lg border border-gray-200 p-2">
-                    {meta.topics.length === 0 && (
-                      <p className="text-xs text-gray-400">No topics detected yet.</p>
-                    )}
-                    {meta.topics.map((name) => (
-                      <label key={name} className="flex items-center gap-2 text-xs text-gray-700">
-                        <input
-                          type="checkbox"
-                          checked={selectedTopics.includes(name)}
-                          onChange={() => toggleString(name, selectedTopics, setSelectedTopics)}
-                          className="h-3.5 w-3.5"
-                        />
-                        <span className="truncate" title={name}>{name}</span>
-                      </label>
-                    ))}
-                  </div>
+              <div>
+                <label className="mb-2 block text-sm font-medium text-gray-700">Files / Tests</label>
+                <div className="max-h-52 space-y-2 overflow-auto rounded-lg border border-gray-200 p-2">
+                  {meta.fileGroups.length === 0 && (
+                    <p className="text-xs text-gray-400">No files detected yet.</p>
+                  )}
+                  {meta.fileGroups.map((group) => (
+                    <div key={group.folder} className="rounded-md border border-gray-100 p-2">
+                      <p className="mb-1 text-xs font-semibold text-gray-800">{group.folder}</p>
+                      <div className="space-y-1">
+                        {group.files.map((file) => {
+                          const previewRow = preview?.fileRows.find((r) => r.source_file === file.source_file);
+                          return (
+                            <label key={file.source_file} className="flex items-center justify-between gap-2 text-xs text-gray-700">
+                              <span className="flex items-center gap-2">
+                                <input
+                                  type="checkbox"
+                                  checked={selectedFiles.includes(file.source_file)}
+                                  onChange={() => toggleString(file.source_file, selectedFiles, setSelectedFiles)}
+                                  className="h-3.5 w-3.5"
+                                />
+                                <span className="truncate" title={file.file_name}>{file.file_name}</span>
+                              </span>
+                              <span className="whitespace-nowrap text-[11px] text-gray-500">
+                                {file.total_questions} total
+                                {typeof previewRow?.available_questions === 'number' && ` · ${previewRow.available_questions} available`}
+                              </span>
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -258,6 +309,34 @@ function DashboardContent() {
                 </div>
               </div>
 
+              <div>
+                <label className="mb-2 block text-sm font-medium text-gray-700">Ordering</label>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setOrderMode('preserve')}
+                    className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                      orderMode === 'preserve'
+                        ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-200'
+                        : 'bg-gray-100 text-gray-600 ring-1 ring-gray-200 hover:bg-gray-200'
+                    }`}
+                  >
+                    Preserve file order
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setOrderMode('random')}
+                    className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                      orderMode === 'random'
+                        ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-200'
+                        : 'bg-gray-100 text-gray-600 ring-1 ring-gray-200 hover:bg-gray-200'
+                    }`}
+                  >
+                    Fully randomized
+                  </button>
+                </div>
+              </div>
+
               <div className="grid gap-3 sm:grid-cols-2">
                 <label className="flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-700">
                   <input
@@ -280,21 +359,52 @@ function DashboardContent() {
                 </label>
               </div>
 
-              <div>
-                <div className="mb-2 flex items-center justify-between">
-                  <label className="block text-sm font-medium text-gray-700">Number of questions</label>
-                  <span className="text-sm font-semibold text-blue-700">{limit}</span>
-                </div>
-                <input
-                  type="range"
-                  min={5}
-                  max={100}
-                  step={5}
-                  value={limit}
-                  onChange={(e) => setLimit(parseInt(e.target.value, 10) || 20)}
-                  className="w-full accent-blue-600"
-                />
-                <p className="mt-1 text-xs text-gray-400">Choose between 5 and 100 questions</p>
+              <div className="space-y-2 rounded-lg border border-gray-200 p-3">
+                <p className="text-sm font-medium text-gray-700">Question count</p>
+                <label className="flex items-center gap-2 text-sm text-gray-700">
+                  <input
+                    type="radio"
+                    checked={useAllQuestions}
+                    onChange={() => setUseAllQuestions(true)}
+                  />
+                  Use all available questions
+                </label>
+                <label className="flex items-center gap-2 text-sm text-gray-700">
+                  <input
+                    type="radio"
+                    checked={!useAllQuestions}
+                    onChange={() => setUseAllQuestions(false)}
+                  />
+                  Use reduced subset
+                </label>
+                {!useAllQuestions && (
+                  <div>
+                    <div className="mb-1 flex items-center justify-between">
+                      <span className="text-xs text-gray-500">Subset size</span>
+                      <span className="text-sm font-semibold text-blue-700">{limit}</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={1}
+                      max={Math.max(1, Math.min(1000, preview?.totalAvailable ?? 100))}
+                      step={1}
+                      value={Math.min(limit, Math.max(1, preview?.totalAvailable ?? limit))}
+                      onChange={(e) => setLimit(parseInt(e.target.value, 10) || 20)}
+                      className="w-full accent-blue-600"
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div className="rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 text-xs text-blue-800">
+                {previewLoading && <p>Calculating selected question counts...</p>}
+                {!previewLoading && preview && (
+                  <>
+                    <p>Total matched before history filter: {preview.totalMatchingBeforeHistory}</p>
+                    <p>Available after current filters: {preview.totalAvailable}</p>
+                    <p>Questions in this test: {preview.plannedQuestionCount}</p>
+                  </>
+                )}
               </div>
 
               <div>
