@@ -22,13 +22,23 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     request.headers.get('x-real-ip') ??
     'unknown';
 
-  const { allowed } = await checkAndRecordAttempt(ip);
+  const { allowed, retryAfterSeconds } = await checkAndRecordAttempt(ip);
 
   if (!allowed) {
-    return NextResponse.json(
+    const response = NextResponse.json(
       { error: 'Too many login attempts', code: 'RATE_LIMITED' },
       { status: 429 }
     );
+    if (retryAfterSeconds) {
+      response.headers.set('Retry-After', String(retryAfterSeconds));
+      response.headers.set('X-RateLimit-Retry-After', String(retryAfterSeconds));
+      return NextResponse.json(
+        { error: 'Too many login attempts', code: 'RATE_LIMITED', retryAfterSeconds },
+        { status: 429, headers: response.headers }
+      );
+    }
+
+    return response;
   }
 
   let body: unknown;
@@ -44,7 +54,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const parsed = LoginSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: 'Validation failed', code: 'VALIDATION_ERROR' },
+      {
+        error: 'Validation failed',
+        code: 'VALIDATION_ERROR',
+        details: parsed.error.flatten().fieldErrors,
+      },
       { status: 400 }
     );
   }

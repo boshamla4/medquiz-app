@@ -52,6 +52,7 @@ function ReviewContent({ examId }: ReviewContentProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [retrying, setRetrying] = useState(false);
+  const [retryError, setRetryError] = useState('');
 
   useEffect(() => {
     async function loadExam() {
@@ -74,6 +75,7 @@ function ReviewContent({ examId }: ReviewContentProps) {
   }, [examId]);
 
   async function handleRetry(filter: 'all' | 'wrong_only') {
+    setRetryError('');
     setRetrying(true);
     try {
       const res = await apiPost('/api/exam/retry', {
@@ -85,9 +87,9 @@ function ReviewContent({ examId }: ReviewContentProps) {
         router.push(`/exam/${data.examId}`);
         return;
       }
-      alert(data?.error ?? 'Failed to retry exam.');
+      setRetryError(data?.error ?? 'Failed to retry exam.');
     } catch {
-      alert('Network error. Please try again.');
+      setRetryError('Network error. Please try again.');
     } finally {
       setRetrying(false);
     }
@@ -174,6 +176,12 @@ function ReviewContent({ examId }: ReviewContentProps) {
             {retrying ? 'Starting…' : 'Retry Wrong Only'}
           </button>
         </div>
+
+        {retryError && (
+          <div className="mb-6 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+            {retryError}
+          </div>
+        )}
 
         {/* Questions */}
         <div className="space-y-6">

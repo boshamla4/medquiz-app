@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import db from '@/lib/db';
 import { requireSession } from '@/lib/sessionHelper';
+import { formatServerTiming, recordApiMetric } from '@/lib/performanceMetrics';
 
 const StartExamSchema = z.object({
   module: z.string().optional(),
@@ -198,6 +199,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const session = await requireSession(request);
   if (session instanceof NextResponse) return session;
 
+  const requestStart = Date.now();
+  const stages: Record<string, number> = {};
+
   let body: unknown;
   try {
     body = await request.json();
@@ -211,7 +215,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const parsed = StartExamSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: 'Validation failed', code: 'VALIDATION_ERROR' },
+      {
+        error: 'Validation failed',
+        code: 'VALIDATION_ERROR',
+        details: parsed.error.flatten().fieldErrors,
+      },
       { status: 400 }
     );
   }
@@ -232,6 +240,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const metadataColumnsAvailable = await hasQuestionMetadataColumns();
 
   let questionData: { question: QuestionRow; answers: AnswerRow[] }[] = [];
+  const selectionStart = Date.now();
 
   if (source_exam_id !== undefined) {
     const { data: examOwner, error: ownerError } = await db
@@ -339,6 +348,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     const questionIds = questions.map((q) => q.id);
     questionData = await fetchQuestionsWithAnswers(questionIds);
   }
+  stages.selection = Date.now() - selectionStart;
 
   if (questionData.length === 0) {
     return NextResponse.json(
@@ -347,11 +357,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const createExamStart = Date.now();
   const { data: examRow, error: examInsertError } = await db
     .from('exams')
     .insert({ user_id: session.userId, started_at: new Date().toISOString() })
     .select('id')
     .single();
+  stages.create_exam = Date.now() - createExamStart;
 
   if (examInsertError || !examRow) {
     return NextResponse.json(
@@ -381,6 +393,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const insertedExamQuestionIds = new Map<number, number>();
   const batchSize = 250;
+  const insertQuestionsStart = Date.now();
 
   for (let index = 0; index < examQuestionRows.length; index += batchSize) {
     const batch = examQuestionRows.slice(index, index + batchSize).map(({ question, snapshot }) => ({
@@ -405,11 +418,31 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       insertedExamQuestionIds.set(row.question_id, row.id);
     }
   }
+  stages.insert_exam_questions = Date.now() - insertQuestionsStart;
 
   const examQuestions = examQuestionRows.map(({ question, snapshot }) => ({
     id: insertedExamQuestionIds.get(question.id) ?? 0,
     question_snapshot: snapshot,
   })).filter((entry) => entry.id > 0);
 
-  return NextResponse.json({ examId, questions: examQuestions });
+  const totalMs = Date.now() - requestStart;
+  const response = NextResponse.json({ examId, questions: examQuestions });
+  response.headers.set('Server-Timing', formatServerTiming(stages, totalMs));
+
+  await recordApiMetric({
+    route: '/api/exam/start',
+    statusCode: 200,
+    userId: session.userId,
+    totalMs,
+    itemCount: examQuestions.length,
+    stages,
+    meta: {
+      useAllQuestions,
+      includeRepeated,
+      wrongOnly,
+      orderMode,
+    },
+  });
+
+  return response;
 }

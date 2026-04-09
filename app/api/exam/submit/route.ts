@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import db from '@/lib/db';
 import { requireSession } from '@/lib/sessionHelper';
+import { formatServerTiming, recordApiMetric } from '@/lib/performanceMetrics';
 
 const SubmitAnswerSchema = z.object({
   examQuestionId: z.number().int().positive(),
@@ -51,6 +52,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const session = await requireSession(request);
   if (session instanceof NextResponse) return session;
 
+  const requestStart = Date.now();
+  const stages: Record<string, number> = {};
+
   let body: unknown;
   try {
     body = await request.json();
@@ -64,19 +68,25 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const parsed = SubmitExamSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: 'Validation failed', code: 'VALIDATION_ERROR' },
+      {
+        error: 'Validation failed',
+        code: 'VALIDATION_ERROR',
+        details: parsed.error.flatten().fieldErrors,
+      },
       { status: 400 }
     );
   }
 
   const { examId, answers } = parsed.data;
 
+  const loadExamStart = Date.now();
   const { data: exam, error: examError } = await db
     .from('exams')
     .select('id, user_id, started_at, finished_at')
     .eq('id', examId)
     .eq('user_id', session.userId)
     .maybeSingle();
+  stages.load_exam = Date.now() - loadExamStart;
 
   if (examError) {
     return NextResponse.json(
@@ -99,10 +109,12 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const loadQuestionsStart = Date.now();
   const { data: examQuestions, error: examQuestionsError } = await db
     .from('exam_questions')
     .select('id, question_id, question_snapshot')
     .eq('exam_id', examId);
+  stages.load_questions = Date.now() - loadQuestionsStart;
 
   if (examQuestionsError || !examQuestions) {
     return NextResponse.json(
@@ -125,6 +137,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const updates: Array<{ id: number; selectedAnswerIds: number[]; isCorrect: boolean }> = [];
 
+  const scoreStart = Date.now();
   for (const answer of answers) {
     const eq = eqMap.get(answer.examQuestionId);
     if (!eq) continue;
@@ -145,8 +158,10 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       is_correct: correct,
     });
   }
+  stages.score_answers = Date.now() - scoreStart;
 
   const updateBatchSize = 50;
+  const updateAnswersStart = Date.now();
   for (let i = 0; i < updates.length; i += updateBatchSize) {
     const batch = updates.slice(i, i + updateBatchSize);
     const settled = await Promise.allSettled(
@@ -170,15 +185,18 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       }
     }
   }
+  stages.update_answers = Date.now() - updateAnswersStart;
 
   // Calculate duration server-side; use CURRENT_TIMESTAMP for finished_at to stay consistent with SQLite
   const startedAt = new Date(exam.started_at);
   const duration = Math.round((Date.now() - startedAt.getTime()) / 1000);
 
+  const finalizeStart = Date.now();
   const { error: finishError } = await db
     .from('exams')
     .update({ finished_at: new Date().toISOString(), duration })
     .eq('id', examId);
+  stages.finalize_exam = Date.now() - finalizeStart;
 
   if (finishError) {
     return NextResponse.json(
@@ -187,10 +205,27 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  return NextResponse.json({
+  const totalMs = Date.now() - requestStart;
+  const response = NextResponse.json({
     score: correctCount,
     total: examQuestions.length,
     duration,
     results,
   });
+  response.headers.set('Server-Timing', formatServerTiming(stages, totalMs));
+
+  await recordApiMetric({
+    route: '/api/exam/submit',
+    statusCode: 200,
+    userId: session.userId,
+    totalMs,
+    itemCount: updates.length,
+    stages,
+    meta: {
+      examId,
+      answerPayloadCount: answers.length,
+    },
+  });
+
+  return response;
 }

@@ -52,6 +52,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const [answers, setAnswers] = useState<Map<number, number[]>>(new Map());
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [submitting, setSubmitting] = useState(false);
+  const [savingLater, setSavingLater] = useState(false);
   const [submitError, setSubmitError] = useState('');
   const autoSubmittedRef = useRef(false);
 
@@ -74,6 +75,13 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
         }
 
         setExam(data);
+        const restored = new Map<number, number[]>();
+        for (const question of data.questions) {
+          if (Array.isArray(question.user_answer) && question.user_answer.length > 0) {
+            restored.set(question.id, question.user_answer);
+          }
+        }
+        setAnswers(restored);
 
         // Restore index from URL query param ?q=N
         if (initialQ) {
@@ -132,6 +140,36 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
       setSubmitError('Network error. Please try again.');
     } finally {
       setSubmitting(false);
+    }
+  }
+
+  async function handleContinueLater() {
+    if (!exam || savingLater || submitting) return;
+    setSubmitError('');
+    setSavingLater(true);
+
+    try {
+      const answersPayload = exam.questions.map((q) => ({
+        examQuestionId: q.id,
+        selectedAnswerIds: answers.get(q.id) ?? [],
+      }));
+
+      const res = await apiPost('/api/exam/save-progress', {
+        examId: exam.id,
+        answers: answersPayload,
+      });
+
+      if (res.ok) {
+        router.push('/dashboard');
+        return;
+      }
+
+      const data = await res.json().catch(() => ({}));
+      setSubmitError(data?.error ?? 'Failed to save progress.');
+    } catch {
+      setSubmitError('Network error. Please try again.');
+    } finally {
+      setSavingLater(false);
     }
   }
 
@@ -279,13 +317,22 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
         {/* Quick submit button available throughout */}
         {!isLast && (
           <div className="mt-4 text-center">
-            <button
-              onClick={handleSubmit}
-              disabled={submitting}
-              className="text-sm font-medium text-gray-500 underline hover:text-gray-700 disabled:opacity-50"
-            >
-              {submitting ? 'Submitting…' : 'Submit exam now'}
-            </button>
+            <div className="flex items-center justify-center gap-4">
+              <button
+                onClick={handleContinueLater}
+                disabled={savingLater || submitting}
+                className="text-sm font-medium text-blue-600 underline hover:text-blue-700 disabled:opacity-50"
+              >
+                {savingLater ? 'Saving…' : 'Continue later'}
+              </button>
+              <button
+                onClick={handleSubmit}
+                disabled={submitting || savingLater}
+                className="text-sm font-medium text-gray-500 underline hover:text-gray-700 disabled:opacity-50"
+              >
+                {submitting ? 'Submitting…' : 'Submit exam now'}
+              </button>
+            </div>
           </div>
         )}
       </main>

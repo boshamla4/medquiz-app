@@ -22,7 +22,7 @@ const ratelimit = hasUpstashEnv
     })
   : null;
 
-function memoryLimit(ip: string): { allowed: boolean; remaining: number } {
+function memoryLimit(ip: string): { allowed: boolean; remaining: number; retryAfterSeconds?: number } {
   const now = Date.now();
   const existing = memoryStore.get(ip);
 
@@ -34,19 +34,33 @@ function memoryLimit(ip: string): { allowed: boolean; remaining: number } {
 
   existing.count += 1;
   memoryStore.set(ip, existing);
+  const allowed = existing.count <= MAX_ATTEMPTS;
+  const remaining = Math.max(0, MAX_ATTEMPTS - existing.count);
+
+  if (allowed) {
+    return { allowed, remaining };
+  }
+
+  const retryAfterMs = Math.max(1, WINDOW_MS - (now - existing.firstAttempt));
   return {
-    allowed: existing.count <= MAX_ATTEMPTS,
-    remaining: Math.max(0, MAX_ATTEMPTS - existing.count),
+    allowed,
+    remaining,
+    retryAfterSeconds: Math.ceil(retryAfterMs / 1000),
   };
 }
 
 export async function checkAndRecordAttempt(
   ip: string
-): Promise<{ allowed: boolean; remaining: number }> {
+): Promise<{ allowed: boolean; remaining: number; retryAfterSeconds?: number }> {
   if (!ratelimit) {
     return memoryLimit(ip);
   }
 
-  const { success, remaining } = await ratelimit.limit(ip);
-  return { allowed: success, remaining };
+  const result = await ratelimit.limit(ip);
+  const allowed = result.success;
+  const retryAfterSeconds = !allowed && typeof result.reset === 'number'
+    ? Math.max(1, Math.ceil((result.reset - Date.now()) / 1000))
+    : undefined;
+
+  return { allowed, remaining: result.remaining, retryAfterSeconds };
 }

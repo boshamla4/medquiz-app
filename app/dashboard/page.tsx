@@ -95,7 +95,7 @@ function DashboardContent() {
 
   useEffect(() => {
     if (!showWelcomeBanner) return;
-    const timer = setTimeout(() => setShowWelcomeBanner(false), 5000);
+    const timer = setTimeout(() => setShowWelcomeBanner(false), 15_000);
     return () => clearTimeout(timer);
   }, [showWelcomeBanner]);
 
@@ -261,7 +261,12 @@ function DashboardContent() {
 
       if (!res.ok) {
         const data = await res.json();
-        setFeedbackStatus(data?.error ?? 'Failed to submit feedback.');
+        const firstDetail = data?.details
+          ? Object.values(data.details as Record<string, string[]>)
+              .flat()
+              .find((message) => typeof message === 'string' && message.length > 0)
+          : null;
+        setFeedbackStatus(firstDetail ?? data?.error ?? 'Failed to submit feedback.');
         return;
       }
 

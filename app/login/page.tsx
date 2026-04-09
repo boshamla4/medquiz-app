@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { apiPost } from '@/lib/apiClient';
 
@@ -9,10 +9,18 @@ export default function LoginPage() {
   const [token, setToken] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [retryAfterSeconds, setRetryAfterSeconds] = useState(0);
+
+  useEffect(() => {
+    if (retryAfterSeconds <= 0) return;
+    const timer = setTimeout(() => setRetryAfterSeconds((value) => Math.max(0, value - 1)), 1000);
+    return () => clearTimeout(timer);
+  }, [retryAfterSeconds]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError('');
+    if (retryAfterSeconds > 0) return;
     setLoading(true);
 
     try {
@@ -26,11 +34,22 @@ export default function LoginPage() {
 
       const code: string = data?.code ?? '';
       if (code === 'RATE_LIMITED') {
-        setError('Too many login attempts. Please wait before trying again.');
+        const retrySeconds = Number(data?.retryAfterSeconds ?? 0);
+        if (Number.isFinite(retrySeconds) && retrySeconds > 0) {
+          setRetryAfterSeconds(Math.floor(retrySeconds));
+          setError(`Too many login attempts. Try again in ${Math.floor(retrySeconds)} seconds.`);
+        } else {
+          setError('Too many login attempts. Please wait before trying again.');
+        }
       } else if (code === 'INVALID_TOKEN') {
         setError('Invalid token. Please check your credentials.');
       } else {
-        setError(data?.error ?? 'An error occurred. Please try again.');
+        const firstDetail = data?.details
+          ? Object.values(data.details as Record<string, string[]>)
+              .flat()
+              .find((message) => typeof message === 'string' && message.length > 0)
+          : null;
+        setError(firstDetail ?? data?.error ?? 'An error occurred. Please try again.');
       }
     } catch {
       setError('Network error. Please check your connection and try again.');
@@ -75,10 +94,10 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              disabled={loading || !token.trim()}
+              disabled={loading || !token.trim() || retryAfterSeconds > 0}
               className="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              {loading ? 'Signing in…' : 'Sign In'}
+              {loading ? 'Signing in…' : retryAfterSeconds > 0 ? `Try again in ${retryAfterSeconds}s` : 'Sign In'}
             </button>
           </form>
         </div>

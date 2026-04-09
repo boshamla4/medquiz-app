@@ -12,17 +12,22 @@ export default function SessionGuard({ children }: { children: React.ReactNode }
   const router = useRouter();
   const [disconnected, setDisconnected] = useState<DisconnectInfo | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const dismissTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     async function validate() {
       try {
-        const res = await apiGet('/api/auth/validate');
+        const res = await apiGet('/api/auth/validate', { redirectOn401: false });
         if (res.status === 401) {
           const data = await res.json().catch(() => ({}));
           const code: string = data?.code ?? 'SESSION_INVALID';
           if (code === 'SESSION_EXPIRED' || code === 'SESSION_HIJACKED') {
             setDisconnected({ reason: code });
             if (intervalRef.current) clearInterval(intervalRef.current);
+            if (dismissTimerRef.current) clearTimeout(dismissTimerRef.current);
+            dismissTimerRef.current = setTimeout(() => {
+              router.push('/login');
+            }, 15_000);
           }
         }
       } catch {
@@ -35,8 +40,9 @@ export default function SessionGuard({ children }: { children: React.ReactNode }
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
+      if (dismissTimerRef.current) clearTimeout(dismissTimerRef.current);
     };
-  }, []);
+  }, [router]);
 
   function handleDismiss() {
     router.push('/login');
@@ -54,6 +60,7 @@ export default function SessionGuard({ children }: { children: React.ReactNode }
               ? 'Your session has expired. Please log in again.'
               : 'Your session was terminated due to a security event. Please log in again.'}
           </p>
+          <p className="mb-4 text-xs text-gray-500">Redirecting to login in about 15 seconds.</p>
           <button
             onClick={handleDismiss}
             className="w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"

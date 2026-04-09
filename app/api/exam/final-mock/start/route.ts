@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import db from '@/lib/db';
 import { requireSession } from '@/lib/sessionHelper';
+import { formatServerTiming, recordApiMetric } from '@/lib/performanceMetrics';
 
 const FinalMockSchema = z.object({
   totalQuestions: z.number().int().positive().max(1000).optional().default(200),
@@ -197,6 +198,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const session = await requireSession(request);
   if (session instanceof NextResponse) return session;
 
+  const requestStart = Date.now();
+  const stages: Record<string, number> = {};
+
   let body: unknown;
   try {
     body = await request.json();
@@ -210,7 +214,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const parsed = FinalMockSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: 'Validation failed', code: 'VALIDATION_ERROR' },
+      {
+        error: 'Validation failed',
+        code: 'VALIDATION_ERROR',
+        details: parsed.error.flatten().fieldErrors,
+      },
       { status: 400 }
     );
   }
@@ -218,7 +226,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const totalQuestions = parsed.data.totalQuestions;
   const program = parsed.data.program;
 
+  const distributionStart = Date.now();
   const rows = await fetchDistribution(program);
+  stages.load_distribution = Date.now() - distributionStart;
   if (rows.length === 0) {
     return NextResponse.json(
       { error: 'Final mock distribution not configured', code: 'FINAL_MOCK_DISTRIBUTION_MISSING' },
@@ -226,7 +236,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const loadQuestionsStart = Date.now();
   const allQuestions = await fetchAllQuestions();
+  stages.load_questions = Date.now() - loadQuestionsStart;
   if (allQuestions.length === 0) {
     return NextResponse.json(
       { error: 'No questions available', code: 'NO_QUESTIONS' },
@@ -238,6 +250,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const selected = new Map<number, QuestionRow>();
 
+  const selectQuestionsStart = Date.now();
   for (let i = 0; i < rows.length; i++) {
     const rule = rows[i];
     const target = targets[i] ?? 0;
@@ -266,8 +279,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const selectedQuestions = [...selected.values()];
   selectedQuestions.sort(() => Math.random() - 0.5);
+  stages.select_questions = Date.now() - selectQuestionsStart;
 
+  const answersFetchStart = Date.now();
   const questionData = await fetchQuestionsWithAnswers(selectedQuestions.map((q) => q.id));
+  stages.fetch_answers = Date.now() - answersFetchStart;
   if (questionData.length === 0) {
     return NextResponse.json(
       { error: 'Failed to fetch questions for final mock', code: 'FINAL_MOCK_FETCH_FAILED' },
@@ -275,11 +291,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const createExamStart = Date.now();
   const { data: examRow, error: examInsertError } = await db
     .from('exams')
     .insert({ user_id: session.userId, started_at: new Date().toISOString() })
     .select('id')
     .single();
+  stages.create_exam = Date.now() - createExamStart;
 
   if (examInsertError || !examRow) {
     return NextResponse.json(
@@ -308,6 +326,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const insertedExamQuestionIds = new Map<number, number>();
   const batchSize = 250;
+  const insertQuestionsStart = Date.now();
 
   for (let index = 0; index < examQuestionRows.length; index += batchSize) {
     const batch = examQuestionRows.slice(index, index + batchSize).map(({ question, snapshot }) => ({
@@ -332,6 +351,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       insertedExamQuestionIds.set(row.question_id, row.id);
     }
   }
+  stages.insert_exam_questions = Date.now() - insertQuestionsStart;
 
   const examQuestions = examQuestionRows
     .map(({ question, snapshot }) => ({
@@ -340,5 +360,22 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     }))
     .filter((entry) => entry.id > 0);
 
-  return NextResponse.json({ examId, total: examQuestions.length, questions: examQuestions });
+  const totalMs = Date.now() - requestStart;
+  const response = NextResponse.json({ examId, total: examQuestions.length, questions: examQuestions });
+  response.headers.set('Server-Timing', formatServerTiming(stages, totalMs));
+
+  await recordApiMetric({
+    route: '/api/exam/final-mock/start',
+    statusCode: 200,
+    userId: session.userId,
+    totalMs,
+    itemCount: examQuestions.length,
+    stages,
+    meta: {
+      program,
+      requestedTotalQuestions: totalQuestions,
+    },
+  });
+
+  return response;
 }

@@ -31,7 +31,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const parsed = FeedbackSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: 'Validation failed', code: 'VALIDATION_ERROR' },
+      {
+        error: 'Validation failed',
+        code: 'VALIDATION_ERROR',
+        details: parsed.error.flatten().fieldErrors,
+      },
       { status: 400 }
     );
   }
