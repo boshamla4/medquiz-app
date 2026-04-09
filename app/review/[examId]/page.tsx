@@ -107,10 +107,10 @@ function ReviewContent({ examId }: ReviewContentProps) {
         <div className="text-center">
           <p className="mb-4 text-red-600">{error || 'Exam not found.'}</p>
           <Link
-            href="/history"
+            href="/dashboard"
             className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
           >
-            Back to History
+            Back to Dashboard
           </Link>
         </div>
       </div>
@@ -132,10 +132,10 @@ function ReviewContent({ examId }: ReviewContentProps) {
         <div className="mx-auto flex max-w-3xl items-center justify-between">
           <h1 className="text-xl font-bold text-gray-900">MedQuiz</h1>
           <Link
-            href="/history"
+            href="/dashboard"
             className="text-sm font-medium text-blue-600 hover:text-blue-800"
           >
-            ← History
+            ← Dashboard
           </Link>
         </div>
       </header>

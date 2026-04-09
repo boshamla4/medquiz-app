@@ -16,6 +16,9 @@ interface DistributionRow {
   display_order: number;
 }
 
+const DEFAULT_PROGRAM = 'Medicine';
+const DEFAULT_TOTAL_QUESTIONS = 200;
+
 interface QuestionRow {
   id: number;
   module: string;
@@ -61,6 +64,54 @@ function allocateByWeights(total: number, rows: DistributionRow[]): number[] {
   }
 
   return base;
+}
+
+async function fetchDistribution(program: string): Promise<DistributionRow[]> {
+  const { data: distribution, error } = await db
+    .from('final_mock_distribution')
+    .select('subject, source_pattern, match_type, weight_percent, display_order')
+    .eq('program', program)
+    .eq('active', true)
+    .order('display_order');
+
+  if (error || !distribution || distribution.length === 0) {
+    return [];
+  }
+
+  return distribution as DistributionRow[];
+}
+
+export async function GET(request: NextRequest): Promise<NextResponse> {
+  const session = await requireSession(request);
+  if (session instanceof NextResponse) return session;
+
+  const program = request.nextUrl.searchParams.get('program') ?? DEFAULT_PROGRAM;
+  const totalQuestions = Number(request.nextUrl.searchParams.get('totalQuestions') ?? DEFAULT_TOTAL_QUESTIONS);
+  const safeTotal = Number.isFinite(totalQuestions) && totalQuestions > 0
+    ? Math.min(Math.floor(totalQuestions), 1000)
+    : DEFAULT_TOTAL_QUESTIONS;
+
+  const rows = await fetchDistribution(program);
+  if (rows.length === 0) {
+    return NextResponse.json(
+      { error: 'Final mock distribution not configured', code: 'FINAL_MOCK_DISTRIBUTION_MISSING' },
+      { status: 500 }
+    );
+  }
+
+  const targets = allocateByWeights(safeTotal, rows);
+  const totalWeightPercent = rows.reduce((sum, row) => sum + Number(row.weight_percent), 0);
+
+  return NextResponse.json({
+    program,
+    totalQuestions: safeTotal,
+    totalWeightPercent,
+    sections: rows.map((row, index) => ({
+      subject: row.subject,
+      weightPercent: Number(row.weight_percent),
+      targetQuestions: targets[index] ?? 0,
+    })),
+  });
 }
 
 async function fetchAllQuestions(): Promise<QuestionRow[]> {
@@ -167,14 +218,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const totalQuestions = parsed.data.totalQuestions;
   const program = parsed.data.program;
 
-  const { data: distribution, error: distError } = await db
-    .from('final_mock_distribution')
-    .select('subject, source_pattern, match_type, weight_percent, display_order')
-    .eq('program', program)
-    .eq('active', true)
-    .order('display_order');
-
-  if (distError || !distribution || distribution.length === 0) {
+  const rows = await fetchDistribution(program);
+  if (rows.length === 0) {
     return NextResponse.json(
       { error: 'Final mock distribution not configured', code: 'FINAL_MOCK_DISTRIBUTION_MISSING' },
       { status: 500 }
@@ -189,7 +234,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     );
   }
 
-  const rows = distribution as DistributionRow[];
   const targets = allocateByWeights(totalQuestions, rows);
 
   const selected = new Map<number, QuestionRow>();

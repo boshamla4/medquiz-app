@@ -230,21 +230,7 @@ function DashboardContent() {
   }
 
   async function handleStartFinalMockExam() {
-    setExamError('');
-    setExamLoading(true);
-    try {
-      const res = await apiPost('/api/exam/final-mock/start', { totalQuestions: 200, program: 'Medicine' });
-      const data = await res.json();
-      if (!res.ok) {
-        setExamError(data?.error ?? 'Failed to start final mock exam.');
-        return;
-      }
-      router.push(`/exam/${data.examId}`);
-    } catch {
-      setExamError('Network error. Please try again.');
-    } finally {
-      setExamLoading(false);
-    }
+    router.push('/final-mock');
   }
 
   function toggleGroupSelection(group: FileGroup) {
@@ -344,12 +330,15 @@ function DashboardContent() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
       <header className="border-b border-gray-200 bg-white px-4 py-4">
-        <div className="mx-auto flex max-w-4xl items-center justify-between">
+        <div className="mx-auto grid max-w-5xl grid-cols-[auto_1fr_auto] items-center gap-3">
           <h1 className="text-xl font-bold text-gray-900">MedQuiz</h1>
+          <p className="justify-self-center rounded-full bg-amber-50 px-3 py-1 text-center text-xs font-medium text-amber-800 ring-1 ring-amber-200">
+            Beta: Features and scoring details are still being refined.
+          </p>
           <button
             onClick={handleLogout}
             disabled={logoutLoading}
-            className="rounded-lg border border-gray-300 px-3.5 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50"
+            className="justify-self-end rounded-lg border border-gray-300 px-3.5 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50"
           >
             {logoutLoading ? 'Logging out…' : 'Logout'}
           </button>
@@ -366,9 +355,6 @@ function DashboardContent() {
         <div className="mb-8">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
           <p className="mt-2 text-sm text-gray-500">Configure your exam scope, question types, and pace before you begin.</p>
-          <p className="mt-2 inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800 ring-1 ring-amber-200">
-            Beta: Features and scoring details are still being refined.
-          </p>
         </div>
 
         <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
