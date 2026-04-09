@@ -50,6 +50,11 @@ interface DashboardStats {
   bestScore: string;
 }
 
+interface ActiveUsersSnapshot {
+  activeUsers: number;
+  windowMinutes: number;
+}
+
 function scoreLabel(entry?: ExamHistoryEntry): string {
   if (!entry || entry.total <= 0) return 'No exams yet';
   const percent = Math.round((entry.score / entry.total) * 100);
@@ -92,6 +97,7 @@ function DashboardContent() {
   const [feedbackWhatsapp, setFeedbackWhatsapp] = useState('');
   const [feedbackLoading, setFeedbackLoading] = useState(false);
   const [feedbackStatus, setFeedbackStatus] = useState('');
+  const [activeUsers, setActiveUsers] = useState<ActiveUsersSnapshot | null>(null);
 
   useEffect(() => {
     if (!showWelcomeBanner) return;
@@ -199,6 +205,35 @@ function DashboardContent() {
     }
 
     loadStats();
+  }, []);
+
+  useEffect(() => {
+    let mounted = true;
+
+    async function loadActiveUsers() {
+      try {
+        const res = await apiGet('/api/users/active');
+        if (!res.ok) return;
+
+        const data = (await res.json()) as Partial<ActiveUsersSnapshot>;
+        if (!mounted) return;
+
+        setActiveUsers({
+          activeUsers: Number(data.activeUsers ?? 0),
+          windowMinutes: Number(data.windowMinutes ?? 5),
+        });
+      } catch {
+        // Ignore failures and keep dashboard usable.
+      }
+    }
+
+    loadActiveUsers();
+    const intervalId = setInterval(loadActiveUsers, 30_000);
+
+    return () => {
+      mounted = false;
+      clearInterval(intervalId);
+    };
   }, []);
 
   function toggleString(value: string, list: string[], setter: (value: string[]) => void) {
@@ -358,6 +393,10 @@ function DashboardContent() {
         )}
 
         <div className="mb-8">
+          <p className="mb-3 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 ring-1 ring-blue-200">
+            Active users now: {activeUsers?.activeUsers ?? '...'}
+            {activeUsers?.windowMinutes ? ` (last ${activeUsers.windowMinutes} min)` : ''}
+          </p>
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
           <p className="mt-2 text-sm text-gray-500">Configure your exam scope, question types, and pace before you begin.</p>
         </div>

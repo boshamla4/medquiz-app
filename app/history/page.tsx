@@ -15,6 +15,11 @@ interface HistoryEntry {
   total: number;
 }
 
+interface ActiveUsersSnapshot {
+  activeUsers: number;
+  windowMinutes: number;
+}
+
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString(undefined, {
     year: 'numeric',
@@ -41,6 +46,7 @@ function HistoryContent() {
   const [retryFilter, setRetryFilter] = useState<'all' | 'wrong_only'>('all');
   const [retrying, setRetrying] = useState(false);
   const [retryError, setRetryError] = useState('');
+  const [activeUsers, setActiveUsers] = useState<ActiveUsersSnapshot | null>(null);
 
   useEffect(() => {
     async function loadHistory() {
@@ -59,6 +65,35 @@ function HistoryContent() {
       }
     }
     loadHistory();
+  }, []);
+
+  useEffect(() => {
+    let mounted = true;
+
+    async function loadActiveUsers() {
+      try {
+        const res = await apiGet('/api/users/active');
+        if (!res.ok) return;
+
+        const data = (await res.json()) as Partial<ActiveUsersSnapshot>;
+        if (!mounted) return;
+
+        setActiveUsers({
+          activeUsers: Number(data.activeUsers ?? 0),
+          windowMinutes: Number(data.windowMinutes ?? 5),
+        });
+      } catch {
+        // Ignore failures and keep history usable.
+      }
+    }
+
+    loadActiveUsers();
+    const intervalId = setInterval(loadActiveUsers, 30_000);
+
+    return () => {
+      mounted = false;
+      clearInterval(intervalId);
+    };
   }, []);
 
   async function handleRetry(e: React.FormEvent) {
@@ -103,6 +138,11 @@ function HistoryContent() {
 
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
         <h2 className="mb-6 text-2xl font-semibold text-gray-900">Exam History</h2>
+
+        <p className="mb-6 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 ring-1 ring-blue-200">
+          Active users now: {activeUsers?.activeUsers ?? '...'}
+          {activeUsers?.windowMinutes ? ` (last ${activeUsers.windowMinutes} min)` : ''}
+        </p>
 
         {loading && (
           <p className="text-gray-500">Loading history…</p>
