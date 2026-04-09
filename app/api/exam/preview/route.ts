@@ -10,7 +10,7 @@ const PreviewSchema = z.object({
   includeRepeated: z.boolean().optional().default(true),
   wrongOnly: z.boolean().optional().default(false),
   useAllQuestions: z.boolean().optional().default(false),
-  limit: z.number().int().positive().max(2000).optional().default(20),
+  limit: z.number().int().positive().max(1000).optional().default(20),
 });
 
 interface QuestionRow {
@@ -208,7 +208,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   }
 
   const totalAvailable = filteredQuestions.length;
-  const plannedQuestionCount = useAllQuestions ? totalAvailable : Math.min(limit, totalAvailable);
+  const plannedQuestionCount = useAllQuestions
+    ? Math.min(1000, totalAvailable)
+    : Math.min(limit, totalAvailable, 1000);
 
   return NextResponse.json({
     totalAvailable,

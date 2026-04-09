@@ -50,43 +50,6 @@ interface DashboardStats {
   bestScore: string;
 }
 
-interface ExamPreset {
-  name: string;
-  selectedFiles: string[];
-  selectedTypes: Array<'single' | 'multiple'>;
-  orderMode: 'preserve' | 'random';
-  useAllQuestions: boolean;
-  includeRepeated: boolean;
-  wrongOnly: boolean;
-  limit: number;
-  timerMinutes: number;
-}
-
-const PRESET_STORAGE_KEY = 'medquiz.exam-presets.v1';
-
-function isBrowser() {
-  return typeof window !== 'undefined';
-}
-
-function getStoredPresets(): ExamPreset[] {
-  if (!isBrowser()) return [];
-  try {
-    const raw = window.localStorage.getItem(PRESET_STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw) as unknown;
-    return Array.isArray(parsed)
-      ? parsed.filter((preset): preset is ExamPreset => Boolean(preset && typeof preset === 'object' && typeof (preset as ExamPreset).name === 'string'))
-      : [];
-  } catch {
-    return [];
-  }
-}
-
-function storePresets(presets: ExamPreset[]) {
-  if (!isBrowser()) return;
-  window.localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets));
-}
-
 function scoreLabel(entry?: ExamHistoryEntry): string {
   if (!entry || entry.total <= 0) return 'No exams yet';
   const percent = Math.round((entry.score / entry.total) * 100);
@@ -120,13 +83,15 @@ function DashboardContent() {
   const [statsLoading, setStatsLoading] = useState(false);
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [recentHistory, setRecentHistory] = useState<ExamHistoryEntry[]>([]);
-  const [presets, setPresets] = useState<ExamPreset[]>([]);
-  const [presetName, setPresetName] = useState('');
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [limit, setLimit] = useState(20);
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState('');
   const [logoutLoading, setLogoutLoading] = useState(false);
+  const [feedbackComment, setFeedbackComment] = useState('');
+  const [feedbackWhatsapp, setFeedbackWhatsapp] = useState('');
+  const [feedbackLoading, setFeedbackLoading] = useState(false);
+  const [feedbackStatus, setFeedbackStatus] = useState('');
 
   useEffect(() => {
     if (!showWelcomeBanner) return;
@@ -143,10 +108,6 @@ function DashboardContent() {
       const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}`;
       window.history.replaceState(null, '', nextUrl);
     }
-  }, []);
-
-  useEffect(() => {
-    setPresets(getStoredPresets());
   }, []);
 
   useEffect(() => {
@@ -256,46 +217,6 @@ function DashboardContent() {
     setSelectedTypes([...selectedTypes, value]);
   }
 
-  function savePreset() {
-    const name = presetName.trim();
-    if (!name) return;
-
-    const nextPreset: ExamPreset = {
-      name,
-      selectedFiles,
-      selectedTypes,
-      orderMode,
-      useAllQuestions,
-      includeRepeated,
-      wrongOnly,
-      limit,
-      timerMinutes,
-    };
-
-    const nextPresets = [nextPreset, ...presets.filter((preset) => preset.name !== name)].slice(0, 8);
-    setPresets(nextPresets);
-    storePresets(nextPresets);
-    setPresetName('');
-  }
-
-  function applyPreset(preset: ExamPreset) {
-    setSelectedFiles(preset.selectedFiles);
-    setSelectedTypes(preset.selectedTypes);
-    setOrderMode(preset.orderMode);
-    setUseAllQuestions(preset.useAllQuestions);
-    setIncludeRepeated(preset.includeRepeated);
-    setWrongOnly(preset.wrongOnly);
-    setLimit(preset.limit);
-    setTimerMinutes(preset.timerMinutes);
-    setShowExamModal(true);
-  }
-
-  function deletePreset(name: string) {
-    const nextPresets = presets.filter((preset) => preset.name !== name);
-    setPresets(nextPresets);
-    storePresets(nextPresets);
-  }
-
   function startWeakModuleRetry() {
     setSelectedFiles([]);
     setSelectedTypes([]);
@@ -308,30 +229,11 @@ function DashboardContent() {
     setShowExamModal(true);
   }
 
-  function startFinalMockExam() {
-    setSelectedFiles([]);
-    setSelectedTypes([]);
-    setOrderMode('preserve');
-    setUseAllQuestions(true);
-    setIncludeRepeated(true);
-    setWrongOnly(false);
-    setLimit(200);
-    setTimerMinutes(0);
-  }
-
   async function handleStartFinalMockExam() {
     setExamError('');
     setExamLoading(true);
     try {
-      const res = await apiPost('/api/exam/start', {
-        limit: 200,
-        files: [],
-        questionTypes: [],
-        orderMode: 'random',
-        useAllQuestions: false,
-        includeRepeated: true,
-        wrongOnly: false,
-      });
+      const res = await apiPost('/api/exam/final-mock/start', { totalQuestions: 200, program: 'Medicine' });
       const data = await res.json();
       if (!res.ok) {
         setExamError(data?.error ?? 'Failed to start final mock exam.');
@@ -342,6 +244,48 @@ function DashboardContent() {
       setExamError('Network error. Please try again.');
     } finally {
       setExamLoading(false);
+    }
+  }
+
+  function toggleGroupSelection(group: FileGroup) {
+    const groupFiles = group.files.map((file) => file.source_file);
+    const allSelected = groupFiles.every((file) => selectedFiles.includes(file));
+
+    if (allSelected) {
+      setSelectedFiles(selectedFiles.filter((file) => !groupFiles.includes(file)));
+      return;
+    }
+
+    setSelectedFiles([...new Set([...selectedFiles, ...groupFiles])]);
+  }
+
+  async function submitFeedback(e: React.FormEvent) {
+    e.preventDefault();
+    const comment = feedbackComment.trim();
+    if (!comment) return;
+
+    setFeedbackLoading(true);
+    setFeedbackStatus('');
+
+    try {
+      const res = await apiPost('/api/feedback', {
+        comment,
+        whatsapp: feedbackWhatsapp.trim() || undefined,
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        setFeedbackStatus(data?.error ?? 'Failed to submit feedback.');
+        return;
+      }
+
+      setFeedbackComment('');
+      setFeedbackWhatsapp('');
+      setFeedbackStatus('Thanks. Your feedback has been received.');
+    } catch {
+      setFeedbackStatus('Network error while sending feedback.');
+    } finally {
+      setFeedbackLoading(false);
     }
   }
 
@@ -421,7 +365,10 @@ function DashboardContent() {
 
         <div className="mb-8">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
-          <p className="mt-2 text-sm text-gray-500">Select a module, configure your exam, and start practicing.</p>
+          <p className="mt-2 text-sm text-gray-500">Configure your exam scope, question types, and pace before you begin.</p>
+          <p className="mt-2 inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-800 ring-1 ring-amber-200">
+            Beta: Features and scoring details are still being refined.
+          </p>
         </div>
 
         <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -520,11 +467,12 @@ function DashboardContent() {
             <div className="mt-4 space-y-3">
               <button
                 type="button"
-                onClick={startFinalMockExam}
+                onClick={handleStartFinalMockExam}
+                disabled={examLoading}
                 className="w-full rounded-xl bg-emerald-600 px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-emerald-700"
               >
                 <span className="block text-xs uppercase tracking-wide text-emerald-100">Final mock exam</span>
-                <span className="block mt-1">All questions in preserved order</span>
+                <span className="block mt-1">Weighted 200-question simulation</span>
               </button>
 
               <button
@@ -553,62 +501,41 @@ function DashboardContent() {
           <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm lg:col-span-2">
             <div className="mb-3 flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Presets</p>
-                <h3 className="text-base font-semibold text-gray-900">Saved exam setups</h3>
+                <p className="text-xs font-medium uppercase tracking-wide text-gray-400">Feedback</p>
+                <h3 className="text-base font-semibold text-gray-900">Help improve the platform</h3>
               </div>
-              <span className="text-xs text-gray-500">Stored locally on this device</span>
+              <span className="text-xs text-gray-500">Optional contact is available below</span>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
+            <form onSubmit={submitFeedback} className="space-y-3">
+              <textarea
+                value={feedbackComment}
+                onChange={(e) => setFeedbackComment(e.target.value)}
+                placeholder="Tell us what worked, what felt slow, or what should be improved next."
+                rows={4}
+                className="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+              />
               <input
                 type="text"
-                value={presetName}
-                onChange={(e) => setPresetName(e.target.value)}
-                placeholder="Preset name, e.g. Pediatrics weak CM"
-                className="rounded-xl border border-gray-300 px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                value={feedbackWhatsapp}
+                onChange={(e) => setFeedbackWhatsapp(e.target.value)}
+                placeholder="WhatsApp (optional)"
+                className="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
               />
-              <button
-                type="button"
-                onClick={savePreset}
-                disabled={!presetName.trim()}
-                className="rounded-xl bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                Save current setup
-              </button>
-            </div>
-
-            <div className="mt-4 space-y-2">
-              {presets.length === 0 ? (
-                <p className="text-sm text-gray-500">Save a setup once and reuse it for fast exam creation.</p>
-              ) : (
-                presets.map((preset) => (
-                  <div key={preset.name} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-900">{preset.name}</p>
-                      <p className="text-xs text-gray-500">
-                        All modules · {preset.useAllQuestions ? 'All questions' : `${preset.limit} questions`} · {preset.wrongOnly ? 'Wrong only' : 'All history'}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <button
-                        type="button"
-                        onClick={() => applyPreset(preset)}
-                        className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
-                      >
-                        Apply
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => deletePreset(preset.name)}
-                        className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-white"
-                      >
-                        Delete
-                      </button>
-                    </div>
-                  </div>
-                ))
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-xs text-gray-500">Your feedback is attached to your account for follow-up.</p>
+                <button
+                  type="submit"
+                  disabled={feedbackLoading || !feedbackComment.trim()}
+                  className="rounded-xl bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {feedbackLoading ? 'Sending…' : 'Send feedback'}
+                </button>
+              </div>
+              {feedbackStatus && (
+                <p className={`text-sm ${feedbackStatus.startsWith('Thanks') ? 'text-emerald-700' : 'text-red-700'}`}>{feedbackStatus}</p>
               )}
-            </div>
+            </form>
           </div>
 
           <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
@@ -645,7 +572,16 @@ function DashboardContent() {
                   )}
                   {meta.fileGroups.map((group) => (
                     <div key={group.folder} className="rounded-md border border-gray-100 p-2">
-                      <p className="mb-1 text-xs font-semibold text-gray-800">{group.folder}</p>
+                      <div className="mb-1 flex items-center justify-between gap-2">
+                        <p className="text-xs font-semibold text-gray-800">{group.folder}</p>
+                        <button
+                          type="button"
+                          onClick={() => toggleGroupSelection(group)}
+                          className="rounded-md border border-gray-200 px-2 py-1 text-[11px] font-medium text-gray-700 hover:bg-gray-50"
+                        >
+                          {group.files.every((file) => selectedFiles.includes(file.source_file)) ? 'Unselect folder' : 'Select folder'}
+                        </button>
+                      </div>
                       <div className="space-y-1">
                         {group.files.map((file) => {
                           const previewRow = preview?.fileRows.find((r) => r.source_file === file.source_file);
@@ -846,6 +782,15 @@ function DashboardContent() {
               </div>
             </form>
             </div>
+          </div>
+        </div>
+      )}
+
+      {examLoading && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-gray-900/40 px-4">
+          <div className="w-full max-w-sm rounded-2xl bg-white p-6 text-center shadow-xl">
+            <p className="text-sm font-medium text-gray-900">Preparing your exam...</p>
+            <p className="mt-2 text-xs text-gray-500">Loading questions and answers. This can take a few seconds for large tests.</p>
           </div>
         </div>
       )}

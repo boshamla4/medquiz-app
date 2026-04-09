@@ -11,7 +11,7 @@ const StartExamSchema = z.object({
   useAllQuestions: z.boolean().optional().default(false),
   includeRepeated: z.boolean().optional().default(true),
   wrongOnly: z.boolean().optional().default(false),
-  limit: z.number().int().positive().max(2000).optional().default(20),
+  limit: z.number().int().positive().max(1000).optional().default(20),
   source_exam_id: z.number().int().positive().optional(),
   filter: z.enum(['all', 'wrong_only']).optional().default('all'),
 });
@@ -311,7 +311,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       filtered = filtered.filter((q) => !answeredIds.has(q.id));
     }
 
-    const selectedCount = useAllQuestions ? filtered.length : Math.min(limit, filtered.length);
+    const selectedCount = useAllQuestions
+      ? Math.min(1000, filtered.length)
+      : Math.min(limit, filtered.length, 1000);
     const pool = [...filtered];
     if (selectedCount < pool.length) {
       pool.sort(() => Math.random() - 0.5);
