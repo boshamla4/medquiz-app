@@ -50,6 +50,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const [error, setError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Map<number, number[]>>(new Map());
+  const answersRef = useRef<Map<number, number[]>>(new Map());
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [submitting, setSubmitting] = useState(false);
   const [savingLater, setSavingLater] = useState(false);
@@ -81,6 +82,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
             restored.set(question.id, question.user_answer);
           }
         }
+        answersRef.current = restored;
         setAnswers(restored);
 
         // Restore index from URL query param ?q=N
@@ -100,7 +102,10 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   }, [examId, router, searchParams]);
 
   const handleAnswerChange = useCallback((examQuestionId: number, ids: number[]) => {
-    setAnswers((prev) => new Map(prev).set(examQuestionId, ids));
+    const next = new Map(answersRef.current);
+    next.set(examQuestionId, ids);
+    answersRef.current = next;
+    setAnswers(next);
   }, []);
 
   function navigateTo(index: number) {
@@ -118,9 +123,10 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
     setSubmitting(true);
 
     try {
+      const latestAnswers = answersRef.current;
       const answersPayload = exam.questions.map((q) => ({
         examQuestionId: q.id,
-        selectedAnswerIds: answers.get(q.id) ?? [],
+        selectedAnswerIds: latestAnswers.get(q.id) ?? [],
       }));
 
       const res = await apiPost('/api/exam/submit', {
@@ -149,9 +155,10 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
     setSavingLater(true);
 
     try {
+      const latestAnswers = answersRef.current;
       const answersPayload = exam.questions.map((q) => ({
         examQuestionId: q.id,
-        selectedAnswerIds: answers.get(q.id) ?? [],
+        selectedAnswerIds: latestAnswers.get(q.id) ?? [],
       }));
 
       const res = await apiPost('/api/exam/save-progress', {
