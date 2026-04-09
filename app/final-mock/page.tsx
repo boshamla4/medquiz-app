@@ -32,7 +32,7 @@ function FinalMockContent() {
       setError('');
 
       try {
-        const res = await apiGet('/api/exam/final-mock/start?program=Medicine&totalQuestions=200');
+        const res = await apiGet('/api/exam/final-mock/start?program=Medicine&totalQuestions=100');
         const data = await res.json().catch(() => null);
 
         if (!res.ok) {
@@ -57,7 +57,7 @@ function FinalMockContent() {
 
     try {
       const res = await apiPost('/api/exam/final-mock/start', {
-        totalQuestions: 200,
+        totalQuestions: 100,
         program: 'Medicine',
       });
       const data = await res.json().catch(() => null);
@@ -95,7 +95,7 @@ function FinalMockContent() {
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-emerald-950">Hello. You are about to start the 2025-style final mock exam.</h2>
           <p className="mt-3 text-sm text-emerald-900">
             This exam uses a weighted subject blueprint based on the 2025 graduation exam profile.
-            It targets {config?.totalQuestions ?? 200} questions and balances topic coverage by percentage.
+            It targets {config?.totalQuestions ?? 100} questions and balances topic coverage by percentage.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ function FinalMockContent() {
           <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
             <h3 className="text-base font-semibold text-gray-900">Before You Start</h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-600">
-              <li>Target size: {config?.totalQuestions ?? 200} questions</li>
+              <li>Target size: {config?.totalQuestions ?? 100} questions</li>
               <li>Selection mode: weighted by 2025 subject profile</li>
               <li>Scoring mode: standard question scoring per item</li>
               <li>Question order: randomized at launch</li>

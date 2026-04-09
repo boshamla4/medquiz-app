@@ -56,9 +56,14 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const [savingLater, setSavingLater] = useState(false);
   const [submitError, setSubmitError] = useState('');
   const autoSubmittedRef = useRef(false);
+  const initialQuestionRef = useRef<string | null>(null);
+
+  if (initialQuestionRef.current === null) {
+    initialQuestionRef.current = searchParams.get('q');
+  }
 
   useEffect(() => {
-    const initialQ = searchParams.get('q');
+    const initialQ = initialQuestionRef.current;
 
     async function loadExam() {
       try {
@@ -99,11 +104,15 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
       }
     }
     loadExam();
-  }, [examId, router, searchParams]);
+  }, [examId, router]);
 
   const handleAnswerChange = useCallback((examQuestionId: number, ids: number[]) => {
     const next = new Map(answersRef.current);
-    next.set(examQuestionId, ids);
+    if (ids.length === 0) {
+      next.delete(examQuestionId);
+    } else {
+      next.set(examQuestionId, ids);
+    }
     answersRef.current = next;
     setAnswers(next);
   }, []);
@@ -213,9 +222,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const current = exam.questions[currentIndex];
   const isLast = currentIndex === exam.questions.length - 1;
   const currentRevealed = revealed.has(current.id);
-  const answeredCount = exam.questions.filter((q) =>
-    (answers.get(q.id) ?? []).length > 0
-  ).length;
+  const answeredCount = Array.from(answers.values()).filter((selected) => selected.length > 0).length;
 
   const selectedNow = answers.get(current.id) ?? [];
   const correctNow = new Set(

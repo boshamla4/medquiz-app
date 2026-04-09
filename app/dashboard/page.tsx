@@ -427,7 +427,7 @@ function DashboardContent() {
           >
             <span className="text-2xl">🎯</span>
             <span className="text-base font-semibold text-emerald-900">Start Final Mock Exam</span>
-            <span className="text-sm text-emerald-700">Random 200 questions across all files</span>
+            <span className="text-sm text-emerald-700">Random 100 questions across all files</span>
           </button>
         </div>
 

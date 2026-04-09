@@ -324,10 +324,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       ? Math.min(1000, filtered.length)
       : Math.min(limit, filtered.length, 1000);
     const pool = [...filtered];
-    if (selectedCount < pool.length) {
-      pool.sort(() => Math.random() - 0.5);
-      pool.length = selectedCount;
-    }
 
     if (orderMode === 'preserve') {
       pool.sort((a, b) => {
@@ -339,11 +335,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         if (orderA !== orderB) return orderA - orderB;
         return a.id - b.id;
       });
+      questions = pool.slice(0, selectedCount);
     } else {
       pool.sort(() => Math.random() - 0.5);
+      questions = pool.slice(0, selectedCount);
     }
-
-    questions = pool;
 
     const questionIds = questions.map((q) => q.id);
     questionData = await fetchQuestionsWithAnswers(questionIds);

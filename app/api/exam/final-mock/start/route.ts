@@ -5,7 +5,7 @@ import { requireSession } from '@/lib/sessionHelper';
 import { formatServerTiming, recordApiMetric } from '@/lib/performanceMetrics';
 
 const FinalMockSchema = z.object({
-  totalQuestions: z.number().int().positive().max(1000).optional().default(200),
+  totalQuestions: z.number().int().positive().max(1000).optional().default(100),
   program: z.string().optional().default('Medicine'),
 });
 
@@ -18,7 +18,7 @@ interface DistributionRow {
 }
 
 const DEFAULT_PROGRAM = 'Medicine';
-const DEFAULT_TOTAL_QUESTIONS = 200;
+const DEFAULT_TOTAL_QUESTIONS = 100;
 
 interface QuestionRow {
   id: number;
