@@ -14,9 +14,9 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     : DEFAULT_ACTIVE_WINDOW_MINUTES;
   const windowStartIso = new Date(Date.now() - windowMinutes * 60_000).toISOString();
 
-  const { count, error } = await db
+  const { data, error } = await db
     .from('sessions')
-    .select('id', { count: 'exact', head: true })
+    .select('user_id')
     .eq('is_active', true)
     .gte('last_seen', windowStartIso);
 
@@ -27,8 +27,15 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const uniqueUserIds = new Set(
+    (data ?? [])
+      .map((row) => row.user_id)
+      .filter((userId): userId is number => typeof userId === 'number')
+  );
+
   return NextResponse.json({
-    activeUsers: count ?? 0,
+    activeUsers: uniqueUserIds.size,
+    activeSessions: (data ?? []).length,
     windowMinutes,
     asOf: new Date().toISOString(),
   });
