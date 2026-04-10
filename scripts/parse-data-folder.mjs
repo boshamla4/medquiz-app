@@ -179,8 +179,13 @@ function normLetter(ch) {
 const QUESTION_P = /^(\d+)[.)]\s*(?:(CM|CS)[.):]?\s+)?(\S[\s\S]+)$/i;
 // Accepts: "1. CS text", "1) CS. text", "1. text"
 
+// Accepts Latin a-e AND Cyrillic а-е as answer-option letter prefix (Neonatology)
 const ANSWER_BRACKET_P =
-  /^([A-Ea-e])[.)]{1,2}\s*\[([^\]]*)\]\s*(.+)$/;
+  /^([A-Ea-eаАвВсСдДеЕ])[.)]{1,2}\s*\[([^\]]*)\]\s*(.+)$/;
+
+// Regex for OL-list items that start directly with a bracket marker (no letter prefix).
+// Surgery_Ped_Jalba uses: <li>[ ] answer text</li>  or  <li>[x ] bold answer</li>
+const LIST_BRACKET_P = /^\[([^\]]*)\]\s*(.+)$/;
 
 function parseBracket(html) {
   const segments = extractSegments(html);
@@ -206,7 +211,7 @@ function parseBracket(html) {
   let pendingNumber = null;
 
   for (const seg of segments) {
-    const { text } = seg;
+    const { text, isList } = seg;
 
     // Skip separator lines
     if (/^[-–—_=.]{3,}$/.test(text)) continue;
@@ -217,17 +222,36 @@ function parseBracket(html) {
       continue;
     }
 
-    // Answer with bracket
+    // Answer with bracket (letter-prefixed, including Cyrillic labels)
     const aMatch = text.match(ANSWER_BRACKET_P);
     if (aMatch && current) {
       const isCorrect = isBracketCorrect(aMatch[2]);
+      // Normalize Cyrillic letter labels to Latin A-E
+      const rawLetter = aMatch[1];
+      const letter = (CYRILLIC_TO_LATIN[rawLetter] || rawLetter).toUpperCase();
+      // If the answer letter is already taken (Cyrillic а=A collides with Latin a=A),
+      // fall through to auto-assign only if we already have that letter.
       const ans = {
-        letter: aMatch[1].toUpperCase(),
+        letter,
         text: aMatch[3].replace(/\s+/g, ' ').trim(),
         is_correct: isCorrect,
       };
       current.answers.push(ans);
       lastAnswer = ans;
+      continue;
+    }
+
+    // OL list-item that starts directly with a bracket marker — no letter prefix.
+    // Surgery_Ped_Jalba answers inside <ol><li>[ ] text</li> or <li>[x ] text</li>.
+    const listBracketMatch = isList ? text.match(LIST_BRACKET_P) : null;
+    if (listBracketMatch && current) {
+      const isCorrect = isBracketCorrect(listBracketMatch[1]);
+      const letter = String.fromCharCode(65 + current.answers.length);
+      if (letter <= 'E') {
+        const ans = { letter, text: listBracketMatch[2].replace(/\s+/g, ' ').trim(), is_correct: isCorrect };
+        current.answers.push(ans);
+        lastAnswer = ans;
+      }
       continue;
     }
 
@@ -284,6 +308,23 @@ function parseBracket(html) {
 
     // Continuation text
     if (current) {
+      // Pneumology: some question stems appear without a CS/CM prefix or number.
+      // They arrive as plain text after the previous question's last answer.
+      // Detect them via isQuestion() so they start a new question rather than
+      // being appended to the last answer's text.
+      if (
+        lastAnswer
+        && current.answers.length >= 3
+        && isQuestion(text)
+        && !ANSWER_BRACKET_P.test(text)
+        && !LIST_BRACKET_P.test(text)
+      ) {
+        flush();
+        autoNum++;
+        current = { question_number: autoNum, type: 'unknown', question_text: text, answers: [] };
+        lastAnswer = null;
+        continue;
+      }
       if (lastAnswer) {
         lastAnswer.text = (lastAnswer.text + ' ' + text).replace(/\s+/g, ' ').trim();
       } else {
@@ -308,28 +349,40 @@ function parseExplicit(html) {
   const questions = [];
   let current = null;
   let autoNum = 0;
+  // Track the current section type set by <h2>CS</h2> or <h2>CM</h2> markers.
+  // Nephrology embeds section headers between question groups; questions in that
+  // section carry no CS/CM prefix of their own.
+  let pendingSectionType = null;
+  // When a csMatch fires on a list-item segment (Obstetrics format), subsequent
+  // list-items are unlabeled answer options that get auto-assigned A–E letters.
+  let autoLetterMode = false;
 
   function flush() {
     if (!current) return;
     if (current.answers.length === 0 || !current.answers.some((a) => a.is_correct)) {
       current = null;
+      autoLetterMode = false;
       return;
     }
     const correct = current.answers.filter((a) => a.is_correct).length;
     current.type = correct > 1 ? 'multiple' : 'single';
     questions.push(current);
     current = null;
+    autoLetterMode = false;
   }
 
   for (const seg of segments) {
-    const { text } = seg;
+    const { text, isList } = seg;
     if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
 
     // Correct answer line
     const caMatch = text.match(CORRECT_ANSWER_P);
     if (caMatch && current) {
       const raw = caMatch[1].trim();
-      // Extract letters (A-E, a-e, possibly comma/space separated)
+      // Extract letters (A-E, a-e, possibly comma/space separated).
+      // Works for both named letters ("Correct answer: B") and position-based
+      // lowercase ("Correct answer: a, b, d") because auto-assigned letters
+      // A=1st, B=2nd … match positional a=1st, b=2nd … after normLetter().
       const letters = new Set(
         [...raw.matchAll(/[A-Ea-e]/g)].map((m) => normLetter(m[0]))
       );
@@ -345,35 +398,79 @@ function parseExplicit(html) {
     // Question line (numbered)
     const qMatch = text.match(QUESTION_P);
     if (qMatch) {
-      const questionText = qMatch[3].trim();
+      let questionText = qMatch[3].trim();
       if (questionText.length < 5) continue;
       flush();
       autoNum = parseInt(qMatch[1]);
       current = {
         question_number: autoNum,
-        type: qMatch[2]?.toUpperCase() || 'unknown',
+        type: qMatch[2]?.toUpperCase() || pendingSectionType || 'unknown',
         question_text: questionText,
         answers: [],
       };
+      pendingSectionType = null;
+
+      // Reumatology: some paragraphs contain the question AND all five answers
+      // in one <p> with no <br> between them, e.g.:
+      //   "38. Phalangeal involvement…: A. "Sausage finger" B. "Telescoped…" …"
+      // Split inline answers out so "Correct answer: X" can mark them correctly.
+      const inlineIdx = questionText.search(/\s[A-E][.)]\s/);
+      if (inlineIdx > 0) {
+        current.question_text = questionText.slice(0, inlineIdx).trim();
+        const answersPart = questionText.slice(inlineIdx + 1);
+        for (const am of answersPart.matchAll(/([A-E])[.)]\s+(.+?)(?=\s+[A-E][.)]\s|$)/g)) {
+          current.answers.push({ letter: am[1], text: am[2].trim(), is_correct: false });
+        }
+      }
       continue;
     }
 
-    // Unnumbered CS/CM question
+    // Unnumbered CS/CM question (e.g. "CM Which of the following…")
     const csMatch = text.match(/^(CS|CM)[.):]?\s+(.{5,})$/i);
-    if (csMatch && !current?.answers.length) {
+    if (csMatch) {
       flush();
       autoNum++;
+      // If the match came from inside an OL list item (Obstetrics), subsequent
+      // list-item siblings are unlabeled answer options → enable auto-letter mode.
+      autoLetterMode = isList;
       current = {
         question_number: autoNum,
         type: csMatch[1].toUpperCase(),
         question_text: csMatch[2].trim(),
         answers: [],
       };
+      pendingSectionType = null;
       continue;
     }
 
-    // CS/CM type-only line (Nephrology uses <h2>CS</h2> before the ol)
-    if (/^(CS|CM)$/i.test(text)) continue;
+    // CS/CM type-only line — e.g. <h2>CS</h2> in Nephrology.
+    // Instead of discarding, record the section type so the next unnumbered
+    // paragraph that looks like a question stem can be picked up correctly.
+    if (/^(CS|CM)$/i.test(text)) {
+      pendingSectionType = text.toUpperCase();
+      continue;
+    }
+
+    // Unnumbered question stem detected via heuristic (Nephrology CS questions).
+    // Only fires when a section type was established by a preceding h2 marker
+    // and the current segment is not an answer-option line.
+    if (
+      pendingSectionType
+      && isQuestion(text)
+      && !ANSWER_LETTER_P.test(text)
+      && (!current || current.answers.length > 0)
+    ) {
+      flush();
+      autoNum++;
+      current = {
+        question_number: autoNum,
+        type: pendingSectionType,
+        question_text: text,
+        answers: [],
+      };
+      // Keep pendingSectionType alive — multiple questions share the same h2 section.
+      continue;
+    }
 
     // Answer line (letter prefix)
     if (current) {
@@ -387,8 +484,15 @@ function parseExplicit(html) {
         continue;
       }
 
-      // The question itself might be the first <li> in Nephrology nested ol
-      // If we have a current question but no answers yet, append to question text
+      // Unlabeled list-item answer (Obstetrics format):
+      // The question was the first <li>; remaining <li>s are answer options.
+      if (isList && autoLetterMode && current.answers.length < 5) {
+        const letter = String.fromCharCode(65 + current.answers.length);
+        current.answers.push({ letter, text, is_correct: false });
+        continue;
+      }
+
+      // Continuation text — only append to question stem before any answers collected.
       if (current.answers.length === 0 && text.length > 3) {
         current.question_text = (current.question_text + ' ' + text).replace(/\s+/g, ' ').trim();
       }
@@ -534,6 +638,23 @@ function splitCmGroups(text) {
   return groups.filter((g) => g.length > 0);
 }
 
+// ---------------------------------------------------------------------------
+// Shared heuristic: does this segment text look like a question stem?
+// Used by both extractQuestionsFromHtml and parseExplicit.
+// ---------------------------------------------------------------------------
+function isQuestion(text) {
+  if (text.length < 10) return false;
+  if (ANSWER_LETTER_P.test(text)) return false;
+  if (/^[A-E][.)]\s/.test(text)) return false;
+  // Ends with ? or : → likely question
+  if (/[?:]$/.test(text.trim())) return true;
+  // Contains question words
+  if (/\b(which|what|choose|select|indicate|identify|specify|name|note|mark|determine|define|enumerate)\b/i.test(text)) return true;
+  // Long enough without being an answer
+  if (text.length > 60) return true;
+  return false;
+}
+
 /**
  * Parse all questions and their answer options from the HTML body.
  * Returns: Array<{ question_number, type, question_text, answers: [{letter, text}] }>
@@ -551,20 +672,6 @@ function extractQuestionsFromHtml(html) {
     if (!current || current.answers.length === 0) { current = null; return; }
     questions.push(current);
     current = null;
-  }
-
-  // Heuristic: is this text a question?
-  function isQuestion(text) {
-    if (text.length < 10) return false;
-    if (ANSWER_LETTER_P.test(text)) return false;
-    if (/^[A-E][.)]\s/.test(text)) return false;
-    // Ends with ? or : → likely question
-    if (/[?:]$/.test(text.trim())) return true;
-    // Contains question words
-    if (/\b(which|what|choose|select|indicate|identify|specify|name|note|mark|determine|define|enumerate)\b/i.test(text)) return true;
-    // Long enough without being an answer
-    if (text.length > 60) return true;
-    return false;
   }
 
   // Detect if question has a number prefix
@@ -867,6 +974,188 @@ function parseBoldCorrect(html) {
 }
 
 // ---------------------------------------------------------------------------
+// Surgery 4th year — per-section answer keys: "Section (answers)" + <ol> block
+// ---------------------------------------------------------------------------
+
+/**
+ * Parse one Surgery_4th answer-key OL item.
+ * Items mix CS (single letter) and CM (number + letter group) in one entry, e.g.:
+ *   "A 21. A,B,C,E"  → csLetter='A', numberedCm={21:['A','B','C','E']}
+ *   "B"              → csLetter='B'
+ *   "A,B,C"          → sequentialCm=['A','B','C']
+ *   "A,B,C,E 24. B,C"→ sequentialCm=['A','B','C','E'], numberedCm={24:['B','C']}
+ */
+function parseSurgery4thKeyItem(rawItem) {
+  let t = rawItem;
+  for (const [cyr, lat] of Object.entries(CYRILLIC_TO_LATIN)) t = t.split(cyr).join(lat);
+  t = t.toUpperCase().replace(/\s+/g, ' ').trim();
+
+  const csLetters = [];
+  const numberedCm = {};
+  const sequentialCm = [];
+
+  // Collect all numbered entries: "21. A,B,C,E" or "21.ABCE"
+  const numRe = /(\d+)\s*[.]\s*([A-E][A-E,\s]*)/g;
+  const numMatches = [...t.matchAll(numRe)];
+  for (const nm of numMatches) {
+    numberedCm[parseInt(nm[1])] = [...nm[2].matchAll(/[A-E]/g)].map((m) => m[0]);
+  }
+
+  // Remove numbered parts and examine what's left
+  let remaining = t;
+  for (const nm of [...numMatches].reverse()) {
+    remaining = remaining.slice(0, nm.index) + ' ' + remaining.slice(nm.index + nm[0].length);
+  }
+  remaining = remaining.trim();
+
+  const letterGroups = remaining
+    .split(/\s+/)
+    .map((s) => s.replace(/[^A-E,]/g, ''))
+    .filter(Boolean);
+
+  for (const grp of letterGroups) {
+    if (/^[A-E]$/.test(grp)) {
+      csLetters.push(grp);
+    } else if (/^[A-E]([,A-E])+$/.test(grp)) {
+      sequentialCm.push([...grp.matchAll(/[A-E]/g)].map((m) => m[0]));
+    }
+  }
+
+  return { csLetters, numberedCm, sequentialCm };
+}
+
+function parseSurgery4th(html) {
+  const allQuestions = [];
+
+  // Find each "Section (answers)" header paragraph.
+  // The key that follows may be an OL block OR plain paragraph text.
+  const headerRe = /(<p>(?:<[^>]+>)*[^<]*\(answers?\)[^<]*(?:<\/[^>]+>)*<\/p>)/gi;
+  const keyBlocks = [];
+  let hm;
+  while ((hm = headerRe.exec(html)) !== null) {
+    const headerEnd = hm.index + hm[0].length;
+    const sectionLabel = hm[1].replace(/<[^>]+>/g, '').trim();
+    // Skip whitespace/newlines between header and next tag
+    const rest = html.slice(headerEnd).replace(/^\s+/, '');
+    let items = [];
+    let blockLen = 0;
+
+    // Look for an OL within the next ~300 chars (may be wrapped in UL)
+    const nearbyHtml = rest.slice(0, 600);
+    const firstOlOffset = nearbyHtml.search(/<ol>/i);
+    const firstPOffset = nearbyHtml.search(/<p>/i);
+
+    if (firstOlOffset >= 0 && (firstPOffset < 0 || firstOlOffset < firstPOffset + 50)) {
+      // OL-format key (possibly nested inside <ul>)
+      const olStart = rest.indexOf('<ol>', firstOlOffset);
+      const olEnd = rest.indexOf('</ol>', olStart) + 5;
+      const olHtml = rest.slice(olStart, olEnd);
+      items = [...olHtml.matchAll(/<li>([\s\S]*?)<\/li>/g)]
+        .map((m) => m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+      // Block extends to closing structure (find closing </ul> or just use olEnd)
+      const closingTag = rest.indexOf('</ul>', olEnd);
+      blockLen = html.slice(headerEnd).length - rest.length + (closingTag >= 0 ? closingTag + 5 : olEnd);
+    } else if (firstPOffset >= 0) {
+      // Text-format key — collect consecutive <p> blocks that look like answer data
+      let pos = firstPOffset;
+      const combinedItems = [];
+      while (pos < rest.length) {
+        if (!/^<p>/i.test(rest.slice(pos))) break;
+        const pClose = rest.indexOf('</p>', pos) + 4;
+        if (pClose <= pos) break;
+        const pText = rest.slice(pos, pClose).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        // Stop if paragraph contains question-like content (long sentences, CS/CM prefix)
+        if (pText.length > 100 || /\b(CS|CM)\b/.test(pText) || /[a-z]{5,}/.test(pText)) break;
+        if (/^[A-Ea-e\d\s.,]+$/.test(pText) && pText.length > 1) combinedItems.push(pText);
+        pos = pClose;
+        // skip whitespace
+        while (pos < rest.length && /\s/.test(rest[pos])) pos++;
+      }
+      if (combinedItems.length > 0) {
+        items = [combinedItems.join(' ')];
+        blockLen = html.slice(headerEnd).length - rest.length + pos;
+      }
+    }
+
+    keyBlocks.push({
+      index: hm.index,
+      end: headerEnd + blockLen,
+      sectionLabel,
+      items,
+    });
+  }
+
+  if (keyBlocks.length === 0) return [];
+
+  // Extract question blocks: text BEFORE each key block (from previous key end or doc start).
+  let docStart = 0;
+  for (const kb of keyBlocks) {
+    const sectionHtml = html.slice(docStart, kb.index);
+    docStart = kb.end;
+
+    const sectionQuestions = extractQuestionsFromHtml(sectionHtml);
+    if (sectionQuestions.length === 0) continue;
+
+    // Parse all key items for this section.
+    const csLetters = [];
+    const numberedCm = {};
+    const seqCmGroups = [];
+
+    for (const item of kb.items) {
+      const { csLetters: cl, numberedCm: nc, sequentialCm: sc } = parseSurgery4thKeyItem(item);
+      csLetters.push(...cl);
+      for (const [n, letters] of Object.entries(nc)) numberedCm[n] = letters;
+      seqCmGroups.push(...sc);
+    }
+
+    // Apply answers: numbered CM first (by question_number), then sequential.
+    const csQueue = [...csLetters];
+    const seqCmQueue = [...seqCmGroups];
+
+    for (const q of sectionQuestions) {
+      const numKey = q.question_number;
+      if (numberedCm[numKey]) {
+        // CM question with explicit key entry
+        const letters = new Set(numberedCm[numKey]);
+        for (const ans of q.answers) {
+          if (letters.has(ans.letter)) ans.is_correct = true;
+        }
+        q.type = 'multiple';
+      } else if (q.type === 'CM' || q.type === 'multiple') {
+        // CM question without explicit number — take next sequential group
+        const group = seqCmQueue.shift();
+        if (group) {
+          const letters = new Set(group);
+          for (const ans of q.answers) {
+            if (letters.has(ans.letter)) ans.is_correct = true;
+          }
+        }
+      } else {
+        // CS question — take next letter from queue
+        const letter = csQueue.shift();
+        if (letter) {
+          for (const ans of q.answers) {
+            if (ans.letter === letter) { ans.is_correct = true; break; }
+          }
+          // Index fallback
+          if (!q.answers.some((a) => a.is_correct)) {
+            const idx = letter.charCodeAt(0) - 65;
+            if (q.answers[idx]) q.answers[idx].is_correct = true;
+          }
+        }
+        q.type = 'single';
+      }
+    }
+
+    const validQs = sectionQuestions.filter((q) => q.answers.length > 0 && q.answers.some((a) => a.is_correct));
+    allQuestions.push(...validQs);
+  }
+
+  return allQuestions;
+}
+
+// ---------------------------------------------------------------------------
 // Surgery 5th year — per-section answer key in bold <ol><li>
 // ---------------------------------------------------------------------------
 
@@ -951,14 +1240,20 @@ function extractQuestionsFromSurgery5thHtml(html) {
     current = null;
   }
 
+  // Surgery_5th has two observed question-number formats:
+  //   "1.CM Which of…"    (no space, no dot after CM)
+  //   "25.CM.Which of…"   (dot after CM instead of space)
+  //   "1. CM Which of…"   (space between dot and CM)
+  // The pattern below handles all three variants.
+  const SURGERY5_Q = /^(\d+)\s*\.\s*(CM|CS)[.):\s]+(.{5,})$/i;
+
   for (const seg of segs) {
-    const { text } = seg;
+    const { text, isList } = seg;
     if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
-    // Skip KEY answers lines
+    // Skip KEY answers lines and section headers
     if (/^KEY\s+answers/i.test(text)) { flush(); continue; }
 
-    // "1.CM question text" — note answers may be on same segment or following
-    const qMatch = text.match(/^(\d+)\.(CM|CS)\s+(.{5,})$/i);
+    const qMatch = text.match(SURGERY5_Q);
     if (qMatch) {
       flush();
       current = {
@@ -970,10 +1265,18 @@ function extractQuestionsFromSurgery5thHtml(html) {
       continue;
     }
 
-    // Answer line: "A.text" (capital letter + dot + text)
+    // Answer line: "A.text" or "A. text" (capital letter + dot)
     const aMatch = text.match(/^([A-E])\.\s*(.{2,})$/);
     if (aMatch && current) {
       current.answers.push({ letter: aMatch[1], text: aMatch[2].trim(), is_correct: false });
+      continue;
+    }
+
+    // Unlabeled list-item answer (some Surgery_5th sections put answer options
+    // inside <ol><li> without a letter prefix — auto-assign A, B, C, D, E).
+    if (isList && current && current.answers.length < 5 && text.length > 1) {
+      const letter = String.fromCharCode(65 + current.answers.length);
+      current.answers.push({ letter, text, is_correct: false });
       continue;
     }
 
@@ -1004,6 +1307,7 @@ async function parseFile(filePath) {
   const hasBracket = /\[[xX×хХ✓ ]\]/.test(rawText);
   const hasExplicitCorrect = /Correct\s+answer/i.test(rawText);
   const isSurgery5th = filename === 'Surgery_5th year_Timis.docx';
+  const isSurgery4th = filename === 'Surgery_4th year_Vozian.docx';
   const isUnderlinedSurgery = filename === 'Surgery_3rd year_Vescu.docx';
 
   let rawQuestions;
@@ -1015,6 +1319,8 @@ async function parseFile(filePath) {
     }
   } else if (isSurgery5th) {
     rawQuestions = parseSurgery5th(html);
+  } else if (isSurgery4th) {
+    rawQuestions = parseSurgery4th(html);
   } else if (hasBracket) {
     rawQuestions = parseBracket(html);
   } else if (hasExplicitCorrect) {
@@ -1029,6 +1335,11 @@ async function parseFile(filePath) {
     }
   } else {
     rawQuestions = parseAnswerKey(html);
+  }
+
+  // Validation: alert if strategy returned 0 questions despite non-trivial content
+  if (rawQuestions.length === 0 && rawText.length > 2000) {
+    console.warn(`  ⚠ Strategy returned 0 raw questions for ${filename} (${rawText.length} chars). Check format detection.`);
   }
 
   // Normalise output

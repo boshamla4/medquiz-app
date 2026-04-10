@@ -372,8 +372,9 @@ function DashboardContent() {
       <header className="border-b border-gray-200 bg-white px-4 py-4">
         <div className="mx-auto grid max-w-5xl grid-cols-[auto_1fr_auto] items-center gap-3">
           <h1 className="text-xl font-bold text-gray-900">MedQuiz</h1>
-          <p className="justify-self-center rounded-full bg-amber-50 px-3 py-1 text-center text-xs font-medium text-amber-800 ring-1 ring-amber-200">
-            Beta: Features and scoring details are still being refined.
+          <p className="justify-self-center rounded-full bg-blue-50 px-3 py-1 text-center text-xs font-medium text-blue-800 ring-1 ring-blue-200">
+            Active users now: {activeUsers?.activeUsers ?? '...'}
+            {activeUsers?.windowMinutes ? ` (last ${activeUsers.windowMinutes} min)` : ''}
           </p>
           <button
             onClick={handleLogout}
@@ -393,10 +394,6 @@ function DashboardContent() {
         )}
 
         <div className="mb-8">
-          <p className="mb-3 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 ring-1 ring-blue-200">
-            Active users now: {activeUsers?.activeUsers ?? '...'}
-            {activeUsers?.windowMinutes ? ` (last ${activeUsers.windowMinutes} min)` : ''}
-          </p>
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Mock Test Platform</h2>
           <p className="mt-2 text-sm text-gray-500">Configure your exam scope, question types, and pace before you begin.</p>
         </div>
