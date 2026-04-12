@@ -417,6 +417,15 @@ function DashboardContent() {
             <span className="text-sm text-gray-500">Browse your past exams and results</span>
           </Link>
 
+          <Link
+            href="/stats"
+            className="flex flex-col items-start gap-2 rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-blue-300"
+          >
+            <span className="text-2xl">📊</span>
+            <span className="text-base font-semibold text-gray-900">Performance Stats</span>
+            <span className="text-sm text-gray-500">Score, consistency and coverage by file</span>
+          </Link>
+
           <button
             onClick={handleStartFinalMockExam}
             disabled={examLoading}
