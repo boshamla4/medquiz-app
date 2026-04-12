@@ -59,18 +59,18 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">MedQuiz</h1>
-          <p className="mt-3 text-sm font-medium text-blue-700">Welcome back</p>
-          <p className="mt-2 text-sm text-gray-500">Enter your access token to continue</p>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">MedQuiz</h1>
+          <p className="mt-3 text-sm font-medium text-blue-700 dark:text-blue-400">Welcome back</p>
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Enter your access token to continue</p>
         </div>
 
-        <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200">
+        <div className="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label htmlFor="token" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="token" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Access Token
               </label>
               <input
@@ -82,12 +82,12 @@ export default function LoginPage() {
                 autoComplete="off"
                 autoFocus
                 placeholder="Enter your token"
-                className="mt-1.5 block w-full rounded-lg border border-gray-300 px-3.5 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                className="mt-1.5 block w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 px-3.5 py-2.5 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
               />
             </div>
 
             {error && (
-              <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+              <div className="rounded-lg bg-red-50 dark:bg-red-900/30 px-4 py-3 text-sm text-red-700 dark:text-red-400 ring-1 ring-red-200 dark:ring-red-800">
                 {error}
               </div>
             )}

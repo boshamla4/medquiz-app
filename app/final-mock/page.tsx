@@ -76,13 +76,13 @@ function FinalMockContent() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-50">
-      <header className="border-b border-gray-200 bg-white px-4 py-4">
+    <div className="flex min-h-screen flex-col bg-gray-50 dark:bg-gray-900">
+      <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-4">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <h1 className="text-xl font-bold text-gray-900">MedQuiz</h1>
+          <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">MedQuiz</h1>
           <Link
             href="/dashboard"
-            className="text-sm font-medium text-blue-600 hover:text-blue-800"
+            className="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
           >
             Back to Dashboard
           </Link>
@@ -90,42 +90,42 @@ function FinalMockContent() {
       </header>
 
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
-        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">Final Mock</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-emerald-950">Hello. You are about to start the 2025-style final mock exam.</h2>
-          <p className="mt-3 text-sm text-emerald-900">
+        <div className="rounded-2xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20 p-6 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400">Final Mock</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-emerald-950 dark:text-emerald-100">Hello. You are about to start the 2025-style final mock exam.</h2>
+          <p className="mt-3 text-sm text-emerald-900 dark:text-emerald-300">
             This exam uses a weighted subject blueprint based on the 2025 graduation exam profile.
             It targets {config?.totalQuestions ?? 100} questions and balances topic coverage by percentage.
           </p>
         </div>
 
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
-          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-2">
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 shadow-sm lg:col-span-2">
             <div className="mb-3 flex items-center justify-between">
-              <h3 className="text-base font-semibold text-gray-900">2025 Weight Scale</h3>
-              <span className="text-xs text-gray-500">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">2025 Weight Scale</h3>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
                 {config ? `${Math.round(config.totalWeightPercent)}% total` : 'Loading...'}
               </span>
             </div>
 
-            {loading && <p className="text-sm text-gray-500">Loading weight distribution...</p>}
+            {loading && <p className="text-sm text-gray-500 dark:text-gray-400">Loading weight distribution...</p>}
 
             {!loading && config && (
-              <div className="overflow-hidden rounded-xl border border-gray-200">
+              <div className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
                 <table className="w-full text-sm">
-                  <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500">
+                  <thead className="bg-gray-50 dark:bg-gray-700/50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
                     <tr>
                       <th className="px-4 py-3">Subject</th>
                       <th className="px-4 py-3">Weight</th>
                       <th className="px-4 py-3">Expected Questions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-100">
+                  <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
                     {config.sections.map((section) => (
                       <tr key={section.subject}>
-                        <td className="px-4 py-3 text-gray-900">{section.subject}</td>
-                        <td className="px-4 py-3 text-gray-700">{section.weightPercent}%</td>
-                        <td className="px-4 py-3 text-gray-700">{section.targetQuestions}</td>
+                        <td className="px-4 py-3 text-gray-900 dark:text-gray-100">{section.subject}</td>
+                        <td className="px-4 py-3 text-gray-700 dark:text-gray-300">{section.weightPercent}%</td>
+                        <td className="px-4 py-3 text-gray-700 dark:text-gray-300">{section.targetQuestions}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -134,9 +134,9 @@ function FinalMockContent() {
             )}
           </div>
 
-          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-            <h3 className="text-base font-semibold text-gray-900">Before You Start</h3>
-            <ul className="mt-3 space-y-2 text-sm text-gray-600">
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 shadow-sm">
+            <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">Before You Start</h3>
+            <ul className="mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li>Target size: {config?.totalQuestions ?? 100} questions</li>
               <li>Selection mode: weighted by 2025 subject profile</li>
               <li>Scoring mode: standard question scoring per item</li>
@@ -153,7 +153,7 @@ function FinalMockContent() {
             </button>
 
             {error && (
-              <p className="mt-3 text-sm text-red-700">{error}</p>
+              <p className="mt-3 text-sm text-red-700 dark:text-red-400">{error}</p>
             )}
           </div>
         </div>

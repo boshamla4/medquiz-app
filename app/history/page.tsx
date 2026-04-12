@@ -123,13 +123,13 @@ function HistoryContent() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-50">
-      <header className="border-b border-gray-200 bg-white px-4 py-4">
+    <div className="flex min-h-screen flex-col bg-gray-50 dark:bg-gray-900">
+      <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-4">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <h1 className="text-xl font-bold text-gray-900">MedQuiz</h1>
+          <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">MedQuiz</h1>
           <Link
             href="/dashboard"
-            className="text-sm font-medium text-blue-600 hover:text-blue-800"
+            className="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
           >
             ← Dashboard
           </Link>
@@ -137,26 +137,26 @@ function HistoryContent() {
       </header>
 
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
-        <h2 className="mb-6 text-2xl font-semibold text-gray-900">Exam History</h2>
+        <h2 className="mb-6 text-2xl font-semibold text-gray-900 dark:text-gray-100">Exam History</h2>
 
-        <p className="mb-6 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 ring-1 ring-blue-200">
+        <p className="mb-6 inline-flex rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300 ring-1 ring-blue-200 dark:ring-blue-800">
           Active users now: {activeUsers?.activeUsers ?? '...'}
           {activeUsers?.windowMinutes ? ` (last ${activeUsers.windowMinutes} min)` : ''}
         </p>
 
         {loading && (
-          <p className="text-gray-500">Loading history…</p>
+          <p className="text-gray-500 dark:text-gray-400">Loading history…</p>
         )}
 
         {error && (
-          <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+          <div className="rounded-lg bg-red-50 dark:bg-red-900/30 px-4 py-3 text-sm text-red-700 dark:text-red-400 ring-1 ring-red-200 dark:ring-red-800">
             {error}
           </div>
         )}
 
         {!loading && !error && exams.length === 0 && (
-          <div className="rounded-xl bg-white p-8 text-center shadow-sm ring-1 ring-gray-200">
-            <p className="text-gray-500">No exams yet. Start your first exam!</p>
+          <div className="rounded-xl bg-white dark:bg-gray-800 p-8 text-center shadow-sm ring-1 ring-gray-200 dark:ring-gray-700">
+            <p className="text-gray-500 dark:text-gray-400">No exams yet. Start your first exam!</p>
             <Link
               href="/dashboard"
               className="mt-4 inline-block rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
@@ -167,9 +167,9 @@ function HistoryContent() {
         )}
 
         {!loading && exams.length > 0 && (
-          <div className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-200">
+          <div className="overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700">
             <table className="w-full text-sm">
-              <thead className="border-b border-gray-200 bg-gray-50 text-xs font-semibold uppercase tracking-wide text-gray-500">
+              <thead className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700/50 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
                 <tr>
                   <th className="px-4 py-3 text-left">Date</th>
                   <th className="px-4 py-3 text-left">Duration</th>
@@ -177,30 +177,30 @@ function HistoryContent() {
                   <th className="px-4 py-3 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100">
+              <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
                 {exams.map((exam) => {
                   const percentage = exam.total > 0
                     ? Math.round((exam.score / exam.total) * 100)
                     : 0;
                   const scoreColor =
                     percentage >= 70
-                      ? 'text-green-700'
+                      ? 'text-green-700 dark:text-green-400'
                       : percentage >= 50
-                      ? 'text-yellow-700'
-                      : 'text-red-700';
+                      ? 'text-yellow-700 dark:text-yellow-400'
+                      : 'text-red-700 dark:text-red-400';
 
                   return (
-                    <tr key={exam.id} className="hover:bg-gray-50">
-                      <td className="px-4 py-3 text-gray-900">
+                    <tr key={exam.id} className="hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                      <td className="px-4 py-3 text-gray-900 dark:text-gray-100">
                         {formatDate(exam.started_at)}
                       </td>
-                      <td className="px-4 py-3 text-gray-600">
+                      <td className="px-4 py-3 text-gray-600 dark:text-gray-400">
                         {formatDuration(exam.duration)}
                       </td>
                       <td className={`px-4 py-3 font-medium ${scoreColor}`}>
                         {exam.score}/{exam.total}
                         {exam.total > 0 && (
-                          <span className="ml-1 text-xs text-gray-400">
+                          <span className="ml-1 text-xs text-gray-400 dark:text-gray-500">
                             ({percentage}%)
                           </span>
                         )}
@@ -210,7 +210,7 @@ function HistoryContent() {
                           {exam.finished_at && (
                             <Link
                               href={`/review/${exam.id}`}
-                              className="rounded-md bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700 hover:bg-gray-200"
+                              className="rounded-md bg-gray-100 dark:bg-gray-700 px-2.5 py-1 text-xs font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
                             >
                               Review
                             </Link>
@@ -221,7 +221,7 @@ function HistoryContent() {
                               setRetryFilter('all');
                               setRetryError('');
                             }}
-                            className="rounded-md bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700 hover:bg-blue-100"
+                            className="rounded-md bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 text-xs font-medium text-blue-700 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50"
                           >
                             Retry
                           </button>
@@ -238,16 +238,16 @@ function HistoryContent() {
 
       {retryModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-          <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-xl">
-            <h3 className="mb-4 text-lg font-semibold text-gray-900">Retry Exam</h3>
+          <div className="w-full max-w-sm rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700">
+            <h3 className="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">Retry Exam</h3>
 
             <form onSubmit={handleRetry} className="space-y-4">
               <fieldset>
-                <legend className="mb-2 text-sm font-medium text-gray-700">
+                <legend className="mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
                   Questions to include
                 </legend>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-3 rounded-lg border border-gray-200 p-3 cursor-pointer hover:bg-gray-50">
+                  <label className="flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-600 p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700">
                     <input
                       type="radio"
                       name="filter"
@@ -256,9 +256,9 @@ function HistoryContent() {
                       onChange={() => setRetryFilter('all')}
                       className="text-blue-600"
                     />
-                    <span className="text-sm text-gray-800">All questions</span>
+                    <span className="text-sm text-gray-800 dark:text-gray-200">All questions</span>
                   </label>
-                  <label className="flex items-center gap-3 rounded-lg border border-gray-200 p-3 cursor-pointer hover:bg-gray-50">
+                  <label className="flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-600 p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700">
                     <input
                       type="radio"
                       name="filter"
@@ -267,13 +267,13 @@ function HistoryContent() {
                       onChange={() => setRetryFilter('wrong_only')}
                       className="text-blue-600"
                     />
-                    <span className="text-sm text-gray-800">Wrong answers only</span>
+                    <span className="text-sm text-gray-800 dark:text-gray-200">Wrong answers only</span>
                   </label>
                 </div>
               </fieldset>
 
               {retryError && (
-                <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+                <div className="rounded-lg bg-red-50 dark:bg-red-900/30 px-4 py-3 text-sm text-red-700 dark:text-red-400 ring-1 ring-red-200 dark:ring-red-800">
                   {retryError}
                 </div>
               )}
@@ -282,7 +282,7 @@ function HistoryContent() {
                 <button
                   type="button"
                   onClick={() => setRetryModal(null)}
-                  className="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                  className="flex-1 rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
                   Cancel
                 </button>

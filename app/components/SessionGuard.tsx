@@ -50,17 +50,17 @@ export default function SessionGuard({ children }: { children: React.ReactNode }
 
   if (disconnected) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-        <div className="mx-4 w-full max-w-sm rounded-xl bg-white p-6 shadow-xl">
-          <h2 className="mb-2 text-lg font-semibold text-gray-900">
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+        <div className="mx-4 w-full max-w-sm rounded-xl bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700">
+          <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
             You have been disconnected
           </h2>
-          <p className="mb-4 text-sm text-gray-600">
+          <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
             {disconnected.reason === 'SESSION_EXPIRED'
               ? 'Your session has expired. Please log in again.'
               : 'Your session was terminated due to a security event. Please log in again.'}
           </p>
-          <p className="mb-4 text-xs text-gray-500">Redirecting to login in about 15 seconds.</p>
+          <p className="mb-4 text-xs text-gray-500 dark:text-gray-400">Redirecting to login in about 15 seconds.</p>
           <button
             onClick={handleDismiss}
             className="w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"

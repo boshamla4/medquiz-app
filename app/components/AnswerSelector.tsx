@@ -40,19 +40,25 @@ export default function AnswerSelector({
         const isSelected = selectedIds.includes(answer.id);
         const isCorrect = correctIds.includes(answer.id);
 
-        let stateClass = 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50';
+        let stateClass =
+          'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600';
         if (revealed) {
           if (isCorrect && isSelected) {
-            stateClass = 'border-green-400 bg-green-50 text-green-900';
+            stateClass =
+              'border-green-400 bg-green-50 text-green-900 dark:border-green-500 dark:bg-green-900/30 dark:text-green-100';
           } else if (isCorrect && !isSelected) {
-            stateClass = 'border-amber-400 bg-amber-50 text-amber-900';
+            stateClass =
+              'border-amber-400 bg-amber-50 text-amber-900 dark:border-amber-500 dark:bg-amber-900/30 dark:text-amber-100';
           } else if (!isCorrect && isSelected) {
-            stateClass = 'border-red-400 bg-red-50 text-red-900';
+            stateClass =
+              'border-red-400 bg-red-50 text-red-900 dark:border-red-500 dark:bg-red-900/30 dark:text-red-100';
           } else {
-            stateClass = 'border-gray-200 bg-gray-50 text-gray-700';
+            stateClass =
+              'border-gray-200 bg-gray-50 text-gray-700 dark:border-gray-600 dark:bg-gray-700/50 dark:text-gray-300';
           }
         } else if (isSelected) {
-          stateClass = 'border-blue-500 bg-blue-50 text-blue-900';
+          stateClass =
+            'border-blue-500 bg-blue-50 text-blue-900 dark:border-blue-400 dark:bg-blue-900/30 dark:text-blue-100';
         }
 
         if (type === 'single') {
@@ -70,7 +76,7 @@ export default function AnswerSelector({
                 disabled={revealed}
                 className="h-4 w-4 text-blue-600"
               />
-              <span className="text-sm text-gray-800">{answer.answer_text}</span>
+              <span className="text-sm text-gray-800 dark:text-gray-200">{answer.answer_text}</span>
             </label>
           );
         }
@@ -88,7 +94,7 @@ export default function AnswerSelector({
               disabled={revealed}
               className="h-4 w-4 rounded text-blue-600"
             />
-            <span className="text-sm text-gray-800">{answer.answer_text}</span>
+            <span className="text-sm text-gray-800 dark:text-gray-200">{answer.answer_text}</span>
           </label>
         );
       })}

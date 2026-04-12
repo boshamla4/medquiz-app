@@ -91,7 +91,6 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
         answersRef.current = restored;
         setAnswers(restored);
 
-        // Restore index from URL query param ?q=N
         if (initialQ) {
           const idx = parseInt(initialQ, 10) - 1;
           if (!isNaN(idx) && idx >= 0 && idx < data.questions.length) {
@@ -198,17 +197,17 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-gray-500">Loading exam…</p>
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900">
+        <p className="text-gray-500 dark:text-gray-400">Loading exam…</p>
       </div>
     );
   }
 
   if (error || !exam) {
     return (
-      <div className="flex min-h-screen items-center justify-center px-4">
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 px-4">
         <div className="text-center">
-          <p className="mb-4 text-red-600">{error || 'Exam not found.'}</p>
+          <p className="mb-4 text-red-600 dark:text-red-400">{error || 'Exam not found.'}</p>
           <button
             onClick={() => router.push('/dashboard')}
             className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
@@ -239,8 +238,8 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-50">
-      <header className="border-b border-gray-200 bg-white px-4 py-3">
+    <div className="flex min-h-screen flex-col bg-gray-50 dark:bg-gray-900">
+      <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-3">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4">
           <div className="flex-1">
             <ProgressTracker
@@ -272,10 +271,10 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           <div
             className={`mt-4 rounded-lg px-4 py-3 text-sm font-medium ring-1 ${
               currentWeight === 1
-                ? 'bg-green-50 text-green-700 ring-green-200'
+                ? 'bg-green-50 text-green-700 ring-green-200 dark:bg-green-900/30 dark:text-green-400 dark:ring-green-800'
                 : currentWeight === 0
-                ? 'bg-red-50 text-red-700 ring-red-200'
-                : 'bg-amber-50 text-amber-700 ring-amber-200'
+                ? 'bg-red-50 text-red-700 ring-red-200 dark:bg-red-900/30 dark:text-red-400 dark:ring-red-800'
+                : 'bg-amber-50 text-amber-700 ring-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:ring-amber-800'
             }`}
           >
             {scoreFeedback(currentWeight)}
@@ -283,7 +282,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
         )}
 
         {submitError && (
-          <div className="mt-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-200">
+          <div className="mt-4 rounded-lg bg-red-50 dark:bg-red-900/30 px-4 py-3 text-sm text-red-700 dark:text-red-400 ring-1 ring-red-200 dark:ring-red-800">
             {submitError}
           </div>
         )}
@@ -292,12 +291,12 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           <button
             onClick={() => navigateTo(currentIndex - 1)}
             disabled={currentIndex === 0}
-            className="rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40"
+            className="rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-40"
           >
             ← Previous
           </button>
 
-          <span className="text-xs text-gray-400">
+          <span className="text-xs text-gray-400 dark:text-gray-500">
             {answeredCount} / {exam.questions.length} answered
           </span>
 
@@ -327,21 +326,20 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           )}
         </div>
 
-        {/* Quick submit button available throughout */}
         {!isLast && (
           <div className="mt-4 text-center">
             <div className="flex items-center justify-center gap-4">
               <button
                 onClick={handleContinueLater}
                 disabled={savingLater || submitting}
-                className="text-sm font-medium text-blue-600 underline hover:text-blue-700 disabled:opacity-50"
+                className="text-sm font-medium text-blue-600 dark:text-blue-400 underline hover:text-blue-700 dark:hover:text-blue-300 disabled:opacity-50"
               >
                 {savingLater ? 'Saving…' : 'Continue later'}
               </button>
               <button
                 onClick={handleSubmit}
                 disabled={submitting || savingLater}
-                className="text-sm font-medium text-gray-500 underline hover:text-gray-700 disabled:opacity-50"
+                className="text-sm font-medium text-gray-500 dark:text-gray-400 underline hover:text-gray-700 dark:hover:text-gray-300 disabled:opacity-50"
               >
                 {submitting ? 'Submitting…' : 'Submit exam now'}
               </button>
@@ -362,8 +360,8 @@ export default function ExamPage({ params }: { params: Promise<{ examId: string 
 
   if (!examId) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-gray-500">Loading…</p>
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900">
+        <p className="text-gray-500 dark:text-gray-400">Loading…</p>
       </div>
     );
   }

@@ -46,11 +46,13 @@ export default function Timer({ startedAt, countdownMinutes = 0, onExpire }: Tim
   return (
     <div
       className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-mono font-medium ${
-        isWarning ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-700'
+        isWarning
+          ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400'
+          : 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
       }`}
     >
       <svg
-        className={`h-4 w-4 ${isWarning ? 'text-orange-600' : 'text-gray-500'}`}
+        className={`h-4 w-4 ${isWarning ? 'text-orange-600 dark:text-orange-400' : 'text-gray-500 dark:text-gray-400'}`}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
