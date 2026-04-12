@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-12T14:43:33.210Z",
+  "generatedAt": "2026-04-12T15:02:50.160Z",
   "sourceFolder": "data",
   "totalFiles": 25,
-  "totalQuestions": 3154,
+  "totalQuestions": 3126,
   "files": [
     {
       "file": "data/Graduation Exam Tests/Cardiology_Grejdieru.docx",
@@ -17516,7 +17516,7 @@
       "file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
       "module": "Gastro_Berliba",
       "folder": "Graduation Exam Tests",
-      "questionCount": 455,
+      "questionCount": 454,
       "questions": [
         {
           "module": "Gastro_Berliba",
@@ -31192,21 +31192,6 @@
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
           "question_order": 391,
-          "question_number": 392,
-          "type": "single",
-          "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which tests are including initial evaluation for suspected hepatitis C? a) Glucose, urea, prothrombin",
-          "answers": [
-            {
-              "letter": "B",
-              "text": "ARN HCV, ALT, AST c) ALT, urea, creatinine d) Total bilirubine, direct bilirubine, INR e) Alkaline phosphatase, LDH, albumin",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Gastro_Berliba",
-          "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 392,
           "question_number": 393,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which symptoms are specifical for chronic hepatitis C with extrahepatic manifestation:",
@@ -31241,7 +31226,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 393,
+          "question_order": 392,
           "question_number": 394,
           "type": "single",
           "question_text": "Capitol: Gastrita Mod de punctare: A1 Punctajul: 10 Which of the methods can be done in follow-up of gastric ulcer for the risk of developing gastric cancer?",
@@ -31276,7 +31261,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 394,
+          "question_order": 393,
           "question_number": 395,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following viral causes of acute hepatitis is most likely to cause fulminant hepatitis in a pregnant woman?",
@@ -31311,7 +31296,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 395,
+          "question_order": 394,
           "question_number": 396,
           "type": "multiple",
           "question_text": "Capitol: Gastrita multiplu Mod de punctare: A3 Punctajul: 10 Which of the following symptoms are characteristic for Early Dumping Syndrome?",
@@ -31346,7 +31331,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 396,
+          "question_order": 395,
           "question_number": 397,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following statements supports a favorable prognosis in liver cirrhosis?",
@@ -31381,7 +31366,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 397,
+          "question_order": 396,
           "question_number": 398,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following statements regarding liver transplantation is TRUE?",
@@ -31416,7 +31401,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 398,
+          "question_order": 397,
           "question_number": 399,
           "type": "single",
           "question_text": "Capitol: Gastrita Mod de punctare: A1 Punctajul: 10 Which of the following statements concerning portal- hypertensive gastropathy is FALSE:",
@@ -31451,7 +31436,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 399,
+          "question_order": 398,
           "question_number": 400,
           "type": "multiple",
           "question_text": "Capitol: Gastrita multiplu Mod de punctare: A3 Punctajul: 10 Which of the following statements are correct for peptic ulcer?",
@@ -31486,7 +31471,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 400,
+          "question_order": 399,
           "question_number": 401,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following statements about cardiac cirrhosis is TRUE?",
@@ -31521,7 +31506,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 401,
+          "question_order": 400,
           "question_number": 402,
           "type": "multiple",
           "question_text": "Capitol: Gastrita multiplu Mod de punctare: A3 Punctajul: 10 Which of the following noninvasive tests can be used in detection of H. Pylori :",
@@ -31556,7 +31541,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 402,
+          "question_order": 401,
           "question_number": 403,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following is the most important goal of treating chronic viral hepatitis C?",
@@ -31591,7 +31576,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 403,
+          "question_order": 402,
           "question_number": 404,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which of the following is the most important goal of treating chronic viral hepatitis B infection?",
@@ -31626,7 +31611,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 404,
+          "question_order": 403,
           "question_number": 405,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following is the most common symptom of liver disease?",
@@ -31661,7 +31646,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 405,
+          "question_order": 404,
           "question_number": 406,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following is the most common cause of liver cirrhosis?",
@@ -31696,7 +31681,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 406,
+          "question_order": 405,
           "question_number": 407,
           "type": "multiple",
           "question_text": "Capitol: Gastrita multiplu Mod de punctare: A3 Punctajul: 10 Which of the following endogenous noxious agents tend constantly to affect the gastroduodenal mucosa?",
@@ -31731,7 +31716,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 407,
+          "question_order": 406,
           "question_number": 408,
           "type": "single",
           "question_text": "Capitol: Gastrita Mod de punctare: A1 Punctajul: 10 Which of the following conditions increase the risk of gastric adenocarcinoma in patients with a gastric ulcer?",
@@ -31766,7 +31751,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 408,
+          "question_order": 407,
           "question_number": 409,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following clinical signs of cirrhosis is caused by portal hypertension?",
@@ -31801,7 +31786,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 409,
+          "question_order": 408,
           "question_number": 410,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which of the following can be prevented?",
@@ -31836,7 +31821,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 410,
+          "question_order": 409,
           "question_number": 411,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which of the following are the causes of liver cirrhosis?",
@@ -31871,7 +31856,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 411,
+          "question_order": 410,
           "question_number": 412,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which of the folowing are false regarding chronic hepatitis C?",
@@ -31906,7 +31891,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 412,
+          "question_order": 411,
           "question_number": 413,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which of the following antibiotics will be most usefull in hepatic encephalopathy:",
@@ -31941,7 +31926,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 413,
+          "question_order": 412,
           "question_number": 414,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 Which is the most sensitive method for diagnostic of Herpes simplex virus (HSV) esophagitis:",
@@ -31976,7 +31961,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 414,
+          "question_order": 413,
           "question_number": 415,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which hemodynamic factors contribute to the development of ascites in liver cirrhosis?",
@@ -32011,7 +31996,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 415,
+          "question_order": 414,
           "question_number": 416,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which fluids can content in moderate amount hepatitis virus B?",
@@ -32046,7 +32031,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 416,
+          "question_order": 415,
           "question_number": 417,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 Which fluid can content the highest amount of hepatitis virus B?",
@@ -32081,7 +32066,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 417,
+          "question_order": 416,
           "question_number": 418,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which extrahepatic sites can content HBV?",
@@ -32116,7 +32101,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 418,
+          "question_order": 417,
           "question_number": 419,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which conditions lead to progression of liver disease in patients with chronic hepatitis C?",
@@ -32151,7 +32136,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 419,
+          "question_order": 418,
           "question_number": 420,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which conditions lead to progression of liver disease in patients with chronic hepatitis C?",
@@ -32186,7 +32171,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 420,
+          "question_order": 419,
           "question_number": 421,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which conditions are more likely lead to progression of liver disease in patients with chronic hepatitis C:",
@@ -32221,7 +32206,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 421,
+          "question_order": 420,
           "question_number": 422,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which complications can develop Caroli's disease?",
@@ -32256,7 +32241,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 422,
+          "question_order": 421,
           "question_number": 423,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which circumstances are useful for testing anti-HDV antibodies in patients with hepatitis B?",
@@ -32291,7 +32276,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 423,
+          "question_order": 422,
           "question_number": 424,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 Which are manifestations of hepatocellular failure in patients with liver cirrhosis:",
@@ -32326,7 +32311,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 424,
+          "question_order": 423,
           "question_number": 425,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 What type of therapy for achalasia is effective with clinical improvement in 60% of patients at 6 months?",
@@ -32361,7 +32346,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 425,
+          "question_order": 424,
           "question_number": 426,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What type of the following criteria are specific for hypersplenism?",
@@ -32396,7 +32381,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 426,
+          "question_order": 425,
           "question_number": 427,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What type of the cells is majority in the liver?",
@@ -32431,7 +32416,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 427,
+          "question_order": 426,
           "question_number": 428,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What type of major complications of cirrhosis are directly induced by portal hypertension?",
@@ -32466,7 +32451,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 428,
+          "question_order": 427,
           "question_number": 429,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What type of investigation is often used as an initial investigation for patients with jaundice:",
@@ -32501,7 +32486,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 429,
+          "question_order": 428,
           "question_number": 430,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What type of autoantibody is characteristic for patients with primary biliary colangitis?",
@@ -32536,7 +32521,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 430,
+          "question_order": 429,
           "question_number": 431,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What type of antibodies is possible to find in hepatitis delta:",
@@ -32571,7 +32556,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 431,
+          "question_order": 430,
           "question_number": 432,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What symptoms are caracterisc for liver disease?",
@@ -32606,7 +32591,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 432,
+          "question_order": 431,
           "question_number": 433,
           "type": "multiple",
           "question_text": "Capitol: Esofag multiplu Mod de punctare: A3 Punctajul: 10 What may cause or be aggravated by GERD?",
@@ -32641,7 +32626,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 433,
+          "question_order": 432,
           "question_number": 434,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What laboratory tests would you request in man known to be carrier of HbsAg who presents with jaundice, pain in right hypocondria and reveal AST and ALT > 900 IU/ml?",
@@ -32676,7 +32661,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 434,
+          "question_order": 433,
           "question_number": 435,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What laboratory tests should be obtained to determine if therapy is effective in patient with HBV infection who has treated for 12 weeks with lamivudine?",
@@ -32711,7 +32696,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 435,
+          "question_order": 434,
           "question_number": 436,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What kind of therapeutic measures are recommended in case of repeated short-term gastrointestinal bleeding in cirrhosis?",
@@ -32746,7 +32731,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 436,
+          "question_order": 435,
           "question_number": 437,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What kind of criteria does CHILD-PUGH classification of cirrhosis include?",
@@ -32781,7 +32766,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 437,
+          "question_order": 436,
           "question_number": 438,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is TRUE about Child-Pugh score:",
@@ -32816,7 +32801,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 438,
+          "question_order": 437,
           "question_number": 439,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is the weight of the liver in adult person:",
@@ -32851,7 +32836,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 439,
+          "question_order": 438,
           "question_number": 440,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is the probability of an adult with acute hepatitis B progressing to chronic hepattitis B?",
@@ -32886,7 +32871,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 440,
+          "question_order": 439,
           "question_number": 441,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 What is the most typical statement that characterizes the gastroesophageal reflux disease?",
@@ -32921,7 +32906,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 441,
+          "question_order": 440,
           "question_number": 442,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is the most frequent mode of transmission HBV:",
@@ -32956,7 +32941,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 442,
+          "question_order": 441,
           "question_number": 443,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is the minimum amount of daily alcohol intake for women, that is associated with the development of chronic liver disease?",
@@ -32991,7 +32976,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 443,
+          "question_order": 442,
           "question_number": 444,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What is the mainstay of treatment of fatty liver disease?",
@@ -33026,7 +33011,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 444,
+          "question_order": 443,
           "question_number": 445,
           "type": "single",
           "question_text": "Capitol: Ficatul Mod de punctare: A1 Punctajul: 10 What is the mainstay of therapy for hemochromatosis?",
@@ -33061,7 +33046,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 445,
+          "question_order": 444,
           "question_number": 446,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 What is the difficulty swallowing in initiating?",
@@ -33096,7 +33081,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 446,
+          "question_order": 445,
           "question_number": 447,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What are the cause of skin haemorrhagic syndrome in alcoholic cirrhosis?",
@@ -33131,7 +33116,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 447,
+          "question_order": 446,
           "question_number": 448,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What are the cause of anemia in alcoholic cirrhosis?",
@@ -33166,7 +33151,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 448,
+          "question_order": 447,
           "question_number": 449,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What includes the treatment of ascites under liver cirrhosis:",
@@ -33201,7 +33186,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 449,
+          "question_order": 448,
           "question_number": 450,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What factors can influence the treatment regimens in HCV?",
@@ -33236,7 +33221,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 450,
+          "question_order": 449,
           "question_number": 451,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What drugs include treatment of severe alcoholic hepatitis:",
@@ -33271,7 +33256,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 451,
+          "question_order": 450,
           "question_number": 452,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 What does vomiting means?",
@@ -33306,7 +33291,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 452,
+          "question_order": 451,
           "question_number": 453,
           "type": "multiple",
           "question_text": "Capitol: Ficat multiplu Mod de punctare: A3 Punctajul: 10 What does the treatment of portal hypertension in liver cirrhosis include?",
@@ -33341,7 +33326,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 453,
+          "question_order": 452,
           "question_number": 454,
           "type": "single",
           "question_text": "Capitol: Esofag Mod de punctare: A1 Punctajul: 10 What does rumination means?",
@@ -33376,7 +33361,7 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 454,
+          "question_order": 453,
           "question_number": 455,
           "type": "single",
           "question_text": "Capitol: Gastrita Mod de punctare: A1 Punctajul: 10 What does rumination means?",
@@ -78984,7 +78969,7 @@
       "file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
       "module": "Surgery_4th year_Vozian",
       "folder": "Graduation Exam Tests",
-      "questionCount": 108,
+      "questionCount": 103,
       "questions": [
         {
           "module": "Surgery_4th year_Vozian",
@@ -79460,21 +79445,6 @@
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
           "question_order": 14,
-          "question_number": 17,
-          "type": "single",
-          "question_text": "Select the symptoms which correspond to acute appendicitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Epigastric pain",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_4th year_Vozian",
-          "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 15,
           "question_number": 18,
           "type": "multiple",
           "question_text": "In confirmed acute appendicitis the following manipulations are required:",
@@ -79509,7 +79479,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 16,
+          "question_order": 15,
           "question_number": 19,
           "type": "multiple",
           "question_text": "Generalized peritonitis of appendiceal origin is characterized by:",
@@ -79544,7 +79514,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 17,
+          "question_order": 16,
           "question_number": 20,
           "type": "multiple",
           "question_text": "Select the clinical signs of acute appendicitis in adults at the onset of the disease:",
@@ -79579,7 +79549,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 18,
+          "question_order": 17,
           "question_number": 21,
           "type": "multiple",
           "question_text": "Choose the possible evolution variants of the appendiceal mass (infiltrate):",
@@ -79614,7 +79584,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 19,
+          "question_order": 18,
           "question_number": 22,
           "type": "multiple",
           "question_text": "Select the morphopathological variants of acute appendicitis:",
@@ -79649,7 +79619,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 20,
+          "question_order": 19,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Acute appendicitis in children should be differentiated with:",
@@ -79684,7 +79654,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 21,
+          "question_order": 20,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Select the position variants of the vermiform appendix:",
@@ -79719,7 +79689,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 22,
+          "question_order": 21,
           "question_number": 18,
           "type": "multiple",
           "question_text": "C,D,E",
@@ -79754,7 +79724,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 23,
+          "question_order": 22,
           "question_number": 19,
           "type": "multiple",
           "question_text": "CS Alegeţi factorul patogenetic, dezechilibrul căruia determină apariţia ulcerului gastric Select the pathogenetic factor, which imbalance will determine the occurrence of gastric ulcer:",
@@ -79789,7 +79759,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 24,
+          "question_order": 23,
           "question_number": 20,
           "type": "multiple",
           "question_text": "CS Select the useful diagnostic test in monitoring of anti-Helicobacter pylori therapy:",
@@ -79824,7 +79794,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 25,
+          "question_order": 24,
           "question_number": 21,
           "type": "multiple",
           "question_text": "CS Indicate the diagnostic method used to detect the source of upper digestive haemorrhage:",
@@ -79859,7 +79829,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 26,
+          "question_order": 25,
           "question_number": 22,
           "type": "multiple",
           "question_text": "CS Select the period of perforated ulcer characterized by the following clinical signs: vomiting, accelerated pulse, superficial breathing, hypotension and lack of intestinal transit:",
@@ -79894,7 +79864,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 27,
+          "question_order": 26,
           "question_number": 23,
           "type": "single",
           "question_text": "CS Select surgical procedure indicated for perforation of chronic gastric ulcer in 40-60 years old patient admitted within 6 hours from onset:",
@@ -79919,22 +79889,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 28,
-          "question_number": 24,
-          "type": "single",
-          "question_text": "Wedge gastric resection and vagotomy (Cuneiform excision of ulcer and vagotomy)",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Bilateral truncal vagotomy and simple suture of the ulcer",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_4th year_Vozian",
-          "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 29,
+          "question_order": 27,
           "question_number": 25,
           "type": "multiple",
           "question_text": "CS Select the dominant clinical sign of the chronic duodenal ulcer:",
@@ -79969,7 +79924,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 30,
+          "question_order": 28,
           "question_number": 26,
           "type": "multiple",
           "question_text": "CS Define the Bergman's sign, determined in bleeding peptic ulcer:",
@@ -80004,7 +79959,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 31,
+          "question_order": 29,
           "question_number": 27,
           "type": "multiple",
           "question_text": "CS Malignancy of gastroduodenal ulcer more often occurs when it is localized in:",
@@ -80039,7 +79994,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 32,
+          "question_order": 30,
           "question_number": 28,
           "type": "multiple",
           "question_text": "CS Select the gastric secretion phase appreciated by Hollender test:",
@@ -80074,7 +80029,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 33,
+          "question_order": 31,
           "question_number": 29,
           "type": "multiple",
           "question_text": "CS Select the grade of upper digestive bleeding at loss of 1000-1500 ml of blood (30% of circulating volume):",
@@ -80109,7 +80064,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 34,
+          "question_order": 32,
           "question_number": 30,
           "type": "multiple",
           "question_text": "CS According to Johnson classification the lesser curvature ulcer is classied as:",
@@ -80144,7 +80099,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 35,
+          "question_order": 33,
           "question_number": 31,
           "type": "multiple",
           "question_text": "СS Indicate the most common gastric drainage surgerical procedure associated with truncal vagotomy in peptic ulcer disease:",
@@ -80179,7 +80134,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 36,
+          "question_order": 34,
           "question_number": 32,
           "type": "multiple",
           "question_text": "CS Select the rare complication that occurs in the duodenal ulcer:",
@@ -80214,7 +80169,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 37,
+          "question_order": 35,
           "question_number": 33,
           "type": "multiple",
           "question_text": "CS Pacient C., 45 year old, with a long history of duodenal ulcer refractory to drug therapy, and the prevalence of hyperacidity after the Kay test, the specifed operation is:",
@@ -80244,7 +80199,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 38,
+          "question_order": 36,
           "question_number": 2,
           "type": "single",
           "question_text": "/3 partial gastrectomy ( Gastric resection 2/3)",
@@ -80279,7 +80234,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 39,
+          "question_order": 37,
           "question_number": 3,
           "type": "single",
           "question_text": "CM Select the types of gastric outlet obstruction as result of peptic ulcer disease:",
@@ -80314,7 +80269,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 40,
+          "question_order": 38,
           "question_number": 4,
           "type": "single",
           "question_text": "CM Select the most common complications in duodenal ulcer:",
@@ -80349,7 +80304,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 41,
+          "question_order": 39,
           "question_number": 6,
           "type": "single",
           "question_text": "It is important to differentiate bleeding from ulcer from bleeding caused by esophageal varices",
@@ -80374,7 +80329,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 42,
+          "question_order": 40,
           "question_number": 7,
           "type": "single",
           "question_text": "CM Select the features of Zollinger-Ellison Syndrome:",
@@ -80409,7 +80364,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 43,
+          "question_order": 41,
           "question_number": 8,
           "type": "single",
           "question_text": "CM Select types of atypical ulcer perforation:",
@@ -80444,7 +80399,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 44,
+          "question_order": 42,
           "question_number": 22,
           "type": "multiple",
           "question_text": "MC Select clinical conditions that are radiologically manifested by pneumoperitoneum:",
@@ -80479,7 +80434,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 45,
+          "question_order": 43,
           "question_number": 23,
           "type": "multiple",
           "question_text": "MC The clinical features (signs) of the perforated duodenal ulcer in the third phase of evolution is dominated by:",
@@ -80514,7 +80469,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 46,
+          "question_order": 44,
           "question_number": 24,
           "type": "multiple",
           "question_text": "MC Specify the diseases that can cause the appearance of stress ulcer:",
@@ -80549,7 +80504,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 47,
+          "question_order": 45,
           "question_number": 25,
           "type": "multiple",
           "question_text": "MC Select the components of Darrow's syndrome, characteristic for gastric outlet obstruction:",
@@ -80584,7 +80539,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 48,
+          "question_order": 46,
           "question_number": 26,
           "type": "multiple",
           "question_text": "MC Select the components of the Mondor's triad, characteristic of the perforated ulcer:",
@@ -80619,7 +80574,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 49,
+          "question_order": 47,
           "question_number": 27,
           "type": "multiple",
           "question_text": "MC Specify the signs that can be detected in the perforated ulcer during percussion of the abdomen:",
@@ -80654,7 +80609,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 50,
+          "question_order": 48,
           "question_number": 28,
           "type": "multiple",
           "question_text": "MC The presence of subdiaphragmatic free air on an abdominal radiography is characteristic of:",
@@ -80694,7 +80649,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 51,
+          "question_order": 49,
           "question_number": 29,
           "type": "multiple",
           "question_text": "The standard dose of lansoprazole is 30 mg / day for 4-8 weeks",
@@ -80729,7 +80684,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 52,
+          "question_order": 50,
           "question_number": 30,
           "type": "multiple",
           "question_text": "Chronic ulcer with peritonitis 24 hours (chronic perforating ulcer complicated by peritonitis over 24 hours)",
@@ -80759,37 +80714,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 53,
-          "question_number": 31,
-          "type": "single",
-          "question_text": "Аppeared as a result of the use of nonsteroidal anti-inflammatory drugs.",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "MC Indicate the radiological features suggesting benign gastric ulcer («niche» sign or Haudek's niche sign):",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_4th year_Vozian",
-          "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 54,
-          "question_number": 32,
-          "type": "single",
-          "question_text": "The mucosal folds are symmetrical converge, visible along the edges of the “niche”",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "The presence of a regular radiotransparent area surrounding the ulcerative crater due to edema",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_4th year_Vozian",
-          "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 55,
+          "question_order": 51,
           "question_number": 33,
           "type": "multiple",
           "question_text": "The \"niche\" projection does not extend beyond the gastric lumen",
@@ -80824,7 +80749,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 56,
+          "question_order": 52,
           "question_number": 35,
           "type": "multiple",
           "question_text": "MC Select discirculatory hypoxic ulcers that occur as a result of deficit gastrointestinal protective factors",
@@ -80859,7 +80784,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 57,
+          "question_order": 53,
           "question_number": 3,
           "type": "single",
           "question_text": "Select the false statement for the traumatic lesions of the esophagus:",
@@ -80889,7 +80814,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 58,
+          "question_order": 54,
           "question_number": 4,
           "type": "single",
           "question_text": "Select the most feasible sign for traumatic aortic lesion in simple chest X-ray:",
@@ -80924,7 +80849,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 59,
+          "question_order": 55,
           "question_number": 5,
           "type": "single",
           "question_text": "Aortic lesions are more commonly caused by:",
@@ -80959,7 +80884,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 60,
+          "question_order": 56,
           "question_number": 6,
           "type": "multiple",
           "question_text": "Select the false statement for haemothorax:",
@@ -80994,7 +80919,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 61,
+          "question_order": 57,
           "question_number": 7,
           "type": "multiple",
           "question_text": "In thoracic traumas thoracocentesis is:",
@@ -81029,7 +80954,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 62,
+          "question_order": 58,
           "question_number": 8,
           "type": "multiple",
           "question_text": "Thoracocentesis is performed taking into account the following correct statements:",
@@ -81064,7 +80989,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 63,
+          "question_order": 59,
           "question_number": 9,
           "type": "multiple",
           "question_text": "The volume of surgical intervention in cardiac tamponade in trauma consists of:",
@@ -81099,7 +81024,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 64,
+          "question_order": 60,
           "question_number": 10,
           "type": "multiple",
           "question_text": "Sternal fractures are characterized by:",
@@ -81134,7 +81059,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 65,
+          "question_order": 61,
           "question_number": 11,
           "type": "multiple",
           "question_text": "Flail chest causes:",
@@ -81154,7 +81079,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 66,
+          "question_order": 62,
           "question_number": 12,
           "type": "multiple",
           "question_text": "Cardiac lesions from thoracic trauma can be characterized by the following correct statements :",
@@ -81189,7 +81114,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 67,
+          "question_order": 63,
           "question_number": 13,
           "type": "multiple",
           "question_text": "Chose the indications for thoracotomy in thoracic trauma:",
@@ -81224,7 +81149,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 68,
+          "question_order": 64,
           "question_number": 19,
           "type": "multiple",
           "question_text": "CS Indicate postoperative post-splenectomy specific complication:",
@@ -81259,7 +81184,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 69,
+          "question_order": 65,
           "question_number": 20,
           "type": "multiple",
           "question_text": "CS Pringle maneuver for the temporary control of haemorrhage in exploratory laparotomy is:",
@@ -81294,7 +81219,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 70,
+          "question_order": 66,
           "question_number": 21,
           "type": "multiple",
           "question_text": "CS Select the correct treatment method for penetrating perforating wounds:",
@@ -81319,7 +81244,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 71,
+          "question_order": 67,
           "question_number": 23,
           "type": "multiple",
           "question_text": "CS Indicate the most common complication that may occur as a result of pancreatic trauma:",
@@ -81354,7 +81279,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 72,
+          "question_order": 68,
           "question_number": 24,
           "type": "multiple",
           "question_text": "CS Select the surgical management in case of spenic injuries with haemodynamic stability:",
@@ -81389,7 +81314,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 73,
+          "question_order": 69,
           "question_number": 25,
           "type": "multiple",
           "question_text": "CS Select the mandatory measure in all cases of abdominal wounds:",
@@ -81409,7 +81334,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 74,
+          "question_order": 70,
           "question_number": 1,
           "type": "single",
           "question_text": "Indicate the form of peritonitis that evolves without the presence of pathogenic germs:",
@@ -81444,7 +81369,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 75,
+          "question_order": 71,
           "question_number": 2,
           "type": "single",
           "question_text": "In a 46-year-old patient who underwent appendectomy for acute gangrenous appendicitis, on the 5th postoperative day there have appeared obtuse pains in the suprapubic region, tenesmus, severe pain in defecation and dysuria, fever 37,8- 38,5°C. What is the presumptive diagnosis?",
@@ -81479,7 +81404,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 76,
+          "question_order": 72,
           "question_number": 3,
           "type": "single",
           "question_text": "Indicate the most common causes of peritonitis:",
@@ -81514,7 +81439,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 77,
+          "question_order": 73,
           "question_number": 4,
           "type": "single",
           "question_text": "For acute peritonitis is NOT characteristic:",
@@ -81549,7 +81474,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 78,
+          "question_order": 74,
           "question_number": 5,
           "type": "single",
           "question_text": "Indicate the main clinical sign in acute peritonitis:",
@@ -81584,7 +81509,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 79,
+          "question_order": 75,
           "question_number": 6,
           "type": "single",
           "question_text": "Acute peritonitis may be secondary to the following conditions, EXCEPTION being:",
@@ -81619,7 +81544,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 80,
+          "question_order": 76,
           "question_number": 7,
           "type": "single",
           "question_text": "Indicate the surgical gesture in Douglas abscess:",
@@ -81654,7 +81579,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 81,
+          "question_order": 77,
           "question_number": 8,
           "type": "single",
           "question_text": "Indicate the most suggestive sign for establishing the diagnosis of acute postoperative peritonitis:",
@@ -81689,7 +81614,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 82,
+          "question_order": 78,
           "question_number": 9,
           "type": "single",
           "question_text": "A 70 years old pacient with a history of heart attack prezents the clinical picture of generalized peritonitis with a 5-day onset. Indicate the medical-surgical tactics:",
@@ -81719,7 +81644,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 83,
+          "question_order": 79,
           "question_number": 10,
           "type": "single",
           "question_text": "In a patient with acute diffuse fecalide peritonitis during the laparotomy there has been detected a resected neoplasm of the ascendant peritonitis with perforation of the proximal tumor intestine.Indicate the volume of the operation:",
@@ -81739,7 +81664,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 84,
+          "question_order": 80,
           "question_number": 11,
           "type": "multiple",
           "question_text": "Indicate the purpose of gastrointestinal intubation in the treatment of diffuse purulent peritonitis:",
@@ -81774,7 +81699,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 85,
+          "question_order": 81,
           "question_number": 12,
           "type": "multiple",
           "question_text": "Indicate clinical manifestations attributed to the reactive phase of acute peritonitis:",
@@ -81809,7 +81734,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 86,
+          "question_order": 82,
           "question_number": 13,
           "type": "multiple",
           "question_text": "Indicate the most commonly used routes of antibiotic administration in the postoperative period in patients with diffuse peritonitis:",
@@ -81844,7 +81769,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 87,
+          "question_order": 83,
           "question_number": 14,
           "type": "multiple",
           "question_text": "Indicate the correct assertions on argumenting the performance of the laparotomy incision in acute diffuse peritonitis:",
@@ -81879,7 +81804,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 88,
+          "question_order": 84,
           "question_number": 15,
           "type": "multiple",
           "question_text": "Indicate the forms of acute peritonitis in which fibrin deposition on parietal and visceral sheets is determined:",
@@ -81914,7 +81839,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 89,
+          "question_order": 85,
           "question_number": 16,
           "type": "multiple",
           "question_text": "Indicate maladies that can cause fake surgical abdomen syndrome:",
@@ -81949,7 +81874,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 90,
+          "question_order": 86,
           "question_number": 17,
           "type": "multiple",
           "question_text": "Acute diffuse peritonitis may occur in the following forms of acute peritonitis:",
@@ -81984,7 +81909,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 91,
+          "question_order": 87,
           "question_number": 18,
           "type": "multiple",
           "question_text": "For the terminal phase of the acute peritonitis are characteristic:",
@@ -82019,7 +81944,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 92,
+          "question_order": 88,
           "question_number": 19,
           "type": "multiple",
           "question_text": "List the therapeutic measures in the complex treatment of the acute diffuse peritonitis:",
@@ -82049,7 +81974,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 93,
+          "question_order": 89,
           "question_number": 20,
           "type": "multiple",
           "question_text": "Indicate the diagnostic criteria of the anaerobic peritonitis:",
@@ -82074,22 +81999,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 94,
-          "question_number": 21,
-          "type": "single",
-          "question_text": "Enormous amount of exudate in the peritoneal cavity with a greenish-brown hue",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Absence of exudate in the peritoneal cavity",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_4th year_Vozian",
-          "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 95,
+          "question_order": 90,
           "question_number": 21,
           "type": "multiple",
           "question_text": "Indicate the etiologic treatment of the acute peritonitis:",
@@ -82124,7 +82034,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 96,
+          "question_order": 91,
           "question_number": 22,
           "type": "multiple",
           "question_text": "List the consequences of acute peritonitis at systemic level:",
@@ -82159,7 +82069,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 97,
+          "question_order": 92,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Specify the symptoms that facilitate the diagnosis of postoperatory peritonitis:",
@@ -82194,7 +82104,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 98,
+          "question_order": 93,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Specify the clinical signs present at abdomen palpation in secondary diffuse peritonitis:",
@@ -82229,7 +82139,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 99,
+          "question_order": 94,
           "question_number": 25,
           "type": "multiple",
           "question_text": "Indicate the microflora present in tertiary peritonitis:",
@@ -82264,7 +82174,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 100,
+          "question_order": 95,
           "question_number": 1,
           "type": "single",
           "question_text": "Choose the false statement, which does not characterize the deep venous system of the inferior limbs:",
@@ -82299,7 +82209,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 101,
+          "question_order": 96,
           "question_number": 9,
           "type": "multiple",
           "question_text": "List the complications that may occur as a result of varicose vein sclerotherapy:",
@@ -82334,7 +82244,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 102,
+          "question_order": 97,
           "question_number": 10,
           "type": "multiple",
           "question_text": "List the methods that can be used to prevent massive pulmonary thromboembolism in the case of a floating inferior vena cava thrombus:",
@@ -82369,7 +82279,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 103,
+          "question_order": 98,
           "question_number": 11,
           "type": "multiple",
           "question_text": "Indicate the specific methods in diagnosis of lung embolism:",
@@ -82404,7 +82314,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 104,
+          "question_order": 99,
           "question_number": 12,
           "type": "multiple",
           "question_text": "Indicate the factors involved in the thrombi formation:",
@@ -82439,7 +82349,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 105,
+          "question_order": 100,
           "question_number": 13,
           "type": "multiple",
           "question_text": "Select the characteristics of post-thrombotic (post-phlebitic) syndrome:",
@@ -82474,7 +82384,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 106,
+          "question_order": 101,
           "question_number": 14,
           "type": "multiple",
           "question_text": "The aims of the surgery for varicose veins are, EXCEPT:",
@@ -82509,7 +82419,7 @@
         {
           "module": "Surgery_4th year_Vozian",
           "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
-          "question_order": 107,
+          "question_order": 102,
           "question_number": 15,
           "type": "multiple",
           "question_text": "Indicate the factors that influence positively the venous blood circulation:",
@@ -90428,7 +90338,7 @@
       "file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
       "module": "Acute pneumonia_2026_OC",
       "folder": "Pediatrics",
-      "questionCount": 50,
+      "questionCount": 48,
       "questions": [
         {
           "module": "Acute pneumonia_2026_OC",
@@ -91195,21 +91105,6 @@
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
           "question_order": 22,
           "question_number": 5,
-          "type": "single",
-          "question_text": "Chest X-ray may show blunting of the costophrenic angles and mediastinal shift in large effusions",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "The development of pleurisy worsens the clinical course",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Acute pneumonia_2026_OC",
-          "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 23,
-          "question_number": 5,
           "type": "multiple",
           "question_text": "What are the most common etiological agents of community-acquired pneumonia in children?",
           "answers": [
@@ -91243,7 +91138,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 24,
+          "question_order": 23,
           "question_number": 6,
           "type": "multiple",
           "question_text": "Which findings are characteristic of alveolar condensation syndrome in community-acquired pneumonia?",
@@ -91278,7 +91173,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 25,
+          "question_order": 24,
           "question_number": 7,
           "type": "multiple",
           "question_text": "Which findings suggest treatment failure in community-acquired pneumonia?",
@@ -91313,7 +91208,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 26,
+          "question_order": 25,
           "question_number": 8,
           "type": "multiple",
           "question_text": "Which statements that describe bronchopneumonia in children?",
@@ -91348,7 +91243,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 27,
+          "question_order": 26,
           "question_number": 9,
           "type": "multiple",
           "question_text": "Which radiological findings may be seen on chest X-ray in uncomplicated community-acquired pneumonia?",
@@ -91383,7 +91278,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 28,
+          "question_order": 27,
           "question_number": 10,
           "type": "multiple",
           "question_text": "What are possible complications of community-acquired pneumonia in children?",
@@ -91418,7 +91313,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 29,
+          "question_order": 28,
           "question_number": 11,
           "type": "multiple",
           "question_text": "Which conditions should be considered in the differential diagnosis of community-acquired pneumonia in children?",
@@ -91453,7 +91348,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 30,
+          "question_order": 29,
           "question_number": 12,
           "type": "multiple",
           "question_text": "What are the criteria for hospitalization of children with community-acquired pneumonia?",
@@ -91488,7 +91383,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 31,
+          "question_order": 30,
           "question_number": 13,
           "type": "single",
           "question_text": "Clinical follow-up by the family physician for approximately 3 months",
@@ -91508,22 +91403,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 32,
-          "question_number": 14,
-          "type": "single",
-          "question_text": "Identification and correction of nutritional deficiencies (e.g., anemia, rickets)",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "General measures to support recovery and prevent new infections",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Acute pneumonia_2026_OC",
-          "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 33,
+          "question_order": 31,
           "question_number": 14,
           "type": "multiple",
           "question_text": "What are the main principles of treatment for community-acquired pneumonia in children?",
@@ -91558,7 +91438,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 34,
+          "question_order": 32,
           "question_number": 15,
           "type": "multiple",
           "question_text": "Which measures are included in symptomatic treatment of community-acquired pneumonia in school-aged children?",
@@ -91593,7 +91473,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 35,
+          "question_order": 33,
           "question_number": 16,
           "type": "multiple",
           "question_text": "Which antibiotic groups are used for uncomplicated community-acquired pneumonia in children?",
@@ -91628,7 +91508,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 36,
+          "question_order": 34,
           "question_number": 17,
           "type": "multiple",
           "question_text": "Which antibiotics are used for atypical pneumonia in children?",
@@ -91663,7 +91543,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 37,
+          "question_order": 35,
           "question_number": 18,
           "type": "multiple",
           "question_text": "Which infectious agents most commonly cause atypical pneumonia in children?",
@@ -91698,7 +91578,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 38,
+          "question_order": 36,
           "question_number": 19,
           "type": "multiple",
           "question_text": "What are recommended treatments for uncomplicated community-acquired pneumonia?",
@@ -91733,7 +91613,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 39,
+          "question_order": 37,
           "question_number": 20,
           "type": "multiple",
           "question_text": "What are risk factors for pneumonia in newborns?",
@@ -91768,7 +91648,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 40,
+          "question_order": 38,
           "question_number": 21,
           "type": "multiple",
           "question_text": "Which antibiotics may be used in the treatment of staphylococcal pneumonia in children?",
@@ -91803,7 +91683,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 41,
+          "question_order": 39,
           "question_number": 22,
           "type": "multiple",
           "question_text": "Which antibiotics are appropriate for pneumonia caused by Gram-positive bacteria in children?",
@@ -91838,7 +91718,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 42,
+          "question_order": 40,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Which diseases may be associated with Chlamydia infection in newborns?",
@@ -91873,7 +91753,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 43,
+          "question_order": 41,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Which clinical signs may occur in a child with exudative pleurisy?",
@@ -91908,7 +91788,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 44,
+          "question_order": 42,
           "question_number": 25,
           "type": "multiple",
           "question_text": "Which signs suggest pneumothorax in a child?",
@@ -91943,7 +91823,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 45,
+          "question_order": 43,
           "question_number": 26,
           "type": "multiple",
           "question_text": "Which factors predispose to pneumonia in early childhood?",
@@ -91978,7 +91858,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 46,
+          "question_order": 44,
           "question_number": 27,
           "type": "multiple",
           "question_text": "What diagnostic criteria support pneumonia in infants under 1 year?",
@@ -92013,7 +91893,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 47,
+          "question_order": 45,
           "question_number": 28,
           "type": "multiple",
           "question_text": "Which antibiotics may be used as second-line treatment for acute pneumonia?",
@@ -92048,7 +91928,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 48,
+          "question_order": 46,
           "question_number": 29,
           "type": "multiple",
           "question_text": "What complications may occur in children with acute pneumonia?",
@@ -92083,7 +91963,7 @@
         {
           "module": "Acute pneumonia_2026_OC",
           "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
-          "question_order": 49,
+          "question_order": 47,
           "question_number": 30,
           "type": "multiple",
           "question_text": "Which features are characteristic of Mycoplasma pneumonia in children?",
@@ -92121,7 +92001,7 @@
       "file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
       "module": "Acute repiratory infections_2026_OC",
       "folder": "Pediatrics",
-      "questionCount": 43,
+      "questionCount": 42,
       "questions": [
         {
           "module": "Acute repiratory infections_2026_OC",
@@ -93277,21 +93157,6 @@
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
           "question_order": 33,
-          "question_number": 35,
-          "type": "single",
-          "question_text": "Which of the following are contraindications to influenza vaccination in children?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Primary immunodeficiency",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Acute repiratory infections_2026_OC",
-          "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 34,
           "question_number": 36,
           "type": "single",
           "question_text": "Severe allergic reaction (anaphylaxis) to a previous vaccine dose or to vaccine components",
@@ -93316,7 +93181,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 35,
+          "question_order": 34,
           "question_number": 37,
           "type": "multiple",
           "question_text": "Which children are candidates for influenza vaccination?",
@@ -93351,7 +93216,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 36,
+          "question_order": 35,
           "question_number": 38,
           "type": "multiple",
           "question_text": "What complications may occur following acute respiratory infections in children?",
@@ -93386,7 +93251,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 37,
+          "question_order": 36,
           "question_number": 39,
           "type": "multiple",
           "question_text": "In which situations is antibiotic therapy indicated in acute respiratory infections?",
@@ -93421,7 +93286,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 38,
+          "question_order": 37,
           "question_number": 40,
           "type": "multiple",
           "question_text": "Which signs are commonly associated with viral pharyngitis?",
@@ -93456,7 +93321,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 39,
+          "question_order": 38,
           "question_number": 41,
           "type": "multiple",
           "question_text": "Which are late complications of group A β-hemolytic streptococcal (GABHS) pharyngitis?",
@@ -93491,7 +93356,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 40,
+          "question_order": 39,
           "question_number": 42,
           "type": "multiple",
           "question_text": "Which antibiotics are appropriate for treating group A β-hemolytic streptococcal (GABHS) pharyngitis?",
@@ -93526,7 +93391,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 41,
+          "question_order": 40,
           "question_number": 43,
           "type": "multiple",
           "question_text": "Which are early complications of group A β-hemolytic streptococcal (GABHS) pharyngitis?",
@@ -93561,7 +93426,7 @@
         {
           "module": "Acute repiratory infections_2026_OC",
           "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
-          "question_order": 42,
+          "question_order": 41,
           "question_number": 44,
           "type": "multiple",
           "question_text": "Which signs suggest acute bacterial sinusitis in children?",
@@ -94482,7 +94347,7 @@
       "file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
       "module": "Bronchial asthma_2026_OC",
       "folder": "Pediatrics",
-      "questionCount": 34,
+      "questionCount": 30,
       "questions": [
         {
           "module": "Bronchial asthma_2026_OC",
@@ -94628,66 +94493,6 @@
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
           "question_order": 4,
-          "question_number": 5,
-          "type": "single",
-          "question_text": "Which clinical sign is not typical of an asthma exacerbation in children?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Spasmodic cough with whitish sputum",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Expiratory dyspnea",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Agitation of the child, anxiety, headache",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Inspiratory dyspnea",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Nocturnal cough",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Intravenous",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Subcutaneous",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Intramuscular",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Inhalational",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Oral",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Bronchial asthma_2026_OC",
-          "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 5,
           "question_number": 6,
           "type": "single",
           "question_text": "What is the therapeutic effect of mast cell stabilizers in childhood asthma?",
@@ -94722,7 +94527,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 6,
+          "question_order": 5,
           "question_number": 7,
           "type": "single",
           "question_text": "Which manifestation is not characteristic of the pathogenesis of childhood asthma?",
@@ -94757,7 +94562,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 7,
+          "question_order": 6,
           "question_number": 8,
           "type": "single",
           "question_text": "Which drug group is not indicated for anti-inflammatory treatment of childhood asthma?",
@@ -94792,7 +94597,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 8,
+          "question_order": 7,
           "question_number": 9,
           "type": "single",
           "question_text": "Which group of drugs may frequently exacerbate asthma symptoms in children?",
@@ -94827,7 +94632,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 9,
+          "question_order": 8,
           "question_number": 10,
           "type": "single",
           "question_text": "Which test is used for daily monitoring of bronchial variability in children with asthma?",
@@ -94862,7 +94667,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 10,
+          "question_order": 9,
           "question_number": 11,
           "type": "single",
           "question_text": "Which biomarker in sputum reflects allergic airway inflammation in children with asthma?",
@@ -94897,7 +94702,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 11,
+          "question_order": 10,
           "question_number": 12,
           "type": "single",
           "question_text": "What is the principal goal of asthma management in children?",
@@ -94932,7 +94737,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 12,
+          "question_order": 11,
           "question_number": 13,
           "type": "single",
           "question_text": "A child presents with an acute asthma exacerbation. Which laboratory test provides the most critical information about respiratory status?",
@@ -94967,7 +94772,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 13,
+          "question_order": 12,
           "question_number": 14,
           "type": "single",
           "question_text": "A 7-year-old female with asthma is playing a soccer game in gym class. Suddenly she develops cough, wheezing, and dyspnea during exercise. Which medication provides rapid relief?",
@@ -95002,7 +94807,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 14,
+          "question_order": 13,
           "question_number": 18,
           "type": "single",
           "question_text": "All of the following are risk factors for asthma except:",
@@ -95037,7 +94842,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 15,
+          "question_order": 14,
           "question_number": 21,
           "type": "multiple",
           "question_text": "Severe asthma is suggested by which of the following findings?",
@@ -95072,7 +94877,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 16,
+          "question_order": 15,
           "question_number": 22,
           "type": "multiple",
           "question_text": "All of the following are risk factors for asthma except:",
@@ -95107,7 +94912,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 17,
+          "question_order": 16,
           "question_number": 23,
           "type": "single",
           "question_text": "Which pathogenetic mechanisms are involved in childhood bronchial asthma?",
@@ -95127,7 +94932,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 18,
+          "question_order": 17,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Bronchial smooth muscle spasm (reversible airflow obstruction)",
@@ -95147,7 +94952,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 19,
+          "question_order": 18,
           "question_number": 25,
           "type": "single",
           "question_text": "What are the diagnostic criteria for bronchial asthma in children?",
@@ -95172,22 +94977,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 20,
-          "question_number": 26,
-          "type": "single",
-          "question_text": "Spirometry demonstrating obstructive changes in small airways",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Spirometry showing a restrictive ventilatory pattern",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Bronchial asthma_2026_OC",
-          "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 21,
+          "question_order": 19,
           "question_number": 27,
           "type": "multiple",
           "question_text": "Which diseases should be considered in the differential diagnosis of bronchial asthma in children?",
@@ -95222,7 +95012,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 22,
+          "question_order": 20,
           "question_number": 28,
           "type": "multiple",
           "question_text": "What are the therapeutic indications for initiating inhaled corticosteroids in children with asthma?",
@@ -95257,22 +95047,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 23,
-          "question_number": 29,
-          "type": "single",
-          "question_text": "Which clinical features are characteristic of status asthmaticus in children?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Wheezing lasting longer than 6 hours",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Bronchial asthma_2026_OC",
-          "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 24,
+          "question_order": 21,
           "question_number": 30,
           "type": "single",
           "question_text": "Neurological manifestations (agitation, confusion, exhaustion)",
@@ -95297,7 +95072,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 25,
+          "question_order": 22,
           "question_number": 31,
           "type": "multiple",
           "question_text": "Which complaints are commonly reported by children with bronchial asthma?",
@@ -95332,7 +95107,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 26,
+          "question_order": 23,
           "question_number": 32,
           "type": "multiple",
           "question_text": "Which parameters are used to assess asthma severity in children?",
@@ -95367,7 +95142,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 27,
+          "question_order": 24,
           "question_number": 33,
           "type": "multiple",
           "question_text": "What factors may precipitate status asthmaticus in children?",
@@ -95402,22 +95177,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 28,
-          "question_number": 34,
-          "type": "single",
-          "question_text": "What are recognized risk factors for childhood asthma?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Genetic predisposition",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Bronchial asthma_2026_OC",
-          "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 29,
+          "question_order": 25,
           "question_number": 35,
           "type": "multiple",
           "question_text": "Frequent respiratory infections with inappropriate antibiotic use",
@@ -95442,7 +95202,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 30,
+          "question_order": 26,
           "question_number": 36,
           "type": "multiple",
           "question_text": "Which diagnostic investigations are recommended for asthma evaluation in school-aged children?",
@@ -95477,7 +95237,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 31,
+          "question_order": 27,
           "question_number": 37,
           "type": "multiple",
           "question_text": "What are the immediate complications of bronchial asthma in children?",
@@ -95512,7 +95272,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 32,
+          "question_order": 28,
           "question_number": 38,
           "type": "multiple",
           "question_text": "Which food allergens most frequently trigger asthma attacks in children?",
@@ -95547,7 +95307,7 @@
         {
           "module": "Bronchial asthma_2026_OC",
           "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
-          "question_order": 33,
+          "question_order": 29,
           "question_number": 39,
           "type": "multiple",
           "question_text": "Which environmental factors commonly trigger asthma exacerbations in children?",
@@ -96433,7 +96193,7 @@
       "file": "data/Pediatrics/Child growth and development  corrected.docx",
       "module": "Child growth and development  corrected",
       "folder": "Pediatrics",
-      "questionCount": 24,
+      "questionCount": 21,
       "questions": [
         {
           "module": "Child growth and development  corrected",
@@ -96534,21 +96294,6 @@
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
           "question_order": 3,
-          "question_number": 6,
-          "type": "single",
-          "question_text": "Choose the definition of one of the laws of normal growth and development in children – the proportion law:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Body segments do not grow all at the same time, but alternating",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Child growth and development  corrected",
-          "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 4,
           "question_number": 8,
           "type": "single",
           "question_text": "For every childhood period there is a certain growth rate for body’s segmental levels",
@@ -96568,22 +96313,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 5,
-          "question_number": 8,
-          "type": "single",
-          "question_text": "Choose the role of parathyroid gland in normal growth and development in children:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Stimulates anabolic mechanisms",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Child growth and development  corrected",
-          "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 6,
+          "question_order": 4,
           "question_number": 9,
           "type": "single",
           "question_text": "Regulates calcium-phosphorus metabolism and bone mineralization",
@@ -96608,7 +96338,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 7,
+          "question_order": 5,
           "question_number": 9,
           "type": "single",
           "question_text": "Choose the definition of child’s growth and development:",
@@ -96643,7 +96373,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 8,
+          "question_order": 6,
           "question_number": 10,
           "type": "single",
           "question_text": "Choose the criterion that is not used in the complex assessment of child’s growth and development:",
@@ -96678,7 +96408,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 9,
+          "question_order": 7,
           "question_number": 11,
           "type": "single",
           "question_text": "Choose the criterion that does not define growth and development as a biological process",
@@ -96708,7 +96438,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 10,
+          "question_order": 8,
           "question_number": 12,
           "type": "multiple",
           "question_text": "Choose the criterion that does not characterize maturation process during the child’s growth and development:",
@@ -96743,7 +96473,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 11,
+          "question_order": 9,
           "question_number": 13,
           "type": "multiple",
           "question_text": "Choose the statement that list indicators of body’s size and composition:",
@@ -96778,7 +96508,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 12,
+          "question_order": 10,
           "question_number": 1,
           "type": "multiple",
           "question_text": "Enumerate endocrine glands that significantly influence child’s physical development in the first year of life:",
@@ -96813,7 +96543,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 13,
+          "question_order": 11,
           "question_number": 2,
           "type": "multiple",
           "question_text": "Enumerate criteria for biological maturation assessment in girls:",
@@ -96848,7 +96578,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 14,
+          "question_order": 12,
           "question_number": 3,
           "type": "multiple",
           "question_text": "Enumerate causes of height deficit in children:",
@@ -96883,7 +96613,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 15,
+          "question_order": 13,
           "question_number": 4,
           "type": "multiple",
           "question_text": "Enumerate causes of weight deficit in children:",
@@ -96918,7 +96648,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 16,
+          "question_order": 14,
           "question_number": 5,
           "type": "multiple",
           "question_text": "Enumerate criteria for biological maturation assessment in boys:",
@@ -96953,7 +96683,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 17,
+          "question_order": 15,
           "question_number": 6,
           "type": "multiple",
           "question_text": "Enumerate criteria for biological maturation in children:",
@@ -96988,7 +96718,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 18,
+          "question_order": 16,
           "question_number": 7,
           "type": "multiple",
           "question_text": "Enumerate laws of normal growth and development in children:",
@@ -97013,22 +96743,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 19,
-          "question_number": 8,
-          "type": "single",
-          "question_text": "The unequal and asymmetrical growth law of tissues and organs",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "The accelerated growth law",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Child growth and development  corrected",
-          "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 20,
+          "question_order": 17,
           "question_number": 9,
           "type": "multiple",
           "question_text": "Enumerate exogenous factors that interfere with normal growth and development in children:",
@@ -97063,7 +96778,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 21,
+          "question_order": 18,
           "question_number": 9,
           "type": "multiple",
           "question_text": "Enumerate endocrine glands that significantly influence child’s physical development:",
@@ -97098,7 +96813,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 22,
+          "question_order": 19,
           "question_number": 10,
           "type": "multiple",
           "question_text": "Enumerate roles of the thyroid gland in normal growth and development in children:",
@@ -97133,7 +96848,7 @@
         {
           "module": "Child growth and development  corrected",
           "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
-          "question_order": 23,
+          "question_order": 20,
           "question_number": 11,
           "type": "multiple",
           "question_text": "Enumerate roles of sexual glands in normal growth and development in children:",
@@ -97171,7 +96886,7 @@
       "file": "data/Pediatrics/Chronic lung disease revazut.docx",
       "module": "Chronic lung disease revazut",
       "folder": "Pediatrics",
-      "questionCount": 40,
+      "questionCount": 37,
       "questions": [
         {
           "module": "Chronic lung disease revazut",
@@ -97527,21 +97242,6 @@
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
           "question_order": 10,
-          "question_number": 13,
-          "type": "single",
-          "question_text": "Which statement is not characteristic for pulmonary hemosiderosis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Is a rare disorder",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Chronic lung disease revazut",
-          "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 11,
           "question_number": 14,
           "type": "single",
           "question_text": "Abnormal accumulation of iron as hemosiderin in alveolar macrophages",
@@ -97566,7 +97266,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 12,
+          "question_order": 11,
           "question_number": 15,
           "type": "single",
           "question_text": "Neonatal onset of cystic fibrosis is not characterized by:",
@@ -97601,7 +97301,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 13,
+          "question_order": 12,
           "question_number": 16,
           "type": "single",
           "question_text": "Pulmonary atelectasis can be confirmed by one of the following methods:",
@@ -97636,7 +97336,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 14,
+          "question_order": 13,
           "question_number": 17,
           "type": "single",
           "question_text": "Which statement does not characterize the bronchoscopy purposes:",
@@ -97671,7 +97371,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 15,
+          "question_order": 14,
           "question_number": 18,
           "type": "single",
           "question_text": "The syndrome of ciliary dysmotility is characteristic for:",
@@ -97706,7 +97406,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 16,
+          "question_order": 15,
           "question_number": 19,
           "type": "single",
           "question_text": "Which statement is characteristic for pulmonary emphysema in children:",
@@ -97741,7 +97441,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 17,
+          "question_order": 16,
           "question_number": 20,
           "type": "single",
           "question_text": "Select the hallmark for chronic inflammation in children with bronchiectasis:",
@@ -97776,7 +97476,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 18,
+          "question_order": 17,
           "question_number": 21,
           "type": "single",
           "question_text": "Which of the following sign is characteristic for pulmonary hemosiderosis:",
@@ -97811,7 +97511,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 19,
+          "question_order": 18,
           "question_number": 22,
           "type": "single",
           "question_text": "Mark the method of choice for diagnosis of bronchiectatic disease in children:",
@@ -97846,7 +97546,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 20,
+          "question_order": 19,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Select the radiological feature that is characteristic for pulmonary hemosiderosis in children:",
@@ -97881,7 +97581,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 21,
+          "question_order": 20,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Which of the following diseases for diagnostic requires sweat test:",
@@ -97916,7 +97616,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 22,
+          "question_order": 21,
           "question_number": 25,
           "type": "multiple",
           "question_text": "Diagnostic workup in bronchopulmonary dysplasia includes the following tests:",
@@ -97951,7 +97651,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 23,
+          "question_order": 22,
           "question_number": 26,
           "type": "multiple",
           "question_text": "The characteristics that determine the unfavorable evolution of cystic fibrosis in children are:",
@@ -97986,7 +97686,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 24,
+          "question_order": 23,
           "question_number": 27,
           "type": "single",
           "question_text": "The treatment of a child with primary bronchopulmonary dysplasia will include:",
@@ -98006,22 +97706,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 25,
-          "question_number": 28,
-          "type": "single",
-          "question_text": "Antibacterial treatment in exacerbation of respiratory infection",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Inhaled antibiotics and expectorants",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Chronic lung disease revazut",
-          "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 26,
+          "question_order": 24,
           "question_number": 29,
           "type": "multiple",
           "question_text": "Specific immunization (influenza and pneumococcal vaccination)",
@@ -98056,7 +97741,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 27,
+          "question_order": 25,
           "question_number": 30,
           "type": "multiple",
           "question_text": "The computer tomography signs of bronchiectasis in children are:",
@@ -98081,7 +97766,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 28,
+          "question_order": 26,
           "question_number": 31,
           "type": "multiple",
           "question_text": "Clinical manifestations characteristic for chronic interstitial lung disease in children are:",
@@ -98106,22 +97791,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 29,
-          "question_number": 32,
-          "type": "single",
-          "question_text": "Growth retardation, signs of weight loss, and/or failure to thrive",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Cough with foamy and pink colored sputum",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Chronic lung disease revazut",
-          "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 30,
+          "question_order": 27,
           "question_number": 33,
           "type": "multiple",
           "question_text": "The radiological features of pneumofibrosis in children are:",
@@ -98156,7 +97826,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 31,
+          "question_order": 28,
           "question_number": 34,
           "type": "multiple",
           "question_text": "Medical care in children with interstitial lung disease include:",
@@ -98191,7 +97861,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 32,
+          "question_order": 29,
           "question_number": 35,
           "type": "multiple",
           "question_text": "Major indications for diagnostic bronchoscopy are:",
@@ -98226,7 +97896,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 33,
+          "question_order": 30,
           "question_number": 36,
           "type": "multiple",
           "question_text": "Medications used to treat patients with cystic fibrosis include the following:",
@@ -98261,7 +97931,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 34,
+          "question_order": 31,
           "question_number": 37,
           "type": "multiple",
           "question_text": "The causes of respiratory failure in children are:",
@@ -98296,7 +97966,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 35,
+          "question_order": 32,
           "question_number": 38,
           "type": "multiple",
           "question_text": "Clinical symptoms characteristic for respiratory failure in children are:",
@@ -98331,7 +98001,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 36,
+          "question_order": 33,
           "question_number": 39,
           "type": "multiple",
           "question_text": "Clinical symptoms characteristic for children with cystic fibrosis are:",
@@ -98366,7 +98036,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 37,
+          "question_order": 34,
           "question_number": 40,
           "type": "multiple",
           "question_text": "Associated antibiotic therapy is used in:",
@@ -98401,7 +98071,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 38,
+          "question_order": 35,
           "question_number": 41,
           "type": "multiple",
           "question_text": "Indirect signs of bronchiectasis on computed tomography are:",
@@ -98436,7 +98106,7 @@
         {
           "module": "Chronic lung disease revazut",
           "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
-          "question_order": 39,
+          "question_order": 36,
           "question_number": 42,
           "type": "multiple",
           "question_text": "Which systems are affected in cystic fibrosis?",
@@ -98867,7 +98537,7 @@
       "file": "data/Pediatrics/colagenosis in children.docx",
       "module": "colagenosis in children",
       "folder": "Pediatrics",
-      "questionCount": 34,
+      "questionCount": 29,
       "questions": [
         {
           "module": "colagenosis in children",
@@ -99433,66 +99103,6 @@
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
           "question_order": 16,
-          "question_number": 21,
-          "type": "multiple",
-          "question_text": "Note the central nervous system manifestations in Systemic Lupus Erythematosus:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Peripheral Neuropathy",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Psychosis",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Meningoencephalitis",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Febrile seizures",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Cranial nerve involvement",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Antinuclear antibodies",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Anti–DNA antibodies",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Anti-centromere antibodies",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Anti-cardiolipin antibodies",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Anti-phospholipidic antibodies",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "colagenosis in children",
-          "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 17,
           "question_number": 22,
           "type": "multiple",
           "question_text": "Note the specific hematologic manifestations in Systemic Lupus Erythematosus:",
@@ -99527,7 +99137,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 18,
+          "question_order": 17,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Specify the drugs used in treatment of Systemic Lupus Erythematosus:",
@@ -99562,7 +99172,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 19,
+          "question_order": 18,
           "question_number": 14,
           "type": "multiple",
           "question_text": "Specify the non-pharmacological treatment in Systemic Lupus Erythematosus:",
@@ -99597,72 +99207,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 20,
-          "question_number": 15,
-          "type": "multiple",
-          "question_text": "Specify unfavorable factors for evolution of Systemic Lupus Erythematosus:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Thrombocytopenia",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Arterial Hypertension",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Onset before the age of 20 years",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "High activity of disease",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Antinuclear antibodies",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "c",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "b",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "b",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "a",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "a",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Name the major criteria for diagnosis of Systemic Scleroderma:",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "colagenosis in children",
-          "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 21,
+          "question_order": 19,
           "question_number": 16,
           "type": "multiple",
           "question_text": "Scleroderma lesions of the skin proximal to the metacarpophalangeal or metatarsophalangeal joints",
@@ -99702,7 +99247,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 22,
+          "question_order": 20,
           "question_number": 17,
           "type": "multiple",
           "question_text": "Antinuclear antibodies, Tropoisomerase-1, SCL 70, Anticentromere antibodies",
@@ -99737,7 +99282,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 23,
+          "question_order": 21,
           "question_number": 18,
           "type": "multiple",
           "question_text": "Determine the clinical forms of Systemic Scleroderma according to Leroy:",
@@ -99772,7 +99317,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 24,
+          "question_order": 22,
           "question_number": 19,
           "type": "multiple",
           "question_text": "Enumerate the minor criteria for diagnosis of Systemic Scleroderma:",
@@ -99807,7 +99352,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 25,
+          "question_order": 23,
           "question_number": 20,
           "type": "multiple",
           "question_text": "Specify the anti-fibrosis drugs used in treatment of Systemic Scleroderma:",
@@ -99842,7 +99387,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 26,
+          "question_order": 24,
           "question_number": 21,
           "type": "multiple",
           "question_text": "Enumerate the immunosuppressive drugs used in treatment of Systemic Scleroderma:",
@@ -99877,7 +99422,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 27,
+          "question_order": 25,
           "question_number": 22,
           "type": "multiple",
           "question_text": "Specify the capillaroscopy alterations in Systemic Scleroderma:",
@@ -99912,7 +99457,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 28,
+          "question_order": 26,
           "question_number": 23,
           "type": "multiple",
           "question_text": "Specify the classification criteria of Systemic Scleroderma:",
@@ -99947,7 +99492,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 29,
+          "question_order": 27,
           "question_number": 24,
           "type": "multiple",
           "question_text": "Specify the general manifestations of Systemic Scleroderma in children:",
@@ -99982,207 +99527,7 @@
         {
           "module": "colagenosis in children",
           "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 30,
-          "question_number": 25,
-          "type": "multiple",
-          "question_text": "Enumerate the criteria of diagnosis for CREST syndrome in Systemic Scleroderma in children:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Calcinosis",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Raynaud phenomenon",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Excitability",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Sclerodactyly",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Diastolic hypertension",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "b",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "a",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "e",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "d",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Specify the age of onset of Juvenile Dermatomyositis:",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "colagenosis in children",
-          "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 31,
-          "question_number": 7,
-          "type": "multiple",
-          "question_text": "10 years",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Note the specific muscular affection in Juvenile Dermatomyositis:",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Asymmetrical muscular affection",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Affection of distal muscular segments of extremities",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Affection of eye-bulb muscles",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Symmetrical muscular affection",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Name the specific skin manifestation in Juvenile Dermatomyositis:",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Determine the enzyme which level does not increase in Juvenile Dermatomyositis:",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Determine the group of muscles affected in Juvenile Dermatomyositis:",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Specify the atypical joint manifestation in Juvenile Dermatomyositis:",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Arthralgia",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Non-erosive arthritis",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Acute arthritis",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Deforming arthritis",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Specify the typical muscular manifestations in Juvenile Dermatomyositis:Muscular weakness",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Muscular swelling",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Muscular atrophy and contracture",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Affection of eye-bulb muscles",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Affection of neck flexor muscles",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Note the typical joint affections in Juvenile Dermatomyositis:Arthralgia",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Erosive arthritis",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Non-erosive arthritis",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Joint swelling",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Joint contractures",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "colagenosis in children",
-          "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 32,
-          "question_number": 8,
-          "type": "single",
-          "question_text": "Name the typical pulmonary manifestations in Juvenile Dermatomyositis:A. Intercostal muscular affectionB. Affection of diaphragmC. Pulmonary fibrosisD. Aspiration pneumoniaE. Pneumothorax",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Specify the typical skin manifestations in Juvenile Dermatomyositis:A. Heliotrope rashB. TelangiectasiaC. Gottron papulesD. Malar rashE. „V-shape” rash over the neck",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "colagenosis in children",
-          "source_file": "data/Pediatrics/colagenosis in children.docx",
-          "question_order": 33,
+          "question_order": 28,
           "question_number": 7,
           "type": "multiple",
           "question_text": "Specify the enzymes which level increase in Juvenile Dermatomyositis:",
@@ -102083,7 +101428,7 @@
       "file": "data/Pediatrics/iron deficiency anemia_.docx",
       "module": "iron deficiency anemia_",
       "folder": "Pediatrics",
-      "questionCount": 31,
+      "questionCount": 27,
       "questions": [
         {
           "module": "iron deficiency anemia_",
@@ -102394,36 +101739,6 @@
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
           "question_order": 9,
-          "question_number": 194,
-          "type": "single",
-          "question_text": "Choose the recommendation that is not applicable for the treatment of children in early childhood with iron deficiency anemia:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "oral iron supplement in dose of 5-6 mg/kg/24 hrs",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "iron deficiency anemia_",
-          "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 10,
-          "question_number": 196,
-          "type": "single",
-          "question_text": "intravenous iron products in children with malabsorption syndromes",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "improved iron dietary intake",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "iron deficiency anemia_",
-          "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 11,
           "question_number": 197,
           "type": "multiple",
           "question_text": "Choose the statement that is not correct for folate deficiency anemia:",
@@ -102443,22 +101758,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 12,
-          "question_number": 198,
-          "type": "single",
-          "question_text": "folate deficiency does not develop in children fed with goat milk",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "folate deficiency can develop during pregnancy",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "iron deficiency anemia_",
-          "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 13,
+          "question_order": 10,
           "question_number": 199,
           "type": "multiple",
           "question_text": "folate deficiency develops in children with malabsorption syndromes",
@@ -102488,7 +101788,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 14,
+          "question_order": 11,
           "question_number": 201,
           "type": "multiple",
           "question_text": "Enumerate organs that represent tissue storage of iron:",
@@ -102523,7 +101823,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 15,
+          "question_order": 12,
           "question_number": 202,
           "type": "multiple",
           "question_text": "Enumerate clinical signs characteristic for the anemic syndrome:",
@@ -102558,7 +101858,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 16,
+          "question_order": 13,
           "question_number": 203,
           "type": "multiple",
           "question_text": "Enumerate changes of the complete blood count in children with iron deficiency anemia:",
@@ -102593,7 +101893,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 17,
+          "question_order": 14,
           "question_number": 5,
           "type": "multiple",
           "question_text": "Enumerate laboratory test results characteristic for iron deficiency anemia in children:",
@@ -102628,7 +101928,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 18,
+          "question_order": 15,
           "question_number": 6,
           "type": "multiple",
           "question_text": "Enumerate laboratory test results characteristic for B12 deficiency anemia:",
@@ -102663,7 +101963,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 19,
+          "question_order": 16,
           "question_number": 7,
           "type": "multiple",
           "question_text": "Enumerate laboratory test results characteristic for latent iron deficiency:",
@@ -102698,7 +101998,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 20,
+          "question_order": 17,
           "question_number": 8,
           "type": "multiple",
           "question_text": "Enumerate haem iron food sources:",
@@ -102733,7 +102033,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 21,
+          "question_order": 18,
           "question_number": 9,
           "type": "multiple",
           "question_text": "Enumerate recommendations for prophylaxis of iron deficiency in infants:",
@@ -102758,22 +102058,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 22,
-          "question_number": 10,
-          "type": "single",
-          "question_text": "oral iron supplements for all children in the first year of life",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "oral iron supplements during the first year of life for all children born prematurely",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "iron deficiency anemia_",
-          "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 23,
+          "question_order": 19,
           "question_number": 11,
           "type": "multiple",
           "question_text": "A case of 7 years old child who complains about the pallor of the skin, headaches, abdominal pain. Complete blood count results: hemoglobin level 99 g/l; red blood cells 3,8 mln/mm3; decreased mean corpuscular hemoglobin (MCH) and mean corpuscular hemoglobin concentration (MCHC). Parasitological examination of feces revealed helminth eggs. Enumerate optimal therapeutic indications:",
@@ -102808,7 +102093,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 24,
+          "question_order": 20,
           "question_number": 13,
           "type": "single",
           "question_text": "oral iron preparations only until the normalization of hemoglobin levels",
@@ -102828,7 +102113,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 25,
+          "question_order": 21,
           "question_number": 14,
           "type": "multiple",
           "question_text": "therapeutic dose of iron supplements should be 5-6 mg/kg body weight in 24 hrs",
@@ -102863,7 +102148,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 26,
+          "question_order": 22,
           "question_number": 15,
           "type": "multiple",
           "question_text": "Enumerate diseases that determine reduced iron absorption in the gastrointestinal tract:",
@@ -102898,7 +102183,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 27,
+          "question_order": 23,
           "question_number": 16,
           "type": "multiple",
           "question_text": "Enumerate laboratory indicators that confirm the diagnosis of iron deficiency anemia:",
@@ -102933,7 +102218,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 28,
+          "question_order": 24,
           "question_number": 17,
           "type": "multiple",
           "question_text": "Additionally, to the low red blood cell count in patients with iron deficiency anemia, in the peripheral blood smear test may be found:",
@@ -102968,7 +102253,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 29,
+          "question_order": 25,
           "question_number": 18,
           "type": "multiple",
           "question_text": "Enumerate diseases that should be differentiated from iron deficiency anemia:",
@@ -103003,7 +102288,7 @@
         {
           "module": "iron deficiency anemia_",
           "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
-          "question_order": 30,
+          "question_order": 26,
           "question_number": 19,
           "type": "multiple",
           "question_text": "Enumerate correct affirmations characteristic for folate-deficiency anemia:",

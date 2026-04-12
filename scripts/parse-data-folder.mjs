@@ -374,6 +374,8 @@ function parseExplicit(html) {
   for (const seg of segments) {
     const { text, isList } = seg;
     if (!text || /^[-–—_=.]{3,}$/.test(text)) continue;
+    // Skip exam-metadata headers (Gastro scoring annotations)
+    if (/^(Capitol\s*:|Mod de punctare\s*:|Punctajul\s*:)/i.test(text)) continue;
 
     // Correct answer line
     const caMatch = text.match(CORRECT_ANSWER_P);
@@ -650,7 +652,10 @@ function isQuestion(text) {
   if (/[?:]$/.test(text.trim())) return true;
   // Contains question words
   if (/\b(which|what|choose|select|indicate|identify|specify|name|note|mark|determine|define|enumerate)\b/i.test(text)) return true;
-  // Long enough without being an answer
+  // Long enough to be a question (but not a bullet-point answer option).
+  // This is an intentional heuristic — needed for unnumbered question stems in
+  // bracket-format Pediatrics files. False positives (long answer options without
+  // bracket markers) are subsequently filtered at the output stage (< 2 answers).
   if (text.length > 60) return true;
   return false;
 }
@@ -1148,7 +1153,7 @@ function parseSurgery4th(html) {
       }
     }
 
-    const validQs = sectionQuestions.filter((q) => q.answers.length > 0 && q.answers.some((a) => a.is_correct));
+    const validQs = sectionQuestions.filter((q) => q.answers.length >= 2 && q.answers.some((a) => a.is_correct));
     allQuestions.push(...validQs);
   }
 
@@ -1352,8 +1357,12 @@ async function parseFile(filePath) {
 
   for (const rq of rawQuestions) {
     if (!rq.question_text || rq.question_text.length < 5) continue;
-    if (rq.answers.length === 0) {
-      warnings.push(`Q${rq.question_number}: no answers — skipped`);
+    if (rq.answers.length < 2) {
+      warnings.push(`Q${rq.question_number}: only ${rq.answers.length} answer(s) — skipped`);
+      continue;
+    }
+    if (rq.answers.length > 8) {
+      warnings.push(`Q${rq.question_number}: ${rq.answers.length} answers (too many) — skipped`);
       continue;
     }
     const correctCount = rq.answers.filter((a) => a.is_correct).length;
