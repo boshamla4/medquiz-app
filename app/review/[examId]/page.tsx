@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SessionGuard from '@/app/components/SessionGuard';
 import { apiGet, apiPost } from '@/lib/apiClient';
+import { scoreQuestion, formatWeight } from '@/lib/scoring';
 
 interface Answer {
   id: number;
@@ -119,9 +120,15 @@ function ReviewContent({ examId }: ReviewContentProps) {
     );
   }
 
-  const correctCount = exam.questions.filter((q) => q.is_correct === true).length;
   const total = exam.questions.length;
-  const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+  // Recompute score client-side from snapshots for consistency with scoring engine.
+  // This also handles legacy exams where score_weight was not yet stored in the DB.
+  const questionWeights = exam.questions.map((q) =>
+    scoreQuestion(q.question_snapshot, q.user_answer ?? [])
+  );
+  const weightedScore = questionWeights.reduce((sum, w) => sum + w, 0);
+  const percentage = total > 0 ? Math.round((weightedScore / total) * 100) : 0;
 
   const scoreColor =
     percentage >= 70 ? 'text-green-700' : percentage >= 50 ? 'text-yellow-700' : 'text-red-700';
@@ -154,7 +161,9 @@ function ReviewContent({ examId }: ReviewContentProps) {
             </div>
             <div className="text-right">
               <p className={`text-4xl font-bold ${scoreColor}`}>{percentage}%</p>
-              <p className="text-sm text-gray-500">{correctCount}/{total} correct</p>
+              <p className="text-sm text-gray-500">
+                {formatWeight(Math.round(weightedScore * 100) / 100)}/{total} points
+              </p>
             </div>
           </div>
         </div>
@@ -188,36 +197,60 @@ function ReviewContent({ examId }: ReviewContentProps) {
           {exam.questions.map((q, idx) => {
             const snapshot = q.question_snapshot;
             const userAnswerIds = q.user_answer ?? [];
-            const isCorrect = q.is_correct;
+            const weight = questionWeights[idx];
+            const isPartial = weight > 0 && weight < 1;
+            const notAnswered = q.user_answer === null || q.user_answer.length === 0;
+
+            const borderClass = notAnswered
+              ? 'border-gray-200'
+              : weight === 1
+              ? 'border-green-300'
+              : weight === 0
+              ? 'border-red-300'
+              : 'border-amber-300';
 
             return (
               <div
                 key={q.id}
-                className={`rounded-xl border bg-white p-6 ${
-                  isCorrect === true
-                    ? 'border-green-300'
-                    : isCorrect === false
-                    ? 'border-red-300'
-                    : 'border-gray-200'
-                }`}
+                className={`rounded-xl border bg-white p-6 ${borderClass}`}
               >
                 <div className="mb-3 flex items-start justify-between gap-3">
                   <span className="text-xs text-gray-400">Q{idx + 1}</span>
-                  {isCorrect === true && (
-                    <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-700">
-                      ✓ Correct
-                    </span>
-                  )}
-                  {isCorrect === false && (
-                    <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-700">
-                      ✗ Incorrect
-                    </span>
-                  )}
-                  {isCorrect === null && (
-                    <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500">
-                      Not answered
-                    </span>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {!notAnswered && (
+                      <span
+                        className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+                          weight === 1
+                            ? 'bg-green-100 text-green-700'
+                            : weight === 0
+                            ? 'bg-red-100 text-red-700'
+                            : 'bg-amber-100 text-amber-700'
+                        }`}
+                      >
+                        {formatWeight(weight)}/1
+                      </span>
+                    )}
+                    {weight === 1 && (
+                      <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-700">
+                        ✓ Correct
+                      </span>
+                    )}
+                    {weight === 0 && !notAnswered && (
+                      <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-700">
+                        ✗ Incorrect
+                      </span>
+                    )}
+                    {isPartial && (
+                      <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700">
+                        ~ Partial
+                      </span>
+                    )}
+                    {notAnswered && (
+                      <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-500">
+                        Not answered
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 <p className="mb-4 text-sm font-medium text-gray-900 leading-relaxed">

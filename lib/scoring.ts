@@ -72,3 +72,22 @@ export function isFullyCorrect(
 ): boolean {
   return scoreQuestion(snapshot, selectedIds) === 1;
 }
+
+/**
+ * Formats a weight value for display: drops trailing zeros after decimal.
+ * 1 → "1", 0 → "0", 0.40 → "0.4", 0.75 → "0.75"
+ */
+export function formatWeight(w: number): string {
+  if (w === 1) return '1';
+  if (w === 0) return '0';
+  return parseFloat(w.toFixed(2)).toString();
+}
+
+/**
+ * Returns the user-facing feedback message for a question result.
+ */
+export function scoreFeedback(weight: number): string {
+  if (weight === 1) return '1 point. Correct answer.';
+  if (weight === 0) return '0 points. Incorrect answer. Review highlighted options above.';
+  return `${formatWeight(weight)} point. You missed some answers. Review highlighted options above.`;
+}

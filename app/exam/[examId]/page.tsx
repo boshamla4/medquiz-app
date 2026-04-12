@@ -7,6 +7,7 @@ import QuestionCard from '@/app/components/QuestionCard';
 import ProgressTracker from '@/app/components/ProgressTracker';
 import Timer from '@/app/components/Timer';
 import { apiGet, apiPost } from '@/lib/apiClient';
+import { scoreQuestion, scoreFeedback } from '@/lib/scoring';
 
 interface Answer {
   id: number;
@@ -225,14 +226,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
   const answeredCount = Array.from(answers.values()).filter((selected) => selected.length > 0).length;
 
   const selectedNow = answers.get(current.id) ?? [];
-  const correctNow = new Set(
-    current.question_snapshot.answers
-      .filter((answer) => answer.is_correct)
-      .map((answer) => answer.id)
-  );
-  const currentIsCorrect =
-    selectedNow.length === correctNow.size &&
-    selectedNow.every((id) => correctNow.has(id));
+  const currentWeight = scoreQuestion(current.question_snapshot, selectedNow);
 
   function handleRevealCurrent() {
     setRevealed((prev) => {
@@ -266,6 +260,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           examQuestionId={current.id}
           selectedAnswerIds={answers.get(current.id) ?? []}
           revealed={currentRevealed}
+          scoreWeight={currentRevealed ? currentWeight : undefined}
           onAnswerChange={handleAnswerChange}
           questionNumber={currentIndex + 1}
           totalQuestions={exam.questions.length}
@@ -274,12 +269,14 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
         {currentRevealed && (
           <div
             className={`mt-4 rounded-lg px-4 py-3 text-sm font-medium ring-1 ${
-              currentIsCorrect
+              currentWeight === 1
                 ? 'bg-green-50 text-green-700 ring-green-200'
-                : 'bg-red-50 text-red-700 ring-red-200'
+                : currentWeight === 0
+                ? 'bg-red-50 text-red-700 ring-red-200'
+                : 'bg-amber-50 text-amber-700 ring-amber-200'
             }`}
           >
-            {currentIsCorrect ? 'Correct answer.' : 'Incorrect answer. Review highlighted options above.'}
+            {scoreFeedback(currentWeight)}
           </div>
         )}
 

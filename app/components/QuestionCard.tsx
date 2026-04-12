@@ -1,6 +1,7 @@
 'use client';
 
 import AnswerSelector from './AnswerSelector';
+import { formatWeight } from '@/lib/scoring';
 
 interface Answer {
   id: number;
@@ -20,6 +21,7 @@ interface QuestionCardProps {
   examQuestionId: number;
   selectedAnswerIds: number[];
   revealed?: boolean;
+  scoreWeight?: number;
   onAnswerChange: (examQuestionId: number, ids: number[]) => void;
   questionNumber: number;
   totalQuestions: number;
@@ -30,6 +32,7 @@ export default function QuestionCard({
   examQuestionId,
   selectedAnswerIds,
   revealed = false,
+  scoreWeight,
   onAnswerChange,
   questionNumber,
   totalQuestions,
@@ -40,21 +43,38 @@ export default function QuestionCard({
     .filter((answer) => answer.is_correct)
     .map((answer) => answer.id);
 
+  const showScore = revealed && scoreWeight !== undefined;
+  const scoreLabel = showScore ? `${formatWeight(scoreWeight!)}/1` : null;
+  const scorePillClass = showScore
+    ? scoreWeight === 1
+      ? 'bg-green-100 text-green-700'
+      : scoreWeight === 0
+      ? 'bg-red-100 text-red-700'
+      : 'bg-amber-100 text-amber-700'
+    : null;
+
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
       <div className="mb-4 flex items-center justify-between">
         <span className="text-xs font-medium uppercase tracking-wide text-gray-400">
           Question {questionNumber} / {totalQuestions}
         </span>
-        <span
-          className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
-            type === 'single'
-              ? 'bg-green-100 text-green-700'
-              : 'bg-purple-100 text-purple-700'
-          }`}
-        >
-          {typeLabel}
-        </span>
+        <div className="flex items-center gap-2">
+          {showScore && (
+            <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${scorePillClass}`}>
+              {scoreLabel}
+            </span>
+          )}
+          <span
+            className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+              type === 'single'
+                ? 'bg-green-100 text-green-700'
+                : 'bg-purple-100 text-purple-700'
+            }`}
+          >
+            {typeLabel}
+          </span>
+        </div>
       </div>
 
       <p className="mb-5 text-base font-medium leading-relaxed text-gray-900">
