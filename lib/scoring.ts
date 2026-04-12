@@ -34,6 +34,8 @@ export function scoreQuestion(
   const { type, answers } = snapshot;
 
   if (!Array.isArray(answers) || answers.length === 0) return 0;
+  // Unanswered questions always score 0 — never award credit for unselected wrong options.
+  if (!selectedIds || selectedIds.length === 0) return 0;
 
   const selectedSet = new Set(selectedIds);
 

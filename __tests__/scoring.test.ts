@@ -51,15 +51,10 @@ describe('scoreQuestion — multiple choice', () => {
     expect(scoreQuestion(s, [2, 4])).toBe(0); // selecting only wrong answers
   });
 
-  it('returns 0 for empty selection (every correct is missed, every wrong is not-selected)', () => {
-    // With 5 answers, 3 correct: each correct missed = -1/5, each wrong not-sel = +1/5
-    // raw = -3/5 + 2/5 = -1/5  → norm = (−0.2+1)/2 = 0.4 → NOT 0
-    // Actually let's test the real value
+  it('returns 0 for empty selection — unanswered questions never score', () => {
+    // Unanswered must always be 0, regardless of answer distribution.
     const s = makeSnapshot('multiple', 5, [0, 1, 2]);
-    const score = scoreQuestion(s, []);
-    // raw: correct not sel: 3 × (−1/5) = −0.6; wrong not sel: 2 × (+1/5) = +0.4 → raw = −0.2
-    // normalised = (−0.2+1)/2 = 0.4
-    expect(score).toBeCloseTo(0.4, 5);
+    expect(scoreQuestion(s, [])).toBe(0);
   });
 
   it('clamps to 0 for worst-case selection (select all wrong, miss all correct)', () => {
