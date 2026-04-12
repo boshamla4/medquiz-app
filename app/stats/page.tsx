@@ -326,10 +326,10 @@ function StatsContent() {
                               {row.correct_count}
                             </td>
                             <td className={`px-4 py-3 text-right tabular-nums font-semibold ${scoreColor}`}>
-                              {noData ? '—' : `${row.partial_sum.toFixed(2)} / ${row.total_questions}`}
+                              {noData ? '—' : `${row.partial_sum.toFixed(2)} / ${row.answered_count}`}
                               {!noData && (
                                 <span className="ml-1 text-xs font-normal text-gray-400">
-                                  ({pct(row.score)})
+                                  ({(row.answered_count > 0 ? (row.partial_sum / row.answered_count) * 100 : 0).toFixed(0)}%)
                                 </span>
                               )}
                             </td>
@@ -352,7 +352,7 @@ function StatsContent() {
             {/* Legend */}
             <div className="mt-4 flex flex-wrap gap-4 text-xs text-gray-500">
               <span>
-                <strong>Score</strong> = earned points / total questions in file
+                <strong>Score</strong> = earned points / answered (chart uses earned / total file size)
               </span>
               <span>
                 <strong>Consistency</strong> = fully correct / answered
