@@ -121,10 +121,9 @@ describe('parsed-questions.json — data integrity', () => {
       }
     }
 
-    // These are known parser edge cases in certain Pediatrics and Surgery files.
-    // They are excluded from the database at import time by import-to-supabase.mjs.
-    // Keep the threshold tight — if this number grows, the parser regressed.
-    expect(anomalies.length).toBeLessThanOrEqual(30);
+    // All anomalies are now filtered at the parser output stage.
+    // If this number grows above 0 the parser regressed.
+    expect(anomalies).toHaveLength(0);
   });
 
   it('all questions have type single or multiple', () => {
