@@ -227,6 +227,8 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
 
   const selectedNow = answers.get(current.id) ?? [];
   const currentWeight = scoreQuestion(current.question_snapshot, selectedNow);
+  const isMultipleChoice = current.question_snapshot.type === 'multiple';
+  const canReveal = isMultipleChoice ? selectedNow.length >= 2 : selectedNow.length >= 1;
 
   function handleRevealCurrent() {
     setRevealed((prev) => {
@@ -302,7 +304,7 @@ function ExamPageContent({ examId }: ExamPageContentProps) {
           {!currentRevealed ? (
             <button
               onClick={handleRevealCurrent}
-              disabled={selectedNow.length === 0}
+              disabled={!canReveal}
               className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
             >
               Check Answer

@@ -9,7 +9,9 @@
  *     - Correct + not sel    → -1/N
  *     - Incorrect + selected → -1/N
  *     - Incorrect + not sel  → +1/N
- *   Raw sum is normalised to [0, 1] (clamped at 0).
+ *   Raw sum ∈ [-1, 1]. Final score = clamp(raw, 0, 1).
+ *   No normalization — negative raw scores clamp to 0.
+ *   Unanswered questions always score 0 regardless of answer distribution.
  */
 
 export interface ScoringAnswer {
@@ -59,9 +61,8 @@ export function scoreQuestion(
     }
   }
 
-  // Normalise: raw range is [-1, 1], shift to [0, 1] then clamp
-  const normalised = (raw + 1) / 2;
-  return Math.max(0, Math.min(1, normalised));
+  // Clamp raw to [0, 1] — no normalization. Negative raw means net wrong selections → 0.
+  return Math.max(0, Math.min(1, raw));
 }
 
 /**

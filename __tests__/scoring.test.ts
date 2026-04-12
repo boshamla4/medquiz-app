@@ -70,8 +70,8 @@ describe('scoreQuestion — multiple choice', () => {
     const s = makeSnapshot('multiple', 4, [0, 1]);
     const score = scoreQuestion(s, [1]);
     // correct sel: 1×(+1/4)=0.25; correct not sel: 1×(−1/4)=−0.25; wrong not sel: 2×(+1/4)=0.5
-    // raw = 0.25 − 0.25 + 0.5 = 0.5 → norm = (0.5+1)/2 = 0.75
-    expect(score).toBeCloseTo(0.75, 5);
+    // raw = 0.25 − 0.25 + 0.5 = 0.5 → clamped to 0.5
+    expect(score).toBeCloseTo(0.5, 5);
   });
 
   it('works correctly with a single correct answer in multiple-choice type', () => {
