@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T20:16:31.985Z",
+  "generatedAt": "2026-04-12T14:43:33.210Z",
   "sourceFolder": "data",
   "totalFiles": 25,
   "totalQuestions": 3154,
@@ -85065,17 +85065,682 @@
           "question_order": 72,
           "question_number": 1,
           "type": "single",
+          "question_text": "Fibroscopy reveals the third grade esophageal varices which bleed,the gastric mucosa without ulceration. Name the first method of hemostasis:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Esophageal varices ligation.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "The resection of inferior esophagus with gastroesophageal anasthomosis.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Plugging with Blackmore probe, intravenous pituitrine.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Azygo-portal deconnection.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Spleno-renal anasthomosis.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 73,
+          "question_number": 2,
+          "type": "multiple",
+          "question_text": "What is the most safest and objective method of diagnosing upper digestive haemorrhage?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Fibroesophagogastroduodenoscopy.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Barium radiography.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Scintigraphy.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Angiography.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Diagnostic laparoscopy.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 74,
+          "question_number": 3,
+          "type": "multiple",
+          "question_text": "What is the most useful method in the treatment of cirrhous portal hypertension,?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Drainage of Wirsung.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Truncal vagotomy.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Lien transplantation.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Azygo-portal deconection.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Left spleno-pancreatectomy.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 75,
+          "question_number": 4,
+          "type": "multiple",
+          "question_text": "What is the most common cause of portal hypertension?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Congestive pericarditis.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "The Budd-Chiari syndrome.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Liver cirrhosis with intrahepatic dam.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Quadrifurcation of the portal vein.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "The lienal vein thrombosis.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 76,
+          "question_number": 5,
+          "type": "multiple",
+          "question_text": "Which gradation is usedto assess the liver function in cirrhotic patients with portal hypertension:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Ranson score.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Algover index.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Apgar score.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Child-Pugh cryterion.",
+              "is_correct": true
+            },
+            {
+              "letter": "E",
+              "text": "Glasgow score.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 77,
+          "question_number": 6,
+          "type": "multiple",
+          "question_text": "That is the indication for Tanner surgery in patients with portal hupertension:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Encefalopathy.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Refractory ascites to medical treatment.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Haemorrhagy through rupture of esophageal varices.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Haemorrhagy through rupture of colonic varices.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Haemorrhagy through rupture of rectal varices.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 78,
+          "question_number": 7,
+          "type": "multiple",
+          "question_text": "What is the wrong affirmation about the prehepatic form of portal hypertension?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Occurs more frequently in children.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Causes intermittent claudication.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Distal spleno-renal anastomosis reduces portal pressure.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Is caused by the development of congenital anomalies of the portal vein.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Causes the onset of digestive haemorrhage.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 79,
+          "question_number": 8,
+          "type": "multiple",
+          "question_text": "Cirrhogenic portal hypertension has the following complications,with the exception of:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Jaundice.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Haemorrhage of esophageal varices.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Lower digestive haemorrhage.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Exophthalmia.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Encephalopathy.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 80,
+          "question_number": 9,
+          "type": "multiple",
+          "question_text": "List the causes of digestive bleeding in the context of portal hypertension:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Rupture of esophageal varices.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Portal-hypertensive gastropathy.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Barrett’s esophageal epithelial dysplasia.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Breaking of the secondary hemorrhoids.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Breaking gastric varicose veins.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 81,
+          "question_number": 10,
+          "type": "multiple",
+          "question_text": "List the major risks of using the Blackmore probe:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Tracheal aspiration (Mendelson’s syndrome).",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Rupture of the esophageal wall.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "Paradoxical breathing.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Rupture of large intrathecal vessels.",
+              "is_correct": true
+            },
+            {
+              "letter": "E",
+              "text": "Heart rhytm disorders, angina pain.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 82,
+          "question_number": 11,
+          "type": "multiple",
+          "question_text": "Which of the following surgeries does rarely lead to hepatic encephalopathy?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "The endo-lateral porto-cava anasthomosis.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "The lateral-lateral porto-cava anasthomosis.",
+              "is_correct": true
+            },
+            {
+              "letter": "C",
+              "text": "The proximal spleno-renal anasthomosis.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Distal spleno-renal anasthomosis (Warren).",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Mesenterico-caval anasthomosis.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 83,
+          "question_number": 12,
+          "type": "single",
+          "question_text": "Which of the following therapeutic modalities can be used to stop bleeding from esophageal varices?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Endoscopic sclerotherapy.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Thoracic esophagus resection with esophagoplasty.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Sengstaken-Blackmore probe.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Vagotomy with pyloroplasty.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Elasting ring ligature.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 84,
+          "question_number": 13,
+          "type": "single",
+          "question_text": "What are the goals of surgical treatment in portal hypertension?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Reducing gastric secretion.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Volumatic and hematic rebalancing.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Reducing portal hypertension.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Control of acute gastroesophagial variceal hemorrhage.",
+              "is_correct": true
+            },
+            {
+              "letter": "E",
+              "text": "Reducing the risk of relapse of variceal bleeding.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 85,
+          "question_number": 14,
+          "type": "single",
+          "question_text": "The Child classification criteria for the assessment of liver function include:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Bilirubin and serum albumin.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Ascites,neurological disorders.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Transaminases, urea, prothrombin.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Glucose, transferase",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "The state of nutrition.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 86,
+          "question_number": 15,
+          "type": "single",
+          "question_text": "Which of the following statements about the porto-caval shunt in emergency cases are true?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "A prompt haemostasis is obtained.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Should be followed by liver transplantation.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "A selective type shunt is preffered.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Has no contraindications.",
+              "is_correct": true
+            },
+            {
+              "letter": "E",
+              "text": "Postoperative mortality is low.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 87,
+          "question_number": 16,
+          "type": "single",
+          "question_text": "The spleen response to portal hypertension, regardless of the obstacle site, is:",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Splenomegaly.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Hypervascularization with increased portal pressure through hiperaflux.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Immunological hypersplenism.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Splattering of the spleen.",
+              "is_correct": true
+            },
+            {
+              "letter": "E",
+              "text": "The occurrence of arterio-venous lienal fistulas",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 88,
+          "question_number": 17,
+          "type": "single",
+          "question_text": "Which of the following conditions can cause a pre-hepatic portal obstruction?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Atresia of venous portal shaft.",
+              "is_correct": true
+            },
+            {
+              "letter": "B",
+              "text": "Phlegm of the shaft of portal vein.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Thrombosis of the spleno-portal venous spindle.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Banti syndrome.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Hepatic fibrosis.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 89,
+          "question_number": 18,
+          "type": "single",
+          "question_text": "Which of the conditions below may cause intraheptatic portal obstruction?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Pancreatic disorders.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Primitive splenomegaly.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Liver tumour.",
+              "is_correct": false
+            },
+            {
+              "letter": "D",
+              "text": "Liver cirrhosis.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Budd-Chiari syndrome.",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 90,
+          "question_number": 19,
+          "type": "single",
+          "question_text": "The main causes of the suprahepatic portal obstruction are?",
+          "answers": [
+            {
+              "letter": "A",
+              "text": "Budd-Chiari syndrome.",
+              "is_correct": false
+            },
+            {
+              "letter": "B",
+              "text": "Constrictive pericarditis.",
+              "is_correct": false
+            },
+            {
+              "letter": "C",
+              "text": "Thrombosis of the lienal vein.",
+              "is_correct": true
+            },
+            {
+              "letter": "D",
+              "text": "Hepatic fibrosis.",
+              "is_correct": false
+            },
+            {
+              "letter": "E",
+              "text": "Liver cirrhosis.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 91,
+          "question_number": 1,
+          "type": "multiple",
           "question_text": "Intermediate host for Echinococcus granulosus may be any of the one’s listed, except:",
           "answers": [
             {
               "letter": "A",
               "text": "Sheep.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "B",
               "text": "Pig.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "C",
@@ -85085,7 +85750,7 @@
             {
               "letter": "D",
               "text": "Dog.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
@@ -85097,7 +85762,7 @@
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 73,
+          "question_order": 92,
           "question_number": 2,
           "type": "multiple",
           "question_text": "Complications of the Hydatid disease of the liver are the following, except:",
@@ -85110,7 +85775,7 @@
             {
               "letter": "B",
               "text": "The rupture in the abdominal cavity.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "C",
@@ -85125,14 +85790,14 @@
             {
               "letter": "E",
               "text": "Suppuration.",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 74,
+          "question_order": 93,
           "question_number": 3,
           "type": "multiple",
           "question_text": "What statement concerning the liver hydatid cyst is incorrect:",
@@ -85155,19 +85820,19 @@
             {
               "letter": "D",
               "text": "It may erupt in biliary ways, pleura, abdominal cavity.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
               "text": "Surgery is necessary.",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 75,
+          "question_order": 94,
           "question_number": 4,
           "type": "multiple",
           "question_text": "The most common benign tumor of the liver is represented by:",
@@ -85175,12 +85840,12 @@
             {
               "letter": "A",
               "text": "Liver lipoma.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "B",
               "text": "Liver hemangioma.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "C",
@@ -85190,7 +85855,7 @@
             {
               "letter": "D",
               "text": "Liver leiomyoma.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
@@ -85202,7 +85867,7 @@
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 76,
+          "question_order": 95,
           "question_number": 5,
           "type": "multiple",
           "question_text": "What statement concerning the hepatic alveolar echinococcosis is true:",
@@ -85210,7 +85875,7 @@
             {
               "letter": "A",
               "text": "Ultrasound shows a single cystic image.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "B",
@@ -85237,7 +85902,7 @@
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 77,
+          "question_order": 96,
           "question_number": 6,
           "type": "multiple",
           "question_text": "What statement,related to non parasitic liver cyst, is incorrect:",
@@ -85250,29 +85915,29 @@
             {
               "letter": "B",
               "text": "It can appear after trauma.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "C",
               "text": "It is often without symptoms.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "D",
               "text": "Ecoguided punction is the optimal treatment solution.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
               "text": "Some complications may appear in evolution.",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 78,
+          "question_order": 97,
           "question_number": 7,
           "type": "multiple",
           "question_text": "The treatment of choice in hydatid cyst of liver is:",
@@ -85285,7 +85950,7 @@
             {
               "letter": "B",
               "text": "Surgery.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "C",
@@ -85307,7 +85972,7 @@
         {
           "module": "Surgery_5th year_Timis",
           "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 79,
+          "question_order": 98,
           "question_number": 8,
           "type": "multiple",
           "question_text": "When is indicated marginal hepatic resection in liver hydatidosis:",
@@ -85320,27 +85985,37 @@
             {
               "letter": "B",
               "text": "In suppurated hydatid cyst with liver piosclerosis.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "C",
               "text": "In hepatic hydatid cyst complicated with biliary fistula.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "D",
               "text": "Eruption in the abdominal cavity.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
               "text": "In hepatic hydatid cyst located marginally.",
-              "is_correct": false
-            },
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "module": "Surgery_5th year_Timis",
+          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+          "question_order": 99,
+          "question_number": 9,
+          "type": "multiple",
+          "question_text": "Which of the following statements,referring to the alveolar echinococcosis of the liver, are false:",
+          "answers": [
             {
               "letter": "A",
               "text": "It has a slow evolution.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "letter": "B",
@@ -85355,1426 +86030,11 @@
             {
               "letter": "D",
               "text": "It has an invasive growth and a gloomy prognosis.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "letter": "E",
               "text": "Optimal treatment solution is peritoneal lavage-puncture.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Hematoma puncture and evacuation.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Capsule incision and hematoma evacuation.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Hematoma evacuation and diathermocoagulation to the respective liver zone.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Drainage of peritoneal cavity.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Abstention from any maneuvers, and closing abdominal cavity.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Liver colic.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Jaundice.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Bleeding in digestive tract.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Hepatomegaly.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Hematochezia.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Cyst fenestration.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Liver resection.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Cysto-dygestive anasthomosis.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Azygo-portal devascularization.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Porto-systemic transjugular shunt.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Liver trauma.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Liver tumor in decomposition.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Gallstones.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Budd-Chiari syndrome.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Mirizzi syndrome.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Liver colic.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Jaundice.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Bleeding in the digestive tract.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Hepatomegaly.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Hematochezia.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Fibrogastroduodenoscopy.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Echography.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Scintigraphy.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Computed tomography.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Selective angiography.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Lungs.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Retina.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Pancreas.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Osteo-articular system.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Liver.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Formaldehyde, peroxide.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Clorurat hipertonic serum of 20% concentation.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "5 – Fluoruracil.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Octreotide.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Brilliant green.",
-              "is_correct": false
-            },
-            {
-              "letter": "A",
-              "text": "Dyspnea, cyanosis.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Fever, pain, shivers.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Impaired pulmonary ventilation.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Septic condition.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Haemobilia.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Parasite migration throught gallbladder main path.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "The appearance of hepatic secretions in the remaining cavity.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "The presence of clear fluid in the remaining cavity.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "The presence of the turbid, viscousliquid.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Paradoxical breathing.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 80,
-          "question_number": 11,
-          "type": "multiple",
-          "question_text": "Which statement is true of posterior mediastinal masses?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "They are commoner in children than adults",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "They are more likely to be malignant in adults",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "They commonly present with spinal cord compression",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "They usually secrete catecholamines",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "They cause narrowing of the paravertebral stripe on a chest X‐ray",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Thymictumors.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Meningocele.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Hydatidcyst.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Metastatic tumors.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Hodgkin's disease.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Remote metastase.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Superior vena cava syndrome.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Laryngeal paralysis (persistent).",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Dysphagia.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Algic syndrome.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Tracheal rupture.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Esophagus rupture.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Bronchial rupture.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Stomach rupture.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Pericardial rupture.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Mediastinitis caused by the mediastinal trauma without harming the mediastinal organs.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Mediastinitis caused by the mediastinal trauma with harming the mediastinal organs.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Mediastinitis caused by mediastinal trauma with pleural and lung damage.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Mediastinitis succeeding a source in the neighborhood.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Metastatic mediastinitis (succeeding generalized infections).",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Retrosternal pain.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Diarrhoea with blood and mucous membranes.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Dysphagia.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Breathlessness.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "The instability of hemodynamics.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 81,
-          "question_number": 6,
-          "type": "multiple",
-          "question_text": "Which of following affirmation is not characteristic for aortic coarctation:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "More commonly occurs in men.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Frequently is associated with Turner syndrome.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Frequently associated with the aneurysm in the circle of Willis.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Frequently associated with the biluminal aortic valve.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Increases the risk of aortic rupture in the first trimester of pregnancy.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "It is more common in women.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "More frequently occurs in newborns with mothers who have had rubella in the first trimester of pregnancy.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "More frequently occurs in newborns with mothers who underwent toxoplasmosis in the first trimester of pregnancy.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "More often occurs in premature births.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "More often in newborns at high altitude conditions.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "PDA connects the aorta with the pulmonary artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "PDA connects the ascending aorta with the pulmonary artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "In the initial PDA period, oxygenation of the blood in the small circuit is increased.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Initially in pulmonary hypertension the arteriolar miofibers hypertrophy.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "In the IV phase of pulmonary hypertension the bloodstream changes its direction through the PDA.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "In the case of PDA, after birth, the blood pressure in the pulmonary artery is higher than in the aorta.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "For the onset of PDA, is characterized by the systolo-diastolic murmur in the presence of the unidirectional blood flow.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "The PDA defect can pass from pale to cyanotic.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "In patients with the onset of PDA, pulmonary hypervolemia occurs.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "In the PDA, in the absence of surgical treatment, the most severe changes first occur in the small bloodstream.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "The PDA occlusion can be performed without thoracotomy.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "The PDA operation is performed by thoracotomy with channel ligation.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "The PDA operation can consist of sectioning and suturing the aortic and pulmonary ends.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "In the ligation of the PDA, the vagus nerve can be affected more frequently.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "In the ligation of the PDA, the recurrent nerve can be affected more frequently.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "In the VSD, systolic murmur spreads across the whole chest.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Pale defect can be turned into cyanotic.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Palliative surgery can only be performed after the age of one year.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Palliative surgery can be performed within the first three months of life.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "The operation performed in the cyanogenic phase is ineffective.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "In the septum defect plasty, the surge is applied continuously.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "In ASD plasty dotted sutures are applied.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Electrocardiography detects signs of overloading only in the right chambers of the heart.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "The left ventricle remains under solicited.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Morphological changes in the small bloodstream occur gradually.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "The small bloodstream is trained in the process by compressing the pulmonary veins.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "The liver relatively soon increases due to strangulation of the inferior cave vein and right atrium.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "The operation consists of total pericardectomy.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "The operation consists of subtotal pericardectomy.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "After the pericardectomy, the heart is denuded.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Excessively jugular veins pulsation.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Excessively carotid arteries pulsation.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "In the liver, as a result of venous stasis, cirrhosis develops.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Peripheral edema occurs.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Viciousness can be corrected by valve plasty, narrowing of the fibrous ring, application of valvular prosthesis.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Narrowing of the aorta occurs after the beginning of the brachiocephalic artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Narrowing occurs distal to the left subclavian artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Blood passes to the lower part of the body through the dilated subclavian artery.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "The tension in the femoral arteries is diminished.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Plasty in the coarctation of the aorta consists in the excision of the narrowed segment with end-to-end suture or the application of the vascular prosthesis.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "In IPAS, narrowing can be valvular or subvalvular.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "In IPAS, the trunk of the pulmonary artery is dilated.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "In IPAS, the tension in the small blood stream reflectory increases.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "In IPAS the second sound on the pulmonary artery is diminished.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Operation in IPAS consists of open comisurotomy, excision of muscle surplus, application of plastic patch.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Is characterized by excessive cyanosis.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "There are forms that periodically (especially at rest) become acyanotic.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Frequently associated with lipothymy.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Minute circulating volume in the small blood stream is diminished.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Reduce the incidence of myocardial infarction.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Significantly relieves angina symptoms.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Statistically improve the life span.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Improve the ejection fraction of the left ventricle in many patients in whom it is significantly depressed preoperatively.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "To reduce the manifestations of overhepatic portal hypertension.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Increased venous pressure.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Shock.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Low minute cardiac volume.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Increased diastolic filling.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Low blood pressure.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 82,
-          "question_number": 20,
-          "type": "multiple",
-          "question_text": "Which of the following anomalies is not associated with tetralogy of Fallot?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Absence of the left pulmonary artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "A right aortic arch.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "A retroesophageal subclavian artery.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Anomalous origin of the left anterior descending coronary artery from the right coronary artery.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Primary pulmonary hypertension.",
-              "is_correct": true
-            },
-            {
-              "letter": "A",
-              "text": "Decreased heart flow (debit).",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Atrial fibrillation.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Systemic embolism.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Increase of peripheral resistance.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Pulmonary edema.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 83,
-          "question_number": 1,
-          "type": "single",
-          "question_text": "Which of the following is the fundamental anatomo-pathological lesion of chronic pancreatitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Wirsungian lithiasis.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Necrhosis.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Fibrosclerosis.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Suppuration.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Pseudocysts.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 84,
-          "question_number": 2,
-          "type": "single",
-          "question_text": "Which of the following radiological signs (abdominal radiographs) is most specific to chronic pancreatitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "The sentinel loop.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Calcifications in the pancreas area.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Colonic pneumatosis.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Hydro-aeric images.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Wirsungian stenosis",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 85,
-          "question_number": 3,
-          "type": "single",
-          "question_text": "Which of the following dietary measures have more importance in the treatment of chronic pancreatitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Increased intake of vitamins.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Increased protein intake.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Reduction of carbohydrate rations.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Refuse of alcohol.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Increased of plant intake.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 86,
-          "question_number": 4,
-          "type": "single",
-          "question_text": "Which of the following medical treatments can improve the symptoms of chronic pancreatitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Drugs with vasodilatation effects.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Vitamins.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Pancreatic substitution enzymes.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Choleretics drugs.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Propanolol.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 87,
-          "question_number": 5,
-          "type": "single",
-          "question_text": "Which of the following is the main indication of surgical treatment in chronic pancreatitis?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Weight loss.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Portal hypertension.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Pseudocysts.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Pain.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Pancreatic calcifications.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 88,
-          "question_number": 6,
-          "type": "single",
-          "question_text": "Which of the following situations is indicationfor Puestow operation (wirsungo-jejunostomy)?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Multiple pseudochists.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Infected pseudocysts.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Wirsung dilatation.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Normal Wirsung.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "None of them.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 89,
-          "question_number": 7,
-          "type": "single",
-          "question_text": "Which of the following factors are incriminate in the etiology of chronic pancreatitis:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Channel obstruction.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Alcoholism.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Portal hypertension.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Malnutrition.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Biliary lithiasis.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 90,
-          "question_number": 8,
-          "type": "single",
-          "question_text": "Which of the following clinical signs can occur in chronic pancreatitis:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Pain.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Jaundice.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Steatorrhea.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Anemia.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Weight loss.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 91,
-          "question_number": 9,
-          "type": "multiple",
-          "question_text": "Which of the following signs of chronic pancreatitis can be viewed at the computer tomography? А.Pseudocysts.",
-          "answers": [
-            {
-              "letter": "B",
-              "text": "Narrowing of the terminal part of choledocus.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Dilatation of the Wirsung channel.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Spasm of Oddian sphincter.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Microlithiasis of the distal part of choledocus.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 92,
-          "question_number": 10,
-          "type": "multiple",
-          "question_text": "Which of the following may be the complications of pancreatic pseudocysts?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Rupture in the peritoneal cavity.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Intracystic haemorrhage.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Erosionof the aorta.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Digestive stenosis.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Abcess.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 93,
-          "question_number": 11,
-          "type": "multiple",
-          "question_text": "Which of the following can be methods of treatment of a pancreas pseudocyst?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Alcoholization.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Excision.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Internal drainage.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Laser destruction.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "External drainage.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 94,
-          "question_number": 12,
-          "type": "multiple",
-          "question_text": "Which of the following methods can be used in the treatment of pancreatic ascytes?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Parenteral nutrition.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Paracentesis.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Diuretic drugs.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Propranolol.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Surgical treatment.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 95,
-          "question_number": 13,
-          "type": "multiple",
-          "question_text": "Which of the following complications of chronic pancreatitis may require surgical treatment?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Biliary obstruction.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Wirsungian lithiasis with Wirsung duct dilation and pronounced algic syndrome.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Digestive stenosis.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Repeated acute pancreatitis.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Portal hypertension.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 96,
-          "question_number": 14,
-          "type": "multiple",
-          "question_text": "Which is the preferate method of treatment of pancreatic postnecrotic pseudocyst agingup to 3 months:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "External drainage.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Cysto-digestive derivatives.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Drainage of Wirsung.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "The left splenopancreatectomy.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Total pancreatectomy.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 97,
-          "question_number": 15,
-          "type": "multiple",
-          "question_text": "Cancer of the pancreas are translated by the following phenomenon, except:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Progressive jaundice.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Enlarged palpable gallbladder.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Pruritus.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Colangitis.",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Atrophic liver.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 98,
-          "question_number": 16,
-          "type": "multiple",
-          "question_text": "Which are the clinical manifestations of the non-suppurative pancreatic pseudocyst:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Algic syndrome.",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Fever.",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Local symptoms.",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Intoxication.",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Palpable abdominal tumour.",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Surgery_5th year_Timis",
-          "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
-          "question_order": 99,
-          "question_number": 17,
-          "type": "multiple",
-          "question_text": "Which is the method of choice in surgical treatment of pancreatic pseudocyst?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Enucleation.",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Marsupialization.",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Transparietal drainage.",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Internal derivation (cysto-jejunostomia).",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "None of them.",
               "is_correct": true
             }
           ]

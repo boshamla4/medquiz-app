@@ -56,6 +56,39 @@ if (forceReset) {
 const payload = JSON.parse(readFileSync(INPUT, 'utf8'));
 let totalQ = 0;
 let totalA = 0;
+let skipped = 0;
+
+// ---------------------------------------------------------------------------
+// Pre-import validation
+// ---------------------------------------------------------------------------
+const anomalies = [];
+for (const file of payload.files) {
+  const fname = file.file.split('/').at(-1);
+  for (const q of file.questions) {
+    const n = q.answers?.length ?? 0;
+    const correctCount = q.answers?.filter((a) => a.is_correct).length ?? 0;
+    const snippet = q.question_text?.slice(0, 60);
+
+    if (n < 2)
+      anomalies.push({ file: fname, snippet, issue: `Too few answers: ${n}` });
+    if (n > 8)
+      anomalies.push({ file: fname, snippet, issue: `Too many answers: ${n}` });
+    if (q.type === 'single' && correctCount !== 1)
+      anomalies.push({ file: fname, snippet, issue: `Single-choice has ${correctCount} correct answer(s)` });
+    if (q.type === 'multiple' && correctCount === 0)
+      anomalies.push({ file: fname, snippet, issue: 'Multiple-choice has 0 correct answers' });
+  }
+}
+
+if (anomalies.length > 0) {
+  console.warn(`\n⚠  Validation anomalies (${anomalies.length}):`);
+  for (const a of anomalies) {
+    console.warn(`  [${a.file}] ${a.issue} — "${a.snippet}"`);
+  }
+  console.warn('');
+}
+
+// ---------------------------------------------------------------------------
 
 const metadataProbe = await db
   .from('questions')
@@ -64,8 +97,21 @@ const metadataProbe = await db
 
 const hasMetadataColumns = !metadataProbe.error;
 
+// Build a set of invalid question texts to skip
+const invalidKeys = new Set(
+  anomalies
+    .filter((a) => a.issue.startsWith('Too few') || a.issue.startsWith('Single-choice') || a.issue.includes('0 correct'))
+    .map((a) => a.snippet)
+);
+
 for (const file of payload.files) {
   for (const q of file.questions) {
+    const snippet = q.question_text?.slice(0, 60);
+    if (invalidKeys.has(snippet)) {
+      skipped++;
+      continue;
+    }
+
     const insertQuestion = {
       module: q.module,
       type: q.type,
@@ -104,10 +150,12 @@ for (const file of payload.files) {
   }
 }
 
+console.log(`Imported: ${totalQ} questions, ${totalA} answers. Skipped (invalid): ${skipped}.`);
+
 const { error: runError } = await db.from('import_runs').insert({
   tag: IMPORT_TAG,
   source_file: INPUT,
-  notes: `files=${payload.files.length},questions=${totalQ},answers=${totalA}`,
+  notes: `files=${payload.files.length},questions=${totalQ},answers=${totalA},skipped=${skipped}`,
 });
 
 if (runError) throw runError;

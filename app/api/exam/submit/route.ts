@@ -3,6 +3,7 @@ import { z } from 'zod';
 import db from '@/lib/db';
 import { requireSession } from '@/lib/sessionHelper';
 import { formatServerTiming, recordApiMetric } from '@/lib/performanceMetrics';
+import { scoreQuestion, isFullyCorrect } from '@/lib/scoring';
 
 const SubmitAnswerSchema = z.object({
   examQuestionId: z.number().int().positive(),
@@ -32,21 +33,6 @@ interface QuestionSnapshot {
   answers: SnapshotAnswer[];
 }
 
-function isAnswerCorrect(snapshot: QuestionSnapshot, selectedIds: number[]): boolean {
-  if (!Array.isArray(snapshot.answers) || snapshot.answers.length === 0) {
-    return false;
-  }
-
-  const correctIds = snapshot.answers
-    .filter((a) => a.is_correct)
-    .map((a) => a.id)
-    .sort((a, b) => a - b);
-
-  const selected = [...selectedIds].sort((a, b) => a - b);
-
-  if (correctIds.length !== selected.length) return false;
-  return correctIds.every((id, i) => id === selected[i]);
-}
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   const session = await requireSession(request);
@@ -128,14 +114,20 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     eqMap.set(eq.id, eq);
   }
 
-  let correctCount = 0;
+  let weightedScore = 0;
   const results: Array<{
     examQuestionId: number;
     selectedAnswerIds: number[];
     is_correct: boolean;
+    score_weight: number;
   }> = [];
 
-  const updates: Array<{ id: number; selectedAnswerIds: number[]; isCorrect: boolean }> = [];
+  const updates: Array<{
+    id: number;
+    selectedAnswerIds: number[];
+    isCorrect: boolean;
+    scoreWeight: number;
+  }> = [];
 
   const scoreStart = Date.now();
   for (const answer of answers) {
@@ -146,16 +138,23 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       typeof eq.question_snapshot === 'string'
         ? (JSON.parse(eq.question_snapshot) as QuestionSnapshot)
         : eq.question_snapshot;
-    const correct = isAnswerCorrect(snapshot, answer.selectedAnswerIds);
 
-    if (correct) correctCount++;
+    const weight = scoreQuestion(snapshot, answer.selectedAnswerIds);
+    const fullyCorrect = isFullyCorrect(snapshot, answer.selectedAnswerIds);
+    weightedScore += weight;
 
-    updates.push({ id: eq.id, selectedAnswerIds: answer.selectedAnswerIds, isCorrect: correct });
+    updates.push({
+      id: eq.id,
+      selectedAnswerIds: answer.selectedAnswerIds,
+      isCorrect: fullyCorrect,
+      scoreWeight: weight,
+    });
 
     results.push({
       examQuestionId: eq.id,
       selectedAnswerIds: answer.selectedAnswerIds,
-      is_correct: correct,
+      is_correct: fullyCorrect,
+      score_weight: weight,
     });
   }
   stages.score_answers = Date.now() - scoreStart;
@@ -171,6 +170,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
           .update({
             user_answer: JSON.stringify(item.selectedAnswerIds),
             is_correct: item.isCorrect,
+            score_weight: item.scoreWeight,
           })
           .eq('id', item.id)
       )
@@ -207,7 +207,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const totalMs = Date.now() - requestStart;
   const response = NextResponse.json({
-    score: correctCount,
+    score: Math.round(weightedScore * 100) / 100,
     total: examQuestions.length,
     duration,
     results,

@@ -1,0 +1,288 @@
+[
+  {
+    "file": "data/Graduation Exam Tests/Cardiology_Grejdieru.docx",
+    "filename": "Cardiology_Grejdieru.docx",
+    "format": "Bracket [x]/[ ]",
+    "groundTruth": 500,
+    "methods": {
+      "bracketGroups": 500,
+      "csCmPrefixes": 0,
+      "numberedLines": 0
+    },
+    "olCount": 0
+  },
+  {
+    "file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
+    "filename": "Gastro_Berliba.docx",
+    "format": "Bracket [x]/[ ]",
+    "groundTruth": 496,
+    "methods": {
+      "bracketGroups": 496,
+      "csCmPrefixes": 0,
+      "numberedLines": 0
+    },
+    "olCount": 0
+  },
+  {
+    "file": "data/Graduation Exam Tests/Nephrology_Nistor.docx",
+    "filename": "Nephrology_Nistor.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 212,
+    "methods": {
+      "nestedOlItems": 212,
+      "correctMarkers": 239
+    },
+    "olCount": 239
+  },
+  {
+    "file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
+    "filename": "Obstetrics_Ginecol_Catrinici.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 105,
+    "methods": {
+      "nestedOlItems": 105,
+      "correctMarkers": 501
+    },
+    "olCount": 341
+  },
+  {
+    "file": "data/Graduation Exam Tests/Pneumology_Calaras.docx",
+    "filename": "Pneumology_Calaras.docx",
+    "format": "Bracket [x]/[ ]",
+    "groundTruth": 228,
+    "methods": {
+      "bracketGroups": 228,
+      "csCmPrefixes": 0,
+      "numberedLines": 0
+    },
+    "olCount": 247
+  },
+  {
+    "file": "data/Graduation Exam Tests/Reumatology_Nistor.docx",
+    "filename": "Reumatology_Nistor.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 23,
+    "methods": {
+      "nestedOlItems": 23,
+      "correctMarkers": 248
+    },
+    "olCount": 28
+  },
+  {
+    "file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+    "filename": "Surgery_3rd year_Vescu.docx",
+    "format": "Surgery3rd (underline markers)",
+    "groundTruth": 1,
+    "methods": {
+      "numberedLines": 1
+    },
+    "olCount": 1
+  },
+  {
+    "file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+    "filename": "Surgery_4th year_Vozian.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 30,
+    "methods": {
+      "nestedOlItems": 30,
+      "correctMarkers": 0
+    },
+    "olCount": 101
+  },
+  {
+    "file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+    "filename": "Surgery_5th year_Timis.docx",
+    "format": "Surgery5th (per-section key)",
+    "groundTruth": 100,
+    "methods": {
+      "keyAnswerCount": 100
+    },
+    "olCount": 17
+  },
+  {
+    "file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+    "filename": "Surgery_Ped_Jalba.docx",
+    "format": "Bracket [x]/[ ]",
+    "groundTruth": 140,
+    "methods": {
+      "bracketGroups": 140,
+      "csCmPrefixes": 0,
+      "numberedLines": 3
+    },
+    "olCount": 25
+  },
+  {
+    "file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+    "filename": "Acute pneumonia_2026_OC.docx",
+    "format": "Answer key at end",
+    "groundTruth": 32,
+    "methods": {
+      "olKeyItems": 32,
+      "textKeyCount": 174,
+      "numberedLines": 0
+    },
+    "olCount": 50
+  },
+  {
+    "file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+    "filename": "Acute repiratory infections_2026_OC.docx",
+    "format": "Answer key at end",
+    "groundTruth": 20,
+    "methods": {
+      "olKeyItems": 20,
+      "textKeyCount": 109,
+      "numberedLines": 0
+    },
+    "olCount": 5
+  },
+  {
+    "file": "data/Pediatrics/ARF engl.docx",
+    "filename": "ARF engl.docx",
+    "format": "Answer key at end",
+    "groundTruth": 17,
+    "methods": {
+      "olKeyItems": 17,
+      "textKeyCount": 15,
+      "numberedLines": 0
+    },
+    "olCount": 2
+  },
+  {
+    "file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+    "filename": "Bronchial asthma_2026_OC.docx",
+    "format": "Answer key at end",
+    "groundTruth": 19,
+    "methods": {
+      "olKeyItems": 19,
+      "textKeyCount": 152,
+      "numberedLines": 0
+    },
+    "olCount": 47
+  },
+  {
+    "file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+    "filename": "Bronchitis_2026_OC.docx",
+    "format": "Explicit correct answer",
+    "groundTruth": 0,
+    "methods": {
+      "correctMarkers": 0,
+      "numberedLines": 0
+    },
+    "olCount": 43
+  },
+  {
+    "file": "data/Pediatrics/Child growth and development  corrected.docx",
+    "filename": "Child growth and development  corrected.docx",
+    "format": "Answer key at end",
+    "groundTruth": 14,
+    "methods": {
+      "olKeyItems": 14,
+      "textKeyCount": 6,
+      "numberedLines": 0
+    },
+    "olCount": 29
+  },
+  {
+    "file": "data/Pediatrics/Chronic lung disease revazut.docx",
+    "filename": "Chronic lung disease revazut.docx",
+    "format": "Answer key at end",
+    "groundTruth": 20,
+    "methods": {
+      "olKeyItems": 20,
+      "textKeyCount": 119,
+      "numberedLines": 0
+    },
+    "olCount": 6
+  },
+  {
+    "file": "data/Pediatrics/Coagulation disorders_.docx",
+    "filename": "Coagulation disorders_.docx",
+    "format": "Answer key at end",
+    "groundTruth": 7,
+    "methods": {
+      "textKeyCount": 7,
+      "numberedLines": 0
+    },
+    "olCount": 30
+  },
+  {
+    "file": "data/Pediatrics/colagenosis in children.docx",
+    "filename": "colagenosis in children.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 57,
+    "methods": {
+      "nestedOlItems": 57,
+      "correctMarkers": 0
+    },
+    "olCount": 62
+  },
+  {
+    "file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+    "filename": "Congenetal Heart Diseases engleza.docx",
+    "format": "Answer key at end",
+    "groundTruth": 33,
+    "methods": {
+      "olKeyItems": 33,
+      "textKeyCount": 296,
+      "numberedLines": 0
+    },
+    "olCount": 2
+  },
+  {
+    "file": "data/Pediatrics/iron deficiency anemia_.docx",
+    "filename": "iron deficiency anemia_.docx",
+    "format": "Answer key at end",
+    "groundTruth": 25,
+    "methods": {
+      "olKeyItems": 25,
+      "textKeyCount": 141,
+      "numberedLines": 0
+    },
+    "olCount": 42
+  },
+  {
+    "file": "data/Pediatrics/Malabsorbtion corrected.docx",
+    "filename": "Malabsorbtion corrected.docx",
+    "format": "Nested OL (Nephrology)",
+    "groundTruth": 16,
+    "methods": {
+      "nestedOlItems": 16,
+      "correctMarkers": 0
+    },
+    "olCount": 20
+  },
+  {
+    "file": "data/Pediatrics/Malnutrition corrected.docx",
+    "filename": "Malnutrition corrected.docx",
+    "format": "Explicit correct answer",
+    "groundTruth": 0,
+    "methods": {
+      "correctMarkers": 0,
+      "numberedLines": 0
+    },
+    "olCount": 4
+  },
+  {
+    "file": "data/Pediatrics/neonatology engl (REW2026).docx",
+    "filename": "neonatology engl (REW2026).docx",
+    "format": "Bracket [x]/[ ]",
+    "groundTruth": 94,
+    "methods": {
+      "bracketGroups": 94,
+      "csCmPrefixes": 0,
+      "numberedLines": 0
+    },
+    "olCount": 0
+  },
+  {
+    "file": "data/Pediatrics/Rickets CORRECTED.docx",
+    "filename": "Rickets CORRECTED.docx",
+    "format": "Explicit correct answer",
+    "groundTruth": 0,
+    "methods": {
+      "correctMarkers": 0,
+      "numberedLines": 0
+    },
+    "olCount": 13
+  }
+]

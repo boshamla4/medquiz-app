@@ -7,7 +7,17 @@ interface ExamRow {
   started_at: string;
   finished_at: string | null;
   duration: number | null;
-  exam_questions: { is_correct: boolean | null }[] | null;
+  exam_questions: { is_correct: boolean | null; score_weight: number | null }[] | null;
+}
+
+function computeScore(questionRows: { is_correct: boolean | null; score_weight: number | null }[]): number {
+  // Use score_weight when available (weighted scoring); fall back to boolean count for legacy rows.
+  const hasWeights = questionRows.some((q) => q.score_weight !== null && q.score_weight !== undefined);
+  if (hasWeights) {
+    const sum = questionRows.reduce((s, q) => s + (q.score_weight ?? (q.is_correct ? 1 : 0)), 0);
+    return Math.round(sum * 100) / 100;
+  }
+  return questionRows.filter((q) => q.is_correct === true).length;
 }
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -20,7 +30,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const sort = searchParams.get('sort') === 'score' ? 'score' : 'date';
   const offset = (page - 1) * limit;
 
-  const selectClause = 'id, started_at, finished_at, duration, exam_questions(is_correct)';
+  const selectClause = 'id, started_at, finished_at, duration, exam_questions(is_correct, score_weight)';
 
   let exams: ExamRow[] = [];
   let total = 0;
@@ -41,7 +51,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     const ranked = scoreRows
       .map((row) => {
         const questionRows = row.exam_questions ?? [];
-        const correctCount = questionRows.filter((q) => q.is_correct === true).length;
+        const correctCount = computeScore(questionRows);
         return { row, correctCount };
       })
       .sort((a, b) => {
@@ -72,7 +82,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const data = exams.map((e) => {
     const questionRows = e.exam_questions ?? [];
-    const correctCount = questionRows.filter((q) => q.is_correct === true).length;
+    const correctCount = computeScore(questionRows);
 
     return {
     id: e.id,

@@ -1245,7 +1245,8 @@ function extractQuestionsFromSurgery5thHtml(html) {
   //   "25.CM.Which of…"   (dot after CM instead of space)
   //   "1. CM Which of…"   (space between dot and CM)
   // The pattern below handles all three variants.
-  const SURGERY5_Q = /^(\d+)\s*\.\s*(CM|CS)[.):\s]+(.{5,})$/i;
+  // SC = Single Choice, MC = Multiple Choice, SM = Selection Multiple (all variants used in this file)
+  const SURGERY5_Q = /^(\d+)\s*\.\s*(CM|CS|MC|SC|SM)[.):\s]+(.{5,})$/i;
 
   for (const seg of segs) {
     const { text, isList } = seg;
@@ -1256,9 +1257,11 @@ function extractQuestionsFromSurgery5thHtml(html) {
     const qMatch = text.match(SURGERY5_Q);
     if (qMatch) {
       flush();
+      const rawType = qMatch[2].toUpperCase();
+      const normType = (rawType === 'CM' || rawType === 'MC' || rawType === 'SM') ? 'CM' : 'CS';
       current = {
         question_number: parseInt(qMatch[1]),
-        type: qMatch[2].toUpperCase(),
+        type: normType,
         question_text: qMatch[3].trim(),
         answers: [],
       };

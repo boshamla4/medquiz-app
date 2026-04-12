@@ -14,7 +14,9 @@
     "reimport:supabase": "node scripts/import-to-supabase.mjs --force-reset",
     "sync:metadata:supabase": "node scripts/sync-question-metadata.mjs",
     "seed:tokens:supabase": "node scripts/seed-tokens-supabase.mjs",
-    "seed:data-once": "npm run parse:data && npm run import:data"
+    "seed:data-once": "npm run parse:data && npm run import:data",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",
@@ -40,6 +42,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.4"
   }
 }
