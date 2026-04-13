@@ -1,0 +1,1410 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Malnutrition corrected.docx",
+  "module": "Malnutrition corrected",
+  "folder": "Pediatrics",
+  "questionCount": 40,
+  "questions": [
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "According to WHO, which indicator is used to define wasting in children under 5 years of age?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-age",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Height-for-age",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight-for-height",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "BMI-for-age",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Head circumference",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "One of the following criteria for severe acute malnutrition (SAM) in children 6–59 months is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-age Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Height-for-age Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight-for-height Z-score < −3",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "MUAC < 125 mm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "BMI-for-age Z-score < −1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Which clinical sign is characteristic of kwashiorkor?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Severe muscle wasting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral pitting edema",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Marked dehydration",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Loss of subcutaneous fat",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Growth retardation only",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "According to WHO, stunting reflects:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute malnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chronic malnutrition",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Overnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Genetic short stature",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Micronutrient deficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "A height-for-age Z-score below −2 indicates:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wasting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Underweight",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stunting",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Overweight",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Obesity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Mid-upper arm circumference (MUAC) < 115 mm in a child aged 6–59 months indicates:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Moderate acute malnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Severe acute malnutrition",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Chronic malnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Normal nutritional status",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Risk of overweight",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Which age group is primarily used by WHO for assessing acute malnutrition using MUAC?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "0–5 months",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "6–59 months",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "5–10 years",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "10–18 years",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "2–5 years",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Underweight in children is defined by WHO as:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low height-for-age",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Low weight-for-height",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Low weight-for-age",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Low BMI-for-age",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Low head circumference-for-age",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "According to WHO, underweight (low weight-for-age) may reflect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wasting only",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Stunting only",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Both wasting and stunting",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Overweight",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Normal growth",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "According to WHO, which micronutrient deficiency is most commonly associated with malnutrition worldwide?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vitamin D deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Iron deficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Zinc deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Iodine deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitamin A deficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Which Z-score range defines moderate acute malnutrition (MAM)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-height Z-score < −3",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Weight-for-height Z-score between −2 and −3",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Height-for-age Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Weight-for-age Z-score < −1",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "BMI-for-age Z-score < −2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which complication is most commonly associated with severe acute malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypertension",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hypoglycemia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hypercalcemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Obesity",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hypernatremia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "WHO growth standards are based on:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Children from a single country",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Formula-fed infants",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Breastfed children from multiple countries",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hospitalized children",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Children with chronic illness",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Which form of severe malnutrition is classically associated with relative protein deficiency compared to energy intake?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Marasmus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Kwashiorkor",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Rickets",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Scurvy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Iron deficiency anemia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "The main goal of WHO child growth standards is to:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Predict adult height",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diagnose genetic disorders",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Assess optimal growth and development",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Replace national growth charts",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Measure obesity prevalence only",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 15,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Which of the following are indicators of acute malnutrition in children under 5?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-height Z-score < −2",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "MUAC < 125 mm",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Height-for-age Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Presence of bilateral pitting edema",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Head circumference-for-age < −2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 16,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Which of the following are features of kwashiorkor?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Edema",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fatty liver",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Severe wasting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Skin depigmentation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Stunted growth",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 17,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Which are risk factors for child malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low birth weight",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Exclusive breastfeeding for 6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Frequent infections",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Poverty and food insecurity",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Proper complementary feeding after 6 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 18,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Which micronutrient deficiencies are commonly associated with malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Iron",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Vitamin A",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Vitamin D",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Zinc",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Calcium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 19,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Which of the following can be used to diagnose severe acute malnutrition (SAM) in children 6–59 months?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-height Z-score < −3",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "MUAC < 115 mm",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bilateral pitting edema",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Weight-for-age Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Height-for-age Z-score < −3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 20,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Which of the following are consequences of chronic malnutrition (stunting) in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Impaired cognitive development",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased susceptibility to infections",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased adult height",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Delayed puberty",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Reduced work capacity in adulthood",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 21,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Which of the following are clinical signs of marasmus?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Severe muscle wasting",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Loss of subcutaneous fat",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bilateral pitting edema",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Skin changes",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hair changes",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 22,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Which of the following interventions are recommended by WHO for treating severe acute malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Therapeutic feeding with F-75/F-100 formulas",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Antibiotics if infection is present",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Gradual refeeding and catch-up growth",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Immediate high-protein supplementation without monitoring",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitamin and mineral supplementation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 23,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Which of the following are forms of child undernutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wasting",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Stunting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Underweight",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Micronutrient deficiencies",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Obesity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 24,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Which of the following are considered indicators of underweight in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-age Z-score < −2",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Weight-for-age Z-score < −3",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Weight-for-height Z-score < −2",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "MUAC < 125 mm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "BMI-for-age Z-score < −2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 25,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Which of the following factors can exacerbate malnutrition during childhood?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Recurrent diarrhea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Poor sanitation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Exclusive breastfeeding in the first 6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Inadequate complementary feeding",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Immunization against common infections",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 26,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Which of the following are signs of micronutrient deficiencies in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pallor (iron deficiency)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Night blindness (vitamin A deficiency)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Rickets (vitamin D deficiency)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Goiter (iodine deficiency)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hyperpigmentation of skin",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 27,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Which of the following are recommended preventive strategies for child malnutrition according to WHO?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Exclusive breastfeeding for 6 months",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Timely introduction of complementary foods at 6 months",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Micronutrient supplementation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Balanced diet during pregnancy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Early introduction of cow’s milk before 6 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 28,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Which of the following are complications of severe acute malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypoglycemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hypothermia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cardiac failure during refeeding",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased risk of infection",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hypertension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 29,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Which of the following are anthropometric tools used by WHO to assess child malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-age",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Height-for-age",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Weight-for-height",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "BMI-for-age",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Arm span-for-age",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 30,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Which of the following are key strategies for community-based management of malnutrition (CMAM)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Outpatient therapeutic care for uncomplicated SAM",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inpatient care for complicated SAM",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Growth monitoring and promotion",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Exclusive provision of vitamin D",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Community mobilization and education",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 31,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Which of the following are diagnostic indicators of severe chronic malnutrition (severe stunting) according to WHO?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Height-for-age Z-score < −3",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Height-for-age Z-score between −2 and −3",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight-for-height Z-score < −3",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "MUAC < 115 mm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "History of prolonged inadequate nutrition during early childhood",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 32,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Which of the following are common infectious triggers that worsen malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diarrhea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Measles",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "HIV",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tuberculosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Chickenpox",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 33,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Which of the following are WHO recommendations for complementary feeding?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Introduce solid or semi-solid foods at 6 months",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Give complementary foods while continuing breastfeeding",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Introduce sugary drinks before 6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ensure food is nutrient-dense and age-appropriate",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Avoid animal-source foods completely",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 34,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Which of the following are laboratory indicators commonly associated with malnutrition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low serum albumin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Low hemoglobin level",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Low serum zinc",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "High serum vitamin D",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "High serum glucose",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 35,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Which of the following are risk factors for stunting?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Maternal undernutrition during pregnancy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Low birth weight",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Frequent childhood infections",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Adequate dietary diversity",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Poor sanitation and hygiene",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 36,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Which of the following are consequences of wasting in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increased mortality",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Impaired immune function",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Delayed physical growth if prolonged",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased risk of infection",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Overweight in adulthood",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 37,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Which of the following are WHO-recommended therapeutic foods for SAM?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "F-75 formula",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "F-100 formula",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ready-to-use therapeutic foods (RUTF)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Cow’s milk without fortification",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sugar water",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 38,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Which of the following are indicators of moderate acute malnutrition (MAM)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Weight-for-height Z-score between −2 and −3",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "MUAC 115–125 mm",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Height-for-age Z-score < −3",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bilateral pitting edema",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Weight-for-age Z-score < −2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malnutrition corrected",
+      "source_file": "data/Pediatrics/Malnutrition corrected.docx",
+      "question_order": 39,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Which of the following are global strategies to reduce child malnutrition according to WHO?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Promoting exclusive breastfeeding",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Improving maternal nutrition",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ensuring food security",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Routine antibiotic prophylaxis for all children",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Micronutrient fortification of staple foods",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

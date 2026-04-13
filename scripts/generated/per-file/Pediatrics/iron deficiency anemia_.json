@@ -1,0 +1,895 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/iron deficiency anemia_.docx",
+  "module": "iron deficiency anemia_",
+  "folder": "Pediatrics",
+  "questionCount": 27,
+  "questions": [
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 0,
+      "question_number": 180,
+      "type": "single",
+      "question_text": "–240 g/l.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Choose the lowest level of normal hemoglobin in a healthy infant:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "90;",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "100;",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "110;",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "130",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 1,
+      "question_number": 181,
+      "type": "single",
+      "question_text": "Choose the most common cause of iron deficiency anemia in early childhood:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "chronic diseases",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "inadequate dietary iron intake",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "chronic bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "disorders associated with decreased iron absorption",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "infectious diseases",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 2,
+      "question_number": 182,
+      "type": "single",
+      "question_text": "Choose the most specific parameter for the diagnosis of iron deficiency anemia in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hypochromia in the peripheral blood smear test",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "active bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "low serum levels of ferritin or transferrin saturation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "inadequate dietary iron intake",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "intensive physical growth and development of the child",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 3,
+      "question_number": 183,
+      "type": "single",
+      "question_text": "Choose the laboratory result that is not characteristic for iron deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "low transferrin saturation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "low serum iron level",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "low serum ferritin level",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "low MCHC in the complete blood count",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "low serum Total Iron-Binding Capacity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 4,
+      "question_number": 184,
+      "type": "single",
+      "question_text": "Choose the recommendation for children with moderate iron deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "food rich in vegetables",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "blood transfusions",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "chicken of pork liver",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "oral iron supplements",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "intravenous iron products",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 5,
+      "question_number": 185,
+      "type": "single",
+      "question_text": "Choose the etiology of anemia in a premature baby:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hemolytic crisis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "iron deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "bleeding complications",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "bone marrow aplasia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "congenital diserythropoiesis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 6,
+      "question_number": 186,
+      "type": "single",
+      "question_text": "Select the food which is the source of haem iron:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "meat",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "fruits",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "vegetables",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "cereals",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "milk and dairy products",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 7,
+      "question_number": 187,
+      "type": "single",
+      "question_text": "Choose the feature that is not characteristic for B12 - deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "megaloblastic type of hematopoiesis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "disorder of the intrinsic factor (Castle factor) secretion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "hyperchromia in the peripheral blood smear test",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "inadequate dietary intake of vitamin B12",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "increased serum iron levels",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 8,
+      "question_number": 193,
+      "type": "single",
+      "question_text": "usually children with iron deficiency are fed mostly with cow’s milk and buckwheat porridge",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "evolution of iron deficiency is mostly asymptomatic",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "hypochromia in the peripheral blood smear test",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "increased serum iron levels",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 9,
+      "question_number": 197,
+      "type": "multiple",
+      "question_text": "Choose the statement that is not correct for folate deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "phenobarbital influences folate metabolization",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "folate deficiency develops in patients with cancer",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 10,
+      "question_number": 199,
+      "type": "multiple",
+      "question_text": "folate deficiency develops in children with malabsorption syndromes",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Enumerate etiologic factors of iron deficiency anemia in children:",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "inadequate dietary iron intake",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "bone marrow aplasia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "malabsorption syndromes",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 11,
+      "question_number": 201,
+      "type": "multiple",
+      "question_text": "Enumerate organs that represent tissue storage of iron:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "lymph nodes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "liver",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "kidneys",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "bone marrow",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "spleen",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 12,
+      "question_number": 202,
+      "type": "multiple",
+      "question_text": "Enumerate clinical signs characteristic for the anemic syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "pallor of the skin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "lymphadenopathy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "dry skin, fragility of hair and nails",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "systolic heart murmurs and tachycardia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "fever",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 13,
+      "question_number": 203,
+      "type": "multiple",
+      "question_text": "Enumerate changes of the complete blood count in children with iron deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "low hemoglobin levels",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "low mean corpuscular volume (MCV)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "low reticulocytes count",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "low mean corpuscular hemoglobin concentration (MCHC)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "low red blood cells count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 14,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Enumerate laboratory test results characteristic for iron deficiency anemia in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "low serum iron levels",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "low serum iron-binding capacity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "hyperchromia in the blood smear",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "hypochromia in the blood smear",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "low transferrin saturation and ferritin levels",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 15,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Enumerate laboratory test results characteristic for B12 deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "megaloblastic type of hematopoiesis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "low reticulocyte count",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "hyperchromia in the peripheral blood smear test",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "increased serum iron levels",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "red blood cell microcytosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 16,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Enumerate laboratory test results characteristic for latent iron deficiency:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "low hemoglobin levels",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "normal hemoglobin levels",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "normal red blood cell count",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "low serum iron levels",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "increased reticulocyte count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 17,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Enumerate haem iron food sources:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "meat",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "cereals",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "liver",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "vegetables",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "fruits",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 18,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Enumerate recommendations for prophylaxis of iron deficiency in infants:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "iron supplements for women during pregnancy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "infant feeding of cow’s milk",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "breastfeeding",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 19,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "A case of 7 years old child who complains about the pallor of the skin, headaches, abdominal pain. Complete blood count results: hemoglobin level 99 g/l; red blood cells 3,8 mln/mm3; decreased mean corpuscular hemoglobin (MCH) and mean corpuscular hemoglobin concentration (MCHC). Parasitological examination of feces revealed helminth eggs. Enumerate optimal therapeutic indications:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mebendazole",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Aspirin (Acetylsalicylic acid)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "intravenous iron products",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "oral iron supplements",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cotrimoxazole",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 20,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "oral iron preparations only until the normalization of hemoglobin levels",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "oral iron preparations until the normalization of hemoglobin levels and additionally 2-3 months of prophylactic dose",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "intravenous iron products",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 21,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "therapeutic dose of iron supplements should be 5-6 mg/kg body weight in 24 hrs",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "A case of 8 months old child who is pale, irritated, has excessive sweating, wakes up frequently, and sleeps poorly. On examination anterior fontanel has the size of 2x3 cm, the head has a square shape, flattening of the posterior skull (flat occiput) is present. Complete blood count results – hemoglobin level 89 g/l; red blood cells 3.6 mln/mm3; decreased mean corpuscular hemoglobin (MCH) and mean corpuscular hemoglobin concentration (MCHC); ESR – 7 mm/hour. Enumerate correct statements included in the diagnosis of this child from below:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "mild anemia (first degree)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "moderate anemia (second degree)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "first degree of rickets, acute evolution",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "second degree of rickets, acute evolution",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 22,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Enumerate diseases that determine reduced iron absorption in the gastrointestinal tract:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "celiac disease",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "cystic fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "intestinal parasite infections",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "rickets",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "cholecystitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 23,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Enumerate laboratory indicators that confirm the diagnosis of iron deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "low serum iron",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "increased serum total iron binding capacity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "marked reticulocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "low mean corpuscular hemoglobin concentration (MCHC)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "increased mean corpuscular volume of red blood cells",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 24,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Additionally, to the low red blood cell count in patients with iron deficiency anemia, in the peripheral blood smear test may be found:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "anisocytosis, microcytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "abnormal red blood cells named “target cells”",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "poikilocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "spherocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "macrocytosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 25,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Enumerate diseases that should be differentiated from iron deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "acquired hemolytic anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "thalassemia trait",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "sickle cell anemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "hemophilia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Disseminated Intravascular Coagulation Syndrome",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "iron deficiency anemia_",
+      "source_file": "data/Pediatrics/iron deficiency anemia_.docx",
+      "question_order": 26,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Enumerate correct affirmations characteristic for folate-deficiency anemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "develops in children fed with goat’s milk",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "may be seen in cases of malabsorption syndromes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "may be caused by cancer",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "often occurs during pregnancy",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

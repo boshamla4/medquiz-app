@@ -1,0 +1,3505 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/neonatology engl (REW2026).docx",
+  "module": "neonatology engl (REW2026)",
+  "folder": "Pediatrics",
+  "questionCount": 100,
+  "questions": [
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "The newborn’s breathing is the result of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "High flexibility and finesse of the chest wall",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Predominance of laryngo-tracheal (upper airway) breathing sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Small distance from the glottis to auscultation area",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Mechanisms of heat loss in newborns are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Radiation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Convection",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Conduction",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Evaporation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "A newborn’s smell of “Mouse” may be associated with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gaucher disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Patau syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Phenylketonuria",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Leukocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Prescribing vitamins",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Milia is a skin condition and represents the:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Blockage of the sweat ducts",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Blockage of the sebaceous glands",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bacterial destruction of sebaceous glands follicle",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "None of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bacterial defeat of sweat ducts",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Which fontanelle appears opened at birth?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Frontal-lateral",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lateral",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Posterior",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anterior",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Systolic murmur in newborns may be heard in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Healthy newborns",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary hypertension",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Respiratory distress syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "How much urine can excrete a newborn with normal weight within the first hours of life?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "50 ml/ kg",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "25 ml/ kg",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "6-8 ml / kg",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Physiological anuria or oliguria",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "40 ml / kg",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which is the normal axillar temperature of a newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "35,0 - 35,1 ° C",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "36,0 - 36,1 ° С",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "36,1- 36,5 ° C",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "36,5–37,5 ° C",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "37,4 - 38,0 ° C",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "What kind of milk contains the least amount of lipids?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Colostrum",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transitional milk",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Mature milk",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Mother's milk, which gave birth to full-term baby",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cow's milk",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Exclusive breastfeeding means:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The child is not given any product other than breast milk",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Do not use bottle",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Feeding 8-12 times a day",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Feeding 5-6 times per day",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Feeding no more than 6-8 times a day",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Contraindication for breast feeding:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hemolytic disease of the newborn",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Active tuberculosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nonpurulent mastitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dehiscence of the hard palate and lips",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mother receiving antibiotics",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "What is the physiological weight loss in the first days of life?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "15% of weight",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "200 gramme",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "400 gramme",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "6% of weight",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "None of these",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "What diet is recommended for a 3-month old baby?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Milk + fruit juice",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Milk + egg yolk",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Milk + vegetable broth",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Milk + vegetable puree",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Only breast milk",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Contraindication for breastfeeding:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Purulent mastitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cracked nipples",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Galactorrhea",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Newborn's thrush",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of these",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "The ratio of protein: lipid: carbohydrate in human milk is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "1:2:1",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "2:3:6",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "1:3:6",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "2:2:3",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "1:1:6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "The resuscitation algorithm include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "I. - A - initiation of breath B – airways permeability C – circulation maintaining",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "II . – A- airways permeability B - prevent heat loss C - initiation of breath",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "III . – A - Airways permeability B - Initiation of breath C - Circulation maintaining",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "IV . - А - prevent heat loss B - initiation of breath C – prescribing drugs е) В [] - None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "How to asses an effective ventilation of the newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Good chest expansion, visible deep breathing newborn",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pressure gauge record adequate ventilation for a particular child, even if you do not see",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Observe chest movements, effective breathing",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "All statements are true",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "The first resuscitation step takes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "10 to 15 sec",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "From 15 to 30 sec",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "30-60 sec",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "1 minute",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "More than one minute",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 18,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "List the true statements:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The Apgar score is appreciated at 1st minute after birth, it is useful for the decision to initiate the reanimation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The Apgar score is not used for newborns requiring resuscitation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pipes used in neonates are all the same size, both preterm and those born at term",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "None of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All statements are true",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 19,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "Transmission ways of the pathogens from mother to fetus",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hematogenous spread",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "By infected fetal fluid",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lymphogenous spread",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ascending",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 20,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "At what age eyes eliminations can be considered as a manifestation of bacterial infection:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "24-48 hours",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "2-5 days",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "10-12 hours",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 21,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "Physiological intestinal colonization of the newborn is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It manifests at all newborns",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "It manifests in newborns with intrauterine infection",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It manifests in dismature newborns",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "This is due to staphylococci colonization in the intestine of the newborn",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It is a sign of intestinal obstruction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 22,
+      "question_number": 23,
+      "type": "single",
+      "question_text": "The earliest symptom of ulcerative necrotizing enterocolitis (70%):",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abdominal bloating",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Temperature instability",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Apnea",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bradycardia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above indicated",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 23,
+      "question_number": 24,
+      "type": "single",
+      "question_text": "Which of the candidates most frequently causes thrush in infants?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Candida tropicalis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Candida parapsilosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Candida albicans",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Candida krusei",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Candida glabrata",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 24,
+      "question_number": 25,
+      "type": "single",
+      "question_text": "Sepsis is suspected when:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Normo – hypochromic anemia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Leukocytosis with neutrophilia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Neutrophilic leukocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "I to T ratio >0.25",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 25,
+      "question_number": 26,
+      "type": "single",
+      "question_text": "Silverman score:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Determines the severity of respiratory distress soon after birth",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "At 40 min and 120 min. after birth",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Determining the concentration of inspired O2 initial mixture",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "None of the above indicated",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All those listed above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 26,
+      "question_number": 27,
+      "type": "single",
+      "question_text": "Position in the incubator in case of respiratory depression, hypovolemia, cerebral edema:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Position Trendelenburg",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Horizontal",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Supine, neutral head position",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "All of the above indicated",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above indicated",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 27,
+      "question_number": 28,
+      "type": "single",
+      "question_text": "In case of severe anemia, to restore blood volume are used:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Transfusion of donated blood",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Transfusion of red blood cells",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Glucose 10%",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "All of the above indicated",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above indicated",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 28,
+      "question_number": 29,
+      "type": "single",
+      "question_text": "For \"physiological\" hyperbilirubinemia is characteristic:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Jaundice on the third day of life",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bilirubin level equal to 85 µmol/L at birth",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bilirubin direct predominate",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increasing bilirubin per hour >8,5 µmol/L/h",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Anemia in peripheral blood",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 29,
+      "question_number": 30,
+      "type": "single",
+      "question_text": "Indications for blood transfusion are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Jaundice color of the skin in the first hours of life",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reticulocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increasing the time of bilirubin more than 8,5 µmol/L/h",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Umbilical bilirubin greater than 70 µmol/L",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 30,
+      "question_number": 31,
+      "type": "single",
+      "question_text": "Jaundice in the first days after birth is typical for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Enzymatic defects of erythrocytes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Breastfeeding",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Rh group incompatibility",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hipertireoidism βββ",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 31,
+      "question_number": 32,
+      "type": "single",
+      "question_text": "Which of the following causes \"physiological jaundice \"?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The immaturity of the liver",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sterile newborn intestine",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fetal-placental transfusion",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "High activity of β-glucuronidase of newborn in the intestinal wall",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 32,
+      "question_number": 33,
+      "type": "single",
+      "question_text": "In which causes jaundice can appear in the first days of life?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mincovschii-Sofar disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Galactosemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "common bile duct atresia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Incompatibility in ABO system",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hypothyroidism",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 33,
+      "question_number": 34,
+      "type": "single",
+      "question_text": "What is right for jaundice caused by breast milk?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Occurs within the first 24 hours of life",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is characterized by increased levels of conjugated bilirubin",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It is linked to increased levels of cholinesterase milk",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Disappears from increased doses of phenobarbital",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It's caused by increased levels of pregnanediol in milk",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 34,
+      "question_number": 35,
+      "type": "single",
+      "question_text": "Hemolytic disease of the newborn occurs in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "ABO Incompatibility",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Rh factor Incompatibility",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Rare Rh antigen",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Antigens system Liuteran",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of these",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 35,
+      "question_number": 36,
+      "type": "single",
+      "question_text": "What characterizes dysplastic intrauterine growth retention?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mass retention",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "length retention of child",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "proportional retention in mass and length",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "It is associated with multiple congenital anomalies",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "It is also called symmetric variant",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 36,
+      "question_number": 37,
+      "type": "single",
+      "question_text": "What does represent dysplastic intrauterine growth retention?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low body weight",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Small weight and length",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight and length + congenital anomaly",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Small weight + congenital anomaly",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Small length + congenital anomaly",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 37,
+      "question_number": 38,
+      "type": "single",
+      "question_text": "For how long the physiological hypertonus of premature might be present?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "2-3 week",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "3-4 weeks",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "1-2 months",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Three months",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "4 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 38,
+      "question_number": 39,
+      "type": "single",
+      "question_text": "What color characterize the feces of the breastfeeded prematures:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yellow – gold color",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Light brown",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "colorless",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Alloy green",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 39,
+      "question_number": 40,
+      "type": "single",
+      "question_text": "What is the optimal temperature in the incubator for a premature weighing 1500 g in the second week of life?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "30 oC",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "28 oC",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "37 oC",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "32-33 oC",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "34-35 oC",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 40,
+      "question_number": 41,
+      "type": "single",
+      "question_text": "Which of the conditions listed below are typical for premature:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low birth weight",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lanugo",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sclerema",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Muscle Weakness",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 41,
+      "question_number": 42,
+      "type": "single",
+      "question_text": "For how long time can physiological jaundice be present in a premature newborn:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "5-6 days",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "8-10 days",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "10-15 days",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "1 month",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "2 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 42,
+      "question_number": 43,
+      "type": "single",
+      "question_text": "Sucking and swallowing reflex occurs in premature infants at:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "32-33 weeks of gestation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "34 weeks of gestation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "29 weeks of gestation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "30 weeks of gestation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 43,
+      "question_number": 44,
+      "type": "single",
+      "question_text": "What are the calories necessity at 1 month of age in premature infants:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "100 kcal / kg",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "110 kcal / kg",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "120 kcal / kg",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "135-140 kcal / kg",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 44,
+      "question_number": 45,
+      "type": "single",
+      "question_text": "Babkin reflex disappears at the age of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "1 month",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "3 months",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "4 months",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "1 year",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 45,
+      "question_number": 46,
+      "type": "single",
+      "question_text": "Indicate the appropriate size of endotracheal tube for a newborn weighing 1000 - 2000 g at birth:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "1,0",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "1,5",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "2,0",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "2,5",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "3,0",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 46,
+      "question_number": 47,
+      "type": "single",
+      "question_text": "Which of the following are recommended for tracheal aspiration?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Suction catheter",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The Suction catheter 6 or 8 Fr",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Laryngoscope",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Routine tracheal aspiration is not recommended",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "All listed above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 47,
+      "question_number": 48,
+      "type": "single",
+      "question_text": "When chlamydial conjunctivitis occurs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Immediately after birth",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "At 3-5 days of life",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "After 1 week of life",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "In the third week of life",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 48,
+      "question_number": 49,
+      "type": "single",
+      "question_text": "For conjunctivitis caused by Neisseria gonorrhea is typical:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Affect one eye",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral conjunctivitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Involves both eyes, then only one manifests infection",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 49,
+      "question_number": 50,
+      "type": "single",
+      "question_text": "When clinical manifestations of necrotizing ulcerative enterocolitis does appear?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "1 day",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "3-10 days",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "14 days",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "16 days",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above indicated C M",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 50,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Cyanosis in a newborn may be caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Metabolic acidosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Prenatal infection",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Patent ductus arteriosus with right-to-left shunt",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Tetralogy of Fallot",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Left-sided heart failure",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 51,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Consequences of hypothermia in newborns include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hypoglycemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "shock",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "apnoea",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "intraventricular bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Metabolic acidosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 52,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Methods to maintain body temperature during neonatal transport include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "\"skin to skin\"",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "transport incubator",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thermal mattress",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Wrapping the newborn in warm blankets",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Excessive tight wrapping",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 53,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Mechanisms of heat loss in newborn are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Radiation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Conduction",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Convection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Evaporation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Perspiration",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 54,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Breast milk can be safely stored:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "up to 6 months at - 20 ° С",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "24 hours at +10 °C",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "12 hours at room temperature",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "3 days at a t +15 ° C",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Up to 4 days at +4 °C",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 55,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Advantages of breast milk are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Protection against an infection",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Protection against an allergy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "lower level of a syndrome of sudden death at children",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Psychomotor development is better",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "predisposition to development of children's diabetes",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 56,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Correct breastfeeding sucking technique includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The infant takes a large portion of the areola into the mouth",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Coordinated suck–swallow–breath pattern",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nipple and areola are molded in the infant’s mouth",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tongue compresses the nipple in a wave-like motion",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Milk is expressed mainly by jaw compression",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 57,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Criteria of the correct position during breastfeeding:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "the mouth of the child is widely open",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "child’s chin touches the breast",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "flat nipple",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "the lower lip of the child is bent outside",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "in a breast insufficient amount of milk",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 58,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Step B of neonatal resuscitation algorithm include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bag-mask ventilation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Drug administration",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Endotracheal intubation (routine)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Positive pressure ventilation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Tactile stimulation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 59,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Meconium aspiration syndrome can causes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Airways obstruction",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Impaired gas exchange",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased pulmonary vascular resistance",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Persistent pulmonary hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Decreased pulmonary vascular resistance",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 60,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Which of the following may occur as complications of chest compressions during neonatal resuscitation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rib fractures",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cardiac arrest",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Liver rupture",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pneumothorax",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Clavicle fracture",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 61,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Which of the following are common causes of cyanosis in newborns during the early neonatal period?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Polycythemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hypothermia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Apnea",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Congenital heart disease",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pneumothorax",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 62,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "In neonatal resuscitation, adrenaline (epinephrine) may be administered via which routes?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intravenous",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "intramuscular",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Endotracheal",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 63,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Which of the following represent the first three steps of laryngoscope insertion during neonatal endotracheal intubation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Insertion of the endotracheal tube through the glottis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Proper positioning and fixation of the newborn’s head",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Insertion of the laryngoscope blade along the tongue toward the hard palate",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Removal of the laryngoscope",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lifting the blade to visualize the epiglottis and larynx",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 64,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Which of the following are clinical signs suggestive of hypovolemia in a newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent pallor despite adequate oxygenation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Weak peripheral pulse with normal heart rate",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hypertension",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Poor response to resuscitation measures",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Normal pulse and heart rate",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 65,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Identify the first four corrective actions when chest movement is inadequate during positive-pressure ventilation in a newborn.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Immediately increase inspiratory pressure",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ensure the newborn’s mouth is slightly open",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Suction the airway if obstruction is suspected",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Check and correct mask leak",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Reposition the head to open the airway",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 66,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Which of the following conditions are infections of the umbilical stump in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Catarrhal omphalitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gangrene of the umbilical stump",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Beckwith–Wiedemann syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Amniotic umbilicus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Umbilical ulcer",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 67,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Treatment of omphalitis in newborns includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibacterial therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Immunotherapy (e.g., gamma globulin, if indicated)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Supportive therapy (vitamins, fluids)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Local treatment of the umbilical area",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Absence of isolation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 68,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "19 . Which microorganisms are most commonly involved in neonatal bacterial conjunctivitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Escherichia coli",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Neisseria gonorrhea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Staphylococcus aureus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Staphylococcus epidermal",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 69,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Which clinical signs are characteristic of bacterial conjunctivitis in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "purulent discharge",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Eyelid edema and hyperemia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Conjunctival hyperemia with dilated vessels",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bloody discharge",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 70,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Treatment of candidiasis in newborns includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Breastfeeding (if the mother’s nipple is not infected or injured)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Local antifungal therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Antibacterial therapy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Antifungal medications",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "immunomodulatory preparations",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 71,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "22 . Early-onset neonatal septicemia is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Onset within the first 1–4 days of life",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fulminant (“lightning”) course",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Respiratory distress syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Meningitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Slow, prolonged course",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 72,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "23 . Late-onset neonatal septicemia is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Onset within the first 1–4 days of life",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Fulminant (“lightning”) course",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Primary respiratory distress syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Meningitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Slow, pregressive current",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 73,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "24 . Newborns with staphylococcal meningitis typically present with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Depressed consciousness",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Irritability / overexcitation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bulging fontanel",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Seizures",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 74,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Septicemia caused by Escherichia coli in newborns is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Slow progress",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hypothermia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Jaundice",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hepatomegaly",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 75,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "Cardiorespiratory depression in newborns is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bradycardia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tachycardia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Decreased muscle tone",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased muscle tone",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Arterial hypotension:",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 76,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "Select first three emergency measures in the treatment of hypovolemic shock in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Whole blood transfusion",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Albumin or plasma infusion",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Crystalloid solutions",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Packed red blood cells",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dopamine",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 77,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "Pulmonary surfactant performs the following functions:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Prevents alveolar collapse",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bactericidal activity against anaerobes",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Local immune defense",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Facilitation of mucociliary clearance",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 78,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "29 . The main principles of oxygen therapy in neonatal respiratory distress syndrome include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ensuring airway patency",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Adequate oxygenation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Treatment of the underlying cause",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Routine administration of sodium bicarbonate",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 79,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "Physiological jaundice in newborns is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Onset after the first 24 hours of life",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bilirubin increase > 8.5 μmol/L/hour",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fluctuating (“wavy”) course",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Duration longer than 20 days",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Total bilirubin < 80 μmol/L during the first day of life",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 80,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "Which of the following findings confirm the diagnosis of hemolytic disease of the newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anemia with reticulocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Metabolic acidosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hypoglycemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Jaundice appearing in the first hours of life",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hepatosplenomegaly",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 81,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "32 . Which features are characteristic of the edematous (hydropic) form of hemolytic disease of the newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hepatosplenomegaly",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Jaundice appearing in the first hours of life",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Usually associated with ABO incompatibility",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Severe anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Severe cardiovascular dysfunction",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 82,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "Possible complications of exchange blood transfusion in newborns include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Necrotizing enterocolitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Air or thromboembolism",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Electrolyte disturbances",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Polycythemia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cardiac arrest and pulmonary edema",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 83,
+      "question_number": 34,
+      "type": "multiple",
+      "question_text": "Which of the following conditions are characteristically associated with constant hepatosplenomegaly in the newborn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital rubella",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Congenital toxoplasmosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Edematous (hydropic) form of hemolytic disease of the newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Physiological jaundice of the newborn",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Gilbert syndrome",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 84,
+      "question_number": 35,
+      "type": "multiple",
+      "question_text": "Jaundice appearing during the first days of life is most commonly associated with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Erythrocyte enzyme deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Breastfeeding",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "ABO blood group incompatibility",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hypothyroidism",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Rh incompatibility",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 85,
+      "question_number": 36,
+      "type": "multiple",
+      "question_text": "Which of the following parameters are used to estimate gestational age?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alpha-fetoprotein level",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Fetal femur length on ultrasound",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Oxytocin challenge test",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Maternal urinary estriol",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Biparietal diameter of the fetal head",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 86,
+      "question_number": 37,
+      "type": "multiple",
+      "question_text": "Which of the following definitions indicate intrauterine growth restriction (IUGR)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Premature infant with weight appropriate for gestational age",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Low birth weight for gestational age",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Birth weight below the 10th percentile for gestational age",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 87,
+      "question_number": 38,
+      "type": "multiple",
+      "question_text": "Which criteria are used to diagnose intrauterine growth restriction?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Morphological assessment",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Neuromuscular maturity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight index alone",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Combined morphological and neuromuscular assessment",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Percentile growth charts",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 88,
+      "question_number": 39,
+      "type": "multiple",
+      "question_text": "Methods used in prenatal diagnosis of congenital malformations include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ultrasound examination",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Alpha-fetoprotein measurement in maternal serum",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Radiographic studies",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Genetic data alone",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 89,
+      "question_number": 40,
+      "type": "multiple",
+      "question_text": "Decreased skin turgor in newborns may be caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dehydration",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Intrauterine infection",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Subarachnoid hemorrhage",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Congenital hypotonia / constitutional weakness",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Late-diagnosed inborn metabolic disorders",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 90,
+      "question_number": 41,
+      "type": "multiple",
+      "question_text": "Increased heart rate in a newborn may be associated with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypothermia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hyperthermia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Patent ductus arteriosus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Patent foramen ovale",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mild perinatal asphyxia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 91,
+      "question_number": 42,
+      "type": "multiple",
+      "question_text": "Which of the following reflexes may still be considered physiological at the age of 1 year?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rooting (searching) reflex",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Palmar grasp (Robinson) reflex",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Babinski reflex",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Moro reflex",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sucking reflex",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 92,
+      "question_number": 43,
+      "type": "multiple",
+      "question_text": "Pale skin in a newborn is characteristic of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Shock",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Patent ductus arteriosus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Polycythemia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sepsis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 93,
+      "question_number": 44,
+      "type": "multiple",
+      "question_text": "Acrocyanosis in newborns may be caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypothermia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hypovolemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Transitional circulatory adaptation of the newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Inadequate ventilation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Polycythemia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 94,
+      "question_number": 45,
+      "type": "multiple",
+      "question_text": "The “white spot” (prolonged capillary refill) symptom is characteristic of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "severe hypovolemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Autonomic dysfunction after central nervous system trauma",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Severe anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "None of the above",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hypervolemia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 95,
+      "question_number": 46,
+      "type": "multiple",
+      "question_text": "Which of the following skin findings are physiological in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Marked pallor",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Jaundice within the first 24 hours of life",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Toxic erythema of the newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Miliaria crystallina",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Mongolian spots",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 96,
+      "question_number": 47,
+      "type": "multiple",
+      "question_text": "Benefits of breastfeeding include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Protection against infection",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Reduced risk of allergic diseases",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lower incidence of sudden infant death syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Improved psychomotor development",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increased risk of diabetes mellitus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 97,
+      "question_number": 48,
+      "type": "multiple",
+      "question_text": "Which of the following practices exclude the concept of exclusive breastfeeding?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Administration of foods other than breast milk",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Use of a bottle",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Limiting the number of feeds",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Limiting the duration of sucking",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Breastfeeding itself",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 98,
+      "question_number": 49,
+      "type": "multiple",
+      "question_text": "Clinical signs of acute blood loss in a newborn include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent pallor despite oxygen therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tachycardia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Normal pulse",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Weak, thready pulse",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Capillary refill time > 3 seconds",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "neonatology engl (REW2026)",
+      "source_file": "data/Pediatrics/neonatology engl (REW2026).docx",
+      "question_order": 99,
+      "question_number": 50,
+      "type": "multiple",
+      "question_text": "Which of the following are characteristic features of premature newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Predominantly abdominal breathing",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Predominantly thoracic breathing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Well-developed vesicular breath sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Apnea episodes",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "None of the above",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

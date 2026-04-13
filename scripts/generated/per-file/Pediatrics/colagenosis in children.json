@@ -1,0 +1,1030 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/colagenosis in children.docx",
+  "module": "colagenosis in children",
+  "folder": "Pediatrics",
+  "questionCount": 29,
+  "questions": [
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Note the atypical characteristic of arthritis in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Oligoarthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Polyarthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Erosive arthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Asymmetrical arthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Arthritis of big joints",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Specify the number of criteria for diagnosis of Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Name the drug used in Puls–therapy in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Methotrexate",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Methylprednisolone",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Meloxicam",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hydroxychloroquine",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mofetil Meclofenamate",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Note the pathogenetic mechanism in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Autoimmune",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Infectious–allergic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Polyetiological",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Monophasic",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Infectious",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Determine the gender ratio in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "F:M=8:1",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "F:M=1:3",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "F:M=1:1",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "F:M=2:1",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "F:M=1:8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 5,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "15 years",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Note the classical skin manifestation in Systemic Lupus Erythematosus:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Livedo reticularis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Raynaud’s syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Telangiectasia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Malar „butterfly” rash",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 6,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Name the manifestation which is not attributed to ACR Criteria for diagnosis of Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Serositis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Neurological manifestation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Oral non-painful ulcerations",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Raynaud’s Syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Antinuclear antibodies",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 7,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Determine the drugs which may exacerbate Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Methyldopa",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Procainamide",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diclofenac",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chlorpromazine",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitamin E",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 8,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Note the frequent bone and joint manifestations in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Jaccoud arthropathy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Non erosive arthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Erosive arthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Arthritis of small joints of hands",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Osteoporosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 9,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Name the acute skin manifestations in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Malar „butterfly” rash",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Photosensitivity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Discoid Lupus Rash",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Erythematous and bullae lesions",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Telangiectasia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 10,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Note the chronic skin lesions in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hyperkeratosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Photosensitivity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Atrophy of the Epidermis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Telangiectasia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Macular lesions",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 11,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Determine the vascular signs in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Livedo reticularis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Panniculitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Alopecia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Eyelid rash",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Ulcerations of the edges of fingers",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 12,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Specify the manifestations of polyserositis in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Peritonitis in 5-10%",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pleuritis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pericarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pleuritis and pericarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Haemopericarditis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 13,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Determine the morphologic classes of nephritis in Systemic Lupus Erythematosus according to WHO classifications:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mesangial minimal nephritis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Focal lupus nephritis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Glomerular sclerosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Membranous-proliferative nephritis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mesangial proliferative nephritis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 14,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Note the cardiovascular manifestations in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Arrhythmias",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pericarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Libman–Sacks verrucous endocarditis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bacterial endocarditis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Arterial hypertension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 15,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Name the pulmonary manifestations in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lupus pneumonitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pleuritis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary infarcts",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary embolism",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 16,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Note the specific hematologic manifestations in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Leukocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Leukopenia and lymphopenia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Thrombocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Thrombocytopenia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 17,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Specify the drugs used in treatment of Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Non-steroid anti-inflammatory drugs",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Steroids",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Immunosuppressors",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Biologic drugs (inhibitors of Tumor Necrosis Factor-α)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Antibacterial drugs",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 18,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Specify the non-pharmacological treatment in Systemic Lupus Erythematosus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Low lipid diet",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "SPF 30–50 protective creams",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Food rich in Calcium and vitamin D",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Coffee, strong tea",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Avoiding psycho-emotional stress",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 19,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Scleroderma lesions of the skin proximal to the metacarpophalangeal or metatarsophalangeal joints",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Digital ulceration",
+          "is_correct": false
+        },
+        {
+          "letter": "A",
+          "text": "Note the number of minor criteria necessary for diagnosis of Systemic Scleroderma:",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "letter": "A",
+          "text": "Specify the nonspecific immunological investigation in Systemic Scleroderma:",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 20,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Antinuclear antibodies, Tropoisomerase-1, SCL 70, Anticentromere antibodies",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Note the most frequent sign in onset of the Systemic Scleroderma:",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pigmentation abnormalities",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Skin edema",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Mask-like face",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Raynaud’s phenomenon",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 21,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Determine the clinical forms of Systemic Scleroderma according to Leroy:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diffuse skin Systemic Scleroderma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Limited Systemic Scleroderma",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Skin limited Systemic Scleroderma",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Visceral Systemic Scleroderma",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Systemic Scleroderma „sine scleroderma”",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 22,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Enumerate the minor criteria for diagnosis of Systemic Scleroderma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sclerodactyly",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral basilar pulmonary fibrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Tendon-synovia affection",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Digital ulcerations and/or scars on distal phalanges",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fever",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 23,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Specify the anti-fibrosis drugs used in treatment of Systemic Scleroderma:",
+      "answers": [
+        {
+          "letter": "D",
+          "text": "penicillamine",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Methotrexate",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Madecasol",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Cyclophosphamide",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Enzymes (Hyaluronidase, Ronidase)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 24,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Enumerate the immunosuppressive drugs used in treatment of Systemic Scleroderma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Glucocorticosteroids",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hydroxychloroquine",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "penicillamine",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Madecasol",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cyclophosphamide",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 25,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Specify the capillaroscopy alterations in Systemic Scleroderma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reduced number of capillary loops",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Dilated capillary loops",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Distortions of capillary loops",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Narrowing of capillary loops",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hemorrhage",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 26,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Specify the classification criteria of Systemic Scleroderma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Evolution",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Degree of activity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Clinical phase",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Age",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Gender",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 27,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Specify the general manifestations of Systemic Scleroderma in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Polyneuritis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fatigue",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Weight loss",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sclerodactyly",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "colagenosis in children",
+      "source_file": "data/Pediatrics/colagenosis in children.docx",
+      "question_order": 28,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Specify the enzymes which level increase in Juvenile Dermatomyositis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lactatdehydrogenase",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Creatine kinase",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Alanine aminotransferase",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Aldolase",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Catalase",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

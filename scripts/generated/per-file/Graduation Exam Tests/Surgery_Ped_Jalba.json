@@ -1,0 +1,4385 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+  "module": "Surgery_Ped_Jalba",
+  "folder": "Graduation Exam Tests",
+  "questionCount": 125,
+  "questions": [
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "The most frequent congenital malformation of esophagus is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal duplication",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Esophageal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Esophageal atresia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Esophageal fistula",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Megaesophagus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "A newborn after delivery has hypersalivation. The first feeding attempt (after 2-3 swallows) causes cyanosis and coughing. Dyspnea and polypnea occurs. What is the suspected diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal fistula",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Esophageal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diaphragmatic hernia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Esophageal duplication",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Esophageal atresia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "The following affirmations concerning esophageal atresia are right, excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal atesia is the most frequent and severe congenital malformation of the esophagus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Esophageal atresia is a fatal disease, because of impossibility to feed the newborn",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "There are communications between esophagus and trachea in some types of esophageal atresia.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Drooling and excessive oral salivation are the dominant symptoms of esophageal atresia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vomiting with milk is the dominant symptom of esophageal atresia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "The recurrent pneumonia is more common in the following congenital malformation:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal diverticulum",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Esophageal achalasia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Traheo-esophageal fistula",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Congenital diaphragmatic hernia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hypertrophic pyloric stenosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "A newborn 5 hours after birth presents progressive expiratory dyspnea, polypnea, cyanosis and coughing. On inspection the left hemithorax is bulged, with horizontal ribs and widened intercostal spaces. On percussion of the affected side tympanic resonance is present and on auscultation the vesicular respiration is absent. The abdomen is without any findings. What is the suspected diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Spontaneous pneumothorax.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Congenital diaphragmatic hernia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Congenital bronchogenic cyst",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azygous pulmonary lobe",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Congenital lobar emphysema",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Which of the examinations below is of most value in the diagnosis of congenital lobar emphysema?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Plain chest X-ray, upright view",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bronchography",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Computed tomography",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Scintigraphy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "The hypertrophic pyloric stenosis is a:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "High bowel obstruction at the level of papilla Vateri",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Low bowel obstruction at the level of pylorus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "High bowel obstruction at the level of pylorus due to hypertrophy of mucosa",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "High bowel obstruction at the level of pylorus due to muscle hypertrophy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Low bowel obstruction at the level of pylorus due to muscle hypertrophy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "The main symptom of hypertrophic pyloric stenosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Projectile vomiting with food (milk or formula), the vomiting volume exceeds the last meal amount",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bilious vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal distension",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Digestive hemorrhage",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "In hypertrophic pyloric stenosis the vomiting occurs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "At any age",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Up to the age of 1 year",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "After the age of 6 month",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "After the age of 1 year",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Around 14-21 days postnatally",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "A firm, painless on palpation, olive shaped tumor in the right hypochondrium, in the pancreato-duodenal area in a child of 5 weeks, who have projectile milky vomiting from the age of 3 weeks, is present in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pyloric duplication",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Incomplete duodenal obstruction by a perforated web",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Annular pancreas",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bowel intussusception",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The bilious vomiting from the birth is a dominant symptom in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pyloric spasm",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Duodenal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Duodenal atresia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ileal atresia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "The ultrasound sign characteristic for hypertrophic pyloric stenosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "\"Target\" sign",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "\"Doughnut\" sign",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "\"Beak\" sign",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "\"Corkscrew\" sign",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "\"Antral nipple\" sign",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "The following affirmations about Ladd syndrome are true, excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ladd syndrome is a congenital extrinsic duodenal obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "In Ladd syndrome the ascendant colon is not fixed in the right gutter",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In Ladd syndrome the ascendant colon remains hanged in place of colon transversum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "In Ladd syndrome the parietocolic ligament (Ladd's bands) compresses the second part of the duodenum",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In Ladd syndrome the parietocolic ligament (Ladd's bands) compresses the ileum",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "The meconeal ileus is a consequence of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Internal hernias",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bowel stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Jejunoileal duplications",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Colonic duplications",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystic fibrosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "The key role in the pathophysiology of Hirschsprung disease plays the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital or acquired rectal stenosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Short bowel syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Functional causes",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Aganglionosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Anorectal malformations",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "The following affirmations as far as congenital megacolon (Hirschsprung disease) is concerned are true excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The positive diagnostic is established on the base of clinical signs, anorectal manometry, barium enema and rectal biopsy.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The aganglionosis (lack of Auerbach's and Meissner's plexus ganglia) plays the key role in the pathophysiology of Hirschsprung disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Severe cases of Hirschsprung disease are self curing.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "At the anorectal manometry the rectoanal inhibitory reflex is absent.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In mild cases of Hirschsprung disease the constipations occur after several months from the birth when the alimentary diversification in attempted.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "The following affirmations in a child with congenital megacolon are true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diagnosis is established on the base of clinical signs",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diagnosis is established on the base of rectal examination",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diagnosis is established on the base of ultrasound examination",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diagnosis is established on the base of clinical signs, clinical findings, anorectal manometry, barium enema and rectal biopsy.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Diagnosis is established on the base of barium enema",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "The commonest type of intussusception in an infant is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ileoileal",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Colocolonic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Jejunojejunal",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Appendicular",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Ileocecocolonic",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 18,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "The intermittent, crampy abdominal pain associated with recurrent vomiting, \"currant jelly\" stools and a palpable abdominal mass are the symtoms triad in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diverticulitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute appendicitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Gastroenteritis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bowel intussusception",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Necrotizing enterocolitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 19,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "A child of 7 months is admitted after 13 hours from the sudden disease onset against the background of full wellbeing. At the admission he presented colicky abdominal pains, recurrent vomiting. The child is agitated and refuses the food. The agitation periods alternate with periods of quietness. The abdomen is of normal shape, soft, elastic and slightly painful. In the subepatic area an elongated, cylindrical, elastic mass, with smooth surface is palpated. The stools are absent from the onset. What is the suspected diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appendicular infiltrate",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intestinal volvulus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bowel intussusception",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Retroperitoneal tumor",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pancreatic cyst",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 20,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "The definitive diagnosis of the bowel intussusception in an older child is based on:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Physical examination",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Physical examination, plain abdominal X-ray film, air enema, abdominal ultrasound",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Only on the base of plain abdominal X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Only on the base of air enema",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Only on the base of abdominal ultrasound",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 21,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "The following affirmations as far as hemangiomas are concerned are true excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hemangiomas are vascular tumors which consist of abnormal vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hemangiomas have a potential of dramatic progression in size in the first 6 months of life",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In 70-75% of cases hemangiomas are self curing tumors and don't need any treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hemangiomas complications include hemorrhage and infection",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hemangiomas are located only on the face",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 22,
+      "question_number": 23,
+      "type": "single",
+      "question_text": "The following affirmations concerning branchial cleft cysts are true, excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Branchial cleft cysts are congenital epithelial cysts, which arise on the lateral part of the neck from a failure of obliteration of the second branchial cleft in embryonic development",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Branchial cysts are smooth, nontender, fluctuant masses, which occur along the lower one third of the anteromedial border of the sternocleidomastoid muscle between the muscle and the overlying skin",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "When associated with a sinus tract, mucoid or purulent discharge onto the skin or into the pharynx may be present",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The branchial cleft cyst is a congenital lesion formed by incomplete involution of the thyroglossal duct",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Complications of surgical excision of branchial cleft cysts result from damage to nearby vascular or neural structures, which include carotid vessels and the facial, hypoglossal, vagus, and lingual nerves",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 23,
+      "question_number": 24,
+      "type": "single",
+      "question_text": "The commonest complication of acute appendicitis in children is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appendicular infiltrate",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intraperitoneal hemorrhage",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bowel obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Liver abscess",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Diffuse peritonitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 24,
+      "question_number": 25,
+      "type": "single",
+      "question_text": "The main symptom of esophageal atresia is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dysphagia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hypersalivation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bilious vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "High gastrointestinal hemorrhage",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Abdominal distension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 25,
+      "question_number": 26,
+      "type": "single",
+      "question_text": "Which of the examinations below is of most value in the diagnosis of esophageal atresia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thoraco-abdominal plain X-ray in the upright position",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thoraco-abdominal plain X-ray in the upright position with contrasting probe introduced in the esophagus",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thoraco-abdominal X-ray with contrast substance (Upper gastrointestinal series)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Scintigraphy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 26,
+      "question_number": 27,
+      "type": "single",
+      "question_text": "The main symptom of tracheo-esophageal fistula (H fistula) is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Drooling and hypersalivation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Milk regurgitation after 1-2 sucks",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cyanosis from the birth",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Noisy respiration, dyspnea from the birth",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Recurrent coughing during feeding (the coughing interrupts sucking)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 27,
+      "question_number": 28,
+      "type": "single",
+      "question_text": "The cause of generalized cyanosis in neonate is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tracheo-esophageal fistula",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diaphragmatic hernia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pectus carinatum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pectus excavatum",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Congenital bronchiectasis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 28,
+      "question_number": 29,
+      "type": "single",
+      "question_text": "The following affirmations as far as congenital lobar emphysema is concerned are wrong, excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital lobar emphysema is an asymptomatic disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The dominant symptom of congenital lobar emphysema is sepsis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The dominant symptoms of congenital lobar emphysema are dyspnea, polypnea and progressive cyanosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The dominant symptom of congenital lobar emphysema is coughing with mucopurulent expectorations.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In children with congenital lobar emphysema chest X-ray reveals a round shaped, air-liquid shadow on the affected side.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 29,
+      "question_number": 30,
+      "type": "single",
+      "question_text": "Which of the examinations below is of most value in the diagnosis of congenital diaphragmatic hernia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Plain toraco-abdominal film",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Scintigraphy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Barium enema",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Computed tomography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 30,
+      "question_number": 31,
+      "type": "single",
+      "question_text": "Which sign is the most important and informative in the onset of hypertrophic pyloric stenosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Colicky abdominal pain",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Abundant stools",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Food refusal",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Projectile vomiting after feeding",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 31,
+      "question_number": 32,
+      "type": "single",
+      "question_text": "In the hypertrophic pyloric stenosis the vomiting is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Precocious, immediately after birth",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "White projectile and explosive",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Seldom",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Without any consequences as far as body weight gain is concerned",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 32,
+      "question_number": 33,
+      "type": "single",
+      "question_text": "Milky projectile, explosive vomiting at the age of 6 weeks is permanently present in a child with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cow's milk protein intolerance",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Duodenal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ladd syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hiatal hernia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 33,
+      "question_number": 34,
+      "type": "single",
+      "question_text": "The body weight of a child with hypertrophic pyloric stenosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increases abruptly",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Decreases dramatically",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stagnates",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Normally increases",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Stagnates and subsequently gradually decreases",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 34,
+      "question_number": 35,
+      "type": "single",
+      "question_text": "The main radiographic sign of hypertrophic pyloric stenosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Elongated, filiform, centrally located pyloric canal (\"string sign\")",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dilated pyloric canal",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Eccentric pyloric canal",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Significant gastric stasis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Strong gastric waves along greater and lesser curvatures of the stomach",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 35,
+      "question_number": 36,
+      "type": "single",
+      "question_text": "The dominant symptom in the duodenal atresia is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Milky projectile vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Precocious, bilious, recurrent vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Meconial vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Meconial and then fecaloid vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Distended abdomen",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 36,
+      "question_number": 37,
+      "type": "single",
+      "question_text": "The presence of 2 air-liquid levels in the upper abdomen (on the opposite sites of the spine) on the thoraco-abdominal plain X-ray film in the upright position is a sign of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal atresia type C",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Duodenal atresia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Duodenal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Colonic stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 37,
+      "question_number": 38,
+      "type": "single",
+      "question_text": "The bowel aganglionosis in Hirschsprung disease leads to:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Excessive peristaltic waves in the aganglionic segment",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Dilatation of the aganglionic segment",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Colonic atresia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Absence of peristaltic waves in the aganglionic segment",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Absence of the peristaltic waves at the level of small bowel",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 38,
+      "question_number": 39,
+      "type": "single",
+      "question_text": "Most cases of primary intussusception occur in children at the age of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "1-2 months",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "12 months",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In the first 7 days of life",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "6-36 months",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "In the first hours of life",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 39,
+      "question_number": 40,
+      "type": "single",
+      "question_text": "The following affirmations regarding thyroglossal cyst are true, excepting:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "A thyroglossal cyst is a fibrous cyst that forms from a persistent thyroglossal duct",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It usually presents as a midline neck lump (in the region of the hyoid bone) that is usually painless, smooth and cystic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "If infected pain can occur",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The most common locations for a thyroglossal cyst are midline or slightly off midline, between the isthmus of the thyroid and the hyoid bone or just above the hyoid bone",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "A thyroglossal cyst will not move upwards with protrusion of the tongue",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 40,
+      "question_number": 41,
+      "type": "single",
+      "question_text": "Choose the disease in which the newborn has respiratory distress and the mouth is full of salivary secretions:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital lobar emphysema",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tensioned bronchogenic cyst",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tensioned spontaneous pneumothorax",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Tracheoesophageal fistula",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Esophageal atresia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 41,
+      "question_number": 42,
+      "type": "single",
+      "question_text": "Choose the obvious sign of the congenital hypertrophic pyloric stenosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vomiting from the birth",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thin skin fold",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Constipation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Palpation of the olive",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Failure to thrive",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 42,
+      "question_number": 43,
+      "type": "single",
+      "question_text": "The main symptom of the onset of hypertrophic pyloric stenosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Agitation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Recurrent bilious vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "“White” projectile vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Severe constipation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 43,
+      "question_number": 44,
+      "type": "single",
+      "question_text": "The dominant symptom of the duodenal atresia is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "”Milky” projectile vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious or nonbilious recurrent vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bilious and then meconial vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Meconial and then fecaloid vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Abdominal distension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 44,
+      "question_number": 45,
+      "type": "single",
+      "question_text": "The clinical symptom of the congenital high bowel obstruction is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alimentary vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious vomiting, lack of meconial stools",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Meconial and then fecaloid vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Meconial and then fecaloid vomiting, lack of meconial stools",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hemorrhagic vomiting",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 45,
+      "question_number": 46,
+      "type": "single",
+      "question_text": "The newborn on plain abdominal X-ray has two hydroaeric levels (“double bubble sign”) (on the contralateral sides of spine). What is the diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Duodenal atresia after the papilla Vateri",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Duodenal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Meconial ileus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Meconial peritonitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 46,
+      "question_number": 47,
+      "type": "single",
+      "question_text": "The commonest cause of the bilious vomiting in a newborn is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital hypertrophic pyloric stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pyloric spasm",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Meconial ileus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Duodenal atresia after papilla Vateri",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hiatal hernia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 47,
+      "question_number": 48,
+      "type": "single",
+      "question_text": "The dominant symptom of congenital high bowel obstruction is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alimentary vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Alimentary vomiting with traces of blood",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reduced meconial transit",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Significant abdominal distension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 48,
+      "question_number": 49,
+      "type": "single",
+      "question_text": "The dominant symptom of congenital low bowel obstruction is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bilious vomiting from the first 24 hours of life",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious vomiting from the 24-48 hours of life and then fecaloid vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Colicky abdominal pain",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Spontaneous rectorrhagia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Very tenacious meconium adherent to the intestinal wall.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 49,
+      "question_number": 50,
+      "type": "single",
+      "question_text": "What disease should be mandatory ruled in a newborn with bilious vomiting?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gatroesophageal reflux disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hypertrophic pyloric stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Congenital duodenal or small bowel obstruction",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Meconial peritonitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Congenital megacolon",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 50,
+      "question_number": 51,
+      "type": "multiple",
+      "question_text": "The causes that contribute to the development of bowel intussusception in infants are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Morphologic and functional immaturity of the bowel wall",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Aganglionosis of the bowel wall",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Immaturity of the ileocecal valve",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "High colon mobility",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Disturbances in the regulation of peristaltic activity",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 51,
+      "question_number": 52,
+      "type": "multiple",
+      "question_text": "The characteristic clinical signs of bowel intussusception in infants include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute sudden onset",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Periodic attacks of agitation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Intractable (recurrent) vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Stool with blood and mucus (\"currant jelly\" stool)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 52,
+      "question_number": 53,
+      "type": "multiple",
+      "question_text": "The symptoms included in Alvarado Score for appendicitis are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Migration of the pain to the right iliac fossa",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anorexia, Nausea/Vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Tenderness in the right iliac fossa, Rebound pain",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Elevated temperature (fever), Leukocytosis, Shift to the left of neutrophils",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Constipation or diarrhea",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 53,
+      "question_number": 54,
+      "type": "multiple",
+      "question_text": "The acute appendicitis in a child of up to 3 years manifests itself by the following symptoms:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Local pain in the right lower quadrant",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Local pain in the epigastrium",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Local pain in the paraumbelical region",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rebound tenderness in the right lower quadrant",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Positive Blumberg sign",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 54,
+      "question_number": 55,
+      "type": "multiple",
+      "question_text": "A neonate with jejunoileal atresia shows the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Non-bilious vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilious vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Abdominal distension",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Meconium could appears normal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Gray mucus plugs passed via rectum",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 55,
+      "question_number": 56,
+      "type": "multiple",
+      "question_text": "The following is true in a newborn with duodenal atresia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clear or bilious vomiting within hours of birth is present",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "An output of more then 5 ml of gastric content is indicative for positive diagnosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "An output of more then 20 ml of gastric content is indicative for positive diagnosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Meconium could appear normal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blood may be passed via rectum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 56,
+      "question_number": 57,
+      "type": "multiple",
+      "question_text": "What symptoms are present in a child with diaphysial hematogenous osteomielitis on the 3rd day from the disease onset?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Local hyperemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Local fluctuation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Nearest joint dysfunction",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pain on palpation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pain on percussion",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 57,
+      "question_number": 58,
+      "type": "multiple",
+      "question_text": "The diagnosis of Hirschsprung's disease is established on the base of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Full-thickness rectal biopsy or rectal suction biopsy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Contrast enema",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Anorectal manometry",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acetylcholinesterase staining",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Computed tomography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 58,
+      "question_number": 59,
+      "type": "multiple",
+      "question_text": "The chronic constipation in children could be a result of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Megadolichosigma, megarectum",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inflammatory bowel disease",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Intestinal neuronal dysplasia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nutritional factors",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hirschsprung's disease",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 59,
+      "question_number": 60,
+      "type": "multiple",
+      "question_text": "The radiologic findings in Hirschsprung's disease include the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hemorrhagic disease of newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Portal hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Gastric and duodenal ulcer disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Ulcerative colitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Meckel's diverticulum",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 60,
+      "question_number": 61,
+      "type": "multiple",
+      "question_text": "Chronic gastrointestinal hemorrhage could occur in a child with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Portal hypertension",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ulcerative colitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Meckel's diverticulum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Peutz-Jeghers syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Anal fissure",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 61,
+      "question_number": 62,
+      "type": "multiple",
+      "question_text": "Suspicion of portal hypertension invokes the necessity of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Upper gastrointestinal endoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hemodynamic measurement of portal pressure",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Duplex Doppler ultrasonography",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nasogastric tube insertion",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Liver and spleen scan",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 62,
+      "question_number": 63,
+      "type": "multiple",
+      "question_text": "Patients with Peutz-Jeghers syndrome tend to present with the following symptoms:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic GI bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gynecomastia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Developmental delay",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Nasal polyposis (chronic sinusitis)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pigmented macules on the lips and digits",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 63,
+      "question_number": 64,
+      "type": "multiple",
+      "question_text": "Gardner's syndrome is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Multiple polyps in the colon",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tumors outside the colon",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nasal polyposis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pigmented macules on the lips and digits",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Gynecomastia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 64,
+      "question_number": 65,
+      "type": "multiple",
+      "question_text": "Prehepatic portal hypertension syndrome is caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Portal or splenic veins thrombosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Congenital atresia or stenosis of portal vein",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Extrinsic compression (tumors) of the portal vein",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Splanchnic arteriovenous fistula",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hepatic cirrhosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 65,
+      "question_number": 66,
+      "type": "multiple",
+      "question_text": "Intrahepatic (presinusoidal, sinusoidal and postsinusoidal) portal hypertension syndrome is caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Phlebitis of the portal vein",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hepatic cirrhosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hepatic fibrocystic disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Neonatal hepatitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Biliary atresia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 66,
+      "question_number": 67,
+      "type": "multiple",
+      "question_text": "Budd-Chiari syndrome is caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Idiopathic transformation of the portal vein",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thrombosis of the portal vein",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Phlebitis of the portal vein",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Thrombotic or nonthrombotic occlusion of hepatic veins",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Inferior vena cava stenosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 67,
+      "question_number": 68,
+      "type": "multiple",
+      "question_text": "Acute gastrointestinal hemorrhage could occur in a child with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hemorrhagic disease of newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Portal hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Gastric and duodenal ulcer disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Ulcerative colitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Meckel's diverticulum",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 68,
+      "question_number": 69,
+      "type": "multiple",
+      "question_text": "Noncomplicated congenital hydrocele is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Borborygmus during reduction",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Impossibility to reduce the formation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Transillumination symptom on diaphanoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Enlargement of the external inguinal ring",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Positive \"cough\" symptom on palpation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 69,
+      "question_number": 70,
+      "type": "multiple",
+      "question_text": "Pyelonephritis is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Leucocyturia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bacteriuria",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Proteinuria",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Painful urination",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Arterial hypertension",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 70,
+      "question_number": 71,
+      "type": "multiple",
+      "question_text": "Cystitis is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Leucocyturia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bacteriuria",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Proteinuria",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Painful and frequent urination",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Low urine density",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 71,
+      "question_number": 72,
+      "type": "multiple",
+      "question_text": "The localization of the testis in cryptorchism could be:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inguinal",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pubic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Femoral",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Perineal",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 72,
+      "question_number": 73,
+      "type": "multiple",
+      "question_text": "The localization of the ectopic testis could be:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inguinal",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pubic",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Femoral",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Perineal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Crisscross",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 73,
+      "question_number": 74,
+      "type": "multiple",
+      "question_text": "The obstructive hydronephrosis is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pain",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pathologic findings in the urinalysis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Palpable tumor symptom",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pathologic findings in the biochemical blood analysis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hematuria",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 74,
+      "question_number": 75,
+      "type": "multiple",
+      "question_text": "The basic tools for the diagnosis of hydronephrosis include the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ultrasound examination",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Excretory urography",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cystography",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Renal angiography",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Computed tomography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 75,
+      "question_number": 76,
+      "type": "multiple",
+      "question_text": "Epispadias in boys could be:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Glanular",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Perineal",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Penile",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Penopubic",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Balanic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 76,
+      "question_number": 77,
+      "type": "multiple",
+      "question_text": "Epispadias in girl could be:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Glanular",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Penile",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Perineal",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Subsymphiseal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Clitoral",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 77,
+      "question_number": 78,
+      "type": "multiple",
+      "question_text": "The main symptoms of pharyngeal and esophageal burn are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dysphagia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Diareea",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Salivation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fibrin depositions on the mucosa",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hoarse voice",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 78,
+      "question_number": 79,
+      "type": "multiple",
+      "question_text": "The following investigations are required for the confirmation of the diagnosis of esophageal cicatricial stenosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antero-posterior plain chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Contrast swallow X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Double contrasting of the esophagus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Esophagoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blood count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 79,
+      "question_number": 80,
+      "type": "multiple",
+      "question_text": "The symptoms of esophageal perforation are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Headache",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Dysphagia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Retrosternal chest pain",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Subcutaneous crepitation in the neck",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Fever",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 80,
+      "question_number": 81,
+      "type": "multiple",
+      "question_text": "The following could be revealed by the chest X-ray in the first stage of necrotizing pneumonia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tensioned pyopneumothorax",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pneumothorax",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Infiltrate",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fibrinous pleuritis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Abscess",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 81,
+      "question_number": 82,
+      "type": "multiple",
+      "question_text": "The stomach cardia hypotonicity occurs in the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal chalasia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Congenital diaphragmatic hernia or eventration",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Congenital esophageal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Congenital short esophagus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hiatal hernia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 82,
+      "question_number": 83,
+      "type": "multiple",
+      "question_text": "Gastroesophageal reflux could be a result of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Blunt angle of His",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "High position of the diaphragmatic cupula (dome)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Splenomegaly",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Wide esophageal hiatus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dentate line higher than esophageal hiatus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 83,
+      "question_number": 84,
+      "type": "multiple",
+      "question_text": "Main tools with a key role in the diagnosis of gastroesophageal reflux disease include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "pH monitoring of esophagus and stomach",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Upper gastrointestinal imaging series",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Plain chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Esophagogastroduodenoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Multilevel esophageal manometry",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 84,
+      "question_number": 85,
+      "type": "multiple",
+      "question_text": "Aspiration syndrome in neonate could be a result of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal atresia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Double aortic arch",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Reflux esophagitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Achalasia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Tracheoesophageal fistula",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 85,
+      "question_number": 86,
+      "type": "multiple",
+      "question_text": "Symptoms of the foreign body of the esophagus are the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Food refusal",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Salivation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Dyspnea",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Difficult swallow (dysphagia)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 86,
+      "question_number": 87,
+      "type": "multiple",
+      "question_text": "The opacity of the anterior mediastinum on chest X-ray could be the evidence of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neuroblastoma",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ganglioneuroma",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Thymoma",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Teratoma",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Thymus hyperplasia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 87,
+      "question_number": 88,
+      "type": "multiple",
+      "question_text": "The opacity of the posterior mediastinum on chest X-ray could be the evidence of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neuroblastoma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ganglioneuroma",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thymoma",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Teratoma",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Thymus hyperplasia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 88,
+      "question_number": 89,
+      "type": "multiple",
+      "question_text": "Typical injuries of the locomotor apparatus in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Subperiostal fracture",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Epiphysiolysis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hip dislocation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Radial head subluxation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cervical hip fracture",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 89,
+      "question_number": 90,
+      "type": "multiple",
+      "question_text": "Pathologic fractures could occur in children with",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Osteogenesis imperfecta",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Osteomyelitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Osteoid osteoma",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Osteoblastoma",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Rickets and scurvy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 90,
+      "question_number": 91,
+      "type": "multiple",
+      "question_text": "The subperiostal fracture of long tubular bones in children is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pain",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pathologic mobility",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Crepitation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Loss of function",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Soft tissue swelling",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 91,
+      "question_number": 92,
+      "type": "multiple",
+      "question_text": "The clinical signs of a fracture are the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Function loss",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Deformation and abnormal mobility",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fluctuation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Local pain",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Crepitation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 92,
+      "question_number": 93,
+      "type": "multiple",
+      "question_text": "Radial head subluxation in children is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abnormal mobility",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Significantly painful rotational movements of the forearm",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Limited motion in the elbow joint",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Event of forearm traction in the anamnesis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Event of falling on the extended forearm in the anamnesis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 93,
+      "question_number": 94,
+      "type": "multiple",
+      "question_text": "Eventual complications after elbow joint bones injuries include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Volkmann's ischemic contracture",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Varus or valgus deformations",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Madelung deformity",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Elbow joint contracture",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pseudarthrosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 94,
+      "question_number": 95,
+      "type": "multiple",
+      "question_text": "The compressive fracture of the bodies of thoracic vertebras is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Trendelenburg's sign",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Posttraumatic apnoea (respiratory arrest)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pain and limited movements in the area of injured vertebras",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Radiating, belting pain",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Muscle tightness in the affected area",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 95,
+      "question_number": 96,
+      "type": "multiple",
+      "question_text": "First degree burns are usually:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Red",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dry",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Painful",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Wet",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "With blisters",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 96,
+      "question_number": 97,
+      "type": "multiple",
+      "question_text": "Second degree burns are usually:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Red",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dry",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Very painful",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Wet",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "With blisters",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 97,
+      "question_number": 98,
+      "type": "multiple",
+      "question_text": "Third degree burns are usually:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Leathery in consistency",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dry",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Insensate (painless)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Painful",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Waxy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 98,
+      "question_number": 99,
+      "type": "multiple",
+      "question_text": "Fourth degree burns are usually:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Extending through entire skin, and into underlying fat, muscle and bone",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dry",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Insensate (painless)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Painful",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Black, charred with eschar",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 99,
+      "question_number": 100,
+      "type": "multiple",
+      "question_text": "The traumatic injury of the spleen is diagnosed by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Angiography",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pneumoperitoneum",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Ultrasound examination",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Laparoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Air enema",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 100,
+      "question_number": 101,
+      "type": "multiple",
+      "question_text": "The developmental hip dysplasia (previously congenital hip dislocation) in neonate should be treated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Massage",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Abduction brace",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pavlik harness",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Light immobilizing casts",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "One stage reduction under general anesthesia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 101,
+      "question_number": 102,
+      "type": "multiple",
+      "question_text": "The developmental hip dysplasia (previously congenital hip dislocation) beginning from 6 months of age should be treated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Physiotherapy and kinetotherapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pavlik harness",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Massage",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Abduction brace",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "One stage reduction under general anesthesia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 102,
+      "question_number": 103,
+      "type": "multiple",
+      "question_text": "The developmental hip dysplasia (previously congenital hip dislocation) in an infant of 1 month should be treated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Physiotherapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Massage",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pavlik harness",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Abduction brace",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "One stage reduction under general anesthesia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 103,
+      "question_number": 104,
+      "type": "multiple",
+      "question_text": "The developmental hip dysplasia (previously congenital hip dislocation) in a child older than 2 years should be treated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Physiotherapy and kinetotherapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Massage",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Orthopedic surgery",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Light immobilizing casts",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "One stage reduction under general anesthesia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 104,
+      "question_number": 105,
+      "type": "multiple",
+      "question_text": "Classic findings characteristic for developmental hip dysplasia include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ortolani sign",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Galeazzi sign",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Asymmetry of the gluteal thigh or labral skin folds",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Decreased abduction on the affected side",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Absolute leg-length inequality",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 105,
+      "question_number": 106,
+      "type": "multiple",
+      "question_text": "The main symptoms of clubfoot are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Supination",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pronation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Equinus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Adduction",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Abduction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 106,
+      "question_number": 107,
+      "type": "multiple",
+      "question_text": "The conservative treatment of clubfoot includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Traditional casting methods",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ponseti method",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ligamentocapsulotomy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chemotherapy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "One stage reduction under general anesthesia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 107,
+      "question_number": 108,
+      "type": "multiple",
+      "question_text": "The congenital clubfoot should be differentiated from:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Arthrogryposis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Leg shortening",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pes calcaneus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Paralitic pes equinus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Little disease (spastic dyplegia)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 108,
+      "question_number": 109,
+      "type": "multiple",
+      "question_text": "The onset of the Legg-Calve-Perthes disease is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pain in the knee joint",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Claudication",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pain in the hip joint",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Restricted movements in the hip joint",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 109,
+      "question_number": 110,
+      "type": "multiple",
+      "question_text": "The VACTERL association comprises the following constellation of abnormalities:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Renal and cardiac malformations",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anorectal malformations",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Posterior fossa malformations",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vertebral and tracheoesophageal defects",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Limb deformities",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 110,
+      "question_number": 111,
+      "type": "multiple",
+      "question_text": "Indicate the peculiarities of neuroblastoma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Could develop in a very young child (newborn – 3-4 years old child)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Is localized exclusive in the retroperitoneal space",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Could develop everywhere, but mainly in the retroperitoneal space",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Is a invasive tumor without capsule",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Is a non-invasive tumor with capsule",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 111,
+      "question_number": 112,
+      "type": "multiple",
+      "question_text": "Choose the symptoms of omphalocele:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Herniation of abdominal organs through a very enlarged umbilical ring",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Exteriorization of the small bowel through a paraombelical abdominal wall defect",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Eviscerated organs are covered by avascular membrane",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Eviscerated intestinal loops are retracted and edematous.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The belly button is of normal appearance",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 112,
+      "question_number": 113,
+      "type": "multiple",
+      "question_text": "The symptoms of gastroschisis are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Herniation of abdominal organs through a very enlarged umbilical ring",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Exteriorization of the small bowel through a paraombelical abdominal wall defect",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Eviscerated organs are covered by avascular membrane",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Eviscerated intestinal loops are retracted and edematous.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The belly button is of normal appearance",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 113,
+      "question_number": 114,
+      "type": "multiple",
+      "question_text": "The symptoms of testicular torsion are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abrupt and brutal onset in a child who was previously well.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Violent pain in the hemiscrotum with irradiation in the inguinal and hip regions",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Gradual onset with mild pain in the hemiscrotum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Mildly enlarged and edematous hemiscrotum",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "On palpation the testicle is enlarged and in a higher position",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 114,
+      "question_number": 115,
+      "type": "multiple",
+      "question_text": "The following affirmations regarding hemangiomas are true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The natural evolution of hemangioma is towards spontaneous resolution",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The hemangiomas could spread from skin and mucosa to the internal organs",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The evolution of hemangiomas is mainly unpredictable",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The hemangioma is a contraindication for immunization",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The hemangioma could be complicated by hemorrhage and infection",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 115,
+      "question_number": 116,
+      "type": "multiple",
+      "question_text": "The main symptoms of lymphangiomas are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neck tumor presented at birth",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Elastic, painless neck tumor with fluctuation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hard, painful on palpation neck tumor",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hard neck tumor with a diameter of 1-3 cm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hard neck tumors adherent to the skin",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 116,
+      "question_number": 117,
+      "type": "multiple",
+      "question_text": "Symptoms of congenital hip dysplasia are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Asymmetrical hip skin folds",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Internal rotation of the involved extremity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "External rotation of the involved extremity",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Limitation of the abduction in the involved hip joint",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Limitation of the adduction in the involved hip joint",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 117,
+      "question_number": 118,
+      "type": "multiple",
+      "question_text": "Choose the specific symptoms of perforated ulcerative-necrotic enterocolitis in an infant:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fecaloid vomiting",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Significantly distended abdomen with tensioned skin, visible venous circulation on the abdominal wall",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Abundant diarrheic foul smelling stools",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Abundant rectorrhagia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lack of intestinal transit for gases and fecal matter",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 118,
+      "question_number": 119,
+      "type": "multiple",
+      "question_text": "Complications of the necrotizing pneumonia are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sepsis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mediastinitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mediastinal emphysema",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Lobar emphysema",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary hemorrhage",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 119,
+      "question_number": 120,
+      "type": "multiple",
+      "question_text": "Pneumomediastinitis in children could be caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Necrotizing pneumonita",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mediastinal tumors",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Traumatic injuries of the esophagus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Traumatic injuries of the trachea",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 120,
+      "question_number": 121,
+      "type": "multiple",
+      "question_text": "Main symptoms of the left sided congenital diaphragmatic hernia with acute onset are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Progressive dyspnea and cyanosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Difficult polypneic respirations",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Regurgitation with modified blood",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dysphagia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The tachycardic heart sounds are auscultated on the right side",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 121,
+      "question_number": 122,
+      "type": "multiple",
+      "question_text": "The main symptoms of congenital lobar emphysema are as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea, polypnea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cianosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bulging of the involved hemithorax",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Cough with mucous purulent sputum",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fever",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 122,
+      "question_number": 123,
+      "type": "multiple",
+      "question_text": "The differential diagnosis of the congenital diaphragmatic hernia should be done with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pulmonary atelectasis of newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Congenital lobar emphysema",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Congenital bronchiectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pneumonia of the newborn",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cyanotic cardiac malformation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 123,
+      "question_number": 124,
+      "type": "multiple",
+      "question_text": "The following affirmations regarding biliary atresia are true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "From the birth the child always has persistent, progressive jaundice",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "From the birth the child sometimes has persistent, progressive jaundice",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The child develops persistent progressive jaundice on the 10-15 days of life",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The meconium is colorless",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The urine is dark",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_Ped_Jalba",
+      "source_file": "data/Graduation Exam Tests/Surgery_Ped_Jalba.docx",
+      "question_order": 124,
+      "question_number": 124,
+      "type": "multiple",
+      "question_text": "Choose the right affirmations regarding acute appendicitis in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Is the most seldom surgical pathology of childhood",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Is the most frequent surgical pathology of childhood",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Never develops in newborns and infants",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The maximal incidence is in the 8-15 years age group",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The evolution is faster and more severe then in adult",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

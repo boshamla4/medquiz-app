@@ -1,0 +1,3490 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+  "module": "Surgery_4th year_Vozian",
+  "folder": "Graduation Exam Tests",
+  "questionCount": 103,
+  "questions": [
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Select the most suggestive sign in the diagnosis of acute appendicitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The Dieulafoy triad",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The Kocher sign",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The Bartomier-Michelson sign",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The Sitkovsky sign",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The Blumberg sign",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which layer of appendiceal wall contains a large number of lymphatic follicles, the reason why the appendix is called “abdominal tonsil”:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The mucosal layer",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The submucosal layer",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The muscular layer",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The serous layer",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All answers are correct.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Select the correct answer regarding the treatment of appendiceal mass (infiltrate) in the stage of infiltration:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Conservative",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Surgical",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Medical-surgical",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Physiotherapy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All answers are correct.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Select the preferred access path for the Douglas pouch abscess:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rectotomy (transrectal)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Subumbilical laparotomy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Laparotomy in the right iliac fossa",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Supra- and subumbilical laparotomy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Kocher laparotomy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 4,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "The Kocher sign for acute appendicitis describes the onset of pain in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The right iliac fossa",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The epigastrium",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Over the whole abdominal area",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The left iliac fossa",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The hypogastrium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 5,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "A tensed, dilated appendix with matte serosa and infiltrated mesentery is consistent with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Catarrhal acute appendicitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Phlegmonous acute appendicitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chronic appendicitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Gangrenous acute appendicitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Perforated acute appendicitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 6,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Select the main functional sign in acute appendicitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abdominal pain",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Loss of appetite",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nausea",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Alteration of intestinal transit",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 7,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "The following statements about the incidence of acute appendicitis are true, EXCEPT:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It’s the most common abdominal emergency",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The incidence is higher in the elderly",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 8,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Select the optimal treatment options for the appendiceal mass with confirmed abscess:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Conservative therapy, including antibiotics and physiotherapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Extraperitoneal drainage of the abscess (Pirogov incision)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ultrasound/CT guided drainage of the abscess",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Drainage of the abscess through inferior median laparotomy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Drainage of the abscess through McBurney’s oblique incision",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 9,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Select the clinical and paraclinical parameters for monitoring of the appendiceal mass evolution:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thermometry",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Leukocytosis evolution",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dynamic determination of alkaline phosphatase",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Repeated abdominal ultrasound",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The evolution of the inflammatory mass dimensions",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 10,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Select the clinical features at the onset of acute appendicitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever and vomiting anticipate the abdominal pain",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Vomiting occurring shortly after abdominal pain onset",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nausea appears after abdominal pain",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal bloating",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Diarrhea in some cases",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 11,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Select the borders of the Iacobovici triangle:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Linia bispinalis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The median subumbilical line",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The external edge of the rectus abdominis muscle",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The right external third of the linia bispinalis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The right spino-umbilical line",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 12,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Select the correct statements about acute appendicitis in an inguinal hernial sac:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The appendix is detected in the inguinal hernial sac",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Simulates a strangulated hernia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Is named Littre hernia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Can lead to the phlegmon of the hernial sac",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Is named Amyand hernia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 13,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "The appendiceal mass (infiltrate) can be manifested by the following signs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Painless formation in the right iliac fossa",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Alteration of the general condition accompanied by diarrhea",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pain on palpation in the right iliac fossa",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The presence of fluctuation in the right iliac fossa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 14,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "In confirmed acute appendicitis the following manipulations are required:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Laxative medication",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Enema",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Broad spectrum antibiotics",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Surgical intervention",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Laparoscopic appendectomy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 15,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Generalized peritonitis of appendiceal origin is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alteration of the general condition",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Altered bowel habits",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Leukocytosis 15-20.000",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Abdominal pain with posterior referral",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 16,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Select the clinical signs of acute appendicitis in adults at the onset of the disease:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pain in the right iliac fossa",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Early inappetence",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fever > 39°C",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dry tongue with white deposits",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Arrest of bowel transit",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 17,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Choose the possible evolution variants of the appendiceal mass (infiltrate):",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Double stage generalized peritonitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Favorable after medical treatment",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Abscess formation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Always regresses spontaneously",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fistulization",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 18,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Select the morphopathological variants of acute appendicitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Catarrhal",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Toxic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Gangrenous",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Phlegmonous",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cystic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 19,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Acute appendicitis in children should be differentiated with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute gastroenteritis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mesenteric lymhadenitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Intestinal intussusception",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Omphalocele",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Urinary infection",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 20,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Select the position variants of the vermiform appendix:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Retrocaecal",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mesoceliac",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Retrogastric",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pelvic",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Juxta pancreatic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 21,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "C,D,E",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gastric cardia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The duodenal bulb with descending side of the duodenum",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The fundus of the stomach",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The horizontal and ascending part of the duodenum",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The antral part of the stomach",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 22,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "CS Alegeţi factorul patogenetic, dezechilibrul căruia determină apariţia ulcerului gastric Select the pathogenetic factor, which imbalance will determine the occurrence of gastric ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Secretory factor",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Alimentary factor",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Neuro-psyhiatric factori",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Protective factor",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hereditary factor",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 23,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "CS Select the useful diagnostic test in monitoring of anti-Helicobacter pylori therapy:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Detection of urease",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Biopsy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Histology",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bacteriology",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Serology",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 24,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "CS Indicate the diagnostic method used to detect the source of upper digestive haemorrhage:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Radioisotop scanning",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ultrasound",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The barium examination of the gastrointestinal tract",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fibroesophagogastroduodenoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Selective angiography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 25,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "CS Select the period of perforated ulcer characterized by the following clinical signs: vomiting, accelerated pulse, superficial breathing, hypotension and lack of intestinal transit:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "False improvement",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Shock",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Diffuse peritonitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Preperforation period",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Period of onset of perforation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 26,
+      "question_number": 23,
+      "type": "single",
+      "question_text": "CS Select surgical procedure indicated for perforation of chronic gastric ulcer in 40-60 years old patient admitted within 6 hours from onset:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Simple suture of the ulcer",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Gastric resection (primary partial gastrectomy)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Biopsy with ulcer suture Oppel procedure",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 27,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "CS Select the dominant clinical sign of the chronic duodenal ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Haematemesis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Nausea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pain",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Tenesmus",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 28,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "CS Define the Bergman's sign, determined in bleeding peptic ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decrease of epigastric pain at the beginning of bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microscopic upper bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The presence of ulcerogenic adenoma in the pancreas",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rectal bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Esophageal varices bleeding",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 29,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "CS Malignancy of gastroduodenal ulcer more often occurs when it is localized in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The greater curvature of the stomach",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The duodenal bulb",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Gastric cardia region",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The gastric fundus region",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The lesser curvature of the stomach",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 30,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "CS Select the gastric secretion phase appreciated by Hollender test:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "At night",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Basal phase",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Intestinal phase",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cephalic phase",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hormonal phase",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 31,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "CS Select the grade of upper digestive bleeding at loss of 1000-1500 ml of blood (30% of circulating volume):",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "IV",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "I",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "II",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "III",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "V",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 32,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "CS According to Johnson classification the lesser curvature ulcer is classied as:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Type IV",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Type V",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Type I",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Type II",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Type III",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 33,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "СS Indicate the most common gastric drainage surgerical procedure associated with truncal vagotomy in peptic ulcer disease:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Judd Pyloroplasty",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Finney Pyloroplasty",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Jaboulay Gastroduodenostomy",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Gastrojejunostomy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Heineke-Miculicz Pyloroplasty",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 34,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "CS Select the rare complication that occurs in the duodenal ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Malignancy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gastric outlet obstruction",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Penetration",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Perforation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 35,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "CS Pacient C., 45 year old, with a long history of duodenal ulcer refractory to drug therapy, and the prevalence of hyperacidity after the Kay test, the specifed operation is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Highly selective vagotomy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Truncal vagotomy with ulcer excision and gastric drainage",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Selective vagotomy with Jaboulay gastroduodenostomy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Truncal vagotomy with gastrojejunal anastomosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 36,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "/3 partial gastrectomy ( Gastric resection 2/3)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "CM Select treatment guidelines for Mallory-Weis's syndrome:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Antacid and hemostasis drugs",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hormonal therapy (Corticosteroids)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pituitrin",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blakemore tube insertion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 37,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "CM Select the types of gastric outlet obstruction as result of peptic ulcer disease:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cardiac",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mediogastric",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pylobulbar",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Postbulbar",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Stenosis in the fundus region",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 38,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "CM Select the most common complications in duodenal ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Malignancy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Gastric outlet obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Penetration",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Perforation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 39,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "It is important to differentiate bleeding from ulcer from bleeding caused by esophageal varices",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Waiting for 48 hours to perform medical hemostasis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is operated after 48 hours to reduce mortality",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The hemorrhage source is located up to Treitz",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 40,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "CM Select the features of Zollinger-Ellison Syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increase of basal nocturnal secretion",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Constipation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Frequent and acid vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Frequent upper gastrointestinal bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Intensive, continuous epigastric pain with nocturnal crisis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 41,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "CM Select types of atypical ulcer perforation:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sealed (Covered)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Blind perforation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Perforation of the posterior duodenal wall",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Perforation of the cardiac part of the stomach",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In the free peritoneum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 42,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "MC Select clinical conditions that are radiologically manifested by pneumoperitoneum:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Perforation of the abdominal part of esophagus",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Perforated gastroduodenal ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Intestinal perforation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Perforation of the gallbladder",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Perforation of the urinary bladder",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 43,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "MC The clinical features (signs) of the perforated duodenal ulcer in the third phase of evolution is dominated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "„board like” abdomen",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Abdominal distension",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Upper digestive haemorrhage",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Septic shock",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pain in the right hypochondrium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 44,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "MC Specify the diseases that can cause the appearance of stress ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Extensive burns",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Severe polytrauma",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Chronic ingestion of aspirin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sepsis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 45,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "MC Select the components of Darrow's syndrome, characteristic for gastric outlet obstruction:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypochloraemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hypokalemia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hyperkalaemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hyperazotaemia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Metabolic Alkalosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 46,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "MC Select the components of the Mondor's triad, characteristic of the perforated ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Violent epigastric pain",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tenderness of the abdominal wall",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hyperesthesia of skin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pneumoperitoneum",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "History of peptic ulcer disease",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 47,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "MC Specify the signs that can be detected in the perforated ulcer during percussion of the abdomen:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "disappearance of hepatic dullness",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Celaditi's sing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "appearance of dullness in the right parietal-colic space",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Mandel's sing",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blooping in the epigastric region",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 48,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "MC The presence of subdiaphragmatic free air on an abdominal radiography is characteristic of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Perforated gastric ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Biliary ileus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Intestinal obstruction caused by adherent",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Acute cholecystitis with perforation",
+          "is_correct": false
+        },
+        {
+          "letter": "A",
+          "text": "MC Select methods of endoscopic hemostasis used in upper digestive bleeding:",
+          "is_correct": true
+        },
+        {
+          "letter": "A",
+          "text": "MC Specify the correct statements about the treatment of peptic ulcer disease with proton pump inhibitors:",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 49,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "The standard dose of lansoprazole is 30 mg / day for 4-8 weeks",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The serum level of gastrin normalized 2 months after cessation of treatment",
+          "is_correct": true
+        },
+        {
+          "letter": "A",
+          "text": "MC Specify in what cases the perforated ulcer suturing is prescribed:",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Perforated ulcer in young people",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chronic gastric ulcer",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Аcute ulcer with severe co-morbidity in the elderly",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 50,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "Chronic ulcer with peritonitis 24 hours (chronic perforating ulcer complicated by peritonitis over 24 hours)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "MC A stomach ulcer such as Johnson III has the following characteristics:",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hypersecretion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It is located in the prepiloric antral region.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Giant ulcer located in the cardia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 51,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "The \"niche\" projection does not extend beyond the gastric lumen",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Absence of peristalsis in the in the area around the ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "A",
+          "text": "MC Which of the endoscopic estimates are indications for emergency surgical treatment in hemorrhagic gastroduodenal ulcer?",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "I a (Spurting hemorrhage)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "I b (Oozing hemorrhage)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "II a (Non bleeding Visible vessel) > 2 mm",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 52,
+      "question_number": 35,
+      "type": "multiple",
+      "question_text": "MC Select discirculatory hypoxic ulcers that occur as a result of deficit gastrointestinal protective factors",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atherosclerotic ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Curling's ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cushing's ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hypovolemic shoc ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ulcer of Zollinger-Ellison Syndrom",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 53,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Select the false statement for the traumatic lesions of the esophagus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "They may be spontaneous",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Frequently associates with pleural lesions",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Currently the most frequent are iatrogenic lesions",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Surgery is recommended within the first 24 hours",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 54,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Select the most feasible sign for traumatic aortic lesion in simple chest X-ray:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Obliteration of the aortic-pulmonary window",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Compression of the main bronchus on the left",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Displacement of the trachea",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Enlargement of the mediastinum",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Abnormal contour of the aorta",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 55,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Aortic lesions are more commonly caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wounds caused by a white weapon",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Wounds caused by a firearm",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Crushing the chest",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Closed trauma by deceleration",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Closed trauma by a hit from back",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 56,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Select the false statement for haemothorax:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "There is a build-up of blood in the pleural cavity",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The most common source are intercostal vessels",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Severe obstructive respiratory insufficiency occurs",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It may be the cause of restrictive respiratory disorders",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Always requires thoracotomy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 57,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "In thoracic traumas thoracocentesis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "A complex maneuver, with a risk of bleeding and other major complications, which will only be performed by the chest surgeon in the operating room",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "It dramatically ameliorates the condition of the patient with massive pneumothorax",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "It's a purely curative manoeuvre, not diagnostic",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It can be therapeutic",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It can be diagnostic",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 58,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Thoracocentesis is performed taking into account the following correct statements:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It has many risks and is not indicated in the absence of a definite diagnosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is indicated in haemothorax",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "It is indicated in all cases of pneumothorax",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It can be therapeutic",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It's purely diagnostic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 59,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "The volume of surgical intervention in cardiac tamponade in trauma consists of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The blood from the pericardium is evacuated",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Allows direct cardiac massage",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Antero-lateral thoracotomy is the most useful approach",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Median sternotomy allows a quick and wide access",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The pericardium is sutured hermetically to protect the heart",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 60,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Sternal fractures are characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fractures without displacement are not excluding the presence of intrathoracic lesions",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The uncoupled safety belt presents a risk factor",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "It is usually associated with coastal fractures",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Appear frequently in car accidents",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The coupled safety belt presents a risk factor",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 61,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Flail chest causes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decreased cardiac output by mediastinal balancing",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Decreased ventilation due to paradoxical breathing",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 62,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Cardiac lesions from thoracic trauma can be characterized by the following correct statements :",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wounds are more common than concussions",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The presence of pericardial blood requires emergency surgery",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pericardic murmur is a constant sign",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The Beck triad is constantly present",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Contusions are more common than wounds",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 63,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Chose the indications for thoracotomy in thoracic trauma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "There is initially 1000 ml of blood on the drainage tube",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bleeding at a rate of more than 250 ml / hr for 2 hours",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Haemothorax with coagulated blood",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bleeding at a rate of over 50 ml / hr for 5 hours",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bleeding at a rate of more than 100 ml / hr for 2 hours",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 64,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "CS Indicate postoperative post-splenectomy specific complication:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pancreas lesion",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Haemoperitoneum",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Systemic infections with encapsulated germs",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Postoperative eventration",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Postoperative wound suppuration",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 65,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "CS Pringle maneuver for the temporary control of haemorrhage in exploratory laparotomy is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Application of local haemostatics",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Digital clamping of bleeding sources",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Median xifo-pubic incision",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic pedicle clamping in bleeding from hepatic rupture",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Clapming of the splenic hillum in delayed splenic rupture",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 66,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "CS Select the correct treatment method for penetrating perforating wounds:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Administration of analgesics and wound monitoring",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Wound dressing associated with antibiotic therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Vaccination against pneumococcal infections",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 67,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "CS Indicate the most common complication that may occur as a result of pancreatic trauma:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Generalized septic peritonitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Massive haemoperitoneum",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Subphrenic abscess on the right",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute pancreatitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chronic pancreatitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 68,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "CS Select the surgical management in case of spenic injuries with haemodynamic stability:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Splenectomy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Antibiotic therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Vaccination against pneumococcal infections",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Coastal fractures immobilization",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Non-operative treatment",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 69,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "CS Select the mandatory measure in all cases of abdominal wounds:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Exploratory laparotomy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tetanus prophylaxis and antibiotic prophylaxis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 70,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Indicate the form of peritonitis that evolves without the presence of pathogenic germs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Primary",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Secondary",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tertiary",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Specific",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Postoperative",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 71,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "In a 46-year-old patient who underwent appendectomy for acute gangrenous appendicitis, on the 5th postoperative day there have appeared obtuse pains in the suprapubic region, tenesmus, severe pain in defecation and dysuria, fever 37,8- 38,5°C. What is the presumptive diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute paraproctitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute anorectal thrombosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diffuse peritonitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Abscess of Douglas space",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Acute pyelonephritis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 72,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Indicate the most common causes of peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute intestinal obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Perforated gastroduodenal ulcer",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute salpingitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Acute appendicitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Gastric cancer",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 73,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "For acute peritonitis is NOT characteristic:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Muscular abdominal contraction",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Courvoisier symptom",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Tachicardia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Retention of gas and faecal excretion",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vomiting",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 74,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Indicate the main clinical sign in acute peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Abdominal pain",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bloody stool",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Retention of gas and faecal excretion",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fever",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 75,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Acute peritonitis may be secondary to the following conditions, EXCEPTION being:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Perforation of Meckel’s diverticulum",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Crohn illness",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stenosis of Vater papillae",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Richter strangulation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute intestinal obstruction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 76,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Indicate the surgical gesture in Douglas abscess:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ecoguided puncture of the abscess through peritoneal cavity:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Evacuator enema",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Opening and draining the abscess by lower median laparotomy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Puncture, transrectal opening and draining of the abscess",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Only conservative treatment",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 77,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Indicate the most suggestive sign for establishing the diagnosis of acute postoperative peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pain",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pneumoperitoneum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Persistent intestinal ileus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Diuresis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 78,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "A 70 years old pacient with a history of heart attack prezents the clinical picture of generalized peritonitis with a 5-day onset. Indicate the medical-surgical tactics:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Emergency surgery after 24 hours of preoperatory preparation",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Immediate surgery after administration of cardiotonic drugs",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Immediate surgery after hydro-electrolytic repletion",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "No need for preoperatory preparation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 79,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "In a patient with acute diffuse fecalide peritonitis during the laparotomy there has been detected a resected neoplasm of the ascendant peritonitis with perforation of the proximal tumor intestine.Indicate the volume of the operation:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Suturing of the perforation with the application of ileotransversoanastomosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Right hemicolectomy with terminal ileostomy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 80,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Indicate the purpose of gastrointestinal intubation in the treatment of diffuse purulent peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Evidence of fluid losses in the digestive tract",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Decompression of the intestine",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Feeding the patient through the probe",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Introduction of drugs through probe",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Profylaxis of paralytic intestinal occlusion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 81,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Indicate clinical manifestations attributed to the reactive phase of acute peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pain in the suprapubic region when performing",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tachicardia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Irreversible hydroelectrolytic disruptions",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Muscular defencity of anterior abdominal wall",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Leukosytosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 82,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Indicate the most commonly used routes of antibiotic administration in the postoperative period in patients with diffuse peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Subcutaneous",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intramuscular",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Intravenous",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Intraarterial",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intraabdominal",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 83,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Indicate the correct assertions on argumenting the performance of the laparotomy incision in acute diffuse peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appropriate revision of the peritoneal cavity",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Optimal sanitation of the peritoneal cavity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Minor trauma of the peritoneal cavity organs",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Minor losses of blood",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Minimal wound suppuration risk",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 84,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Indicate the forms of acute peritonitis in which fibrin deposition on parietal and visceral sheets is determined:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Serous",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Purulent",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fecaeloid",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fermentative",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fibrinous",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 85,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Indicate maladies that can cause fake surgical abdomen syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Aortic dissection aneurysm",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Retroperitoneal hematoma",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Multiple rib fractures",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Reily syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Strangulated femoral hernia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 86,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Acute diffuse peritonitis may occur in the following forms of acute peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appendicular colic",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute catarrhal appendicitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute phlegmonous appendicitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute gangrenous appendicitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Acute perforative appendicitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 87,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "For the terminal phase of the acute peritonitis are characteristic:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Adinamy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hipertermy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tachicardia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Arterial hypotony",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Arterial hypertony",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 88,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "List the therapeutic measures in the complex treatment of the acute diffuse peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Non-operative treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intoxication reduction",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Correction of metabolic disorders",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Antibiotherapy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 89,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Indicate the diagnostic criteria of the anaerobic peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fulminant evolution",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mrked intoxication",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bacteriological confirmation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 90,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Indicate the etiologic treatment of the acute peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibioticotherapy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pleurostomy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lavage of peritoneal cavity",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Surgical treatment",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Corticotherapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 91,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "List the consequences of acute peritonitis at systemic level:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Metabolic alkalosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Metabolic acidosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Respiratory acidosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Liver failure",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Kidney failure",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 92,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Specify the symptoms that facilitate the diagnosis of postoperatory peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Presence of hyperperistaltism",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute kidney failure, acute respiratory failure",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Purulent secretions through the wound/on drainage tubes",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Presence of pneumoperitoneum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 93,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Specify the clinical signs present at abdomen palpation in secondary diffuse peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of liver dullness",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Muscle defense",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Shielded dullness on the flanks",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fluctuation in the right iliac beam",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Epigastric depression",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 94,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Indicate the microflora present in tertiary peritonitis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fungi",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bacteria with low pathogenesis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Enterococci",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Clostridia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Staphylococci",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 95,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Choose the false statement, which does not characterize the deep venous system of the inferior limbs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The deep venous system drains about 90% of the total inferior limbs’ blood flow",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The venous circulation within the foot region is bidirectional",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The gravitational force is the most important factor which determines the venous return",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Deep veins are located below the aponeurosis (subaponeurotic)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Doppler examination is the method of choice in evaluation of the vessels’ permeability",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 96,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "List the complications that may occur as a result of varicose vein sclerotherapy:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Infiltrations",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Acute thrombophlebitis of the superficial and deep veins",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thromboembolism of the pulmonary artery",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Regional skin necrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Arteriovenous fistula",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 97,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "List the methods that can be used to prevent massive pulmonary thromboembolism in the case of a floating inferior vena cava thrombus:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thrombectomy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Plication of inferior cava vein",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Resection of the inferior cava vein",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Appling cava-filters",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Creation of the aortocaval fistula",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 98,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Indicate the specific methods in diagnosis of lung embolism:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "X-ray of the thorax",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Electrocardiography (ECG)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cardiac ultrasound",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Angiopulmonography",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary scan perfusion",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 99,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Indicate the factors involved in the thrombi formation:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lesion to the venous wall",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Presence of the congenital arteriovenous fistulae (șunturi)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hypercoagulation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Disturbance of the heart rate",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Slow blood flow in the veins",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 100,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Select the characteristics of post-thrombotic (post-phlebitic) syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Elongation of lower limbs",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pain in the lower limb",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased limb volume",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Deformation of leg joints",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Trophic ulcers",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 101,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "The aims of the surgery for varicose veins are, EXCEPT:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To stop the venous reflux through the valve of the magna saphenous vein",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Modeling of the incompetent valves",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Suspension of reflux through the collaterals of the magna saphenous vein",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Insertion of cava-filters",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "To stop the reflux through communicating and collateral veins",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_4th year_Vozian",
+      "source_file": "data/Graduation Exam Tests/Surgery_4th year_Vozian.docx",
+      "question_order": 102,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Indicate the factors that influence positively the venous blood circulation:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Residual systolic force",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Diastolic aspiration of atria",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thoracic aspiration",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Intraabdominal pressure",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Musculovenous pump",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1665 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+  "module": "Acute pneumonia_2026_OC",
+  "folder": "Pediatrics",
+  "questionCount": 48,
+  "questions": [
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Which of the following does not represent a clinical or morphological form of community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lobular pneumonia (bronchopneumonia)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lobar pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Segmental pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Interstitial pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chronic pneumonia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which of the following is not a pathogenetic stage of pneumococcal pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Latent infection stage",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Resolution",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Grey hepatization",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Red hepatization",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Consolidation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Which auscultatory finding is most specific for acute community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Prolonged expiration with grunting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Loud respiratory sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increased chest wall movement on the affected side",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diffuse dry rales and wheezing",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Localized fine moist crackles that persist after coughing",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "What is the most common causative organism of lobar pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Staphilococcus aureus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Haemophilus influenzae",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Klebsiella pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "β-hemolytic streptococcus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "What is the basic diagnostic method for confirming community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lung scintigraphy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Spirometry",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chest x-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bronchography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Which sign is not characteristic of segmental pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Involvement of one or more lung segments",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Often presents with relatively few clinical signs",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wheezing is a typical feature",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Frequently associated with atelectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Triangular opacity on chest X-ray with the base toward the hilum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "What is the primary route of infection spread in community-acquired pneumonia in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ascendent spread of infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Spread from pleura to lung",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Aerogenous spread of infection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Lymphogenous spread",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Spread from mediastinum to lung",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which antibiotic is recommended as first-line therapy for uncomplicated community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Amikacin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Co-trimoxazole",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Amoxicillin",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Doxycycline",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Tetracycline",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "What is the optimal duration of antibiotic therapy for uncomplicated community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "One day after normalization of temperature",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Three days after normalization of temperature",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Seven to ten days",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Until cough disappears",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Until complete radiologic resolution",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which pathogen is most commonly associated with atypical pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Haemophilus influenzae",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Mycobacterium tuberculosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Mycoplasma pneumoniae",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pseudomonas aeruginosa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "What is the first-line antibiotic treatment for atypical pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Macrolides",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Second generation cephalosporins",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Third generation cephalosporins",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Aminoglycosides",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Aminopenicillins",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "What is the preferred route of antibiotic administration in children with uncomplicated community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intramuscular administration",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intravenous administration",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Oral administration",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Administration by inhalation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intrapleural administration",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Which antibiotic is recommended for the treatment of pneumonia caused by Mycoplasma pneumoniae in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ampicillin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tetracycline",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azithromycin",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Cefotaxime",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Co-trimoxazole",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "What is the most frequent cause of atypical pneumonia in school-aged children and adolescents?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Legionella",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pneumocystis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cytomegalovirus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Toxoplasma",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mycoplasma",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "What is the most common etiology of community-acquired pneumonia in children aged 1–5 years?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pseudomonas aeruginosa",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mycoplasma pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Haemophilus influenza",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Klebsiella pneumoniae",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Which antibiotic is recommended for treating pneumonia caused by β-lactamase–producing Haemophilus influenzae?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Phenoxymethylpenicillin (Penicillin V)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Amoxicillin/Clavulanic Acid",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Amoxicillin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ampicillin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Macrolides",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which form of pleurisy is suggested by pleural fluid analysis showing 80% lymphocytes, 15% neutrophils, and 5% red blood cells?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Purulent pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Serous pleurisy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hemorrhagic pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sero-hemorrhagic pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fibrinous pleurisy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "What is the most probable cause of pneumonia in children with immunodeficiency?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pneumococcal pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Staphylococcal pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Mycoplasma pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pneumocystis pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Viral pneumonia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 18,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Which WHO clinical criteria are most specific for diagnosing acute community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cough",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tachypnea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Presence of bronchial obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Intercostal and subcostal chest retractions",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Poor feeding",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 19,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "What are the recognized risk factors for community-acquired pneumonia in early childhood?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Malnutrition",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Immunodeficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Formula feeding",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rickets",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Prematurity",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 20,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Which signs are characteristic of community-acquired pneumonia in early childhood?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea (shortness of breath)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Nasal flaring",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Localized rales and crackles",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary emphysema",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chest retractions",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 21,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Which statements describe pleurisy associated with community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It may develop simultaneously with the pulmonary inflammatory process",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It may appear 2–3 weeks after pneumonia onset",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pleural effusion is most often serous and/or fibrinous",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 22,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "What are the most common etiological agents of community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Haemophilus influenzae",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mycoplasma pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Enterobacteriaceae",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pseudomonas aeruginosa",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 23,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Which findings are characteristic of alveolar condensation syndrome in community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diffuse bilateral ronchi on lung auscultation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Localized subdulness on percussion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Prolonged expiration",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased vocal fremitus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Localized crackles on auscultation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 24,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Which findings suggest treatment failure in community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Decreasing infiltrates on follow-up chest X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increasing leukocytosis with neutrophilic left shift",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Clinical improvement",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Progressive worsening of lung examination findings",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 25,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Which statements that describe bronchopneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "General symptoms may predominate over local physical findings",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is one of the most common forms of pneumonia in childhood",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The inflammatory process is often bilateral or disseminated",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Occurs mainly in children older than 5 years",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Occurs mainly in children younger than 5 years",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 26,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Which radiological findings may be seen on chest X-ray in uncomplicated community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lobular emphysema",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inflammation of the interlobal pleura",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased density of lung markings",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Micronodular or macronodular opacities",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increased interstitial density",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 27,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "What are possible complications of community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lung abscess",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bacterial meningitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Atelectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Foreign body aspiration",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 28,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Which conditions should be considered in the differential diagnosis of community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute nasopharyngitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary edema",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Tuberculosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Epiglottitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Foreign body aspiration into the lower airways",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 29,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "What are the criteria for hospitalization of children with community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Age under 6 months",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Presence of bacterial extrapulmonary complications",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Failure of outpatient treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Unfavorable socio-economic conditions affecting care",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "School-aged child with lobar pneumonia alone",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 30,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Clinical follow-up by the family physician for approximately 3 months",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Routine repeat chest radiography",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary function testing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 31,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "What are the main principles of treatment for community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "General supportive care (nutrition, rest, hydration)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Antihistamine therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Physical therapy when indicated",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Etiological (antimicrobial) treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Symptomatic treatment",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 32,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Which measures are included in symptomatic treatment of community-acquired pneumonia in school-aged children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Expectorants and mucolytics",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Oral rehydration",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Antipyretics for fever",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory physiotherapy and postural drainage",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Antihistamine therapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 33,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Which antibiotic groups are used for uncomplicated community-acquired pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Oral aminopenicillins",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oral second-generation cephalosporinsy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Macrolides",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Oral tetracyclines",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Oral aminoglycosides",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 34,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Which antibiotics are used for atypical pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ampicillin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Clarithromycin",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azithromycin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Josamycin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Nitrofurantoin",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 35,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "Which infectious agents most commonly cause atypical pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mycoplasma pneumoniae",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Staphylococcus aureus",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Escherichia coli",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Chlamydia pneumoniae",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 36,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "What are recommended treatments for uncomplicated community-acquired pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intravenous or intramuscular antibiotics routinely",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oral antibiotics",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cough medicine when appropriate",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Antibiotic therapy for 21 days",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Oral aminopenicillins as first-line therapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 37,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "What are risk factors for pneumonia in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Underlying pulmonary pathology",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Prematurity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pregnancy complications (e.g., toxicosis)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Maternal respiratory infection near delivery",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Prolonged neonatal jaundice",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 38,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Which antibiotics may be used in the treatment of staphylococcal pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Penicillins (anti-staphylococcal)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chloramphenicol",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Aminoglycosides",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cephalosporins",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Fluoroquinolones",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 39,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Which antibiotics are appropriate for pneumonia caused by Gram-positive bacteria in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Amoxicillin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Aminoglycosides (e.g., gentamicin)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chloramphenicol",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tetracycline",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cephalosporins",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 40,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Which diseases may be associated with Chlamydia infection in newborns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Meningitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Conjunctivitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Urethritis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Encephalitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 41,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Which clinical signs may occur in a child with exudative pleurisy?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Frequent painful cough",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Reduced breath sounds over the affected area",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Asymmetric chest expansion",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Ronchi on auscultation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dullness to percussion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 42,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Which signs suggest pneumothorax in a child?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sudden worsening of dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Mediastinal shift toward the affected side",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mediastinal shift toward the healthy side",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Absence of bronchovascular markings on X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Decreased breath sounds on the affected side",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 43,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "Which factors predispose to pneumonia in early childhood?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Immature alveolar development",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rich pulmonary vascularization",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Reduced ciliary function and ineffective cough",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Horizontal ribs with weak intercostal muscles",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Rapid respiratory rate",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 44,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "What diagnostic criteria support pneumonia in infants under 1 year?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cough",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Chest retractions",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Respiratory rate more than 40 breaths per minute",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Respiratory rate more than 50 breaths per minute",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 45,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "Which antibiotics may be used as second-line treatment for acute pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Erythromycin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gentamicin",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cephalosporins",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Clindamycin",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Amoxicillin",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 46,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "What complications may occur in children with acute pneumonia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pleurisy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Atelectasis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pyopneumothorax",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cardiovascular complications",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Neurotoxicity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute pneumonia_2026_OC",
+      "source_file": "data/Pediatrics/Acute pneumonia_2026_OC.docx",
+      "question_order": 47,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "Which features are characteristic of Mycoplasma pneumonia in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Seasonal occurrence (often autumn)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cervical lymphadenopathy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lung tissue destruction",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Eosinophilia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hepatosplenomegaly",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

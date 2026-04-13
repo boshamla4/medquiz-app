@@ -1,0 +1,4350 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+  "module": "Surgery_3rd year_Vescu",
+  "folder": "Graduation Exam Tests",
+  "questionCount": 124,
+  "questions": [
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "What is the blood group?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "A complex of leukocyte's antigens",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "A complex of immunoglobulins",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "A complex of erythrocyte's antigens",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "A complex of platelet's antigens",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Antigens of transplantation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "During the determination of blood group with monoclonal antibodies (Tsoliclon-test), agglutination was obtained with Tsoliclon Anti-B and no agglutination was registered with Tsoliclon Anti-A. Indicate the correct blood group.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "0(I)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "A(II)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "B(III)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "AB(IV)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Error in blood group determination",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "The most frequent way of blood transfusion is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intravenous way",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Intraarterial way",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Intraosseous way",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Intraaortic way",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intracardiac way",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "What temperature is required for RBC (red blood cells) concentrate preservation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "0°C",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "-2-4°C",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "+4+6°C",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "+8+10°C",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "0+1°C",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Select the correct method of blood transfusion for biological test?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bolus transfusion of 25 ml of blood, repeated twice with interval of 3-5 minutes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bolus transfusion of 25 ml of blood, repeated thrice with interval of 3-5 minutes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Slow transfusion of blood during 15 minutes, followed by 3-5 minutes of expectation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Single bolus transfusion of 25 ml of blood",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Biological test is performed only in case of plasma transfusion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Method of blood autotransfusion is performed as follows:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Collecting of blood from patient is done several weeks before elected surgery",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Several samplings of 400-500 mL of blood with an interval of one week are performed",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Several samplings of 100-200 mL of blood with an interval of two days are performed",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Last collecting is made no later than 12 hours prior to surgery",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Last collecting is made no later than 72 hours prior to surgery",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Acute preoperative normovolemic haemodilution means the following measures:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Exfusion of 400-500 mL of patient's blood one week before surgery",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Exfusion of 750-1000 mL of patient's blood immediately before surgery",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Replacement of collected blood with the blood substitutes solutions",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Replacement of collected blood with the donor plasma",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The collected blood is transfused back to the patient during or after surgery",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "In a patient with traumatic rupture of the spleen and hemoperitoneum, the blood from abdominal cavity was collected using the “Cell Saver” device and transfused intravenously to the patient. How is called this method?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Managed haemodilution",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reinfusion",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Rehydration",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Plasmapheresis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hemodialysis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Blood reinfusion can be performed in case of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gastric ulcer bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Traumatic rupture of the spleen",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ruptured ectopic gestation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Traumatic amputation of the lower limb",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Blunt thoracic trauma with hemothorax",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Reinfusion of blood collected from the abdominal cavity is impossible in case of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Injury of diaphragm",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Injury of spleen",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Injury of abdominal hollow organs",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Injury of large blood vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Poor general status of patient",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "What complications of blood transfusion do not refer to the infectious?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Syphilis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Viral hepatitis B, C, D",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "HIV infection",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hemolytic shock",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "TACO syndrome",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Specify which of the listed conditions are related to surgical infection.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute hydradenitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Liver abscess",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Postoperative wound suppuration",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Chronic pyelonephritis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "What infectious processes are related to acute specific surgical infection?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anthrax",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Syphilis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tetanus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Actinomycosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Tuberculosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "What does suggest the symptom of fluctuations in the surgical soft tissue infection?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Formation of the cavity filled with pus",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Presence of inflammatory process in the phase of infiltration",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Presence of gas in the tissues",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anaerobic non-clostridial nature of infection",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Involvement in the pathological process of deeper lying organs",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Specify the typical changes in blood analysis during acute surgical infection.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Leukocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Shift of leukocyte formula to the left",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased erythrocyte sedimentation rate",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Eosinophilia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "In case of furuncle a purulent inflammation initially develops in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Subcutaneous adipose tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sebaceous gland",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Skin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hair follicle",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Sweat gland",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "In which cases are required hospitalizations of patients with furuncle?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "With furuncle of hip in a young patient without comorbidities",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "With furuncle in phase of abscess formation in a patient with severe diabetes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "With the localization of furuncle on the foot and inability to support the limb",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "With the localization of furuncle in the nasolabial triangle",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "With history of furuncle disease",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "A purulent inflammation of sweat glands is called:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Carbuncle",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hydrosalpinx",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Furuncle",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hydradenitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Axillary streptococcal dermatitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 18,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "Which of the statements relating to the phlegmon are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Suppurative process spreads along fascial and adipose spaces",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "An accumulation of pus is limited by pyogenic capsule",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Symptoms of intoxication are usually not expressed",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Condition of patients always remains satisfactory",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Patients require hospitalization and emergency surgery under general or regional anesthesia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 19,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Carbuncle is characterized by the following features:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Usually develops in the occipital or interscapular areas",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Does not develop in diabetic patients",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Skin over the focus of inflammation is not altered",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "An abscess has the form of \"honeycomb\"",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Symptom of fluctuation is not typical",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 20,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "A typical causative microbial agent of erysipelas is a:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Streptococcus pyogenes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Staphylococcus aureus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Escherichia coli",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pneumococcus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pseudomonas aeruginosa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 21,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Specify the clinical forms of erysipelas.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Phlegmonous form",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Abscess formation form",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bullous form",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Necrotic form",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Erythematous form",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 22,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Specify the typical symptoms of acute mastitis.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Nipple retraction on the side of inflammation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pain and bloating in the mammary gland",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Skin in the form of \"orange peel\"",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Serous and hemorrhagic discharge from the nipple",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 23,
+      "question_number": 24,
+      "type": "single",
+      "question_text": "According to classification of surgical infection by clinical evolution, tetanus refers to:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic non-specific infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chronic specific infection",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute specific infection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute putrid infection",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute anaerobic infection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 24,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "What characterizes lymphangitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Is an acute bacterial infection of lymphatic vessels",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Is a purulent inflammation of lymph nodes",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Is a primary disease",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Is a complication of another infectious process",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Always requires surgical drainage",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 25,
+      "question_number": 26,
+      "type": "single",
+      "question_text": "What differentiates the abscess from the phlegmon?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Need in urgent surgery",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Severe pain in the lesion area",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Leukocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Collection of pus is limited from surrounding tissues by capsula",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "High fever",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 26,
+      "question_number": 27,
+      "type": "single",
+      "question_text": "On what basis bleeding are classified into \"per diabrosis\", \"per rexin\" and \"per diapedesis\"?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "In accordance to the anatomical principles",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "In accordance to the mechanism of occurring",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "In accordance to the external environment",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "In accordance to the evaluation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In accordance to the time of occurring",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 27,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "Which of these bleeding refers to the internal?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bleeding from gastric ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Intramuscular hematoma",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bleeding from the cutting leg wound",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bleeding into the joint cavity",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 28,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "Which of these bleeding refers to the internal intracavitary?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bleeding from gastric ulcer",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bleeding in to the pleural cavity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Uterine bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bleeding into the joint cavity",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cardiac tamponade",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 29,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "Specify the possible causes of bleeding.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Trauma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Destruction of vessel wall in a purulent process",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Disturbances of permeability of the vascular wall",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Myocardial infarction",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Anaerobic clostridial gangrene",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 30,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "Specify the consequences of bleeding?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypostatic pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Blood concentration",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing of circulating blood volume",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute anemia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hemophilia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 31,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "Specify the compensatory reaction of organism to hemorrhage.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Blood dilution (hemodilution)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Centralization of the blood circulation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Decentralization of the blood circulation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hyperventilation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Inclusion of renal compensation mechanism",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 32,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "Specify the pathological phenomena of organism, which develop in the terminal phase of hemorrhage.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acidosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Centralization of the blood circulation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hypoxia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Decentralization of the blood circulation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blood dilution (hemodilution)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 33,
+      "question_number": 34,
+      "type": "multiple",
+      "question_text": "Specify the local symptoms of gastrointestinal bleeding?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hematemesis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Epistaxis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hemoperitoneum",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hemoptysis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Melena",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 34,
+      "question_number": 35,
+      "type": "single",
+      "question_text": "A \"coffee-grounds\" vomiting is characteristic for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intestinal obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute pancreatitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bleeding gastroduodenal ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Injury of spleen",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bacterial pulmonary destruction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 35,
+      "question_number": 36,
+      "type": "multiple",
+      "question_text": "Specify the general symptoms of hemorrhage.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tachycardia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Melena",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Paleness",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Blood vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hypotension",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 36,
+      "question_number": 37,
+      "type": "multiple",
+      "question_text": "Which laboratory parameters reflect the severity of blood loss?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Red blood cells number",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "White blood cells number",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hemoglobin",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hematocrit",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Serum protein",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 37,
+      "question_number": 38,
+      "type": "multiple",
+      "question_text": "What methods of hemostasis refer to temporary?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vessel ligation in the wound",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Digital compression of vessel",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Application of tourniquet",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Application of compressive bandage",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Maximal flexion of extremity in a joint",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 38,
+      "question_number": 39,
+      "type": "single",
+      "question_text": "What definition most appropriately describes sepsis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of bacteria in the bloodstream with purulent metastasis into the tissues and organs",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "A microbial phenomenon characterized by a local inflammatory response to the presence of microorganisms",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Presence and active multiplication of bacteria in the bloodstream",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Presence of bacteria in the bloodstream",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "An infectious process accompanied by an abnormal systemic inflammatory reaction",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 39,
+      "question_number": 40,
+      "type": "single",
+      "question_text": "What is the septicemia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "An infectious process accompanied by an acute inflammatory reaction with systemic manifestations",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "A microbial phenomenon characterized by a local inflammatory response to the presence of microorganisms",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Presence and active multiplication of bacteria in the bloodstream",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Presence of bacteria in the bloodstream",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Presence of bacteria in the bloodstream with purulent metastasis into the tissues and organs",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 40,
+      "question_number": 41,
+      "type": "multiple",
+      "question_text": "For diagnosis of systemic inflammatory response syndrome (SIRS) the following criteria are used:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "White blood cell (WBC) count",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Systolic blood pressure",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Temperature",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory rate",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Heart rate",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 41,
+      "question_number": 42,
+      "type": "multiple",
+      "question_text": "What confirms the presence of systemic inflammatory response syndrome (SIRS)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "White blood cell (WBC) count > 12.000/mm3",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "White blood cell (WBC) count < 4.000/mm3",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Systolic blood pressure < 90 mm Hg",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory rate < 14 breaths/min",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Respiratory rate > 20 breaths/min",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 42,
+      "question_number": 43,
+      "type": "single",
+      "question_text": "Which of the following laboratory results confirms the bacteremia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Positive blood culture",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Leukocytosis with a left shift",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "High level of serum cytokines (TNF)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increased level of C-reactive protein",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "High contents of procalcitonin in the blood",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 43,
+      "question_number": 44,
+      "type": "single",
+      "question_text": "The most frequent causative bacterial agent of gas gangrene is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clostridium hystoliticum",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Clostridium oedomatiens",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clostridium tetani",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Clostridium perfringens",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Clostridium septicum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 44,
+      "question_number": 45,
+      "type": "multiple",
+      "question_text": "Specify the wounds with a high risk of anaerobic clostridial infection of soft tissues (gas gangrene) development.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "With heavy soil contamination",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "With massive damage of muscles and bones",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "With profound and narrow wound channel (gunshot wound)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "With ischemia of tissue caused by arterial injury, or a hemostatic tourniquet application",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Lacerated wounds with a large skin defect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 45,
+      "question_number": 46,
+      "type": "single",
+      "question_text": "Crepitus defined on palpation in anaerobic clostridial infection of soft tissue is associated with:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Penetration of air from the gastrointestinal tract into the wound in postoperative form of infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Friction of bone fragments in the wounds received in open fractures",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Production a lot of exotoxines",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Production of gas in tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Penetration of air from the external environment through the wound channel",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 46,
+      "question_number": 47,
+      "type": "multiple",
+      "question_text": "What are the main goals of large longitudinal incisions (fasciotomy) in anaerobic clostridial infection (gas gangrene) of extremity?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To simplify the excision of necrotized and visual devitalized tissues",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "To accelerate the wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To decrease the compartment syndrome and tissue ischemia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "To improve the access of air to wound channel",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "To prevent the multiplication of clostridia spores",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 47,
+      "question_number": 49,
+      "type": "multiple",
+      "question_text": "What is correctly characterizes tetanus?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Although rare, the tetanus cannot be eradicated",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Infection caused by anaerobic microorganisms with preferential affection of fat and conjunctive tissues",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Neonatal tetanus accounts for 50% of the tetanus-related deaths in developing countries",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The disease is not passed from one person to the next",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Mortality rate for severe tetanus may be as high as 60%",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 48,
+      "question_number": 50,
+      "type": "single",
+      "question_text": "What form of tetanus is less dangerous?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Generalized",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Postinjection (after vaccine administration)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Local",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Neonatal",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cephalic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 49,
+      "question_number": 51,
+      "type": "multiple",
+      "question_text": "Specify the measures for tetanus prevention.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Administration of pharmacologic agents that treat muscle spasms",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Administration of tetanus toxoid in combination with diphtheria toxoid and pertussis vaccine (DTP) to children",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Revaccination is performed each 10 years",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Passive immunization with human tetanus immune globulin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Administration of broad-spectrum antibiotics",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 50,
+      "question_number": 52,
+      "type": "multiple",
+      "question_text": "The increased incidence of sepsis is registered among:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Patients with diabetes mellitus",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Patients with cancer",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Men",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Women",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Patients with atherosclerosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 51,
+      "question_number": 53,
+      "type": "single",
+      "question_text": "Specify the pathogen, which is least likely to cause sepsis.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bacteroides fragilis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Escherichia Coli",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Klebsiella",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Candida",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Staphylococcus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 52,
+      "question_number": 54,
+      "type": "multiple",
+      "question_text": "What pathophysiological mechanisms contribute to the development of ischemia and create anaerobic conditions in anaerobic clostridial infection of soft tissues (gas gangrene)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Spread of gas along the fascial planes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased pressure in the fascial spaces due to edema",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Disturbance of circulation due to thrombosis of peripheral blood vessels",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Spontaneous thrombosis of large arteries",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Rapid multiplication of microorganisms",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 53,
+      "question_number": 55,
+      "type": "multiple",
+      "question_text": "Non-clostridial anaerobic infection can clinically manifest as phlegmon with extensive damage of the following tissues:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Nerves and vessels (neuritis and vasculitis)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Subcutaneous adipose tissue (cellulitis)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Connective tissue (fasciitis)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Muscles (myositis)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bone tissue (osteomyelitis)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 54,
+      "question_number": 56,
+      "type": "multiple",
+      "question_text": "The penetration of pathogenic organisms in the soft tissues of hands most often occurs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "By hematogenous route",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Through the callus, cracks of the skin",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "By lymphogenous route",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "With small foreign bodies (splinters, pieces of metal)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "From infected phalangeal and wrist bones",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 55,
+      "question_number": 57,
+      "type": "multiple",
+      "question_text": "Specify the superficial forms of felon.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Subcutaneous",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tenosynovitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pandaktylitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Paronychia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cutaneous",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 56,
+      "question_number": 58,
+      "type": "single",
+      "question_text": "The term \"pandaktylitis\" refers to:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Purulent inflammation of all fingers of hand",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Purulent inflammation of all digits of foot",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Purulent inflammation of all tissues of one finger of hand",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Purulent inflammation of all tissues of one digit of foot",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fusion of all fingers of hand or foot",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 57,
+      "question_number": 59,
+      "type": "multiple",
+      "question_text": "Edema of the dorsal surface of hand in phlegmon of the palmar surface:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Is noted extremely rare",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Is due exceptionally to rupture of pus on the dorsal surface of hand",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Is noted in most cases",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Is due to features of lymph drainage",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Appears early as a result of friable structure of the subcutaneous tissue",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 58,
+      "question_number": 60,
+      "type": "multiple",
+      "question_text": "What location of abscess is defined as a felon?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Palmar surface of nail phalanx of hand finger",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Plantar surface of nail phalanx of feet finger",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pirogov-Parona's cellular space of forearm",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Nail area of hand finger",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dorsal surface of proximal phalanx of hand finger",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 59,
+      "question_number": 61,
+      "type": "multiple",
+      "question_text": "What characterizes the paronychia?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Process can become chronic",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "On pressing from under nail fold is released a drop of pus",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Infection results from trauma to the eponychial or paronychial region",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "In the nail fold appear mild pain, swelling and redness",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Abscess can spread to the palmar surface of nail phalanx in the form of \"hourglass\"",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 60,
+      "question_number": 62,
+      "type": "multiple",
+      "question_text": "What characterizes the bone felon?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Process can become chronic",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bone felon of I and V fingers can spread to the deep cellular spaces of forearm",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "As a rule, this is an outcome of untreated subcutaneous felon",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Infection penetrates in the bone through the cracks of skin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Typical localization is the nail phalanx",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 61,
+      "question_number": 63,
+      "type": "single",
+      "question_text": "Radiographic changes at bone felon appear:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "On the next day after the onset of disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "After 3-5 days after the onset of disease",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "After 5-7 days after the onset of disease",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "After 10-14 days after the onset of disease",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "After 1.5-2 months after the onset of disease",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 62,
+      "question_number": 64,
+      "type": "multiple",
+      "question_text": "Specify the anatomical forms of phlegmon of the dorsal hand surface.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skin abscess",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Phlegmon of midpalmar space",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Interdigital (commissural) phlegmon",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Subcutaneous phlegmon",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Subaponeurotic phlegmon",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 63,
+      "question_number": 65,
+      "type": "multiple",
+      "question_text": "What are the main causes of malnutrition in surgical patients?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Interruption of normal food intake during the preoperative diagnostic tests",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "A pathological process itself that affects the patient",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Administration of antibiotics, which reduce nutrient absorption",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Depressed state and loss of appetite in patients, who are awaiting surgery",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Restriction of food intake after majority of the surgical procedures",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 64,
+      "question_number": 66,
+      "type": "single",
+      "question_text": "Which from laboratory parameters is most closely correlates with the body protein deficiency?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Serum albumin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Serum prothrombin",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Serum globulin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Blood protein",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lymphocyte count in blood",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 65,
+      "question_number": 67,
+      "type": "single",
+      "question_text": "The calculation of the body mass index is done using following formula:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "% lymphocytes x WBC / 100",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Weight (kg) / height (m2)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Actual weight (100) / ideal weight",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "48.1 kg for height 152 cm plus 1.1 kg for every 1 cm over 152 cm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Weight (g) / height (cm2)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 66,
+      "question_number": 68,
+      "type": "single",
+      "question_text": "What values of the body mass index are corresponding to morbid obesity?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "18.5-24.9",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "25.0-29.9",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "30.0-34.9",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "35.0-39.9",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "40 and more",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 67,
+      "question_number": 69,
+      "type": "single",
+      "question_text": "For what patients the enteral feeding is indicated?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Who have functional digestive tract, but unable sustain an adequate oral intake",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Who have upper entero-cutaneous fistulas",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Who have intestinal obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Who have upper gastrointestinal bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Who have severe diarrhea",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 68,
+      "question_number": 70,
+      "type": "multiple",
+      "question_text": "For what patients the parenteral nutrition is indicated?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "After a massive bowel resection",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "With diabetes mellitus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In early postoperative period after partial gastrectomy",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "In early postoperative period after hemorrhoidectomy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "In neurological coma",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 69,
+      "question_number": 71,
+      "type": "multiple",
+      "question_text": "What complications are typical for morbid obesity?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Systemic hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Type II diabetes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Osteomyelitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Joint diseases",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cholelithiasis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 70,
+      "question_number": 72,
+      "type": "multiple",
+      "question_text": "What postoperative complications are characteristics for patients with morbid obesity?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Depression",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary artery embolism",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Surgical wound infection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Urinary tract infection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 71,
+      "question_number": 73,
+      "type": "multiple",
+      "question_text": "What ways are used for enteral feedings administration?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Via nasogastric tube",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Via gastrostomy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Via Sengstaken-Blakemore esophagogastric tube",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Via rectal tube",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Via subclavian venous catheter",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 72,
+      "question_number": 74,
+      "type": "multiple",
+      "question_text": "The local manifestations of wounds are following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bleeding",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pain",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Damage of inner organs",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Separation of wound margins",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Shock",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 73,
+      "question_number": 75,
+      "type": "multiple",
+      "question_text": "Severity of pain in wound depends on the following factors:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Duration of injure",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Intensity of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Number of nerve endings in the tissues of damaged zone",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Sharpness of traumatic agent",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Power of immune response",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 74,
+      "question_number": 76,
+      "type": "multiple",
+      "question_text": "Intensity of bleeding from a wound is determined by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Status of systemic hemodynamics",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Speed of damage",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Depth of wound",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Status of coagulation system",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Diameter and type (arterial or venous) of damaged vessel",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 75,
+      "question_number": 77,
+      "type": "multiple",
+      "question_text": "What wounds are distinguished depending on the nature of traumatic agent?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chopped",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Lacerated",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cut",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Gunshot",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Accidental",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 76,
+      "question_number": 78,
+      "type": "single",
+      "question_text": "To what type of wounds according to the nature of traumatic agent should be attributed a surgical incision?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Industrial wound",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Stub wound",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Compound wound",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cut wound",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Accidental wound",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 77,
+      "question_number": 79,
+      "type": "multiple",
+      "question_text": "Specify the clinical features of stab wounds.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dehiscence of wound margins is significant",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "High risk of injury of deep anatomical structures",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dehiscence of wound margins is not significant",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "External bleeding is not severe",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Risk of infection is low",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 78,
+      "question_number": 80,
+      "type": "single",
+      "question_text": "Specify the type of wounds, which is the most contaminated.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chopped wound",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Stab wound",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Contusioned wound",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cut wound",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bite wound",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 79,
+      "question_number": 81,
+      "type": "multiple",
+      "question_text": "According to classification by grade of contamination, wounds are divided into:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Contaminated",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Aseptic",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Necrotic",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Putrid",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Purulent",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 80,
+      "question_number": 82,
+      "type": "single",
+      "question_text": "It is known that purulent process in the wound develops when the concentration of microorganisms more than:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "105 (100.000) of microorganisms on 1 gram of tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "104 (10.000) of microorganisms on 1 gram of tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "103 (1.000) of microorganisms on 1 gram of tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "102 (100) of microorganisms on 1 gram of tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "101 (10) of microorganisms on 1 gram of tissue",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 81,
+      "question_number": 83,
+      "type": "multiple",
+      "question_text": "What wounds of the abdomen should be considered as penetrating?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wounds, associated with injury of skin, subcutaneous adipose tissues, aponeurosis, parietal peritoneum, and bowel",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Wounds, associated with injury of skin and subcutaneous adipose tissues",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wounds, associated with injury of skin, subcutaneous adipose tissues, and aponeurosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Wounds, associated with injury of skin, subcutaneous adipose tissues, aponeurosis, and muscles of the anterior abdominal wall",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Wounds, associated with injury of skin, subcutaneous adipose tissues, aponeurosis, muscles of the anterior abdominal wall, and parietal peritoneum",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 82,
+      "question_number": 84,
+      "type": "multiple",
+      "question_text": "What zones of tissue alteration are distinguished in gunshot wounds?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Zone of primary traumatic necrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Zone of traumatic edema",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wound channel",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Zone of molecular concussion and secondary necrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Zone of tertiary necrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 83,
+      "question_number": 85,
+      "type": "multiple",
+      "question_text": "What features differentiate the gunshot wound?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of three zones of tissue alteration",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Heals by primary wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Complicated anatomical character of wound channel",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "High grade of contamination",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Primary surgical processing of wound is finished by placement of primary sutures",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 84,
+      "question_number": 86,
+      "type": "multiple",
+      "question_text": "The following phases of wound healing process are distinguished:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Secondary wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Epithelization and reorganization of scar",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Proliferation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Primary wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Inflammation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 85,
+      "question_number": 87,
+      "type": "single",
+      "question_text": "What cells possess a main role in the second phase of wound healing process (phase of proliferation)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lymphocytes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Fibroblasts",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Macrophages",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Neutrophils",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Platelets",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 86,
+      "question_number": 88,
+      "type": "single",
+      "question_text": "What is granulation tissue?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Epithelial tissue, which covers wound defect",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Firm scar tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Necrotic tissue with high contents of microorganisms",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Gentle connective tissue with newly formed capillaries",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dense clot in the wound, which is formed as a result of adhesion and aggregation of platelets and thrombosis of capillaries and small veins",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 87,
+      "question_number": 89,
+      "type": "single",
+      "question_text": "Wound epithelization begins:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "From the middle of wound",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "From the depth of wound",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "From the edges of wound",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "From the area of wound with the best blood supply",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Simultaneously from the entire surface of wound",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 88,
+      "question_number": 90,
+      "type": "multiple",
+      "question_text": "Types of wound healing include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Healing under scab",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Primary deferred wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Secondary wound healing",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Primary wound healing",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Early secondary wound healing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 89,
+      "question_number": 91,
+      "type": "single",
+      "question_text": "How, as usual, heal superficial wounds?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "By secondary wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "By primary deferred wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "By healing under scab",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "By primary wound healing",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "By early secondary wound healing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 90,
+      "question_number": 92,
+      "type": "single",
+      "question_text": "To local complication of wounds refers:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hemorrhagic shock",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Traumatic shock",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sepsis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Suppuration of wound",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Syndrome of intoxication",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 91,
+      "question_number": 93,
+      "type": "multiple",
+      "question_text": "What complications occur in the third phase of an abdominal wound healing process (phase of epithelization and reorganization of scar)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hematoma",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Eventration",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cachexy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sepsis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Keloid scar",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 92,
+      "question_number": 94,
+      "type": "multiple",
+      "question_text": "What refers to the measures of first medical aid for wounds?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Blood transfusion",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Primary surgical processing of the wound",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Application of aseptic bandage on the wound",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Administration of antibiotics",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Control of bleeding",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 93,
+      "question_number": 95,
+      "type": "multiple",
+      "question_text": "A primary surgical processing of contaminated cut wound include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Drainage of purulent collections",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Definitive hemostasis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Excision of wound margins",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Removing of foreign bodies",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Primary suture application",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 94,
+      "question_number": 96,
+      "type": "single",
+      "question_text": "What type of suture is applied after primary surgical processing of the gunshot wound?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Primary suture",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Primary deferred suture",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Early secondary suture",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Late secondary suture",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sutures are not placed",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 95,
+      "question_number": 97,
+      "type": "single",
+      "question_text": "For the early lysis and removal of necrotic tissue from the wound is used:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibiotics",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Solution of hydrogen peroxide",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Ethylic alcohol",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Proteolytic enzymes",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Boric acid",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 96,
+      "question_number": 98,
+      "type": "multiple",
+      "question_text": "In what circumstances the injury, even small-caliber vessels may be accompanied by severe bleeding, and to be life-threatening for patient?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "In patients with liver cirrhosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "In patients with low blood pressure",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In patients with hemophilia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "In patients, receiving antithrombotic drugs",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "In intoxicated patients",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 97,
+      "question_number": 99,
+      "type": "single",
+      "question_text": "In case of a large wound of the anterior abdomen with evisceration of inner organs, the first medical aid consists in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibiotics administration",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Large aseptic dressing",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Clean the skin surrounding the wound with any antiseptic",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Immediate suturing of the abdominal wound",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Clean the eviscerated inner organs with any antiseptic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 98,
+      "question_number": 100,
+      "type": "single",
+      "question_text": "Primary deferred sutures on the wound are placed:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "During first days after primary surgical processing of the wound, prior to the growth of granulation tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Immediately after primary surgical processing of the wound",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "After development of granulation, but prior to formation of scar tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "After excision of granulation tissue in the wound",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "After development of scar tissue and phenomenon of wound contraction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 99,
+      "question_number": 101,
+      "type": "multiple",
+      "question_text": "Deep vein thrombosis can lead to development of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pulmonary embolism",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Post-thrombotic syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lymphedema",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Venous gangrene",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Muscle atrophy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 100,
+      "question_number": 102,
+      "type": "multiple",
+      "question_text": "Select the possible causes for development of acute limb ischemia.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Arterial trauma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis of the vessel lumen with an atherosclerotic plaque",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Arterial embolism",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Arterial thrombosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Thrombophlebitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 101,
+      "question_number": 103,
+      "type": "single",
+      "question_text": "Sensorial disorders (paresthesia, hypo- or anesthesia) and motor deficit (paresis, paralysis) are characteristic for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Syndrome of acute ischemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Syndrome of chronic ischemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute venous thrombosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chronic venous insufficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lymphedema",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 102,
+      "question_number": 104,
+      "type": "multiple",
+      "question_text": "Specify clinical signs, which are characteristic for the final stage of acute limb ischemia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Significant dilatation of subcutaneous veins",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Severe hip edema and foot hyperemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Marmoreal aspect of the limb (mottling) and hypothermia of the foot",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Moderate calf edema",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Foot paralysis and flexion knee contracture",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 103,
+      "question_number": 105,
+      "type": "single",
+      "question_text": "The group of symptoms known as \"6Р\" is characteristic for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute limb ischemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Chronic limb ischemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Arterial aneurysm",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Acute vein thrombosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chronic venous insufficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 104,
+      "question_number": 106,
+      "type": "multiple",
+      "question_text": "Indicate the signs that are not refer to the \"6Р\" group of symptoms.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Paresthesia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pallor",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Polyuria",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Poikilocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pain",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 105,
+      "question_number": 107,
+      "type": "single",
+      "question_text": "Peripheral arterial embolism is manifested with syndrome of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic venous insufficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chronic ischemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute ischemia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Disseminated intravascular coagulation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Aneurysmal dilatation of artery",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 106,
+      "question_number": 108,
+      "type": "multiple",
+      "question_text": "What comorbidities (concomitant diseases) are typical for patients with acute limb ischemia caused by arterial embolism?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Type II diabetes mellitus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Atrial fibrillation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Varicose veins of lower limbs",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Myocardial infarction",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Abdominal aortic aneurysm",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 107,
+      "question_number": 109,
+      "type": "multiple",
+      "question_text": "Indicate the typical symptoms of acute ischemia of lower limb.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sensory deficit (lack of sensation) at the level of the foot",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Intermittent claudication",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Significant thigh edema",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Motor deficit (limitation or lack of movements) at the level of the foot",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Systolic bruit over the arteries of the foot",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 108,
+      "question_number": 110,
+      "type": "multiple",
+      "question_text": "Specify clinical situations which correspond to diabetic foot syndrome definition provided by WHO.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diabetic neuropathy without foot ulcer, gangrene or infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Infected plantar wound in diabetic patient without neuro- and angiopathy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Foot ulcer associated with diabetic neuropathy",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Toe gangrene associated with angiopathy in diabetic patient",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Foot ulcer in non-diabetic patient with atherosclerosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 109,
+      "question_number": 111,
+      "type": "single",
+      "question_text": "Foot ulcer develops in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Less than 1% of patients with diabetes mellitus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Less than 5% of patients with diabetes mellitus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "10-15% of patients with diabetes mellitus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "More than 50% of patients with diabetes mellitus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "More than 90% of patients with diabetes mellitus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 110,
+      "question_number": 112,
+      "type": "single",
+      "question_text": "Specify the most frequent form of diabetic foot.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ischemic",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Osteoarthropathic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Neuropathic",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Neuroischemic",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Osteomyelitic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 111,
+      "question_number": 113,
+      "type": "single",
+      "question_text": "Specify the form of diabetic foot which most frequently results in major amputation",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ischemic",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Osteoarthropathic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Neuropathic",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Neuroischemic",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Osteomyelitic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 112,
+      "question_number": 114,
+      "type": "multiple",
+      "question_text": "Screening for diabetic foot syndrome includes the following tests:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Foot inspection for ulcers, gangrene, infection",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Determination of endogenous insulin level",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Palpation of plantar pulses",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Semmes-Weinstein test",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Duplex ultrasound of arteries of lower limbs",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 113,
+      "question_number": 115,
+      "type": "multiple",
+      "question_text": "For neuropathic form of diabetic foot are characteristic:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of painless plantar ulcers with hyperkeratosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Presence of very painful necrosis at the toes",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Absence of foot pulses",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Warm and dry foot skin",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Evident foot deformation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 114,
+      "question_number": 116,
+      "type": "multiple",
+      "question_text": "For ischemic form of diabetic foot are characteristic:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of painless plantar ulcers with hyperkeratosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Presence of very painful necrosis at the toes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Absence of foot pulses",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Warm and dry foot skin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Systolic bruit at the femoral artery",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 115,
+      "question_number": 117,
+      "type": "multiple",
+      "question_text": "The following methods are used for confirmation of ischemic form of diabetic foot:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Determination of ankle-brachial index",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Semmes-Weinstein test",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Transcutaneous determination of O2 pressure on the foot (ТсpO2)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Determination of toe systolic pressure by photoplethysmography",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Foot X-ray",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 116,
+      "question_number": 118,
+      "type": "multiple",
+      "question_text": "Superficial infection of diabetic foot involves:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Adipose tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Muscles",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Tendons",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bones",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 117,
+      "question_number": 119,
+      "type": "multiple",
+      "question_text": "Deep infection of diabetic foot involves:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Blood vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Nerves",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Muscles",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tendons",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bones",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 118,
+      "question_number": 120,
+      "type": "single",
+      "question_text": "According to Wagner classification, localized gangrene of toes is classified as:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Grade 1",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Grade 2",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Grade 3",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Grade 4",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Grade 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 119,
+      "question_number": 121,
+      "type": "single",
+      "question_text": "According to Wagner classification, foot with extensive gangrene is classified as:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Grade 1",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Grade 2",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Grade 3",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Grade 4",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Grade 5",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 120,
+      "question_number": 122,
+      "type": "multiple",
+      "question_text": "According to Wagner classification, grade 0 diabetic foot means:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Superficial full-thickness ulcer (not extending through the subcutis)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Foot with extensive gangrene",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Deep ulcer with osteomyelitis / abscess formation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Completely epithelialized ulcer",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Absence of tissue defect",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 121,
+      "question_number": 123,
+      "type": "multiple",
+      "question_text": "Choose the drugs which are used for treatment and prevention of vascular complications in patients with diabetic foot syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antispastic (papaverin)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Antithrombotic (aspirin, clopidogrel)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Group B vitamins",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Antihypertensive drugs",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Statins (Simvastatin, Atorvastatin)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 122,
+      "question_number": 124,
+      "type": "multiple",
+      "question_text": "Specify the abnormal changes in the laboratory tests, characteristic for diabetic foot infection.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Leukocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Monocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hyperglycemia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hypoglycemia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Eosinophilia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_3rd year_Vescu",
+      "source_file": "data/Graduation Exam Tests/Surgery_3rd year_Vescu.docx",
+      "question_order": 123,
+      "question_number": 125,
+      "type": "multiple",
+      "question_text": "The initial treatment of ischemic form of the diabetic foot Wagner grade IV should include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skin grafting of the foot ulcer",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Revascularization of affected limb",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Removing of necrotic tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Primary leg amputation at the level above the ankles",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Remove of plantar callus",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

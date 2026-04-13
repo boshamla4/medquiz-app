@@ -1,0 +1,1260 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Chronic lung disease revazut.docx",
+  "module": "Chronic lung disease revazut",
+  "folder": "Pediatrics",
+  "questionCount": 37,
+  "questions": [
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Finger clubbing is not characteristic for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Diffuse bronchiectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiolitis obliterans",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Complicated acquired pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Primary ciliary dyskinesia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Mark the pathogenic mechanism that is not specific for bronchopulmonary dysplasia",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Morphological immaturity of the lungs",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The toxicity of oxygen therapy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchial hyperreactivity",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory distress syndrome in neonates",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Increased lung ventilation with positive pressure",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Which sign on X-ray is characteristic for bronchiectasis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Focal pneumosclerosis with diminishing of pulmonary volume",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lobar consolidation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "“Honeycomb” pattern",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "“Tenting” of the diafphragm",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Compensatory hypertransparence in the bordering segments",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "The clinical examination of a child with chronic cough does not include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "CT pulmonary angiography",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sputum bacteriology",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lung function test",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Mark the pathology that is not a chronic bronchopulmonary disease:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Marfan syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Unilateral lobar pulmonary agenesis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary hypoplasia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bronchiolitis obliterans",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary arteriovenous malformations",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "What clinical sign characterizes chronic bronchopulmonary pathology?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Splayfoot",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Finger clubbing",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Arachnodactylia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Brachydactyly",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Rickets rosary",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "The method of choice for diagnosis of bronchiectasis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lung scintigraphy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchography",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bronchoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Computed tomography",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Select the sign that is not characteristic for cystic fibrosis",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Exocrine pancreatic insufficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased weight gain",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Chronic cough",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Low weight gain",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Viscous sputum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 8,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The method of choice for diagnosis of cystic fibrosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Complete blood count",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Coprological examination",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sweat test",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Abdominal ultrasound",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 9,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which clinical sign is cardinal for chronic bronchopulmonary diseases:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sore throat",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Wheezing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Chest pain",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chronic cough",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 10,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Abnormal accumulation of iron as hemosiderin in alveolar macrophages",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Occurs almost exclusively in premature infants",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Subsequent development of pulmonary fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Severe anemia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 11,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Neonatal onset of cystic fibrosis is not characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic productive cough",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Meconium ileus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Prolonged jaundice",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diarrhea with steatorrhea",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Failure to thrive",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 12,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Pulmonary atelectasis can be confirmed by one of the following methods:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest computed tomography",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Upper gastrointestinal tract radiography",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chest X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary ultrasound",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Lung function test",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 13,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which statement does not characterize the bronchoscopy purposes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Remove a foreign body from the lungs",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Remove excessive secretions",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Collect the biopsy specimens",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Local therapy with antiseptic and antibacterial solutions",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Remove bronchiectasis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 14,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "The syndrome of ciliary dysmotility is characteristic for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Postinfectious obliterative bronchiolitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Kartagener syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Polycystic lung",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary hemosiderosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 15,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "Which statement is characteristic for pulmonary emphysema in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decrease in vital capacity",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased residual lung volume",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increased expiratory reserve volume",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increased the one-second forced expiratory volume",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Increased inspiratory reserve volume",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 16,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "Select the hallmark for chronic inflammation in children with bronchiectasis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stridor",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Chronic cough with mucopurulent sputum",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pleural friction rub",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Localized wheezing on auscultation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Diffuse wheezing on auscultation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 17,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "Which of the following sign is characteristic for pulmonary hemosiderosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Presence of hemosiderin-laden macrophages in sputum",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "High level of serum iron",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary hyperinflation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Lobar consolidation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Low immunoglobulin E level",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 18,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "Mark the method of choice for diagnosis of bronchiectatic disease in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest computed tomography",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pneumotachometry",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Lung function test",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Peakflowmetry",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 19,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Select the radiological feature that is characteristic for pulmonary hemosiderosis in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lobar consolidation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary hyperinflation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Reticular interstitial opacities",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Patchy alveolar infiltrates",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Solitary pulmonary nodule",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 20,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Which of the following diseases for diagnostic requires sweat test:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Community acquired pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chronic bronchitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bronchial asthma",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Kartagener syndrome",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 21,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Diagnostic workup in bronchopulmonary dysplasia includes the following tests:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "High-resolution CT",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulse oximetry",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Arterial blood gas (ABG) sampling",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Chest X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Sweat test",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 22,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "The characteristics that determine the unfavorable evolution of cystic fibrosis in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Respiratory infection with Pseudomonas aeruginosa",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Broncho-obstructive syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cor pulmonale",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Chronic respiratory failure",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Growth failure",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 23,
+      "question_number": 27,
+      "type": "single",
+      "question_text": "The treatment of a child with primary bronchopulmonary dysplasia will include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest physiotherapy (active and passive kinetotherapy, postural drainage during all life)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Pancreatic enzyme replacement therapy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 24,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "Specific immunization (influenza and pneumococcal vaccination)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Kartagener syndrome is characterized by the following clinical signs:",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchoobstructive syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiectasis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Chronic sinusitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Chronic tonsillitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 25,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "The computer tomography signs of bronchiectasis in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tram track opacities",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ground-glass opacity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lobar volume loss",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 26,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "Clinical manifestations characteristic for chronic interstitial lung disease in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tachypnea and/or dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Localized lymphadenopathy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dry and nonproductive cough",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 27,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "The radiological features of pneumofibrosis in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pulmonary hyperinflation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Reticular opacities",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Honeycomb appearance",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nodular opacities",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ground-glass opacities",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 28,
+      "question_number": 34,
+      "type": "multiple",
+      "question_text": "Medical care in children with interstitial lung disease include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Nonsteroidal anti-inflammatory drugs",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bronchodilators",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Inhaled steroids",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Symptomatic therapy (antibiotics, expectorants)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Oxygen therapy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 29,
+      "question_number": 35,
+      "type": "multiple",
+      "question_text": "Major indications for diagnostic bronchoscopy are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent abnormalities on chest radiograph",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Atelectatic lung, lobe or segment",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Suspected foreign body in tracheobronchial tree",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Persistent unexplained cough or wheeze",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Community acquired pneumonia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 30,
+      "question_number": 36,
+      "type": "multiple",
+      "question_text": "Medications used to treat patients with cystic fibrosis include the following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchodilators",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Antitussives",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Nebulized, inhaled, oral, or intravenous antibiotics",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pancreatic enzyme replacement therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Mucolytics",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 31,
+      "question_number": 37,
+      "type": "multiple",
+      "question_text": "The causes of respiratory failure in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cystic fibrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bronchial asthma",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Chronic interstitial lung disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Primary bronchopulmonary dysplasia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute simple bronchitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 32,
+      "question_number": 38,
+      "type": "multiple",
+      "question_text": "Clinical symptoms characteristic for respiratory failure in children are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tachypnea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Accessory muscle use and nasal flaring",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "High fever",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hacking cough",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Paradoxical movement of the chest wall",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 33,
+      "question_number": 39,
+      "type": "multiple",
+      "question_text": "Clinical symptoms characteristic for children with cystic fibrosis are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Disproportionately long limbs",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Wet cough",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Rectal prolapse",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pancreatic exocrine insufficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Joint hypermobility",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 34,
+      "question_number": 40,
+      "type": "multiple",
+      "question_text": "Associated antibiotic therapy is used in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tuberculosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lobar pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sepsis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary infection with Ps. Aeruginosa",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute obstructive bronchitis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 35,
+      "question_number": 41,
+      "type": "multiple",
+      "question_text": "Indirect signs of bronchiectasis on computed tomography are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchial wall thickening",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Mucus plugging",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Air-trapping",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Lobar consolidation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Patchy alveolar infiltrates",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Chronic lung disease revazut",
+      "source_file": "data/Pediatrics/Chronic lung disease revazut.docx",
+      "question_order": 36,
+      "question_number": 42,
+      "type": "multiple",
+      "question_text": "Which systems are affected in cystic fibrosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Respiratory",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Digestive",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Nervous",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reproductive",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Lymphatic",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

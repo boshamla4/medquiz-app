@@ -1,0 +1,1865 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+  "module": "Congenetal Heart Diseases engleza",
+  "folder": "Pediatrics",
+  "questionCount": 53,
+  "questions": [
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Choose the most frequent congenital heart disease found in premature new-borns:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atrioventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Patent ductus arteriosus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation of the aorta",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Tetralogy of Fallot",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which of the following congenital heart diseases does not develop in left-to-right shunt?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Atrial septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tetralogy of Fallot",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Atrioventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Patent ductus arteriosus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Congenital heart disease with decreased pulmonary flow is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atrial septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tetralogy of Fallot",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Atrioventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Aortopulmonary window",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Classification of ventricular septal defects does not include the following type:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Infundibular",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Muscular",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Infantile",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Atrioventricular (subaortal) septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Perimembranous",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "The optimal age for surgical closing of large ventricular septal defect is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The age of 5 years",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The age of 1 year",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "3 years old",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "15 years old",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "After the age of 5 years",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "In ductus dependent congenital heart disease, the maintenance of open arterial channel is performed by the administration of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Indometacin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Prostaglandin E",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Immunoglobulin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ibuprofen",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Oxygen therapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "In Tetralogy of Fallot the common clinical signs of chronic hypoxia are the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Digital hyppocratism",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Polyglobulia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cerebral abscess",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Leukocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hypoxic accesses",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "The major surgical indication for correction of aortic stenosis in children is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appearance of clinical manifestations",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The value of transvalvular pressure gradient over 70 mm Hg",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Right ventricle hypertrophy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Considerable poststenotic dilation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Diastolic murmur",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "In the diagnosis of congenital heart disease the gold standard test is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Electrocardiography",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Cardiopulmonary radiography",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bidimensional Doppler echocardiography",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "X-ray computed tomography",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Coronarography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "In children with syntetic prosthesis the obligatory postoperative procedure is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Prophylaxis of infectious endocarditis throughout life",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Anticoagulant treatment under the coagulation control once a month",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cardiac catheterism every 6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Control of coagulation once in 2 weeks throughout life",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Obligatory hemoculture once in 3 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Which of the following drugs has the fastest diuretic action:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypothiazide",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Furosemide",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Acetazolamide (diacarb)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Spironolactone (verospiron)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Triampur",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Choose the unspecific clinical sign for acute heart failure:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pale skin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thready pulse",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lower blood pressure",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Skin redness",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dyspnea",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "The drug which does not induce orthostatic collapse is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Nifedipine",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Atenolol",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Anaprilin",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Prednisolone",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Izoptin",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Which of the following drugs is not recommended in acute heart failure:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dopamine",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Prednisolone",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mesatone",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dobutamine",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Adrenaline",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Choose the drug that is not recommended in the emergency therapy in Adams Morgan Stokes crises in III degree AV block:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Digoxin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dopamine",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Dobutamine",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Atropine",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Choose the drug that is not recommended for children with Tetralogy of Fallot and \"tet spells\":",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Digoxin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Propranolol",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diazepam",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Infusion therapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Choose the clinical singn that is nonspecific for a six-month-old child with large ventricular septal defect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnoea",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Malnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Tachycardia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Emphasis II sound of pulmonary artery",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Seizures",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "Organic murmurs can occur in, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tetralogy of Fallot",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Minor heart abnormalities",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Transposition of great vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Coarctation of the aorta",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 18,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "What is indicated after surgical/interventional treatment for coarctation of the aorta (adult tip):",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Surgical aortoplasty",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "β-blocker",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Angiotensin converting enzyme inhibitors",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Limitation of exercise",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Aldosterone receptor antagonists",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 19,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "Choose the first choice investigation to detect congenital heart malformations:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Electrocardiography",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Echocardiography",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Computed tomography of the heart",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Magnetic resonance examination of the cardiovascular system",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chest X ray",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 20,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "MC. Choose anatomic anomalies in Tetralogy of Fallot:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ventricular septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Atrial septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Right ventricle hypertrophy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dextrapozition of aorta",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 21,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "MC. Characteristic clinical signs of large ventricular septal defect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Difficulties of alimentation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Diastolic murmur",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Malnutrition",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Recurrent respiratory infections",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 22,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "MC. Vascular malformations are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ebstein anomaly",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Coarctaion of the aorta",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Anomalies of coronarian arteries",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly of aortic arch",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Unique ventricle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 23,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "MC. Hemodynamic factors responsible for the natural history of ventricular septal defect are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dimensions of defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Direction of interventricular shunt",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Localization of defect",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pressure in pulmonary artery",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Thickness of the left ventricle wall",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 24,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "MC. Echocardiographic criteria of complete atrioventricular channel are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ostium primum atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ventricular septal defect located high",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary artery stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Unique atrioventricular valve",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Muscular ventricular septal defect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 25,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "MC. Choose cyanotic congenital heart diseases:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Unique ventricle",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Common arterial trunk",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Transposition of great vessels",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Ventricular septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Patent ductus arteriosus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 26,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "MC. Postductal (adult) type coarctation of aorta is characterized by the following clinical signs:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lower extremity arterial pressure is lower that the upper extremity",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Diffuse cyanosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Systemic arterial hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Diminished pulse on lower extremity",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Lower extremity blood pressure is higher than that of the upper extremity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 27,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "MC. Cyanotic congenital heart disease with hypervascularization in pulmonary circulation are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tetralogy of Fallot",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Complete transposition of great vessels (D-transposition)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Atrial septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Total anomaly of pulmonary venous return",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Patent ductus arteriosus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 28,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "MC. In congenital heart disease with left-to -right shunt postsurgical complications are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Disorders of cardiac rhythm and conductibility",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Frequent respiratory infections",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Residual shunts",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bacterial endocarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Intestinal hemorrhages",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 29,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "MC. Clinical sings of small atrial septal defect are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Continuous murmur on aorta",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Asymptomatic",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Discrete systolic murmur with auscultative maximum at basis of heart",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Splitting of II sound",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dyspnea on effort",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 30,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "MC. Typical radiological signs of diminished pulmonary vascularity (bright lung fields) are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pulmonary stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tetralogy of Fallot",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary embolism",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Eisenmenger syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Large ventricular septal defect with chronic heart failure",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 31,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "MC. Changes of P-wave (P pulmonale”right-heart”) are detected in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "P sharp, with high amplitude in II, III, aVF in pulmonary stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Severe pulmonary hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ebstein's anomaly",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Mitral insufficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Large ventricular septal defect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 32,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "MC. Radiological signs of increased left heart are revealed in case of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dilated left ventricle on myocarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dilated cardiomyopathy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mitral insufficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Heart failure",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Tetralogy of Fallot",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 33,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "MC. Diseases producing syncopal states are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "II-III degree of atrioventricular blocks",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Coarctation of aorta",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hypertrophic cardiomyopathy",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Small atrial septal defect",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Patent foramen ovale",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 34,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "MC. Clinical sings of syncope are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Marked decrease of heart rate",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Absence of pulse",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Marked bradypnea until apnea",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Collapse of blood presure",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Presence of pulse",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 35,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "MC. Characteristics of chest pain with cardiac substrate:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Coronary insufficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Severe aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Coarctation of aorta",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary hypertension",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Minor heart abnormalities",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 36,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "MC.Which of the following tests are applied in the diagnosis of congenital heart diseases:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Coronary angiography",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ventriculography",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Endomyocardial biopsy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pericardiocentisis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Echocardiography",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 37,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "MC. Choose congenital heart malformations with asymptomatic evolution:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Small ventricular septal defect (<5 mm)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Small atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Large aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Large pulmonary artery stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Large ventricular septal defect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 38,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "MC. Congenital heart malformations with severe evolution are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cyanotic anomalies",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Large atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Large ventricular septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Critical coarctation of aorta",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Patent foramen ovale (2-3 mm)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 39,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "MC. Pale congenital heart malformations are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transposition of great vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Total anomalous venous drainage",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation of the aorta",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ventricular septal defect",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 40,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "MC. Cyanotic congenital heart malformations are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ebstein anomaly",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Double outlet right ventricle",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Total anomalous venous drainage",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Aortic stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary artery stenosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 41,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "MC. Anomalies of tract outlet left ventricle tract are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Valvular aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Supravalvular aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Isolated pulmonary valvular stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Stenosis of pulmonary artery branches",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Coarctation of the aorta",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 42,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "MC. Anomalies of tract outlet right ventricle are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Isolated pulmonary valvular stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis of pulmonary artery branches",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Atresia pulmonary artery",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tetralogy of Fallot",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ebstein anomaly",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 43,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "MC. Atrioventricular valve abnormalities are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital mitral stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Atresia tricuspid valve",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ebstein anomaly",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Anomalous origin of great vessels",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Atrial septal defect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 44,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "MC. What laboratory investigations are recommended in pulmonary artery stenosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cardiopulmonary X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Doppler echocardiography",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cardiac catheterization",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Angiography",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Treadmill",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 45,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "MC. Anatomical forms of congenital aortic stenosis are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Valvular aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Supravalvular aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Subaortic aortic stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Unicuspid aortic valve",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Tricuspid aortic valve",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 46,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "MC. Cardiac malformations with left-to-right shunt are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ventricular septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Aortopulmonary septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Permeable ductus arteriosus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ebstein anomaly",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 47,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "MC. Identify anatomical type of atrial septal defect by anatomic location of the defect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Secundum atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ostium primum atrial septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Sinus venosus atrial defect septal",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Coronary sinus atrial defect septal",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Dehiscence of the anterior leaflet of the mitral valve",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 48,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "MC. Specify pathophysiological mechanisms of Tetralogy of Fallot:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Right-left flow in relation with the degree of stenosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Systemic vascular resistance",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Size of ventricular septal defect",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Aortic position",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Additional left ventricular trabeculae",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 49,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "MC. Cardiopulmonary X-ray changes in Tetralogy of Fallot are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Normal or slightly increased heart",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Sabot heart",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Decreased pulmonary vascularity",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary hypervascularisation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Spherical form of the heart",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 50,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "MC. The natural progression and prognosis for common atrioventricular canal are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Favorable",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Unfavorable",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "They depend on left-right shunt",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "They depend on the level of pulmonary vascular resistance",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "They depend on atrioventricular valve insufficiency",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 51,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "MC. Pathological types of total anomalous pulmonary venous return are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Supracardiac",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cardiac",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Infracardiac",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Mixed",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Supradiaphragmatic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Congenetal Heart Diseases engleza",
+      "source_file": "data/Pediatrics/Congenetal Heart Diseases engleza.docx",
+      "question_order": 52,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "MC. Groups of drugs used for the treatment of pale congenital heart malformations complicated with congestive heart failure:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Angiotensin converting enzyme inhibitors",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Aldosterone receptor inhibitors",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Diuretics",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Glycosides",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Opioids",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Child growth and development  corrected.docx",
+  "module": "Child growth and development  corrected",
+  "folder": "Pediatrics",
+  "questionCount": 21,
+  "questions": [
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Choose the endocrine gland that significantly influences the child’s physical development during puberty:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thyroid gland",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thymus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Suprarenal glands",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sexual glands",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hypophysis (pituitary gland)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Choose the period of child development when ponderal growth is the most intensive:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "First 12 months of life",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Between 2 and 3 years of age",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Between 3 and 5 years of age",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Between 8 and 10 years of age",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Between 16 and 18 years of age",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 2,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "For every childhood period there is a certain growth rate for body’s segmental levels",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "During cumulative growth of the body’s segmental levels, their differentiation slows down",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Each body segment has its own growth rate",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Growth of different body’s segmental levels is proportional",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 3,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "For every childhood period there is a certain growth rate for body’s segmental levels",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "During cumulative growth of the body’s segmental levels, their differentiation slows down",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Each body segment has its own growth rate",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 4,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Regulates calcium-phosphorus metabolism and bone mineralization",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stimulates catabolic mechanisms",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Stimulates synthesis of ribosomal RNA and proteins",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Accelerates basal metabolism",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 5,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Choose the definition of child’s growth and development:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Expression of the quantitative phenomena regarding the body’s growth in size and its segments and qualitative processes of the functional differentiation of the tissues, the functional perfection of the apparatus and the systems within the organism",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Adequate nutrition of the child",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Immunoprophylaxis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Growth acceleration",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Growth in height",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 6,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Choose the criterion that is not used in the complex assessment of child’s growth and development:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Height",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Somatoscopy",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Weight",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bone maturation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pubertal maturation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 7,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Choose the criterion that does not define growth and development as a biological process",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Morphological differentiation of the tissues",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gain in weight",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Functional differentiation of the tissues",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Body’s growth in size and its segments",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 8,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Choose the criterion that does not characterize maturation process during the child’s growth and development:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skeleton maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Sexual maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dental maturation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Enzymatic maturation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Weight gain",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 9,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Choose the statement that list indicators of body’s size and composition:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Height, diameters and circumferences, weight",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Skeleton maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dental maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Metabolic maturation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pubertal maturation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 10,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Enumerate endocrine glands that significantly influence child’s physical development in the first year of life:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thyroid gland",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Thymus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Suprarenal glands",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Sexual glands",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hypophysis (pituitary gland)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 11,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Enumerate criteria for biological maturation assessment in girls:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Breast budding",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "First period (menarche)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Growth of pubic and underarm hair",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chest circumference",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Head circumference",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 12,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Enumerate causes of height deficit in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Growth hormone deficit",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hyperthyroidism",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hypothyroidism",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Psychosocial problems",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Decompensated chronic diseases",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 13,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Enumerate causes of weight deficit in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Undernutrition (insufficient food intake)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Psychosocial problems",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Prader-Willi syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hyperthyroidism",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Immunodeficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 14,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Enumerate criteria for biological maturation assessment in boys:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Height",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Weight",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dental maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Sexual maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Blood pressure",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 15,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Enumerate criteria for biological maturation in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appearance of bone centers and their follow up on X-ray",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Eruption and calcification of the dentition",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Asessment of signs of secondary sexual maturation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Growth in height",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Weight gain",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 16,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Enumerate laws of normal growth and development in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The alternance law",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The proportion law",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The different rhythm law of growth and development",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 17,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Enumerate exogenous factors that interfere with normal growth and development in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Food",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Geographic area",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Social-economical factors",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Affective and educational factors",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Genetic factors",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 18,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Enumerate endocrine glands that significantly influence child’s physical development:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypophysis (pituitary gland)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Thymus",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thyroid and parathyroid glands",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Suprarenal and sexual glands",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The exocrine pancreas",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 19,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Enumerate roles of the thyroid gland in normal growth and development in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stimulates anabolic mechanisms тоже",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Stimulates the growth",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stimulates catabolic mechanisms",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Stimulates synthesis of ribosomal RNA and proteins",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Accelerate basal metabolism",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Child growth and development  corrected",
+      "source_file": "data/Pediatrics/Child growth and development  corrected.docx",
+      "question_order": 20,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Enumerate roles of sexual glands in normal growth and development in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stimulates anabolic mechanisms",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Slow down the growth in height at puberty",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stimulates proliferation of cartilage cells",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Stimulate functional differentiation and sexual maturation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Accelerate basal metabolism",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

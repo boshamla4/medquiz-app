@@ -1,0 +1,885 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/ARF engl.docx",
+  "module": "ARF engl",
+  "folder": "Pediatrics",
+  "questionCount": 25,
+  "questions": [
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Name the peak age of onset of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "3-7 years",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "5-15 years",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "13-17 years",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "2-10 years",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "10-18 months",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Indicate the etiologic agent of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Staphylococcus aureus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Streptococcus epidermidis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Β-hemolytic streptococcus group A",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Β-hemolytic streptococcus group B",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Enterococus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Specify how many weeks after supporting streptococcal pharyngitis, can acute rheumatic fever develop:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "2-4 weeks",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "2-4 months",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "1-2 weeks",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "3 months",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "5-6 weeks",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Determine the pathogenetic mechanism of development of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Autoimmune",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Infectious",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Unknown",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Allergic",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Immunological",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Indicate the minor criteria of diagnostic of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Polyarthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Arthralgia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Chorea",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Subcutaneous nodules",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Erythema marginatum",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Specify the major criteria of diagnostic of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Arthralgia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Leukocytosis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increase the PR interval on Electrocardiogram",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chorea",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Indicate the duration of secondary prophylaxis in children with acute rheumatic fever with carditis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "10 years or until 25 years",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "5 years or until 20 years",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lifetime",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "10 years or until 18 years",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "5 years or until 18 years",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Indicate the duration of secondary prophylaxis in children with acute rheumatic fever without carditis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "10 years or until 25 years",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "5 years or until 18 years",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "5 years or until 25 years",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "10 years or until 18 years",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lifetime",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 8,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Name the characteristics of arthritis in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Affection of the medium and big joints",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Affection of multiple joints",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Migratory affection of the joints",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Erosive arthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Affection of the small joints",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 9,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Name the major criteria of diagnostic of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Carditis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Chorea Sydenham",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Erythema marginatum",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Arthralgia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Leukocytosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 10,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Note the minor criteria of diagnostic of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Arthralgia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fever",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Carditis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increase the PR interval on Electrocardiogram",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increasing of erythrocyte sedimentation rate and C- reactive protein",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 11,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Specify the criteria of classification of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "According to clinical syndromes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "According to the degree of activity",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "According the evolution",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "According to the state of chronic heart failure (NYHA)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "According to the present of streptococcal infection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 12,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Determine the characteristics of subcutaneous nodules Meynet in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Localization in hypoderma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Are painless",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Are prominent above bones in extension zones",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Are adherent",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Are painful",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 13,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Specify the characteristics of erythema marginatum in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Represents erythematous areas",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "It is localized on the thorax, proximal parts of the limbs",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Is migratory",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Becomes white at pressure",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Is pruriginous",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 14,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Mention the pleural-pulmonary manifestations in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Interstitial pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary vasculitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Aspiration pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Fibrinous pleurisy",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Exudative pleurisy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 15,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Determine the characteristics of chorea Sydenham in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Appears more frequently in girls",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Appears especially in 9-14 years old children",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Appears after 2-6 months from streptococcal infection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Appears after 2-4 weeks from streptococcal infection",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Has risk of long - term affection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 16,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Mention the characteristics of chorea Sydenham in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The manifestations appear gradually",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Involuntary, sudden, repetitive movements",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Coordinated limb movements",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Grimaces, inadequate smiling",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The movements are accentuated by emotions and physical activity",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 17,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Specify signs of myocarditis in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea at minimal physical effort",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Attenuation of I heart sound",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Systolic murmur",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Diastolic murmur",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cardiomegaly",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 18,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Mention the characteristics of active inflammatory process in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increased erythrocyte sedimentation rate and C- reactive protein",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased globulin",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Leukocytosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased fibrinogen level",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Thrombocytosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 19,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Name the criteria for confirmation of streptococcal infection in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Streptococcal culture from pharyngeal exudate",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increase Antistreptolysine-O",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increase antistreptohialuronidase",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increase antinuclear antibody titer",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Increase anti-dsDNA antibody",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 20,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Determine the conditions for establishing the diagnosis of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "2 major criteria + proof of streptococcal infection",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "1 major criteria + 2 minor criteria + proof of streptococcal infection",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "1 major criteria + 3 minor criteria + proof of streptococcal infection",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "2 major criteria + 2 minor criteria",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "1 major criteria + 1 minor criteria + proof of streptococcal infection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 21,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Mention the goals of pharmacological treatment in acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Eradication of streptococcal infection and its prevention",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Suppression of inflammation in autoimmune response",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Treatment of congestive heart failure",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Reducing the signs of the disease's activity",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Therapy with vitamins and increasing humoral immunity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 22,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Specify management of Chorea Sydenham:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibacterial treatment",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anti-inflammatory treatment",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Benzodiazepines",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Corticosteroids",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Immunosuppressors",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 23,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Name the typical complications of acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congestive heart failure",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Infectious endocarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Intracavitary thrombosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Polyarthritis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Chorea Sydenham",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "ARF engl",
+      "source_file": "data/Pediatrics/ARF engl.docx",
+      "question_order": 24,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Specify the criteria for hospitalization of patients with acute rheumatic fever:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Primary addressing with clinical signs of acute rheumatic fever",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Primary addressing with clinical signs of acute rheumatic fever",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Important comorbidities",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Subcutaneous nodules",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Erythema marginatum",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1410 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Rickets CORRECTED.docx",
+  "module": "Rickets CORRECTED",
+  "folder": "Pediatrics",
+  "questionCount": 40,
+  "questions": [
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Which factor influences the absorption of vitamin D in the small intestine?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Normal absorption of lipids",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased protein content in the diet",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Decreased electrolyte content in the child’s diet",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increased content of B-group vitamins in the diet",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Increased carbohydrate content in the diet",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which metabolite of vitamin D is the most biologically active?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cholecalciferol",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "7-dehydrocholecalciferol",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "25-hydroxyvitamin D₃",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "24,25-dihydroxyvitamin D₃",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "1,25-dihydroxyvitamin D₃",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "The formation of the metabolite 1,25(OH)₂D₃ in the kidneys is stimulated by the following factors, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypocalcemia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hypercalcemia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased concentration of parathyroid hormone",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vitamin D deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hypophosphatemia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "In which organ is the most active metabolite of vitamin D synthesized?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skin",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Intestine",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Liver",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Kidneys",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Stomach",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Which of the following foods contains the highest concentration of vitamin D?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Breast milk",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Cow’s milk",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Egg yolk",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Infant formula “Malish”",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Infant formula “Bona”",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Hyperplasia of osteoid tissue produces the following clinical signs, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Harrison groove",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Frontal and parietal bossing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Rachitic rosary",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rachitic bracelets (wrist widening)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pearl necklace",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "What is the daily physiological requirement of vitamin D in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "40 IU",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "50 IU",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "200 IU",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "300 IU",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "400 IU",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "At what age do the most common clinical manifestations of vitamin D-deficient rickets usually appear?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "3–4 months",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "3–4 weeks",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "20 days–1 month",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "3 weeks–3 months",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "2–4 months",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Grade III vitamin D-deficient rickets is characterized by the following features, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pronounced bone deformities",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Severe anemia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Severe involvement of internal organs",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Neuropsychomotor and physical retardation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Normal biochemical blood parameters",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which of the following is NOT considered an early clinical sign of vitamin D-deficient rickets?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Craniotabes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased sweating",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Occipital alopecia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sleep disturbances",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Persistent red dermographism",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The following thoracic deformities may be observed in vitamin D-deficient rickets, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anteroposteriorly flattened chest",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Funnel chest (pectus excavatum)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pigeon chest (pectus carinatum)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Harrison groove",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Localized precordial bulging",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "In vitamin D-deficient rickets, signs of osteomalacia include the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Craniotabes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased flexibility of the margins of the anterior fontanelle",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Harrison groove",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Flattening of the occipital region",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Occipital alopecia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Differential diagnosis of rickets includes the following diseases, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Phosphaturic renal diabetes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Type I renal tubular acidosis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acquired pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "De Toni–Debré–Fanconi syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitamin D-dependent rickets",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Which factor does NOT contribute to the development of rickets in premature infants?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lack of adequate sunlight exposure after birth",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Impaired absorption of fat-soluble vitamins",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Insufficient development of the respiratory system",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Accelerated growth in premature infants",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Inadequate antenatal stores of calcium and phosphorus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "The pathogenetic mechanisms of rickets include the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decreased intestinal absorption of calcium",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reduced renal tubular reabsorption of phosphorus",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increased secretion of parathyroid hormone",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Decreased renal tubular reabsorption of glucose",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Impaired mineralization of bone matrix",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 15,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Vitamin D-deficient rickets is characterized by the following stages:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stage of onset",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Stage of progression",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Stage of recovery",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Stage of post-rachitic sequelae",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Advanced stage",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 16,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Select vitamin D preparations:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Calciferol",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oxidevit",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Calcidiol",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Calcitriol",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Biosplat",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 17,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "The classification of vitamin D-deficient rickets proposed by S.O. Dulitsky includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stage of the disease",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Severity of the disease",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Course of the disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Etiological factor",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Type of cardiovascular involvement",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 18,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Select the signs of skull involvement in vitamin D-deficient rickets:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Craniotabes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Absence of occipital flattening",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Abnormal head shape",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Olympian forehead",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Frontal and parietal bossing",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 19,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "The functions of the metabolite 1,25(OH)₂D₃ include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It does not influence intestinal calcium absorption",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Regulation of bone mineralization",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Stimulation of osteocalcin synthesis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased renal tubular reabsorption of calcium and phosphorus",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Influence on muscular contractility",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 20,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "The metabolite 1,25-dihydroxycholecalciferol exerts its effects on:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Small intestine",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Kidneys",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lungs",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Muscular system",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Parathyroid glands",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 21,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "The synthesis of 25-hydroxyvitamin D₃ in the liver is stimulated by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypocalcemia",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Vitamin D deficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hyperparathyroidism",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hypercalcemia",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitamin A deficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 22,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "What is the role of parathyroid hormone in the pathogenesis of vitamin D-deficient rickets?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mobilization of calcium from bones under hypercalcemic conditions",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Stimulation of 1,25(OH)₂D₃ synthesis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased renal tubular reabsorption of calcium and magnesium",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased urinary excretion of phosphates",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increased urinary excretion of bicarbonates",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 23,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "The signs of muscular hypotonia observed in vitamin D-deficient rickets include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bell-shaped thorax",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "“Frog-like” abdomen",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Diastasis of the rectus abdominis muscles",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Thoracolumbar kyphosis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Harrison groove",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 24,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Nonspecific antenatal prophylaxis of rickets includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inappropriate use of maternity leave",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Adherence to a rational daily regimen",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Regular exposure to fresh air",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nutrition of the pregnant woman according to physiological requirements",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Prenatal monitoring of pregnant women at increased risk of having infants with rickets",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 25,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "The course of vitamin D-deficient rickets may be:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Subacute",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Recurrent",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Latent",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Progressive",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 26,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Which processes occur in long bones during periods of body growth?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ossification",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Accumulation of vitamin D in bone tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bone resorption associated with calcium mobilization to maintain calcemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bone modeling",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hyperplasia of osteoid tissue",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 27,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "In which organs does vitamin D metabolism occur?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Skin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Kidneys",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Liver",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Lungs",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intestine",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 28,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Which dental disorders are observed in acquired vitamin D-deficient rickets?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Delayed eruption of deciduous teeth",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Enamel hypoplasia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased susceptibility to caries of permanent teeth",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Premature eruption of permanent teeth",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Premature eruption of deciduous teeth",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 29,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "The following data are used for the diagnosis of vitamin D-deficient rickets:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clinical examination",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Biochemical blood changes",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Radiological findings with characteristic changes",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Physical development indices",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Functional state of the cardiovascular system",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 30,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "The physiological effects of 1,25(OH)₂D₃ at the muscular level include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Maintenance of normal muscle tone",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Provision of normal contractile strength",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased ATP availability in muscle tissue",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Stimulation of muscle protein synthesis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Decreased muscle protein synthesis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 31,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Which factors reduce the effectiveness of solar ultraviolet radiation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Northern latitude",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ordinary window glass",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Increased air pollution or dust concentration",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Spring season",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dark skin pigmentation",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 32,
+      "question_number": 18,
+      "type": "multiple",
+      "question_text": "The physiological effects of 1,25(OH)₂D₃ at the level of bones include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Enhancement of bone mineralization",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Regulation of calcium and phosphorus mobilization in coordination with parathyroid hormone",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Influence on skeletal growth",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Inhibition of ossification",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Stimulation of osteoid tissue hyperplasia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 33,
+      "question_number": 19,
+      "type": "multiple",
+      "question_text": "The following degrees of severity are distinguished in vitamin D-deficient rickets:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Grade 0",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Grade I",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Grade II",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Grade III",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Grade IV",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 34,
+      "question_number": 20,
+      "type": "multiple",
+      "question_text": "Vitamin D-deficient rickets is characterized by the following changes in long bones:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rachitic bracelets",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Coxa vara",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Genu varum",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Deformities in the shape of “O” or “X”",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Harrison groove",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 35,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Positive diagnosis of vitamin D-deficient rickets is based on:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clinical presentation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Normal or decreased serum calcium levels",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hyperphosphatemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Increased serum parathyroid hormone levels",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Decreased levels of vitamin D metabolites (25-hydroxyvitamin D₃, 1,25-dihydroxyvitamin D₃)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 36,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "Which factors influence bone lesions in vitamin D-deficient rickets?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decreased resistance of bone to mechanical loading",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Insufficient mineralization of the organic bone matrix",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hyperplasia of cartilaginous cells",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bone deformities",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increased calcium concentration in bone tissue",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 37,
+      "question_number": 23,
+      "type": "multiple",
+      "question_text": "Acute evolution of vitamin D-deficient rickets is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Higher frequency in premature infants",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Predominant occurrence during the winter–spring period",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Marked general clinical manifestations",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Predominance of osteomalacia in bone lesions",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Occurrence mainly in adults",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 38,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Subacute evolution of vitamin D-deficient rickets is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Moderate general manifestations",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Predominance of symptoms related to osteoid tissue hyperplasia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Moderate signs of osteomalacia",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Normal alkaline phosphatase levels",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Prominent frontal and parietal bossing",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Rickets CORRECTED",
+      "source_file": "data/Pediatrics/Rickets CORRECTED.docx",
+      "question_order": 39,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Features of skeletal system involvement in rickets include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Predominant skull involvement during the first 3 months of life",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Predominant thoracic involvement between 2 and 6 months of age",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Involvement of long bones after 6 months of age",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Deformities of the lower limbs appearing after 3 months of age",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "O- or X-shaped deformities of the legs commonly observed around 1 year of age",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

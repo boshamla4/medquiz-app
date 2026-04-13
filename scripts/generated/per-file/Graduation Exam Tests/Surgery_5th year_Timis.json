@@ -1,0 +1,3500 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+  "module": "Surgery_5th year_Timis",
+  "folder": "Graduation Exam Tests",
+  "questionCount": 100,
+  "questions": [
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Which of the following statements about surgical anatomy of the colon and rectum are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The cecum has the largest inner diameter of all segments of the colon (13 to 15 cm.).",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The rectosigmoid junction is situated at approximately 15 to 18 cm. from the anus.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The rectum is entirely an intraperitoneal organ.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The ileocolic, right colic, and middle colic arteries are branches from the inferior mesenteric",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The arterial arcade created by communicating vessels at 1 to 2 cm from the mesenteric is called the artery of Drummond.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Which of the following statements about surgical procedures on the colon and rectum are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Successful healing of colonic anastomoses depends on the adequacy of the blood supply.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "In excising part of the colon containing cancer, the lymphatics should be avoided by dividing the mesentery close to the wall of the colon.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Despite complete removal of the colon and rectum, transanal fecal flow can be preserved by means of an ileal pouch–anal anastomosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "When a colostomy is created it cannot be reversed.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Colostomy can be life saving in patients with colonic perforation or obstruction.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Which of the following statements about colon physiology are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Colonic recycling of urea is accomplished by the splitting of urea by bacterial ureases.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation by colonic bacteria may rescue malabsorbed carbohydrates.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The preferred fuel of the colonic epithelium is glucose.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Absorption by the colonic mucosa is a passive process.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Insoluble fibers create bulk in the stool.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Which of the following statements about diagnostic studies for the colon and rectum are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acetylcholinesterase staining of rectal biopsies is unreliable for the diagnosis of Hirschsprung's disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Cinedefecography is useful for detecting “hidden” prolapse or rectal intussusception.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "A negative osmotic gap in stool is indicative of secretory diarrhea.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "A colonic transit time study involves serial abdominal x-rays after ingestion of radiopaque markers.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Carcinoembryonic antigen (CEA) is useful for monitoring patients after resection for colon cancer.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Which of the following statements about the microbiology of the colon are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The colon contains no more bacteria than the stomach.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The predominant bacteria in the colon are aerobic.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Nearly one third of the dry weight of feces is bacteria.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Common bacteria in the colon are Bacteroides, Bifidobacterium, and Enterobacterium species.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The colonic microflora is relatively stable.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Which of the following statements about bowel preparation for colon surgery are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bowel preparation is accomplished by a combination of mechanical cleansing and nonabsorbable antibiotics.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Three days of clear liquids provides sufficient mechanical cleansing.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Commercial electrolyte-polyethylene glycol solutions provide mechanical cleansing without inducing electrolyte imbalance.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Non-absorbable antibiotics such as neomycin and erythromycin base are administered the day before the operation in three doses.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intravenous antibiotics are also administered the day before surgery.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "The test with the highest diagnostic yield for detecting a colovesical fistula is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Barium enema.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Colonoscopy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Computed tomography (CT).",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cystography.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystoscopy.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which of the following about diverticular disease is not true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It is more common in the United States and Western Europe than in Asia and Africa.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "A low-fiber diet may predispose to development of diverticulosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It involves sigmoid colon in more than 90% of patients.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Eighty percent of general people develop diverticulitis sometime during their lifetime.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It is the most common cause of massive lower gastrointestinal hemorrhage.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "The most common indication for surgery secondary to acute diverticulitis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abscess.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Colonic obstruction.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Colovezical fistula.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Free perforation.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hemorrhage.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which of the following statements about colorectal polyps are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Familial juvenile polyposis is associated with an increased incidence of colon cancer.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Although the propensity for development of malignancy is related to the size of a neoplastic polyp, those with mixed tubule-villous histologic appearance are most likely to develop malignant changes.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The loss of a single tumor suppressor gene such as p53 is sufficient to lead to the development of malignancy in colorectal neoplastic polyps.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Endoscopic polypectomy results in a decreased incidence of carcinomas of the colon and rectum.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Which of the following statements about familial adenomatous polyposis (FAP) is true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inherited in an autosomal-dominant manner, this genetic defect is of variable penetrance, some patients having only a few polyps whereas others develop thousands.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The phenotypic expression of the disease depends mostly on the genotype.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Appropriate surgical therapy includes total abdominal colectomy with ileorectal anastomosis and ileoanal pull-through with rectal mucosectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Panproctocolectomy with ileostomy is not appropriate therapy for this disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pharmacologic management of this disease may be appropriate in some instances.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "Which of the following statements about the etiology of chronic ulcerative colitis are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ulcerative colitis is 50% less frequent in nonwhite than in white populations.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Psychosomatic factors play a major causative role in the development of ulcerative colitis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Cytokines are integrally involved in the pathogenesis of ulcerative colitis.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ulcerative colitis has been identified with a greater frequency in family members of patients with confirmed inflammatory bowel disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Ulcerative colitis is two to four times more common in Jewish than in non-Jewish populations.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Surgical alternatives for the treatment of ulcerative colitis include all of the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Colectomy with ileal pouch–anal anastomosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Left colectomy with colorectal anastomosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Proctocolectomy with Brooke ileostomy or continent ileostomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Subtotal colectomy with ileostomy and Hartmann closure of the rectum.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Subtotal colectomy with ileorectal anasthomosis.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "The initial management of toxic ulcerative colitis should include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Broad-spectrum antibiotics.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "6-Mercaptopurine.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Intravenous fluid and electrolyte resuscitation.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Opioid antidiarrheals.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Colonoscopic decompression.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Which finding suggest the diagnosis of chronic ulcerative colitis as opposed to Crohn's colitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Endoscopic evidence of back-wash ileitis.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Granulomas on biopsy.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Anal fistula.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Rectal sparing.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cobblestone appearance on barium enema.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 15,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Which of the following approaches are currently acceptable for the management of spontaneous pneumothorax?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest tube replacement alone for the patient with a first episode.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Operation on presentation for any patient with a first episode.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Video-assisted thoracic surgery (VATS) bleb excision and pleurodesis for recurrent pneumothorax on the same side.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Thoracotomy with bleb excision and pleurodesis for unilateral recurrent pneumothorax.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Operation after a first episode in an airline pilot.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 16,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Which of the following statements about lung abscess are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pyogenic lung abscess occurs most frequently in the lower lobe of the left lung.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anaerobic bacteria are commonly present in pyogenic lung abscess.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Operation is usually required to eradicate a pyogenic lung abscess.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Penicillin is the treatment of choice for lung abscess.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pyogenic lung abscess occurs only after blunt trauma of the chest.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 17,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Which of the following correctly describe a patient with spontaneous pneumothorax?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The patient is almost always elderly and debilitated.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "An unsuspected primary or metastatic lung tumor may be present.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The administration of supplemental oxygen is of little benefit to the patient.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The patient should always be treated with an intercostal tube and closed pleural drainage.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Video-assisted thoracic surgery (VATS) should be considered for persistent air leak in patients with secondary spontaneous pneumothorax.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 18,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Which of the following statements about spontaneous pneumothorax (PSP) are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The risk of recurrence after resolution of the first episode of PSP or secondary spontaneous pneumothorax (SSP) is 35% to 45%.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Patients with PSP are typically tall, thin, young adult males with a history of smoking.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Secondary spontaneous pneumothorax is associated with family history in 10% of cases.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "For bleb resection and pleurodesis thoracoscopic thoracotomy and open thoracotomy provide similar cure rates for patients with primary spontaneous pneumothorax.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Causes of secondary pneumothorax include trauma and iatrogenic needle puncture.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 19,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Which of the following would be the least appropriate in the management of acute suppurative mediastinitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wide débridement.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Irrigation under pressure.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Topical antibacterials.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Long-term systemic antibacterials.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Closure with muscle flaps.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 20,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Each of the following is appropriate for managing acute suppurative mediastinitis except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alloplastic material and skin flaps.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rectus abdominis muscle flaps.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Omentum.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pectoralis major muscle flaps.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Rigid internal fixation.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 21,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "The principal etiologic factor in lung abcess and gangene is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchogenic.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Trauma.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiectatic disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Septic embolism.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Adjacent purulent focuses.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 22,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Emergency treatment of lung edema consists in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Secret aspiration.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oxygenotherapy with positive expiratory pressure 10-15 cm H2O.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Intubation.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "1/3 of dose of digoxyn for digitalisation (if not yet digitalisated and cardiac insufficiency is",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Vitaminotherapy.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 23,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Wich microflora more frequently provokes developing of pulmonary gangrene?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Protozoas.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Fungs.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Aerobic gram-positive microflora.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Aerobic gram-negative microflora.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Anaerobic nonclostridial microflora.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 24,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "The most frequent localization of aspiration lung abcesses is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Basal anterior segments of inferior lobes.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lateral segments of inferior lobes.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Apical segments of superior lobes.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anterior segments of superior lobes.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Posterior segments of lung /predominantly superior lobes/.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 25,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The causes of chronisation of acute empyema are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Late treatment.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Inadequate draining of pleural cavity.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Agresive and resistant to antibiotics microflora.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Immune reactivity.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Hereditary factors.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 26,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which affirmations regarding pulmonary anatomy are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Left lung consists of 2 lobes.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Right lung consists of 3 lobes.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lungs consists of 5 lobes.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Right lung consists of 2 lobes.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Right lung has the middle lobe.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 27,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Segments of the lobes of the lung are following:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Superior lobe of right lung consists of 3 segments /1,2,3/.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Middle lobe - 1 segment /4/.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Right inferior lobe - 5 segments /6,7,8,9,10/.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Left superior lobe - 5 segments /1,2,3,4,5/.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "inferior left lobe - 4 segments /6,8,9,10/.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 28,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Hemoptysis may occure in following situations:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchial sarcoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchial asthma.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiectasis.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pulmonary infarct.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary tuberculosis.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 29,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Hemostasis in pulmonary gangrene with repeated lung hemorrhage is performed by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchoscopy with lavage.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchoscopy with bronchus obstruction.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Administration of spasmolitics.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Thoracopneumotomy with vessels suturing.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pulmonary resection.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 30,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "The bronchial wall includes the following layers:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mucosa and proper membrane",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Muscular layer",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Submucosal layer",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Adipose-cellular layer",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Fibrous-cartilagious and adventitious",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 31,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which of the following respiratory volumes are correct?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inspiratory reserve volume 1500-2000 ml",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Expiratory reserve volume - 500 ml",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Residual volume - 1000-1300 ml",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory volume - 400-500 ml",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Minute respiratory volume - 5000-10000 ml",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 32,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Which of the following would be the least appropriate in the management of acute suppurative mediastinitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Wide débridement.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Irrigation under pressure.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Topical antibacterials.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Long-term systemic antibacterials.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Closure with muscle flaps.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 33,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Each of the following is appropriate for managing acute suppurative mediastinitis, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alloplastic material and skin flaps.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rectus abdominis muscle flaps.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Omentum.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pectoralis major muscle flaps.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Rigid internal fixation.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 34,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Clinical features suggestive of myasthenia gravis include all of the following except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Proximal muscle weakness.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diplopia.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Sensory deficits of the extremities.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dysphagia.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intermitent claudication.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 35,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "When progressive enlargement of a multinodular goiter causes symptomatic tracheal compression, the preferred management in otherwise good-risk patients is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Iodine treatment.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Thyroid hormone treatment.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Surgical resection of the abnormal thyroid.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Radioactive iodine treatment.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Immunosupresive treatment.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 36,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "The most precise diagnostic screening procedure for differentiating benign thyroid nodules from malignant is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Thyroid ultrasonography.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Thyroid scintiscan.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fine-needle-aspiration biopsy (FNAB).",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Thyroid hormone suppression.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Laringoscopy.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 37,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "Which is the preferred operation for initial management of a thyroid nodule, that is considered suspicious for malignancy by fine-needle-aspiration biopsy (FNAB):",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Excision.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Partial lobectomy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Total lobectomy and isthmusectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Total thyroidectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Enucleation of the nodule.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 38,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "All of the following are components of the MEN type 2B syndrome, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Multiple neuromas on the lips, tongue, and oral mucosa.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hyperparathyroidism.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Medullary carcinoma of thyroid.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pheochromocytoma.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Gastrinoma.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 39,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Which of the following statements about hypoparathyroidism are true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Is most commonly encountered as a postviral syndrome.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Can be associated with marked hypocalcemia after parathyroidectomy in patients with bone disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Can cause anxiety, depression, or confusion.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Can cause physical signs such as Chvostek's and Trousseau's signs.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Is treatable acutely with intravenous calcium salts and chronically with oral calcium and",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 40,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Which steatment about Addisonian crisis, or acute adrenocortical insufficiency, is true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Occurs only in patients with known adrenal insufficiency or in those receiving long-term supraphysiologic doses of exogenous steroids.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Can mimic an acute abdomen with fever, nausea and vomiting, abdominal pain, and hypotension.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "May cause electrolyte abnormalities, including hypernatremia, hypokalemia, hypoglycemia, and hypercalcemia, as well as eosinophilia on peripheral blood smear.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Should be diagnosed with the rapid ACTH stimulation test before steroid replacement is instituted.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "May be effectively treated with intravenous “stress-dose” glucocorticoid and mineralocorticoid replacement.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 41,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "Which of the following statements about the synthesis of thyroid hormone and its physiology are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The iodine utilized in hormone synthesis is derived principally from dietary sources.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The role of thyroid-stimulating hormone (TSH) in thyroid physiology is limited to regulation of the release of thyroid hormone in plasma.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Enough thyroxine (T4) is stored in the normal thyroid to provide a euthyroid state for 3 weeks despite absence of iodine intake.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The regulation of thyroid function involves pituitary, but not hypothalamic, input.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Thyroid-stimulating hormone (TSH) is produced by suprarenal gland in stress situations.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 42,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Hyperthyroidism can be caused by all of the following pathologies, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Graves' disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Plummer's disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Struma ovarii.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hashimoto's disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Medullary carcinoma of the thyroid.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 43,
+      "question_number": 12,
+      "type": "multiple",
+      "question_text": "The most common cause of goitrous hypothyroidism in adults is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Graves' disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Riedel's thyroiditis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hashimoto's disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "de Quervain's thyroiditis.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Plummer's disease.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 44,
+      "question_number": 13,
+      "type": "multiple",
+      "question_text": "Which of the following are surgical indications for thyroidectomy in Grave’s disease?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ocular involvement.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Symptomatic large goiter.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Women of childbearing age.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Concomitant thyroid nodule.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Cosmetic considerations.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 45,
+      "question_number": 14,
+      "type": "multiple",
+      "question_text": "Which of the following is the principal blood supply to the parathyroid glands?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Superior thyroid arteries.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inferior thyroid arteries.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Thyroidea ima arteries.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Parathyroid arterial branches directly from the external carotid artery.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Highly variable.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 46,
+      "question_number": 15,
+      "type": "multiple",
+      "question_text": "Which of the following pharmacologic agents can be used in the treatment of thyrotoxicosis to block the production of thyroid hormone?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Propylthiouracil.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Propranolol.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Methimazole.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Carbimazole.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Iodine.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 47,
+      "question_number": 16,
+      "type": "multiple",
+      "question_text": "Which of the following statements regarding fine needle aspiration cytology of a thyroid nodule are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It differentiates neoplastic and non-neoplastic nodules in most cases.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It does not allow differentiation of papillary, medullary and anaplastic carcinoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It cannot differentiate malignant and benign follicular or Hürthle cell neoplasms.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It is not recommended when a patient has a history of head and neck radiation.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It is high recommended in cysts of the neck.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 48,
+      "question_number": 17,
+      "type": "multiple",
+      "question_text": "Hyperthyroidism results from all of the conditions noted below. Which of the following commonly require surgical management?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Graves’ disease.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Struma ovarii.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Functioning metastatic thyroid carcinoma.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Toxic diffuse goiter.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Single toxic thyroid nodule.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 49,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "Which of the following statements regarding thyroid physiology are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Normally about 20% of T3 is secreted directly from the thyroid gland.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The thyroid gland is the only endogenous source of T4.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Excess thyroid hormone results in an increase in the number of ATP-dependent sodium pumps on the cell membrane.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The majority of thyroid hormone in circulating plasma is bound to albumin, thus limiting the availability of the metabolically active form.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Thyroid-stimulating hormone (TSH) decrease the levels of T3 and T4 in blood stream.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 50,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "Which is the definitive treatment of choice for toxic multinodular goiter?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Total thyroidectomy.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral subtotal thyroidectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Unilateral total lobectomy on the side of dominant disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "131I treatment.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Thyroid hormone treatment",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 51,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "Which of the following are causes of Cushing syndrome?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Posterior pituitary adenoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Adrenal hyperplasia.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Small cell lung carcinoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pheochromocytoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Adrenal carcinoma.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 52,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "The goiter situated in mediastinum is considered as:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Normotopic.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ectopic.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Aberrant.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Mediastinal.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Sublingual.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 53,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "Exophtalmus at one’s patient with goiter is a result of the compression of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Internal jugular vein.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Internal carotid artery.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Recurrent nerve.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cervical simpathecus.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "None of above-mentioned.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 54,
+      "question_number": 23,
+      "type": "single",
+      "question_text": "Normal radioiodine uptake in 2 hours is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "10%.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "20%.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "30%.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "50%.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "70%.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 55,
+      "question_number": 24,
+      "type": "single",
+      "question_text": "Proteic iodine may be decreased in following situations:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hypothyroid.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hyperthyroid.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Liver cirrhosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nephrotic syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cardiac insufficiency.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 56,
+      "question_number": 25,
+      "type": "single",
+      "question_text": "Which of the following tests could be used for recording of peripheral consumption of thyroid hormones:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Electrocardiogram",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Basal metabolism",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Serum cholesterol",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "C-reactive Protein (CRP)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Axillary reflexogram",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 57,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "Which of the following manifestations could be a result of overflow of thyroid hormones in peripheral blood:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cardiothyreosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Thyreotoxic enteropathy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Diabetes mellitus",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hepatosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 58,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "All of the following are complications of peptic ulcer surgery, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Duodenal stump blowout.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Dumping.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diarrhea.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Delayed gastric emptying.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Steatorrhea.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 59,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "The presentation of Zollinger-Ellison syndrome includes all of the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Hyperparathyroidism in patients with multiple endocrine neoplasia type 1 (MEN 1) syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diarrhea.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Migratory rash.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Jejunal ulcers.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Duodenal ulcers.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 60,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "All affirmations about the dumping syndrome are true, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Symptoms can be controlled with a somatostatin analog.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Diarrhea is always part of the dumping syndrome.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Flushing and tachycardia are common features of the syndrome.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Separating solids and liquids in the patient's oral intake alleviates some of the symptoms of the syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Early postoperative dumping after vagotomy often resolves spontaneously.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 61,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Which is the endoscopic finding, associated with the highest incidence of rebleeding in patients with bleeding duodenal ulcers:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Visible vessel.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Cherry-red spot.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Clean ulcer bed.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Duodenitis.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Shallow, 3-mm. ulcer.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 62,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "All of the following measures have been recommended for control of acid secretion in patients with Zollinger-Ellison syndrome, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antrectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Highly selective vagotomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Total gastrectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Vagotomy and pyloroplasty.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Medical therapy with Prilosec (omeprazole).",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 63,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "All of the following contribute to peptic ulcer disease, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cigarette smoking.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Nonsteroidal anti-inflammatory drugs.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Helicobacter pylori.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Gastrinoma.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Spicy foods.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 64,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "Which are the major stimulants of acid secretion by the gastric parietal cells:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Histamine.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Prostaglandin E2.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Acetylcholine.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Gastrin.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Norepinephrine.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 65,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Which are the methods of examination, used for determining the cause of postoperative peptic ulcer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophagogastroduodenoscopy.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Biopsy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Serum gastrin.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Irigografia.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Tests to evaluate the gastric secretion.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 66,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Which of the following approaches are included in the treatment of postoperative peptic ulcer:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "H2 –blockators.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Excluding the remedies with toxic effect to gastrointestinal mucosa.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Endoscopic methods.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Antiviral drugs.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Reoperation.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 67,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which of following clinical situations after stomach surgery sometimes need near total gastrectomy?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Early dumping syndrome.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Late dumping syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Postsurgical gastroparesis.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Alcaline reflux gastritis.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Postvagotomic diarrhoea.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 68,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Which of the following surgical interventions are most effective in treatment of dumping syndrome:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reduodenisation.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Vagotomy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Inversion of small intestine segment.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reduodenisation with reduction of evacuation throu gastric stump.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Gastrectomy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 69,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which is the operation of choice in gastro-jejuno-colic fistulas:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Double resection.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Triple resection with gastrojejunal and colo-colonic anasthomosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Double-stage operation.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Triple-stage operation.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Total gastrectomy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 70,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "First of all the frequency of postoperative peptic ulcer is determined by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Age of the patient.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Anamnesis of the disease.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Ulcer’s localization and size.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Ulcer’s complications at the time of operation.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Type of primary operation.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 71,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "After what type of operation for duodenal ulcer the appearance of postoperative peptic ulcer is less possible?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gastroenteroanasthomosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Partial gastrectomy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Trunkular vagotomy with draining operation.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Trunkular vagotomy with antrumectomy.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "High selective vagotomy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 72,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Fibroscopy reveals the third grade esophageal varices which bleed,the gastric mucosa without ulceration. Name the first method of hemostasis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Esophageal varices ligation.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The resection of inferior esophagus with gastroesophageal anasthomosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Plugging with Blackmore probe, intravenous pituitrine.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azygo-portal deconnection.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Spleno-renal anasthomosis.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 73,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "What is the most safest and objective method of diagnosing upper digestive haemorrhage?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fibroesophagogastroduodenoscopy.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Barium radiography.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Scintigraphy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Angiography.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Diagnostic laparoscopy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 74,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "What is the most useful method in the treatment of cirrhous portal hypertension,?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Drainage of Wirsung.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Truncal vagotomy.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lien transplantation.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azygo-portal deconection.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Left spleno-pancreatectomy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 75,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "What is the most common cause of portal hypertension?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congestive pericarditis.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The Budd-Chiari syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Liver cirrhosis with intrahepatic dam.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Quadrifurcation of the portal vein.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The lienal vein thrombosis.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 76,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "Which gradation is usedto assess the liver function in cirrhotic patients with portal hypertension:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ranson score.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Algover index.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Apgar score.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Child-Pugh cryterion.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Glasgow score.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 77,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "That is the indication for Tanner surgery in patients with portal hupertension:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Encefalopathy.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Refractory ascites to medical treatment.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Haemorrhagy through rupture of esophageal varices.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Haemorrhagy through rupture of colonic varices.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Haemorrhagy through rupture of rectal varices.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 78,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "What is the wrong affirmation about the prehepatic form of portal hypertension?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Occurs more frequently in children.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Causes intermittent claudication.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Distal spleno-renal anastomosis reduces portal pressure.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Is caused by the development of congenital anomalies of the portal vein.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Causes the onset of digestive haemorrhage.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 79,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "Cirrhogenic portal hypertension has the following complications,with the exception of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Jaundice.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Haemorrhage of esophageal varices.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Lower digestive haemorrhage.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Exophthalmia.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Encephalopathy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 80,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "List the causes of digestive bleeding in the context of portal hypertension:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rupture of esophageal varices.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Portal-hypertensive gastropathy.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Barrett’s esophageal epithelial dysplasia.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Breaking of the secondary hemorrhoids.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Breaking gastric varicose veins.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 81,
+      "question_number": 10,
+      "type": "multiple",
+      "question_text": "List the major risks of using the Blackmore probe:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Tracheal aspiration (Mendelson’s syndrome).",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rupture of the esophageal wall.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Paradoxical breathing.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rupture of large intrathecal vessels.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Heart rhytm disorders, angina pain.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 82,
+      "question_number": 11,
+      "type": "multiple",
+      "question_text": "Which of the following surgeries does rarely lead to hepatic encephalopathy?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The endo-lateral porto-cava anasthomosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The lateral-lateral porto-cava anasthomosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The proximal spleno-renal anasthomosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Distal spleno-renal anasthomosis (Warren).",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mesenterico-caval anasthomosis.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 83,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which of the following therapeutic modalities can be used to stop bleeding from esophageal varices?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Endoscopic sclerotherapy.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic esophagus resection with esophagoplasty.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sengstaken-Blackmore probe.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vagotomy with pyloroplasty.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Elasting ring ligature.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 84,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "What are the goals of surgical treatment in portal hypertension?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reducing gastric secretion.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Volumatic and hematic rebalancing.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Reducing portal hypertension.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Control of acute gastroesophagial variceal hemorrhage.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Reducing the risk of relapse of variceal bleeding.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 85,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "The Child classification criteria for the assessment of liver function include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bilirubin and serum albumin.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Ascites,neurological disorders.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Transaminases, urea, prothrombin.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Glucose, transferase",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "The state of nutrition.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 86,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Which of the following statements about the porto-caval shunt in emergency cases are true?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "A prompt haemostasis is obtained.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Should be followed by liver transplantation.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "A selective type shunt is preffered.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Has no contraindications.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Postoperative mortality is low.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 87,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "The spleen response to portal hypertension, regardless of the obstacle site, is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Splenomegaly.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hypervascularization with increased portal pressure through hiperaflux.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Immunological hypersplenism.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Splattering of the spleen.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "The occurrence of arterio-venous lienal fistulas",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 88,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which of the following conditions can cause a pre-hepatic portal obstruction?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Atresia of venous portal shaft.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Phlegm of the shaft of portal vein.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Thrombosis of the spleno-portal venous spindle.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Banti syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hepatic fibrosis.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 89,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "Which of the conditions below may cause intraheptatic portal obstruction?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pancreatic disorders.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Primitive splenomegaly.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Liver tumour.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Liver cirrhosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Budd-Chiari syndrome.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 90,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "The main causes of the suprahepatic portal obstruction are?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Budd-Chiari syndrome.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Constrictive pericarditis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Thrombosis of the lienal vein.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic fibrosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Liver cirrhosis.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 91,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Intermediate host for Echinococcus granulosus may be any of the one’s listed, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sheep.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pig.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Human.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dog.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Horse.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 92,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Complications of the Hydatid disease of the liver are the following, except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The rift in the pleura, bronchi.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The rupture in the abdominal cavity.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The rupture in the biliary pathways.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Pileflebitis.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Suppuration.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 93,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "What statement concerning the liver hydatid cyst is incorrect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Usually it’s unique.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "It is most commonly located in the left lobe of the liver.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Serology is often positive for hydatidosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It may erupt in biliary ways, pleura, abdominal cavity.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Surgery is necessary.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 94,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "The most common benign tumor of the liver is represented by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Liver lipoma.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Liver hemangioma.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Liver cystadenoma.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Liver leiomyoma.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Liver fibroma.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 95,
+      "question_number": 5,
+      "type": "multiple",
+      "question_text": "What statement concerning the hepatic alveolar echinococcosis is true:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ultrasound shows a single cystic image.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is transmitted primarily through foxes.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "It is often met especially in Moldova and southern Ukraine.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It is caused by Echinococcus granulosus.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Surgical treatment consists in the cysts liner.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 96,
+      "question_number": 6,
+      "type": "multiple",
+      "question_text": "What statement,related to non parasitic liver cyst, is incorrect:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It has acute onset.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "It can appear after trauma.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It is often without symptoms.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ecoguided punction is the optimal treatment solution.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Some complications may appear in evolution.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 97,
+      "question_number": 7,
+      "type": "multiple",
+      "question_text": "The treatment of choice in hydatid cyst of liver is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chemotherapy.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Surgery.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Actinic therapy.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hormone therapy.",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Antibiotic therapy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 98,
+      "question_number": 8,
+      "type": "multiple",
+      "question_text": "When is indicated marginal hepatic resection in liver hydatidosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "In all kinds of hydatid cysts whatever their evolutionary stage.",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "In suppurated hydatid cyst with liver piosclerosis.",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "In hepatic hydatid cyst complicated with biliary fistula.",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Eruption in the abdominal cavity.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "In hepatic hydatid cyst located marginally.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Surgery_5th year_Timis",
+      "source_file": "data/Graduation Exam Tests/Surgery_5th year_Timis.docx",
+      "question_order": 99,
+      "question_number": 9,
+      "type": "multiple",
+      "question_text": "Which of the following statements,referring to the alveolar echinococcosis of the liver, are false:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It has a slow evolution.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The diagnosis is experiencing difficulties.",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "It’s a malignant tumor.",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It has an invasive growth and a gloomy prognosis.",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Optimal treatment solution is peritoneal lavage-puncture.",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

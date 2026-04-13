@@ -1,0 +1,850 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+  "module": "Bronchitis_2026_OC",
+  "folder": "Pediatrics",
+  "questionCount": 24,
+  "questions": [
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Identify the most common etiological factor of acute bronchitis in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Food allergens",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Protozoa",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bacteria",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Fungi",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Viruses",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which clinical finding is most characteristic on physical examination in children with acute bronchitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Crackles",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Unilateral dullness to percussion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Normal vesicular breath sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diffuse wet rhonchi that change or clear after coughing",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Localized adventitious sounds",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "What type of cough is most typical at the onset of acute bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Productive cough with sputum",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Barking (spasmodic) cough",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Paroxysmal cough (in bouts)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dry cough",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Staccato cough",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Which clinical feature distinguishes acute obstructive bronchitis from acute simple bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Productive cough",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Fever",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Presence of wheezing",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Barking cough",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dry cough",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Which radiological feature is not characteristic of acute bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchial wall thickening",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tram-track opacities",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Narrowing of the cardiac shadow",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Atelectasis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Hyperinflation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Which clinical sign is not typical of bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest retractions",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Tachypnea",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Diffuse fine adventitious sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Localized crackles",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Wheezing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Which pathogen is most commonly responsible for acute bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Influenza virus type A1",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Influenza virus type A2",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Parainfluenza viruses",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Respiratory syncytial virus (RSV)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Enteroviruses",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which of the following statements does not characterize acute bronchiolitis in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It affects the small airways (bronchioles)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It is usually caused by viral infection",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wheezing is present",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Predominantly inspiratory dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Tachypnea is common",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Which clinical sign is essential for the diagnosis of acute simple bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dullness to percussion",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Diffuse wet rhonchi on auscultation",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Localized crepitations",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Marked infectious syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dyspnea",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which group of medications is commonly used in the treatment of acute simple bronchitis in school-age children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Antibiotics",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchodilators",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Anticoagulants",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cough suppressants",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Expectorants",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "In which situation are antibiotics indicated for the treatment of acute bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Viral infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bacterial infection",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fungic infection",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Presence of high fever",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Presence of wet cough",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which disease is characterized by a frequent, acute wet cough?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute laryngeal stenosis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute simple bronchitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bronchial asthma",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "What is the method of choice for confirming the diagnosis of acute simple bronchitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lung function testing",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lung scintigraphy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Electrocardiography",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Clinical examination",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 13,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "What is the main pathogenic mechanism in the development of acute bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic inflammation of the airways",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased salt content on airway surfaces",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Compression of lung tissue",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Acute inflammation of the distal airways (bronchioles)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Impairment of surfactant function",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 14,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Which clinical sign is most useful in the differential diagnosis between pneumonia and bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dyspnea",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Decreased vesicular breath sounds",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Chest retractions",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Unilateral dullness to percussion",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Diffuse adventitious sounds",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 15,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which disease in children is typically characterized by expiratory wheezing?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acute pharyngitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute stenosing laryngitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute obstructive bronchitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Epiglottitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pneumonia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 16,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "Which condition in children is characterized by inspiratory stridor?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Laryngeal obstruction",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Asthma exacerbation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bronchiolitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 17,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "What is the pharmacological action of salbutamol?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Stimulation of both α- and β-adrenergic receptors",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Antagonism of α-adrenergic receptors",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Selective stimulation of β2-adrenergic receptors",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Antagonism of β-adrenergic receptors",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Nonselective adrenergic receptor stimulation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 18,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "A 3-year-old child presents with cough for 4 days, low-grade fever, and normal general condition. Auscultation reveals diffuse moist rhonchi that partially clear after coughing. Percussion is normal. What is the most likely diagnosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lobar pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Acute simple bronchitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bronchiolitis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Foreign body aspiration",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pleurisy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 19,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "Which situation in a child with suspected acute bronchitis justifies additional diagnostic evaluation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mild cough lasting 3 days",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Normal physical examination between coughing episodes",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Persistent fever with focal chest findings",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Good response to symptomatic treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Absence of dyspnea",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 20,
+      "question_number": 1,
+      "type": "multiple",
+      "question_text": "Which factors increase the risk of developing acute obstructive bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Malnutrition",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Rickets",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Atopic dermatitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Passive smoking",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bottle feeding",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 21,
+      "question_number": 2,
+      "type": "multiple",
+      "question_text": "Which physical examination findings are typical of acute simple bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Localized dullness to percussion",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Prolonged expiration",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Normal percussion resonance",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diffuse wet rhonchi",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bronchophony",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 22,
+      "question_number": 3,
+      "type": "multiple",
+      "question_text": "Which clinical findings are characteristic of acute obstructive bronchitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chough",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inspiratory dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Stridor",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Expiratory wheezing",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Localized dullness to percussion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchitis_2026_OC",
+      "source_file": "data/Pediatrics/Bronchitis_2026_OC.docx",
+      "question_order": 23,
+      "question_number": 4,
+      "type": "multiple",
+      "question_text": "Which parameters indicate severe bronchiolitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "SaO2 < 90%",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "PaO2 ≤ 60 mmHg",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "PaCO2 ˃ 40 mmHg",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "SaO2 ˃ 96%",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "PaCO2 ≤ 45 mmHg",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

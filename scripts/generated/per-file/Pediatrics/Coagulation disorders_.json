@@ -1,0 +1,395 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Coagulation disorders_.docx",
+  "module": "Coagulation disorders_",
+  "folder": "Pediatrics",
+  "questionCount": 11,
+  "questions": [
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Choose the statement that is not characteristic for hemophilia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hematoma is a characteristic type of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "hemarthrosis is a characteristic type of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "bleedings are spontaneous or late posttraumatic",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "petechiae is the most specific symptom of hemophilia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "normal platelet count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Hemophilia A represents deficit of the coagulation factor:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "IX",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "VIII",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "XI",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "XII",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "V",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "First line treatment for acute bleeding in a child with hemophilia A includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "intravenous fluid infusions",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "epsilon-aminocaproic acid infusions",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "factor replacement infusions with cryoprecipitate",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "blood transfusions",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "platelet transfusion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Choose what is contraindicated in the treatment of children with hemophilia:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "factor replacement infusions with cryoprecipitate in case of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "fibrin glue for local treatment in mucosal bleedings",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Proper dental hygiene as a preventive measure",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "aspirin and aspirin-containing products",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "prophylactic self-infusion of factor VIII or IX",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Choose the type of inheritance in hemophilia A:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "autosomal dominant disorder",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "autosomal recessive disorder",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "X-linked recessive inheritance",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "multifactorial inheritance",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "teratogenic problem",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Choose the statement that is characteristic for Von Willebrand disease:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hematoma is a characteristic type of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "mixed type bleeding (hematoma, petechiae, bruising)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "skin purpura is a characteristic type of bleeding",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "unfavorable prognosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "frequent hemarthrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 6,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Choose the statement that is not characteristic for hemophilia A:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "normal or low hemoglobin/hematocrit values",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "normal bleeding time and normal prothrombin time",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "prolonged activated partial thromboplastin time (aPTT)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "low factor VIII levels (less than 50% activity)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "low platelet count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 7,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Choose the most frequent hereditary bleeding disorder in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital hypofibrinogenemia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hemophilia A (factor VIII deficiency)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Hemophilia B (factor IX deficiency)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Hemophilia C (factor XI deficiency)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Factor XII deficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 8,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Coagulation of factor VIII has all of the following characteristics EXCEPT:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "reduced activity in hemophilia A",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "reduced activity in classic von Willebrand disease",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "needed for normal platelet adhesion",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "reduced levels in disseminated intravascular coagulation",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "normal level in liver disease",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 9,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The prothrombin time, which is a test of the extrinsic or tissue coagulation pathway, is abnormally prolonged in:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "hemophilia A",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "von Willebrand disease",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "congenital factor XIII deficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "congenital factor VII deficiency",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "congenital factor XI deficiency",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Coagulation disorders_",
+      "source_file": "data/Pediatrics/Coagulation disorders_.docx",
+      "question_order": 10,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Coagulation studies on a patient with a bleeding disorder show factor VIII coagulant activity of 10 units/dL, factor IX coagulant activity of 60 units/dL, and von Willebrand factor activity of 100 units/dL. (Normal range for all three tests is 70 to 150 units/dL.) The bleeding time was 6 minutes (normal <10 minutes). These findings are diagnostic of:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "liver disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "von Willebrand disease",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "hemophilia A",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "hemophilia B",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "thrombasthenia",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

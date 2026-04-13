@@ -1,0 +1,1000 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+  "module": "Bronchial asthma_2026_OC",
+  "folder": "Pediatrics",
+  "questionCount": 30,
+  "questions": [
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Which class of immune cells plays a principal role in the pathogenesis of bronchial asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Lymphocytes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Endothelial cells",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Eosinophils",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Monocytes",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fibroblasts",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which class of immunoglobulins is primarily involved in the pathogenesis of atopic (allergic) bronchial asthma in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Immunoglobulin A (IgA)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Immunoglobulin D (IgD)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Immunoglobulin E (IgE)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Immunoglobulin M (IgM)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Immunoglobulin G (IgG)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "What is the main pathogenetic mechanism in the development of childhood asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Allergic inflammation of the bronchial mucosa",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Viral inflammation of the bronchial mucosa",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bacterial inflammation of the bronchial mucosa",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Autoimmune inflammation of the bronchial mucosa",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fungal inflammation of the bronchial mucosa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Which local effect of histamine is not characteristic of bronchial asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increased capillary permeability",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased mucus secretion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bronchodilation",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Bronchoconstriction",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Swelling of the bronchial mucosa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 4,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "What is the therapeutic effect of mast cell stabilizers in childhood asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increase of mediator release during allergic reactions",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Activation of β₂-adrenoreceptors",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Reduction of bronchial hyperreactivity",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Activation of alfa-adrenoreceptors",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Increase the required dose of bronchodilators",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 5,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Which manifestation is not characteristic of the pathogenesis of childhood asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchial smooth muscle spasm",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Mucosal edema",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Mucus hypersecretion",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Eosinophilic infiltration of the mucosa",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Laryngeal spasm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 6,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which drug group is not indicated for anti-inflammatory treatment of childhood asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Nonsteroidal anti-inflammatory drugs (NSAIDs)",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Inhaled corticosteroids",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Leukotriene receptor antagonists (LTRA)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sodium cromoglycate",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Ipratropium bromide",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 7,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Which group of drugs may frequently exacerbate asthma symptoms in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Aspirin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Corticosteroids",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Antihistamines",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Theophylline",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Leukotriene receptor antagonists (LTRA)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 8,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which test is used for daily monitoring of bronchial variability in children with asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Electrocardiography (ECG)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cardiointervalography",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Peak expiratory flow rate measurement",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chest X-ray",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Echocardiography",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 9,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Which biomarker in sputum reflects allergic airway inflammation in children with asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increased eosinophil count",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased total leukocyte count",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increased neutrophil count",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Increased monocyte count",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Increased platelet count",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 10,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "What is the principal goal of asthma management in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Achieve and maintain control of clinical symptoms",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Treat infectious foci",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Treat associated diseases",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Improve nasal breathing",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Improve blood microcirculation",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 11,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "A child presents with an acute asthma exacerbation. Which laboratory test provides the most critical information about respiratory status?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Complete blood count (CBC)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Arterial blood gases (ABG)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Blood urea nitrogen (BUN)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Activated partial thromboplastin time (aPTT)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Total serum IgE level",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 12,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "A 7-year-old female with asthma is playing a soccer game in gym class. Suddenly she develops cough, wheezing, and dyspnea during exercise. Which medication provides rapid relief?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Prednisone",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Montelukast",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Salbutamol",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Fluticasone propionate",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Theophylline",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 13,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "All of the following are risk factors for asthma except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Black race",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Early-life exposure to dust mites",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Maternal smoking",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Neonatal respiratory distress syndrome",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Frequent respiratory infections in infancy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 14,
+      "question_number": 21,
+      "type": "multiple",
+      "question_text": "Severe asthma is suggested by which of the following findings?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Speaking in single-word sentences",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Cyanosis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "PaCO2 > 40 mmHg",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Peak expiratory flow <50% of predicted/personal best",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "All of the above",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 15,
+      "question_number": 22,
+      "type": "multiple",
+      "question_text": "All of the following are risk factors for asthma except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Family history of asthma",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Eczema (atopy)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Household smoking exposure",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rural housing",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Allergen exposure",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 16,
+      "question_number": 23,
+      "type": "single",
+      "question_text": "Which pathogenetic mechanisms are involved in childhood bronchial asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Bronchial hyperresponsiveness",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Increased synthesis and release of inflammatory mediators",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 17,
+      "question_number": 24,
+      "type": "multiple",
+      "question_text": "Bronchial smooth muscle spasm (reversible airflow obstruction)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neutrophilic inflammation of the mucosa",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Airway remodelling (in persistent disease)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 18,
+      "question_number": 25,
+      "type": "single",
+      "question_text": "What are the diagnostic criteria for bronchial asthma in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Genetic predisposition",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Recurrent episodes of bronchial obstruction",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Elevated IgE levels",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 19,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "Which diseases should be considered in the differential diagnosis of bronchial asthma in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Foreign body aspiration",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Myocarditis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cystic fibrosis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Obstructive bronchitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 20,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "What are the therapeutic indications for initiating inhaled corticosteroids in children with asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Exacerbation occurring once a month",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inadequate response to other therapies",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Daily asthma symptoms or attacks",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Symptoms triggered by physical exertion",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Nightly nocturnal asthma symptoms",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 21,
+      "question_number": 30,
+      "type": "single",
+      "question_text": "Neurological manifestations (agitation, confusion, exhaustion)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "“Silent chest” with disappearance of cough",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rapid resolution of dyspnea within 4 hours of treatment",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Prolonged expiration with harsh breath sounds and rales",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 22,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "Which complaints are commonly reported by children with bronchial asthma?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Recurrent cough episodes",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Episodes of dyspnea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Skin itching (associated atopy)",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Wheezing",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sneezing and nasal obstruction",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 23,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "Which parameters are used to assess asthma severity in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Frequency of dyspnea episodes",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Duration and intensity of symptoms",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Frequency of viral respiratory infections",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Frequency of nocturnal symptoms",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Exercise tolerance",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 24,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "What factors may precipitate status asthmaticus in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Poor adherence or discontinuation of inhaled corticosteroids",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Use of antihistamines",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Uncontrolled, prolonged use of β₂-agonists",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Worsening airway inflammation or respiratory infection",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Proper administration of inhaled corticosteroids",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 25,
+      "question_number": 35,
+      "type": "multiple",
+      "question_text": "Frequent respiratory infections with inappropriate antibiotic use",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Perinatal and developmental factors (e.g., prematurity, immature airway structure and immune defenses in early childhood)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Absence of allergic disease in family history",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Early-life environmental exposures",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 26,
+      "question_number": 36,
+      "type": "multiple",
+      "question_text": "Which diagnostic investigations are recommended for asthma evaluation in school-aged children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Measurement of total and specific serum IgE",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Abdominal radiography",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Assessment of circulating immune complexes",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Sputum examination (e.g., eosinophils)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Spirometry",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 27,
+      "question_number": 37,
+      "type": "multiple",
+      "question_text": "What are the immediate complications of bronchial asthma in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Status asthmaticus",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chronic heart failure",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Spontaneous pneumothorax",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Subcutaneous or mediastinal emphysema",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Segmental atelectasis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 28,
+      "question_number": 38,
+      "type": "multiple",
+      "question_text": "Which food allergens most frequently trigger asthma attacks in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Eggs",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Citrus fruits",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fish and seafood",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Peanuts",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Corn",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Bronchial asthma_2026_OC",
+      "source_file": "data/Pediatrics/Bronchial asthma_2026_OC.docx",
+      "question_order": 29,
+      "question_number": 39,
+      "type": "multiple",
+      "question_text": "Which environmental factors commonly trigger asthma exacerbations in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "House dust",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Molds",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pollen",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Tobacco smoke",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dry, hot weather",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

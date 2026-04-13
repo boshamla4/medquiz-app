@@ -1,0 +1,570 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Malabsorbtion corrected.docx",
+  "module": "Malabsorbtion corrected",
+  "folder": "Pediatrics",
+  "questionCount": 16,
+  "questions": [
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Cystic fibrosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Generalized exocrinopathy",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Bone disease",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Endocrine pancreas tumor",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Connective tissue disease",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystic lesions of the gastrointestinal tract",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Which of the statements is characteristic for the celiac disease in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "It is an infectious disease",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "It can be cured with fat-soluble vitamins",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It requires exclusion of food products containing gluten",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "It requires systemic antibacterial therapy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "It has poor prognosis for life",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 2,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Allergy to cow milk protein is characterized by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gluten intolerance",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Malabsorption syndrome",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Allergy to milk proteins",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Impaired ability to digest lactose",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Impaired activity of lactase enzyme",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 3,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "Cow’s milk allergy in infants is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Functional constipation",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Complication of the cardiovascular system diseases",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Swallowing problems",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The first allergic disease in the ”atopic march”",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Is common in neuromuscular pathology",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 4,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Choose the typical manifestation of cow’s milk allergy in infants:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Vomiting",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Constipation",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Joint pain",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Muscle pain",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Drowsiness",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 5,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Choose risk factors for cows' milk protein allergy in children:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "acute bronchitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "bacterial enteropathy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "allergic enteropathy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "dysuria",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "biliary disorders.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 6,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "What causes cystic fibrosis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Congenital malformations",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Monogenic disorder",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acquired disease",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Chromosomal aberration",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Polygenic disorder",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 7,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Which group of cells is affected in cystic fibrosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Endocrine glands",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Langerhans cells",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Parietal gastric glands",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Exocrine glands",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Enterocytes",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 8,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "The neonatal onset of cystic fibrosis is represented by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Biliary atresia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Lobar pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Meconium ileus",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Kernicterus (nuclear jaundice)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Bronchial dysplasia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 9,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Specify the pathophysiology of digestive affection in cystic fibrosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cystic mucosal damage",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Maldigestion",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Primary intestinal lymphangiectasia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Disturbance of mesenteric venous blood flow",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Intestinal villous atrophy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 10,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "Select the gold standard for the diagnosis of cystic fibrosis:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intestinal biopsy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Rectoscopy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Microscopic examination of feces",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Biochemistry of blood",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sweat test",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 11,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Specific features of diarrhea in cystic fibrosis is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Watery, foamy acidic stools",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bulky, fetid, steatorrhoeic stools",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Bloody stools",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Semiliquid stools with mucus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Pasty stools with sour milk smell",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 12,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "High levels of chloride in sweat is typical for:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Chronic pancreatitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Celiac disease",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Exudative enteropathy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic cirrhosis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 13,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Celiac disease is the intolerance to one of the following substances:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fructose",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Gluten",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lipids",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cow milk protein",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Carbohydrate",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 14,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "The method of choice for the diagnosis of celiac disease is:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Intestinal biopsy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sweat test",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Urine culture",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal ultrasound",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Colonoscopy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Malabsorbtion corrected",
+      "source_file": "data/Pediatrics/Malabsorbtion corrected.docx",
+      "question_order": 15,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Antibodies that are not useful for the diagnosis of celiac disease are:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anti-deamidated gliadin peptide",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Anti-endomysium",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Antinuclear",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Antireticulin",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Anti-tissue transglutaminase",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

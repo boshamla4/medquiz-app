@@ -1,0 +1,1465 @@
+{
+  "generatedAt": "2026-04-13T15:05:27.497Z",
+  "sourceFolder": "data",
+  "file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+  "module": "Acute repiratory infections_2026_OC",
+  "folder": "Pediatrics",
+  "questionCount": 42,
+  "questions": [
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 0,
+      "question_number": 1,
+      "type": "single",
+      "question_text": "Which group of diseases is most common in young children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rheumatic diseases",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Respiratory infections",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Digestive system infections",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Urinary tract infections",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Nosocomial infections",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 1,
+      "question_number": 2,
+      "type": "single",
+      "question_text": "Respiratory syncytial virus (RSV) most commonly causes which disorder in infants?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Purulent sinusitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Bronchiolitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Suppurative pleurisy",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diarrhea",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Common cold (coryza)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 2,
+      "question_number": 3,
+      "type": "single",
+      "question_text": "Rhinovirus infection in children most commonly leads to which condition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Infectious toxic encephalopathy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Gastrointestinal disorder",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Common cold (coryza)",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Streptococcal pharyngitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 3,
+      "question_number": 4,
+      "type": "single",
+      "question_text": "Which clinical symptom is not useful in differentiating viral croup from epiglottitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Dysphonia",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Muffled voice",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sore throat and dysphagia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Hypersalivation",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Wheezing",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 4,
+      "question_number": 5,
+      "type": "single",
+      "question_text": "Which of the following pediatric emergencies is not typically a complication of acute respiratory infections?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neurotoxicity",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Epiglottitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Viral croup",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Bronchiolitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Angioedema",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 5,
+      "question_number": 6,
+      "type": "single",
+      "question_text": "In more than 80% of pediatric cases, epiglottitis is caused by:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Haemophilus influenzae type b",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mycoplasma pneumoniae",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Adenoviruses",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Respiratory syncytial virus",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 6,
+      "question_number": 7,
+      "type": "single",
+      "question_text": "Which pathogen is most commonly associated with recurrent acute otitis media in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Enterococcus spp.",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Chlamydia trachomatis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Moraxella catarrhalis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Staphylococcus aureus",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Streptococcus pneumoniae",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 7,
+      "question_number": 8,
+      "type": "single",
+      "question_text": "Which of the following is not a typical sign of epiglottitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Respiratory distress",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Dysphagia",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Dysphonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dystonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Drooling",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 8,
+      "question_number": 9,
+      "type": "single",
+      "question_text": "Treatment of moderate to severe viral croup (laryngotracheitis) includes all the following except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Humidified oxygen therapy",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Racemic epinephrine",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Amoxicillin",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Cold humidified air",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dexamethasone",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 9,
+      "question_number": 10,
+      "type": "single",
+      "question_text": "Management of epiglottitis includes all the following except:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Administration of humidified oxygen",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Administration of dexamethasone",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Keeping the child in a sitting position",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Administration of antibiotics (e.g., ceftriaxone)",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Performing routine throat examination",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 10,
+      "question_number": 11,
+      "type": "single",
+      "question_text": "Which acute respiratory infection is a major indication for hospitalization in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Epiglottitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Acute nasopharyngitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Acute otitis externa",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Acute simple bronchitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute pharyngitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 11,
+      "question_number": 12,
+      "type": "single",
+      "question_text": "Which clinical sign is characteristic of viral croup in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Facial swelling",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sialorrhea (drooling)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wet cough",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Swallowing disorders",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dysphonia (hoarseness)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 12,
+      "question_number": 13,
+      "type": "single",
+      "question_text": "What is the most common cause of upper respiratory tract infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Gram-positive bacteria",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Atypical pathogens (Mycoplasma spp., Chlamydia spp.)",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Viruses",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Protozoa",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Fungi",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 13,
+      "question_number": 14,
+      "type": "single",
+      "question_text": "Which of the following is not a risk factor for respiratory infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Swallowing disorders",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Prematurity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Anemia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Breastfeeding",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Rickets",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 14,
+      "question_number": 15,
+      "type": "single",
+      "question_text": "Which of the following is not a predisposing factor for respiratory infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Increased secretion of secretory IgA",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Prematurity",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Immature immune defense mechanisms",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Small airway diameter",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Positive family history",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 15,
+      "question_number": 16,
+      "type": "single",
+      "question_text": "Which pathophysiological mechanism is not characteristic of acute respiratory infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Mucosal edema",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Increased mucociliary clearance",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Mucosal infiltration",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vascular congestion",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Mucus hypersecretion",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 16,
+      "question_number": 17,
+      "type": "single",
+      "question_text": "Which immunological component plays a key role in respiratory mucosal defense?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Serum IgA",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Serum IgM",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Serum IgG",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Secretory IgA",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Total IgE",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 17,
+      "question_number": 18,
+      "type": "single",
+      "question_text": "Which method is not recommended for cooling a febrile child?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Removing excess clothing",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sponging with ice water",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Sponging with tepid water",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Providing airflow across the body",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Sponging with alcohol",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 18,
+      "question_number": 19,
+      "type": "single",
+      "question_text": "What is the first-line medication for treating fever in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acetylsalicylic acid",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Paracetamol",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Ibuprofen",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Diclofenac",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Metamizole",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 19,
+      "question_number": 20,
+      "type": "single",
+      "question_text": "What is considered a second-line medication for treating fever in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Acetylsalicylic acid",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Paracetamol",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Ibuprofen",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Diclofenac",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Metamizole",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 20,
+      "question_number": 21,
+      "type": "single",
+      "question_text": "Which measure represents a specific prophylactic strategy against respiratory infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Oseltamivir",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Nasal lavage with normal saline",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Vitamin C supplementation",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Vaccination",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Physical activity (sports)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 21,
+      "question_number": 22,
+      "type": "single",
+      "question_text": "Which viral infection most commonly presents with croup in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Enterovirus infection",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Parainfluenza virus infection",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Adenovirus infection",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Rotavirus infection",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Influenza virus infection",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 22,
+      "question_number": 24,
+      "type": "single",
+      "question_text": "Direct fiberoptic laryngoscopy (performed in controlled conditions)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Which clinical sign indicates acute respiratory failure in a child?",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Wet rhonchi",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Wheezing",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Dullness to percussion",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Dry rales",
+          "is_correct": true
+        },
+        {
+          "letter": "A",
+          "text": "Which signs indicate respiratory failure in children with acute respiratory infections?",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 23,
+      "question_number": 25,
+      "type": "multiple",
+      "question_text": "Signs of increased work of breathing (paradoxical movements, chest indrawing)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Cyanosis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Hoarseness",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cough",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 24,
+      "question_number": 26,
+      "type": "multiple",
+      "question_text": "What are the risk factors for developing acute respiratory infections in young children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Attendance at kindergarten/daycare",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Immaturity of local pulmonary defense mechanisms",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Bottle-feeding",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Influenza vaccination",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Anemia",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 25,
+      "question_number": 27,
+      "type": "multiple",
+      "question_text": "Croup in children is characterized by which of the following?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Abrupt onset",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Barking cough",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hoarseness",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Inspiratory stridor",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Expiratory wheezing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 26,
+      "question_number": 28,
+      "type": "multiple",
+      "question_text": "Which conditions are classified as upper respiratory tract infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Laryngitis",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Tonsillitis/pharyngitis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Rhinitis",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Epiglottitis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Bronchiolitis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 27,
+      "question_number": 29,
+      "type": "multiple",
+      "question_text": "What clinical manifestations may occur in parainfluenza infection in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Purulent rhinitis",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Follicular tonsillitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Stridor",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Signs of pneumonia",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Signs of laryngotracheobronchitis (croup)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 28,
+      "question_number": 30,
+      "type": "multiple",
+      "question_text": "What are the criteria for hospitalization in children with acute respiratory infections?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decreased level of consciousness",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Neurologic complications (e.g., convulsions)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "High fever poorly tolerated or difficult to control",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Acute bronchitis",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Wheezing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 29,
+      "question_number": 31,
+      "type": "multiple",
+      "question_text": "Which children are at increased risk for influenza complications?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Children younger than 2 years",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Children with chronic diseases",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Children with primary immunodeficiency",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Vaccinated children",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Family history of allergy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 30,
+      "question_number": 32,
+      "type": "multiple",
+      "question_text": "Treatment of acute viral respiratory infections in young children includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reducing fluid intake",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Use of acetylsalicylic acid as antipyretic",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Increasing fluid intake",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Routine antibiotic therapy",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Antiviral therapy when indicated",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 31,
+      "question_number": 33,
+      "type": "multiple",
+      "question_text": "Management of moderate to severe viral croup in children includes:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Humidified air or gas administration",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen therapy",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Corticosteroids",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Nebulized epinephrine",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Routine antibiotic therapy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 32,
+      "question_number": 34,
+      "type": "multiple",
+      "question_text": "Preventive measures against viral respiratory infections in children include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Avoiding contact with infected individuals",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Physical activity (sports)",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Antibiotic prophylaxis",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Influenza vaccination",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Antiviral prophylaxis in selected cases (e.g., oseltamivir)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 33,
+      "question_number": 36,
+      "type": "single",
+      "question_text": "Severe allergic reaction (anaphylaxis) to a previous vaccine dose or to vaccine components",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Allergy to cow's milk protein",
+          "is_correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Allergy to penicillin",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Cystic fibrosis",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 34,
+      "question_number": 37,
+      "type": "multiple",
+      "question_text": "Which children are candidates for influenza vaccination?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Newborn infants",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Child with chronic lung disease in remission",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Child with chronic lung disease during exacerbations",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Healthy children older than 6 months",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Children with tuberculosis",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 35,
+      "question_number": 38,
+      "type": "multiple",
+      "question_text": "What complications may occur following acute respiratory infections in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Neurologic complications (e.g., convulsions)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Reye syndrome if acetylsalicylic acid (aspirin) is used",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Pneumonia",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Congenital heart defects",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Acute respiratory failure",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 36,
+      "question_number": 39,
+      "type": "multiple",
+      "question_text": "In which situations is antibiotic therapy indicated in acute respiratory infections?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Persistent high fever after the third day of illness",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "High fever on the first day of illness",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Acute cough alone",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Severe catarrhal symptoms alone",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Prolonged or worsening clinical course",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 37,
+      "question_number": 40,
+      "type": "multiple",
+      "question_text": "Which signs are commonly associated with viral pharyngitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sneezing",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Rhinorrhea",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dry cough",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Tonsillar exudates with necrotic crypts",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Papulovesicular skin lesions",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 38,
+      "question_number": 41,
+      "type": "multiple",
+      "question_text": "Which are late complications of group A β-hemolytic streptococcal (GABHS) pharyngitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Rheumatic fever and subsequent rheumatic heart disease",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Poststreptococcal glomerulonephritis",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Peritonsillar abscess",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Systemic infection",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Otitis media",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 39,
+      "question_number": 42,
+      "type": "multiple",
+      "question_text": "Which antibiotics are appropriate for treating group A β-hemolytic streptococcal (GABHS) pharyngitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Penicillin",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Amoxicillin-clavulanate",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Macrolides (in case of penicillin allergy)",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Cephalosporins",
+          "is_correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Aminoglycosides",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 40,
+      "question_number": 43,
+      "type": "multiple",
+      "question_text": "Which are early complications of group A β-hemolytic streptococcal (GABHS) pharyngitis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Streptococcal toxic shock syndrome (STSS)",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Acute otitis media / sinusitis",
+          "is_correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Rheumatic fever and subsequent rheumatic heart disease",
+          "is_correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Poststreptococcal glomerulonephritis",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Peritonsillar or retropharyngeal abscess",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "module": "Acute repiratory infections_2026_OC",
+      "source_file": "data/Pediatrics/Acute repiratory infections_2026_OC.docx",
+      "question_order": 41,
+      "question_number": 44,
+      "type": "multiple",
+      "question_text": "Which signs suggest acute bacterial sinusitis in children?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Worsening or new onset of nasal discharge after initial improvement",
+          "is_correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Watery rhinorrhea only",
+          "is_correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Fever after initial clinical improvement",
+          "is_correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Purulent nasal discharge for ≥3 consecutive days",
+          "is_correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Conjunctival redness",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}
