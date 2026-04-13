@@ -1476,7 +1476,10 @@ async function main() {
       fs.rmSync(PER_FILE_OUTPUT_DIR, { recursive: true, force: true });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      throw new Error(`Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}`);
+      throw new Error(
+        `Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}. ` +
+          'Check file permissions, active file locks, or remove the directory manually and retry.'
+      );
     }
 
     let filesWritten = 0;
