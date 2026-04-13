@@ -1472,8 +1472,14 @@ async function main() {
   console.log(`\nOutput written to: ${path.relative(ROOT, OUTPUT_FILE)}`);
 
   if (WRITE_PER_FILE_JSON) {
-    fs.rmSync(PER_FILE_OUTPUT_DIR, { recursive: true, force: true });
+    try {
+      fs.rmSync(PER_FILE_OUTPUT_DIR, { recursive: true, force: true });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      throw new Error(`Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}`);
+    }
 
+    let filesWritten = 0;
     for (const fileEntry of payload.files) {
       const fileOutputPath = getPerFileOutputPath(fileEntry.file);
       fs.mkdirSync(path.dirname(fileOutputPath), { recursive: true });
@@ -1494,9 +1500,12 @@ async function main() {
         ),
         'utf8'
       );
+      filesWritten += 1;
     }
 
-    console.log(`Per-file output written to: ${path.relative(ROOT, PER_FILE_OUTPUT_DIR)}`);
+    console.log(
+      `Per-file output written: ${filesWritten} file(s) to ${path.relative(ROOT, PER_FILE_OUTPUT_DIR)}`
+    );
   }
 }
 
