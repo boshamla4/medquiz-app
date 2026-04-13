@@ -1478,11 +1478,11 @@ async function main() {
       const message = error instanceof Error ? error.message : String(error);
       throw new Error(
         `Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}. ` +
-          'Check file permissions, active file locks, or remove the directory manually and retry.'
+          'Check file permissions and active file locks, then retry.'
       );
     }
 
-    let filesWritten = 0;
+    let perFileOutputCount = 0;
     for (const fileEntry of payload.files) {
       const fileOutputPath = getPerFileOutputPath(fileEntry.file);
       fs.mkdirSync(path.dirname(fileOutputPath), { recursive: true });
@@ -1503,11 +1503,11 @@ async function main() {
         ),
         'utf8'
       );
-      filesWritten += 1;
+      perFileOutputCount += 1;
     }
 
     console.log(
-      `Per-file output written: ${filesWritten} file(s) to ${path.relative(ROOT, PER_FILE_OUTPUT_DIR)}`
+      `Per-file output written: ${perFileOutputCount} file(s) to ${path.relative(ROOT, PER_FILE_OUTPUT_DIR)}`
     );
   }
 }
