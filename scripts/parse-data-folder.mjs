@@ -1475,11 +1475,15 @@ async function main() {
     try {
       fs.rmSync(PER_FILE_OUTPUT_DIR, { recursive: true, force: true });
     } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      throw new Error(
-        `Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}. ` +
-          'Check file permissions and active file locks, then retry.'
-      );
+      if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+        // No existing output directory to clean.
+      } else {
+        const message = error instanceof Error ? error.message : String(error);
+        throw new Error(
+          `Failed to clean per-file output directory (${PER_FILE_OUTPUT_DIR}): ${message}. ` +
+            'Check file permissions and active file locks, then retry.'
+        );
+      }
     }
 
     let perFileOutputCount = 0;
