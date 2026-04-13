@@ -18,6 +18,15 @@ const ROOT = process.cwd();
 const DATA_DIR = path.join(ROOT, 'data');
 const OUTPUT_DIR = path.join(ROOT, 'scripts', 'generated');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'parsed-questions.json');
+const PER_FILE_OUTPUT_DIR = path.join(OUTPUT_DIR, 'per-file');
+const WRITE_PER_FILE_JSON = process.argv.includes('--per-file-json');
+
+function getPerFileOutputPath(fileRelativePath) {
+  const normalized = fileRelativePath.replace(/\\/g, '/');
+  const withoutDataPrefix = normalized.replace(/^data\//, '');
+  const parsed = path.parse(withoutDataPrefix);
+  return path.join(PER_FILE_OUTPUT_DIR, parsed.dir, `${parsed.name}.json`);
+}
 
 // ---------------------------------------------------------------------------
 // HTML helpers
@@ -1461,6 +1470,34 @@ async function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(payload, null, 2), 'utf8');
   console.log(`\nOutput written to: ${path.relative(ROOT, OUTPUT_FILE)}`);
+
+  if (WRITE_PER_FILE_JSON) {
+    fs.rmSync(PER_FILE_OUTPUT_DIR, { recursive: true, force: true });
+
+    for (const fileEntry of payload.files) {
+      const fileOutputPath = getPerFileOutputPath(fileEntry.file);
+      fs.mkdirSync(path.dirname(fileOutputPath), { recursive: true });
+      fs.writeFileSync(
+        fileOutputPath,
+        JSON.stringify(
+          {
+            generatedAt: payload.generatedAt,
+            sourceFolder: payload.sourceFolder,
+            file: fileEntry.file,
+            module: fileEntry.module,
+            folder: fileEntry.folder,
+            questionCount: fileEntry.questionCount,
+            questions: fileEntry.questions,
+          },
+          null,
+          2
+        ),
+        'utf8'
+      );
+    }
+
+    console.log(`Per-file output written to: ${path.relative(ROOT, PER_FILE_OUTPUT_DIR)}`);
+  }
 }
 
 main().catch((err) => {

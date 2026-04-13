@@ -15,6 +15,15 @@ This will:
 
 The importer is guarded to run once (tag `data-folder-json-v1`) and will skip duplicate runs.
 
+For personal verification, you can also generate one JSON per parsed source file:
+
+```bash
+npm run parse:data:per-file
+```
+
+This keeps the normal combined output and additionally writes per-file files under
+`scripts/generated/per-file/` (mirroring the `data/` folder structure).
+
 ## Getting Started
 
 First, run the development server:

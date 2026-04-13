@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "parse:data": "node scripts/parse-data-folder.mjs",
+    "parse:data:per-file": "node scripts/parse-data-folder.mjs --per-file-json",
     "import:data": "node scripts/import-parsed-json.mjs",
     "reimport:data": "node scripts/import-parsed-json.mjs --reset",
     "import:supabase": "node scripts/import-to-supabase.mjs",
