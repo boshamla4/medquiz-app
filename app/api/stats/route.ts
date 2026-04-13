@@ -115,17 +115,27 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const fileMap = new Map<string, { answered_count: number; correct_count: number; partial_sum: number }>();
 
   for (const row of rowsToAggregate) {
-    const snap =
-      typeof row.question_snapshot === 'string'
-        ? (JSON.parse(row.question_snapshot) as { source_file?: string; module?: string })
-        : (row.question_snapshot as { source_file?: string; module?: string });
+    let snap: { source_file?: string; module?: string };
+    try {
+      snap =
+        typeof row.question_snapshot === 'string'
+          ? (JSON.parse(row.question_snapshot) as { source_file?: string; module?: string })
+          : (row.question_snapshot as { source_file?: string; module?: string });
+    } catch {
+      continue; // skip rows with corrupted snapshot data
+    }
 
     const sourceFile = snap.source_file ?? snap.module ?? 'Unknown';
 
-    const ua =
-      typeof row.user_answer === 'string'
-        ? (JSON.parse(row.user_answer) as number[])
-        : (row.user_answer ?? []);
+    let ua: number[];
+    try {
+      ua =
+        typeof row.user_answer === 'string'
+          ? (JSON.parse(row.user_answer) as number[])
+          : (row.user_answer ?? []);
+    } catch {
+      ua = [];
+    }
     const answered = Array.isArray(ua) && ua.length > 0;
 
     // Use persisted score_weight; fall back to is_correct boolean for legacy rows

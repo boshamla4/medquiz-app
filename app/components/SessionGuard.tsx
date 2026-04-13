@@ -16,6 +16,7 @@ export default function SessionGuard({ children }: { children: React.ReactNode }
 
   useEffect(() => {
     async function validate() {
+      if (document.visibilityState === 'hidden') return;
       try {
         const res = await apiGet('/api/auth/validate', { redirectOn401: false });
         if (res.status === 401) {

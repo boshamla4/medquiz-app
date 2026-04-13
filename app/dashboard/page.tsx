@@ -173,14 +173,12 @@ function DashboardContent() {
     async function loadStats() {
       setStatsLoading(true);
       try {
-        const [recentRes, bestRes] = await Promise.all([
-          apiGet('/api/exam/history?limit=5&sort=date'),
-          apiGet('/api/exam/history?limit=1&sort=score'),
-        ]);
-
-        if (!recentRes.ok || !bestRes.ok) return;
-
+        const recentRes = await apiGet('/api/exam/history?limit=5&sort=date');
+        if (!recentRes.ok) return;
         const recentData = (await recentRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
+
+        const bestRes = await apiGet('/api/exam/history?limit=1&sort=score');
+        if (!bestRes.ok) return;
         const bestData = (await bestRes.json()) as { data?: ExamHistoryEntry[]; total?: number };
 
         const recentEntries = recentData.data ?? [];
