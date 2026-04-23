@@ -787,7 +787,7 @@ function DashboardContent() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Notice</h3>
                 <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  We have identified inconsistencies in some questions and answers. We are actively fixing them. Please be patient, and your feedback is valuable.
+                  After the database fix, exams taken before 23.04.2026 cannot be retaken using the retry function. Sorry for the inconvenience. Good luck on your exams.
                 </p>
               </div>
             </div>

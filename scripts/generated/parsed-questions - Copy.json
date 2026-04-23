@@ -3,7 +3,7 @@
   "sourceFolder": "data",
   "totalFiles": 25,
   "totalQuestions": 3566,
- "files": [
+  "files": [
     {
       "file": "data/Graduation Exam Tests/Cardiology_Grejdieru.docx",
       "module": "Cardiology_Grejdieru",
@@ -17516,7 +17516,7 @@
       "file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
       "module": "Gastro_Berliba",
       "folder": "Graduation Exam Tests",
-      "questionCount": 455,
+      "questionCount": 454,
       "questions": [
         {
           "module": "Gastro_Berliba",
@@ -31191,41 +31191,6 @@
         {
           "module": "Gastro_Berliba",
           "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
-          "question_order": 454,
-          "question_number": 392,
-          "type": "single",
-          "question_text": "Which tests are including initial evaluation for suspected hepatitis C?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Glucose, urea, prothrombin",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "ARN HCV, ALT, AST",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "ALT, urea, creatinine",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Total bilirubine, direct bilirubine, INR",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Alkaline phosphatase, LDH, albumin",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Gastro_Berliba",
-          "source_file": "data/Graduation Exam Tests/Gastro_Berliba.docx",
           "question_order": 391,
           "question_number": 393,
           "type": "multiple",
@@ -41807,7 +41772,7 @@
       "file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
       "module": "Obstetrics_Ginecol_Catrinici",
       "folder": "Graduation Exam Tests",
-      "questionCount": 508,
+      "questionCount": 472,
       "questions": [
         {
           "module": "Obstetrics_Ginecol_Catrinici",
@@ -42435,41 +42400,6 @@
             {
               "letter": "E",
               "text": "betamethasone",
-              "is_correct": true
-            }
-          ]
-        },
-         {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 472,
-          "question_number": 19,
-          "type": "multiple",
-          "question_text": ". Which of the circumstances increases the risk of a multiple pregnancy:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "family history of  multiple pregnancy",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "primiparity",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "induction of ovulation with clomiphen citrate ",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "maternal age more than 30 years",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "in vitro fertilization",
               "is_correct": true
             }
           ]
@@ -43521,76 +43451,6 @@
               "letter": "E",
               "text": "stroke",
               "is_correct": false
-            }
-          ]
-        },
-         {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 473,
-          "question_number": 50,
-          "type": "single",
-          "question_text": "After how many days of ovulation embryo implantation occurs?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "3-5 days",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "7-9 days",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "10-12 days",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "13-15 days",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": ">15 days",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 474,
-          "question_number": 51,
-          "type": "multiple",
-          "question_text": "What is true about CIN :",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "premalignant lesion",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "hpv predisposes ",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "pap smear can detect it",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "malignant lesion",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "occurs at squamo-columnar junction ",
-              "is_correct": true
             }
           ]
         },
@@ -45242,286 +45102,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 475,
-          "question_number": 91,
-          "type": "multiple",
-          "question_text": "Treatment of endometriosis include:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "medroxyprogesterone  acetate",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "tibolone",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "OCP",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "danazol",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "methotrexate",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 476,
-          "question_number": 92,
-          "type": "multiple",
-          "question_text": "Treatment of endometriosis include:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "estrogen",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "progesterone",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "OCP",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "danazol",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "GnRH",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 477,
-          "question_number": 93,
-          "type": "multiple",
-          "question_text": "Drugs used in endometriosis are:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "testosterone",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "danazol",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "GnRH",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "progesterone",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "estrogen",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 478,
-          "question_number": 94,
-          "type": "single",
-          "question_text": "Best investigation to establish the diagnosis of endometriosis is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "laparoscopy",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "USG",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "X-ray",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "CT scan",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "seric hormone",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 479,
-          "question_number": 95,
-          "type": "single",
-          "question_text": "True statement regarding adenomiosis is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "most common in nullipara",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "progestin are agents of choice for medical management",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "presents with menorrhagia, dysmenorrhea, and an enlarged uterus",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "more common in young women",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "hormone independent disease",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 480,
-          "question_number": 96,
-          "type": "multiple",
-          "question_text": "Drugs for treatment of primary dysmenorrhea are:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "bromocriptine",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "ibuprofen",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "mefenamic acid",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "norethisterone and ethinyl estradiol",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "estrogen",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 481,
-          "question_number": 97,
-          "type": "single",
-          "question_text": "A 20-year-old woman gives a history of sharp pain in the lower abdomen for 2-3 days every month approximately 2 weeks before the menses. The most probable etiology for her pain is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "endometriosis",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "dysmenorrhea",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "pelvic tuberculosis",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "mittelschmerz",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "PID",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 482,
-          "question_number": 98,
-          "type": "single",
-          "question_text": "Which is the treatment of choice for premenstrual syndrome?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "SSRI",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "progesterone",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "estrogens",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "anxiolytics",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "tamoxifen",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 95,
           "question_number": 99,
           "type": "single",
@@ -46041,41 +45621,6 @@
               "letter": "E",
               "text": "laparoscopy",
               "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 483,
-          "question_number": 114,
-          "type": "multiple",
-          "question_text": "Which solutions are used during the detailed colposcopy?:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "3% Lugol solution",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "KMnO4 solution",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "3% Acetic acid solution",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "6% H2O2 solution",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "0.9% NaCl solution",
-              "is_correct": false
             }
           ]
         },
@@ -46950,41 +46495,6 @@
             {
               "letter": "E",
               "text": "an acceleration of fetal heart rate of 15 beats or more above the baseline for at least 15 seconds is observed is observed during 20 minutes",
-              "is_correct": false
-            }
-          ]
-        },
-         {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 484,
-          "question_number": 141,
-          "type": "single",
-          "question_text": "Normal fetal scalp pH is considered: ",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "7.35-7.45",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "7.25-7.35",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "7.10-7.20",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "7.00-7.10",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "6.90-7.00",
               "is_correct": false
             }
           ]
@@ -48567,321 +48077,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 485,
-          "question_number": 187,
-          "type": "multiple",
-          "question_text": "Which of the following statements concerning viral hepatitis in pregnancy are true?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "hepatitis B core antigen status is the most sensitive indicator of positive vertical transmission of the disease ",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "hepatitis B is the most common form of hepatitis after blood transfusion ",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "the proper treatment of infants born to infected mothers includes the administration of hepatitis B immunoglobulin as well as vaccine",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "patients who develop chronic active hepatitis are an increased risk of fetal malformations",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "hepatitis B is not a contraindication for breastfeeding",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 486,
-          "question_number": 188,
-          "type": "multiple",
-          "question_text": "In a female with appendicitis in pregnancy treatment of choice is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "surgery at earliest",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "abortion with appendectomy",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "surgery after delivery  ",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "before 20 weeks is recommended laparoscopy",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "after 20 weeks is recommended laparotomy (incision should be made at Mc Burnay Point)",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 487,
-          "question_number": 189,
-          "type": "single",
-          "question_text": "All of the following conditions are risk factors for urinary tract infections in pregnancy EXCEPT: ",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "diabetes",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "hypertension",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "sickle cell anemia",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "vesico-ureteral reflux",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "calculi ",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 488,
-          "question_number": 190,
-          "type": "multiple",
-          "question_text": "Following antibiotics are safe to treat UTI in the 3-rd trimester of pregnancy:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "erythromycin  ",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "ampicillin",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "co-trimoxazole",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "ciprofloxacin",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "cephalosporin",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 489,
-          "question_number": 191,
-          "type": "multiple",
-          "question_text": "True statements about asymptomatic bacteriuria in pregnancy:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "incidence is up to 8 %",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "if untreated, progresses to pyelonephritis ",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "early and prompt treatment prevents malformations in fetus",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "increase chance of premature infant",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "increase risk of small for gestational age fetus",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 490,
-          "question_number": 192,
-          "type": "single",
-          "question_text": "With regards to acute pyelonephritis in pregnancy all of the following are true, EXCEPT:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "pregnancy decrease the risk ",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "most common isolate is e. coli",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "higher incidence in the second half of pregnancy",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "responds to amino glycosides ",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "more common in primigravida and young females",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 491,
-          "question_number": 192,
-          "type": "single",
-          "question_text": "A 25-year-old primigravida at 20 weeks of pregnancy has the first episode of an asymptomatic bacteriuria. The risk of having pyelonephritis is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "no risk with first episode",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "less than 5%",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "15-20%",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "25-40%",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "more than 50%",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 492,
-          "question_number": 193,
-          "type": "single",
-          "question_text": "Antibiotic of choice for urinary tract infection (UTI) during pregnancy in the third trimester is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "cephalosporins",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "quinolones",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Co-trimoxazole",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "tetracyclines",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "penicillins ",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 493,
-          "question_number": 194,
-          "type": "multiple",
-          "question_text": "Which statements are correct regarding asymptomatic bacteriuria during pregnancy:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "bacterial count is over 10^5/ml",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "overall incidence is 5-10%",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "it should be treated with appropriate antimicrobial agent",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "risk of progression to pyelonephritis, if left untreated is rare",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "bacterial count is over 10^3/ml",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 180,
           "question_number": 195,
           "type": "single",
@@ -48980,76 +48175,6 @@
             {
               "letter": "E",
               "text": "amniotic fluid chorionic gonadotrophin",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 494,
-          "question_number": 198,
-          "type": "single",
-          "question_text": "Most common type of twin pregnancy is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "vertex+transverse",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "both vertex",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "vertex+breech",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "both breech",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "breech+ transverse",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 495,
-          "question_number": 199,
-          "type": "single",
-          "question_text": "Twin peak sign is seen in:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Monochorionic diamniotic",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Dichorionic monoamniotic",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Conjoined twins",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Diamniotic dichorionic",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "None of above",
               "is_correct": false
             }
           ]
@@ -52452,41 +51577,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 496,
-          "question_number": 296,
-          "type": "single",
-          "question_text": "Which drug is not used for treatment of postpartum hemorrhage?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "oxytocin",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "ergometrine",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "carboprost",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "ritodrin",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "syntometrine",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 280,
           "question_number": 297,
           "type": "single",
@@ -53041,41 +52131,6 @@
               "letter": "E",
               "text": "tocolisis",
               "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 497,
-          "question_number": 314,
-          "type": "multiple",
-          "question_text": "Which of the following are risk factors for uterus rupture?",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "threatened preterm labor",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "transversal situs of the fetus",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "previous cesarean section",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "hydramnios",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "contracted pelvis",
-              "is_correct": true
             }
           ]
         },
@@ -57072,41 +56127,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 498,
-          "question_number": 429,
-          "type": "single",
-          "question_text": "The minimum period of sexual cohabitation resulting is no offspring for a couple to be declared infertile is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "One year",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "One and a half-year",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Two years",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Three years",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "A half year(6 months)",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 410,
           "question_number": 430,
           "type": "single",
@@ -58367,41 +57387,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 499,
-          "question_number": 466,
-          "type": "multiple",
-          "question_text": "Mark pathologies that can lead to the development of acute abdomen:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "pelvioperitonitis",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "acute endometritis",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "acute salpingitis",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "erupted adnexal abscess ",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "torsion of ovarian cyst",
-              "is_correct": true
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 446,
           "question_number": 467,
           "type": "single",
@@ -58997,41 +57982,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 500,
-          "question_number": 484,
-          "type": "single",
-          "question_text": "Which vitamin deficiency is most commonly seen in a pregnant mother who is on phenytoin therapy for  epilepsy:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Vitamin B12",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "Vitamin B6",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Vitamin A",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Folic acid",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Vitamin E",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 463,
           "question_number": 485,
           "type": "multiple",
@@ -59137,146 +58087,6 @@
         {
           "module": "Obstetrics_Ginecol_Catrinici",
           "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 501,
-          "question_number": 488,
-          "type": "multiple",
-          "question_text": "Indication of Anti-D immunoglobulin is/are:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Vaginal bleeding",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "ECV",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Mid trimester abortion",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "After amniocentesis",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Threatened preterm labour",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 502,
-          "question_number": 489,
-          "type": "multiple",
-          "question_text": "True about Anti-D postpartum prophylaxis:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Given to newborn within 72 hrs of birth",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Required when baby is Rh+ and mother Rh-",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Can be helpful in ABO incompatibility",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Not necessary if Anti-D was injected at 28 weeks ",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Not indicated if umbilical cord was clamped more than 3 minutes after birth ",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 503,
-          "question_number": 490,
-          "type": "multiple",
-          "question_text": "Which are not the complications of Rh incompatibility:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Fetal hydrops",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "PPH",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Oligohydramnios",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "Pregnancy induced hypertension",
-              "is_correct": true
-            },
-            {
-              "letter": "E",
-              "text": "Fetal anemia ",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 504,
-          "question_number": 491,
-          "type": "multiple",
-          "question_text": "Mother’s blood group is Rh-ve. Indirect Coomb’s is +ve. The following will be seen in baby:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Anemia",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Abnormal umbilical artery waveform ",
-              "is_correct": true
-            },
-            {
-              "letter": "C",
-              "text": "Hydrops fetalis",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "IUGR",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Oligohydramnics",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
           "question_order": 466,
           "question_number": 492,
           "type": "single",
@@ -59305,111 +58115,6 @@
             {
               "letter": "E",
               "text": "Coombs test",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 505,
-          "question_number": 493,
-          "type": "single",
-          "question_text": "Feto maternal transfusion is detected by:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Kleihauer test",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Spectrophotometry",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Benzidine test",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "None of the above",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "All variants ",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 506,
-          "question_number": 494,
-          "type": "single",
-          "question_text": "The dose of anti D gamma globulin given after term of delivery for a Rh negative mother and Rh positive baby is:",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "50 micro gram",
-              "is_correct": false
-            },
-            {
-              "letter": "B",
-              "text": "200 micro gram",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "300 micro gram",
-              "is_correct": true
-            },
-            {
-              "letter": "D",
-              "text": "100 micro gram",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "All of the above doses are incorrect",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "module": "Obstetrics_Ginecol_Catrinici",
-          "source_file": "data/Graduation Exam Tests/Obstetrics_Ginecol_Catrinici.docx",
-          "question_order": 507,
-          "question_number": 495,
-          "type": "single",
-          "question_text": "Fetal consequences of Rh conflict are all except",
-          "answers": [
-            {
-              "letter": "A",
-              "text": "Nonimmune hydrops fetalis",
-              "is_correct": true
-            },
-            {
-              "letter": "B",
-              "text": "Icterus gravis neonatorum",
-              "is_correct": false
-            },
-            {
-              "letter": "C",
-              "text": "Congenital anemia of the newborn",
-              "is_correct": false
-            },
-            {
-              "letter": "D",
-              "text": "Fetal death",
-              "is_correct": false
-            },
-            {
-              "letter": "E",
-              "text": "Immune hydrops fetalis",
               "is_correct": false
             }
           ]
@@ -59459,27 +58164,27 @@
           "answers": [
             {
               "letter": "A",
-              "text": "increased cardiac output",
+              "text": "↑ed cardiac output",
               "is_correct": true
             },
             {
               "letter": "B",
-              "text": "increased tidal volume",
+              "text": "↑ed tidal volume",
               "is_correct": true
             },
             {
               "letter": "C",
-              "text": "increased vital capacity",
+              "text": "↑ed vital capacity",
               "is_correct": false
             },
             {
               "letter": "D",
-              "text": "decreased fibrinogen",
+              "text": "↓ed fibrinogen",
               "is_correct": false
             },
             {
               "letter": "E",
-              "text": "decreased plasma protein concentration",
+              "text": "↓ed plasma protein concentration",
               "is_correct": true
             }
           ]

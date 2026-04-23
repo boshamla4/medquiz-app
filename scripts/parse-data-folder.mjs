@@ -707,6 +707,17 @@ function extractQuestionsFromHtml(html) {
       continue;
     }
 
+    // Unnumbered CS/CM question in a <p> element (e.g. after nested-OL flattening in Surgery 4th).
+    // Must be checked before the answer-line check so "CS." is not mis-read as a letter prefix.
+    const csParaMatch = !seg.isList && text.match(/^(CS|CM)[.):]?\s+(.{5,})$/i);
+    if (csParaMatch) {
+      flush();
+      autoNum++;
+      current = { question_number: autoNum, type: csParaMatch[1].toUpperCase(), question_text: csParaMatch[2].trim(), answers: [] };
+      i++;
+      continue;
+    }
+
     // Check for answer line (A. text / a) text)
     const aMatch = text.match(ANSWER_LETTER_P);
     if (aMatch && current) {
@@ -720,7 +731,11 @@ function extractQuestionsFromHtml(html) {
       if (isQuestion(text) && (!current || current.answers.length > 0)) {
         flush();
         autoNum++;
-        current = { question_number: autoNum, type: 'unknown', question_text: text, answers: [] };
+        // Detect CS/CM prefix so the apply loop routes it correctly
+        const typePrefix = text.match(/^(CS|CM)[.):\s]/i);
+        const qType = typePrefix ? typePrefix[1].toUpperCase() : 'unknown';
+        const qText = typePrefix ? text.slice(typePrefix[0].length).trim() : text;
+        current = { question_number: autoNum, type: qType, question_text: qText, answers: [] };
         i++;
         continue;
       }
@@ -1058,9 +1073,21 @@ function parseSurgery4th(html) {
       items = [...olHtml.matchAll(/<li>([\s\S]*?)<\/li>/g)]
         .map((m) => m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim())
         .filter(Boolean);
-      // Block extends to closing structure (find closing </ul> or just use olEnd)
-      const closingTag = rest.indexOf('</ul>', olEnd);
-      blockLen = html.slice(headerEnd).length - rest.length + (closingTag >= 0 ? closingTag + 5 : olEnd);
+      // Count how many <ul> layers wrap this <ol> so we close the right amount.
+      // An unbounded search for the first </ul> after </ol> would skip past entire
+      // subsequent sections whenever this OL is NOT wrapped in any UL.
+      const beforeOl = nearbyHtml.slice(0, firstOlOffset);
+      const ulDepth = Math.max(0,
+        (beforeOl.match(/<ul>/gi) || []).length - (beforeOl.match(/<\/ul>/gi) || []).length
+      );
+      const restOffset = html.slice(headerEnd).length - rest.length;
+      let endPos = olEnd;
+      for (let d = 0; d < ulDepth; d++) {
+        const nextClose = rest.indexOf('</ul>', endPos);
+        if (nextClose < 0) break;
+        endPos = nextClose + 5;
+      }
+      blockLen = restOffset + endPos;
     } else if (firstPOffset >= 0) {
       // Text-format key — collect consecutive <p> blocks that look like answer data
       let pos = firstPOffset;
@@ -1164,49 +1191,69 @@ function parseSurgery4th(html) {
 // Surgery 5th year — per-section answer key in bold <ol><li>
 // ---------------------------------------------------------------------------
 
+/**
+ * Parse inline KEY format like "1B; 2C; 3E; 7ABC; 13BD;" into an ordered
+ * array of answer strings (one entry per question, in question-number order).
+ */
+function parseInlineAnswerKey(text) {
+  const pairs = [...text.matchAll(/(\d+)\s*([A-E]+)/gi)];
+  if (pairs.length === 0) return [];
+  pairs.sort((a, b) => parseInt(a[1]) - parseInt(b[1]));
+  return pairs.map((p) => p[2].toUpperCase());
+}
+
 function parseSurgery5th(html) {
   const allQuestions = [];
 
-  // Find all KEY answer blocks explicitly.
-
-  const keyAnswerRe = /KEY\s+answers[^<]*(?:<[^>]+>)*([^<]*)<\/[^>]+>(<ol>[\s\S]*?<\/ol>)/gi;
-  const keyBlocks = [];
-  let km;
-  while ((km = keyAnswerRe.exec(html)) !== null) {
-    keyBlocks.push({
-      index: km.index,
-      sectionName: km[1].trim() || km[0].slice(0, 50),
-      answerHtml: km[2],
-    });
+  // Collect all top-level <p> and <ol> blocks in document order so we can
+  // locate KEY answer sections without being fooled by bold-split tag patterns.
+  const blocks = [];
+  const blockRe = /(<p(?:\s[^>]*)?>[\s\S]*?<\/p>|<ol>[\s\S]*?<\/ol>)/g;
+  let bm;
+  while ((bm = blockRe.exec(html)) !== null) {
+    const rawHtml = bm[1];
+    const text = stripTags(rawHtml).replace(/\s+/g, ' ').trim();
+    const isOl = /^<ol/i.test(rawHtml.trimStart());
+    blocks.push({ rawHtml, text, isOl, docIndex: bm.index });
   }
 
-  // Extract all questions in one pass
+  // Find KEY answer sections: any <p> whose stripped text contains "KEY answers"
+  // (regardless of how bold tags split the words in the raw HTML).
+  const keyBlocks = [];
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i];
+    if (!b.isOl && /KEY\s+answers?/i.test(b.text)) {
+      let answerItems = null;
+      // Look in the next few blocks for an <ol> or an inline answer <p>
+      for (let j = i + 1; j < Math.min(blocks.length, i + 4); j++) {
+        const next = blocks[j];
+        if (next.isOl) {
+          // Standard <ol><li> answer key
+          answerItems = [...next.rawHtml.matchAll(/<li>([\s\S]*?)<\/li>/g)]
+            .map((m) => stripTags(m[1]).replace(/\s+/g, ' ').trim());
+          break;
+        }
+        // Inline format: "1B; 2C; 3E; 7ABC; …" — a bold <p> with num+letters pairs
+        if (!next.isOl && /\d[A-E]/i.test(next.text) && next.text.length < 400) {
+          answerItems = parseInlineAnswerKey(next.text);
+          break;
+        }
+      }
+      if (answerItems && answerItems.length > 0) {
+        keyBlocks.push({ docIndex: b.docIndex, answerItems });
+      }
+    }
+  }
+
+  // Extract all raw questions from the full HTML
   const allRawQuestions = extractQuestionsFromSurgery5thHtml(html);
 
-  if (keyBlocks.length === 0) {
-    // Fallback: no structured key found
-    return allRawQuestions;
-  }
+  if (keyBlocks.length === 0) return allRawQuestions;
 
-  // Assign questions to sections based on document position
-  // Each question has no position info, so we rely on sequential order within sections
-  // Group questions by the order they appear, matching to key blocks in order
-
-  // For each key block, parse the answer list (bold li items)
-  const sectionAnswers = keyBlocks.map((kb) => {
-    const liTexts = [...kb.answerHtml.matchAll(/<li>([\s\S]*?)<\/li>/g)]
-      .map((m) => stripTags(m[1]).replace(/\s+/g, ' ').trim());
-    return liTexts;
-  });
-
-  // Since we don't know exactly how many questions belong to each section,
-  // use the number of answer key items as a guide
+  // Assign answers to questions sequentially across key sections
   let qIdx = 0;
-  for (let s = 0; s < sectionAnswers.length; s++) {
-    const answers = sectionAnswers[s];
-    const sectionQs = [];
-
-    for (const keyItem of answers) {
+  for (const kb of keyBlocks) {
+    for (const keyItem of kb.answerItems) {
       const q = allRawQuestions[qIdx];
       if (!q) break;
 
@@ -1217,17 +1264,15 @@ function parseSurgery5th(html) {
       for (const ans of q.answers) {
         if (letters.has(ans.letter)) ans.is_correct = true;
       }
-      // Index fallback
+      // Index-based fallback
       if (!q.answers.some((a) => a.is_correct)) {
         const idx = [...letters][0]?.charCodeAt(0) - 65;
         if (idx >= 0 && q.answers[idx]) q.answers[idx].is_correct = true;
       }
 
-      if (q.answers.some((a) => a.is_correct)) sectionQs.push(q);
+      if (q.answers.some((a) => a.is_correct)) allQuestions.push(q);
       qIdx++;
     }
-
-    allQuestions.push(...sectionQs);
   }
 
   return allQuestions;
@@ -1299,6 +1344,160 @@ function extractQuestionsFromSurgery5thHtml(html) {
 }
 
 // ---------------------------------------------------------------------------
+// STRATEGY E — Alternating Q-block / Answer-key blocks (Colagenosis format)
+//
+// Format: groups of CS./CM. questions with unlabeled (or labeled a-e) answers,
+// each group followed by an "Answer key:" section listing correct letters.
+// This pattern repeats multiple times through the document.
+//
+// We convert HTML to paragraph-per-line (NOT using stripTags which collapses
+// all whitespace) and use "Answer key:" as the explicit mode-switch signal.
+// ---------------------------------------------------------------------------
+
+async function parseColagenosis(filePath) {
+  // This format stores answers as Word line-breaks (Shift+Enter) within single
+  // paragraphs, so mammoth.convertToHtml merges entire Q-blocks into one <p>.
+  // mammoth.extractRawText correctly preserves each line on its own row.
+  const { value: rawText } = await mammoth.extractRawText({ path: filePath });
+  const lines = rawText
+    .split('\n')
+    .map((l) => l.replace(/\s+/g, ' ').trim())
+    .filter((l) => l.length > 0);
+
+  const allQuestions = [];
+  const COLAG_Q_P = /^(?:(\d+)\.\s*)?(CS|CM)\.\s+(.{5,})$/i;
+
+  let mode = 'questions'; // 'questions' | 'key'
+  let qLines = [];
+  let keyLines = [];
+
+  function processPair() {
+    if (!qLines.length || !keyLines.length) { qLines = []; keyLines = []; return; }
+    const qs = parseColagenosisQLines(qLines);
+    const answerGroups = parseColagenosisKeyLines(keyLines);
+    applyColagenosisAnswers(qs, answerGroups);
+    allQuestions.push(...qs.filter((q) => q.answers.length >= 2 && q.answers.some((a) => a.is_correct)));
+    qLines = [];
+    keyLines = [];
+  }
+
+  for (const line of lines) {
+    if (/^Answer\s+key\s*:/i.test(line)) {
+      mode = 'key';
+      keyLines = [];
+      continue;
+    }
+
+    if (mode === 'key') {
+      // A new CS./CM. question line ends the key and starts the next Q block
+      if (COLAG_Q_P.test(line)) {
+        processPair();
+        mode = 'questions';
+        qLines.push(line);
+        continue;
+      }
+      keyLines.push(line);
+    } else {
+      qLines.push(line);
+    }
+  }
+
+  // Process the final pair (last key block has no following Q block)
+  if (mode === 'key' && keyLines.length) processPair();
+
+  return allQuestions;
+}
+
+/** Parse CS./CM. questions with unlabeled or labeled (a./b./…) answer options. */
+function parseColagenosisQLines(lines) {
+  const questions = [];
+  let current = null;
+  let autoNum = 0;
+
+  const COLAG_Q_P = /^(?:(\d+)\.\s*)?(CS|CM)\.\s+(.{5,})$/i;
+  const LABELED_ANS_P = /^([a-e])[.)]\s+(.{2,})$/i;
+
+  function flush() {
+    if (!current || current.answers.length === 0) { current = null; return; }
+    questions.push(current);
+    current = null;
+  }
+
+  for (const line of lines) {
+    if (!line || /^[-–—_=.]{3,}$/.test(line)) continue;
+
+    const qMatch = line.match(COLAG_Q_P);
+    if (qMatch) {
+      flush();
+      autoNum++;
+      current = {
+        question_number: qMatch[1] ? parseInt(qMatch[1]) : autoNum,
+        type: qMatch[2].toUpperCase(),
+        question_text: qMatch[3].trim(),
+        answers: [],
+      };
+      continue;
+    }
+
+    if (current) {
+      // Labeled answer: "a. Low lipid diet"
+      const labeledMatch = line.match(LABELED_ANS_P);
+      if (labeledMatch) {
+        current.answers.push({
+          letter: labeledMatch[1].toUpperCase(),
+          text: labeledMatch[2].trim(),
+          is_correct: false,
+        });
+        continue;
+      }
+
+      // Unlabeled answer: auto-assign A-E by position
+      if (current.answers.length < 5) {
+        const letter = String.fromCharCode(65 + current.answers.length);
+        current.answers.push({ letter, text: line.trim(), is_correct: false });
+      }
+    }
+  }
+
+  flush();
+  return questions;
+}
+
+/** Parse answer key lines into an array of letter-groups, one group per question. */
+function parseColagenosisKeyLines(lines) {
+  const groups = [];
+  for (const line of lines) {
+    if (!line) continue;
+    if (/^(CS|MC|CM)$/i.test(line)) continue;  // type-label row
+    if (/^[-–—_=.]{3,}$/.test(line)) continue; // separator
+    // Answer line: "c" (single CS) or "a, b, d" (CM)
+    const letters = [...line.matchAll(/[a-eA-E]/g)].map((m) => m[0].toUpperCase());
+    if (letters.length > 0) groups.push(letters);
+  }
+  return groups;
+}
+
+/** Apply answer key letter-groups to questions in order. */
+function applyColagenosisAnswers(questions, answerGroups) {
+  for (let i = 0; i < questions.length && i < answerGroups.length; i++) {
+    const q = questions[i];
+    const letters = new Set(answerGroups[i]);
+    for (const ans of q.answers) {
+      if (letters.has(ans.letter)) ans.is_correct = true;
+    }
+    // Index-based fallback if no letter matched by name
+    if (!q.answers.some((a) => a.is_correct)) {
+      for (const l of letters) {
+        const idx = l.charCodeAt(0) - 65;
+        if (q.answers[idx]) q.answers[idx].is_correct = true;
+      }
+    }
+    const correctCount = q.answers.filter((a) => a.is_correct).length;
+    q.type = correctCount > 1 ? 'multiple' : 'single';
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Main file dispatcher
 // ---------------------------------------------------------------------------
 
@@ -1314,6 +1513,7 @@ async function parseFile(filePath) {
   // Detect strategy
   const hasBracket = /\[[xX×хХ✓ ]\]/.test(rawText);
   const hasExplicitCorrect = /Correct\s+answer/i.test(rawText);
+  const hasAnswerKeyHeader = /Answer\s+key\s*:/i.test(rawText);
   const isSurgery5th = filename === 'Surgery_5th year_Timis.docx';
   const isSurgery4th = filename === 'Surgery_4th year_Vozian.docx';
   const isUnderlinedSurgery = filename === 'Surgery_3rd year_Vescu.docx';
@@ -1329,6 +1529,8 @@ async function parseFile(filePath) {
     rawQuestions = parseSurgery5th(html);
   } else if (isSurgery4th) {
     rawQuestions = parseSurgery4th(html);
+  } else if (hasAnswerKeyHeader) {
+    rawQuestions = await parseColagenosis(filePath);
   } else if (hasBracket) {
     rawQuestions = parseBracket(html);
   } else if (hasExplicitCorrect) {
